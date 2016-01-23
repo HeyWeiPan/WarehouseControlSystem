@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/CommonUI/MasterPage/MasterSetupList.master" AutoEventWireup="true" CodeFile="AppParameterList.aspx.cs" Inherits="Setup_AppParameter_AppParameterList" Title="Untitled Page" %>
+<%-- Add content controls here --%>

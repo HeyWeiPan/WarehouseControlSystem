@@ -1,0 +1,68 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterDetail.master.cs"
+    Inherits="CommonUI_MasterPage_MasterDetail" %>
+
+<%@ Register Assembly="EntpClass.WebControlLib" Namespace="EntpClass.WebControlLib"
+    TagPrefix="cc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/commonui/MasterPage/MasterDetail.css" rel="stylesheet" type="text/css" />
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="MainTb" border="0" cellpadding="0" cellspacing="0">
+        <tr id="top">
+            <td class="TopC">
+                <div id="windowBoxTit">
+                    <h2>
+                        <strong>
+                            <img src="~/Home/images/icon17.gif" alt="Í¼Æ¬ÃèÊö" style="vertical-align: middle;" runat="server" />
+                            <asp:Label ID="LblTitle" runat="server" Text=""></asp:Label></strong></h2>
+                </div>
+            </td>
+        </tr>
+        <tr id="middle">
+            <td>
+                <table class="MidCTb" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="MidCTbCL">
+                            &nbsp;
+                        </td>
+                        <td id="container" align="left" valign="top">
+                            <div style="width: 100%; height: 100%; overflow: auto; position: relative; display: inline;">
+                                <asp:ContentPlaceHolder ID="C1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </td>
+                        <td class="MidCTbCR">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr style="height: 56px;" id="bottom">
+            <td style="padding-right:20px;">
+                <table class="BottomCTb" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="BottomCTbCM">
+                            <asp:ContentPlaceHolder ID="C2" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" align="center" style="height: 28px;">
+                <div class="footer1">
+                    <div class="footer2">
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

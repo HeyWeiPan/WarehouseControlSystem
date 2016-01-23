@@ -1,0 +1,5304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="account_incorrect" xml:space="preserve">
+    <value>帐户错误</value>
+  </data>
+  <data name="activitysstepmsg" xml:space="preserve">
+    <value>保存成功！当前案例已经设为成功状态，您还有一天的时间可以修改相关的方案信息！</value>
+  </data>
+  <data name="alreadyhavedetail" xml:space="preserve">
+    <value>明细表格中已包含数据，继续操作将删除数据,是否进继续?</value>
+  </data>
+  <data name="alreadyinworkflowcantdelete" xml:space="preserve">
+    <value>记录已经进入流程中，不允许删除！</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="alreadymovefirst" xml:space="preserve">
+    <value>已跳转到第一条数据!</value>
+  </data>
+  <data name="alreadymovelast" xml:space="preserve">
+    <value>已跳转到最后一条数据!</value>
+  </data>
+  <data name="alreadyrepaycantedit" xml:space="preserve">
+    <value>还款单已经还款，不能编辑！只有处在新建状态的才允许编辑！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="alreadyuse" xml:space="preserve">
+    <value>该类型已经被使用，不允许删除！请将其设置为不可用。</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="amountmorethanlendamount" xml:space="preserve">
+    <value>交款单金额大于借款余额!</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="areyousurecreateexpense" xml:space="preserve">
+    <value>确定要新增报销单吗？</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="areyousurecreatelend" xml:space="preserve">
+    <value>你确认要创建新的借款单吗？</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="areyousurecreaterepayment" xml:space="preserve">
+    <value>你确定要创建新的交款单吗？</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="areyousurecreateticketapp" xml:space="preserve">
+    <value>确定要新增订票申请单吗？</value>
+  </data>
+  <data name="areyousurecreatevehicleapp" xml:space="preserve">
+    <value>确定要新增用车申请吗？</value>
+  </data>
+  <data name="atleaseonedetailline" xml:space="preserve">
+    <value>报销单最少要有一行详细费用记录！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="attachmentlist" xml:space="preserve">
+    <value>附件列表</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="auditfailedtotalrow" xml:space="preserve">
+    <value> {0} 张单据 [审核] 失败!</value>
+  </data>
+  <data name="auditsuccesstotalrow" xml:space="preserve">
+    <value> {0} 张单据 [审核] 成功!</value>
+  </data>
+  <data name="buildfailedtotalrow" xml:space="preserve">
+    <value> {0} 张单据 [生成] 失败!</value>
+  </data>
+  <data name="buildsuccesstotalrow" xml:space="preserve">
+    <value> {0} 张单据 [生成] 成功!</value>
+  </data>
+  <data name="cannotappendnothold" xml:space="preserve">
+    <value>由于流程已经不处在暂不处理状态，因此不允许添加信息。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="cannotdelete" xml:space="preserve">
+    <value>您不能删除数据！</value>
+  </data>
+  <data name="cannotedit" xml:space="preserve">
+    <value>单据已经核准或是记账,不能编辑!</value>
+  </data>
+  <data name="cannoteditexceedcreatedate" xml:space="preserve">
+    <value>不能修改创建日期在{0}天前的数据！</value>
+  </data>
+  <data name="canotdeletealreadypayment" xml:space="preserve">
+    <value>已经还款的还款单不能被删除！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="cantaddfoldertypeinprocess" xml:space="preserve">
+    <value>流程分类不能放在具体流程之下！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="change_passwod_failed" xml:space="preserve">
+    <value>更新密码失败</value>
+  </data>
+  <data name="changeuserdefineprocessfailed" xml:space="preserve">
+    <value>修改流程为用户自定义流程失败！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="changeuserdefineprocesssuccess" xml:space="preserve">
+    <value>流程成功修改为用户自定义流程</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="checkactualcheckqty" xml:space="preserve">
+    <value>实际检验数量 &gt; 送检数量!</value>
+  </data>
+  <data name="checkdatenotpermitinput" xml:space="preserve">
+    <value>输入输入错误：检查日期之前不能输入{0}！</value>
+  </data>
+  <data name="checkfailed" xml:space="preserve">
+    <value>检查失败!</value>
+  </data>
+  <data name="checkinputdays" xml:space="preserve">
+    <value>请检查输入的天数与实际天数是否相符！</value>
+  </data>
+  <data name="checkinqty" xml:space="preserve">
+    <value>入库数量 &gt; 送检数量!</value>
+  </data>
+  <data name="checkmodifyqty" xml:space="preserve">
+    <value>更改数量,只能减少,不能增加!</value>
+  </data>
+  <data name="checkpaenddate" xml:space="preserve">
+    <value>当前日期必须在绩效考核结束日期之后</value>
+  </data>
+  <data name="checkqcpassqty1" xml:space="preserve">
+    <value>合格数量 &gt; 送检数量!</value>
+  </data>
+  <data name="checkqcpassqty2" xml:space="preserve">
+    <value>合格数量 &gt; 实际检验数量!</value>
+  </data>
+  <data name="checkqtyzero" xml:space="preserve">
+    <value>数量不能为 0 !</value>
+  </data>
+  <data name="checkstringlength" xml:space="preserve">
+    <value>{0}字符长度小于{1}!</value>
+  </data>
+  <data name="checksuccess" xml:space="preserve">
+    <value>检查成功!</value>
+  </data>
+  <data name="checkuserpaerror" xml:space="preserve">
+    <value>生成员工的PA数据错误，可能原因:没有设置正确的部门！</value>
+  </data>
+  <data name="checkwflstate" xml:space="preserve">
+    <value>工作流的状态没有改变,您不能进行操作!</value>
+  </data>
+  <data name="checkwflsubmit" xml:space="preserve">
+    <value>工作流还没有提交,您不能进行操作!</value>
+  </data>
+  <data name="childcountmustlesspersoncount" xml:space="preserve">
+    <value>儿童数必须小于总人数！</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="completesubmitapplication" xml:space="preserve">
+    <value>流程已提交！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="confirm_submit_idmpapplication" xml:space="preserve">
+    <value>你确定要提交此流程吗？</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="confirm_update" xml:space="preserve">
+    <value>确定要更新吗?</value>
+  </data>
+  <data name="confirmapproveform" xml:space="preserve">
+    <value>确定要批准吗?</value>
+  </data>
+  <data name="confirmaudit" xml:space="preserve">
+    <value>您确认要[核准]数据么?</value>
+  </data>
+  <data name="confirmauditrow" xml:space="preserve">
+    <value>您当前选中了 {0} 张单据,是否要进行 [审核] 处理?</value>
+  </data>
+  <data name="confirmbuild" xml:space="preserve">
+    <value>您确认要生成数据么?</value>
+  </data>
+  <data name="confirmbuildcx" xml:space="preserve">
+    <value>您确定要生成冲销单么?</value>
+  </data>
+  <data name="confirmbuildrow" xml:space="preserve">
+    <value>您当前选中了 {0} 张单据,是否要进行 [生成] 处理?</value>
+  </data>
+  <data name="confirmcancelprocess" xml:space="preserve">
+    <value>确定要取消此流程吗？</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="confirmclosewindow" xml:space="preserve">
+    <value>确定要关闭当前窗体吗?</value>
+  </data>
+  <data name="confirmclostpa" xml:space="preserve">
+    <value>当前操作将关闭所有绩效考核表单,同时删除未完成的部门考评和绩效考评,确定要继续吗?</value>
+  </data>
+  <data name="confirmcopynode" xml:space="preserve">
+    <value>您确定要拷贝当前选中节点么?</value>
+  </data>
+  <data name="confirmcutnode" xml:space="preserve">
+    <value>您确定要剪贴当前选中节点么?</value>
+  </data>
+  <data name="confirmdeletenode" xml:space="preserve">
+    <value>您确定要删除当前选中节点么?</value>
+  </data>
+  <data name="confirmdeleterow" xml:space="preserve">
+    <value>删除的数据将无法恢复, 确定要删除当前行吗?</value>
+  </data>
+  <data name="confirmexpandrow" xml:space="preserve">
+    <value>您当前选中了 {0} 张单据,是否要进行 [标识] 处理?</value>
+  </data>
+  <data name="confirmexport" xml:space="preserve">
+    <value>确定要导出数据吗?</value>
+  </data>
+  <data name="confirmpass" xml:space="preserve">
+    <value>您确认要[记账]数据么?</value>
+  </data>
+  <data name="confirmpassrow" xml:space="preserve">
+    <value>您当前选中了 {0} 张单据,是否要进行 [记账] 处理?</value>
+  </data>
+  <data name="confirmsubmitform" xml:space="preserve">
+    <value>您确认要提交当前窗体么?</value>
+  </data>
+  <data name="confirmundoaudit" xml:space="preserve">
+    <value>您确认要[取消核准]数据么?</value>
+  </data>
+  <data name="confirmundoauditrow" xml:space="preserve">
+    <value>您当前选中了 {0} 张单据,是否要进行 [取消审核] 处理?</value>
+  </data>
+  <data name="confirmundobuild" xml:space="preserve">
+    <value>您确认要[取消生成]数据么?</value>
+  </data>
+  <data name="confirmundobuildrow" xml:space="preserve">
+    <value>您当前选中了 {0} 张单据,是否要进行 [取消生成] 处理?</value>
+  </data>
+  <data name="confirmundopass" xml:space="preserve">
+    <value>您确认要[记账还原]数据么?</value>
+  </data>
+  <data name="confirmundopassrow" xml:space="preserve">
+    <value>您当前选中了 {0} 张单据,是否要进行 [记账还原] 处理?</value>
+  </data>
+  <data name="confirmunsubmitform" xml:space="preserve">
+    <value>您确认要取消提交当前窗体么?</value>
+  </data>
+  <data name="confirmupdatestatus" xml:space="preserve">
+    <value>您确认要更新当前流程的状态么?</value>
+  </data>
+  <data name="conntimeoutrelogin" xml:space="preserve">
+    <value>您的连接超时,请重新登录系统.</value>
+  </data>
+  <data name="copypersoninfofailed" xml:space="preserve">
+    <value>复制人员信息失败，请检查后重试！</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="copypersoninfosuccess" xml:space="preserve">
+    <value>成功复制人员信息！</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="copyrolefailed" xml:space="preserve">
+    <value>拷贝角色失败!</value>
+  </data>
+  <data name="copyrolesuccess" xml:space="preserve">
+    <value>拷贝角色成功!</value>
+  </data>
+  <data name="costcenterisnotexist" xml:space="preserve">
+    <value>费用中心代码不存在！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dataerror" xml:space="preserve">
+    <value>数据错误!</value>
+  </data>
+  <data name="datareference" xml:space="preserve">
+    <value>数据被引用,您不能删除此数据！</value>
+  </data>
+  <data name="dataremove" xml:space="preserve">
+    <value>数据已经被删除!</value>
+  </data>
+  <data name="datarepeat" xml:space="preserve">
+    <value>数据重复！</value>
+  </data>
+  <data name="deletefailed" xml:space="preserve">
+    <value>删除失败!</value>
+  </data>
+  <data name="deletefailedtotalrow" xml:space="preserve">
+    <value>{0} 张单据 [删除] 失败!</value>
+  </data>
+  <data name="deletesuccess" xml:space="preserve">
+    <value>删除成功!</value>
+  </data>
+  <data name="deletesuccesstotalrow" xml:space="preserve">
+    <value>{0} 张单据 [删除] 成功!</value>
+  </data>
+  <data name="donot_allow_delete" xml:space="preserve">
+    <value>当前数据不允许删除！</value>
+  </data>
+  <data name="don't_allow_delete" xml:space="preserve">
+    <value>记录已经关闭,您不能删除!</value>
+    <comment>CMDB</comment>
+  </data>
+  <data name="don't_allow_edit" xml:space="preserve">
+    <value>记录已经关闭,您不能编辑!</value>
+    <comment>CMDB</comment>
+  </data>
+  <data name="dontallowdifapplication" xml:space="preserve">
+    <value>不允许从一种应用复制或者剪切到另一应用下！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="editprocessconfirm" xml:space="preserve">
+    <value>确认要编辑此流程吗？进入编辑状态后，在提交之前此流程不可使用！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="jxcmsg086" xml:space="preserve">
+    <value>生成的产品检验单已经核准,无法取消核准.</value>
+  </data>
+  <data name="password_incorrect" xml:space="preserve">
+    <value>旧密码错误!</value>
+  </data>
+  <data name="userdefinecannotdelete" xml:space="preserve">
+    <value>用户自定义流程不允许删除！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="commonui_webform_scope_aspx" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="hr_hrapplication_apphiredetail_aspx" xml:space="preserve">
+    <value>新员工录用申请明细</value>
+  </data>
+  <data name="hr_payroll_setup_payslipitemdetail_aspx" xml:space="preserve">
+    <value>工资单项</value>
+  </data>
+  <data name="jxc_arap_jxcreceivelist_aspx" xml:space="preserve">
+    <value>收款单一览表</value>
+  </data>
+  <data name="jxc_jx_jxcjxlist_aspx" xml:space="preserve">
+    <value>检修单一览表</value>
+  </data>
+  <data name="jxc_report_xsmatdetail_aspx" xml:space="preserve">
+    <value>产品销售明细表</value>
+  </data>
+  <data name="new_terr" xml:space="preserve">
+    <value>New Terr</value>
+  </data>
+  <data name="template_file" xml:space="preserve">
+    <value>模板文档</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="figl_kmdm_error7" xml:space="preserve">
+    <value>科目标识为'汇总'时，不能设置账簿打印-三栏账</value>
+  </data>
+  <data name="figl_pzbh_error1" xml:space="preserve">
+    <value>请填写必有方向科目</value>
+  </data>
+  <data name="figl_pzbh_error2" xml:space="preserve">
+    <value>必有科目１和必有科目２不能相同</value>
+  </data>
+  <data name="figl_pzbh_error3" xml:space="preserve">
+    <value>请填写必有方向</value>
+  </data>
+  <data name="figl_pzbh_error4" xml:space="preserve">
+    <value>请填写必无方向科目</value>
+  </data>
+  <data name="figl_pzbh_error5" xml:space="preserve">
+    <value>必无科目１和必无科目２不能相同</value>
+  </data>
+  <data name="figl_pzbh_error6" xml:space="preserve">
+    <value>请填写必无方向</value>
+  </data>
+  <data name="figl_pzbh_error7" xml:space="preserve">
+    <value>同一个方向，必有科目１不能和必无科目相同</value>
+  </data>
+  <data name="figl_pzbh_error8" xml:space="preserve">
+    <value>同一个方向，必有科目2不能和必无科目相同</value>
+  </data>
+  <data name="figl_sysdate_error1" xml:space="preserve">
+    <value>当前会计年度已经存在，不能新增</value>
+  </data>
+  <data name="figl_sysdate_error2" xml:space="preserve">
+    <value>请先填写数据，再进行保存操作</value>
+  </data>
+  <data name="figl_sysdate_error3" xml:space="preserve">
+    <value>当前期间的记账日期，不能小于或等于上一期间</value>
+  </data>
+  <data name="figl_sysdate_error4" xml:space="preserve">
+    <value>当前期间外系统结束日期不能超过当前期间记账日期</value>
+  </data>
+  <data name="figl_sysdate_error5" xml:space="preserve">
+    <value>期间{0} 记账日期不能为空</value>
+  </data>
+  <data name="figl_sysdate_error6" xml:space="preserve">
+    <value>期间{0} ERP系统开始不能为空</value>
+  </data>
+  <data name="figl_sysdate_error7" xml:space="preserve">
+    <value>期间{0} ERP系统结束不能为空</value>
+  </data>
+  <data name="insertfailed" xml:space="preserve">
+    <value>新增失败:</value>
+  </data>
+  <data name="jxcmsg0681" xml:space="preserve">
+    <value>无法取消核准,请先删除已经生产的采购计划单！</value>
+  </data>
+  <data name="jxcmsg136" xml:space="preserve">
+    <value>第{0}行,损耗数量 + 合格数量 != 实际数量</value>
+  </data>
+  <data name="jxcmsg137" xml:space="preserve">
+    <value>物料明细第{0}行，电缆盘有空值</value>
+  </data>
+  <data name="jxcmsg138" xml:space="preserve">
+    <value>物料明细第{0}行，分段内,中,外之和不等于 数量</value>
+  </data>
+  <data name="jxcmsg139" xml:space="preserve">
+    <value>物料明细第{0}行，货位不能为空</value>
+  </data>
+  <data name="jxcmsg140" xml:space="preserve">
+    <value>物料明细第{0}行，批号不能为空</value>
+  </data>
+  <data name="jxcmsg143" xml:space="preserve">
+    <value>物料{0},电缆盘{1},货位代码{2},批号{3}-超出当前库存{4}</value>
+  </data>
+  <data name="jxcmsg144" xml:space="preserve">
+    <value>物料{0},电缆盘{1},货位代码{2},批号{3}-分段1超出{4},分段2超出{5},分段3超出{6}</value>
+  </data>
+  <data name="jxcmsg145" xml:space="preserve">
+    <value>当前单据中的物料在货物库存表中不存在，请重新选择</value>
+  </data>
+  <data name="jxcmsg146" xml:space="preserve">
+    <value>物料明细第{0}行,没有选择出库物料，请先选择</value>
+  </data>
+  <data name="jxcmsg147" xml:space="preserve">
+    <value>物料明细第{0}行，对应的数据中，分段1,2,3之和不等于 合格数量</value>
+  </data>
+  <data name="jxcmsg148" xml:space="preserve">
+    <value>物料明细第{0}行，货位对应的仓库，和单据头上的仓库不一致</value>
+  </data>
+  <data name="jxcmsg149" xml:space="preserve">
+    <value>生成的电缆产品检验单已经核准,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg150" xml:space="preserve">
+    <value>生成的质量检验单没有核准,不能记帐.</value>
+  </data>
+  <data name="jxcmsg151" xml:space="preserve">
+    <value>生成的电缆产品检验单没有核准,不能记帐.</value>
+  </data>
+  <data name="jxcmsg152" xml:space="preserve">
+    <value>生成的产品检验单没有核准,不能记帐.</value>
+  </data>
+  <data name="jxcmsg153" xml:space="preserve">
+    <value>物料明细第{0}行，分段(内,中,外),报废分段(内,中,外)之和不等于 数量</value>
+  </data>
+  <data name="jxcmsg154" xml:space="preserve">
+    <value>销售单有剩余数量，请选择剩余处理方式</value>
+  </data>
+  <data name="jxcmsg155" xml:space="preserve">
+    <value>生成的产品入库单已经核准或记账,无法取消核准</value>
+  </data>
+  <data name="jxcmsg156" xml:space="preserve">
+    <value>产品库存与实际库存不一致，可能期间有作其他单据，请重新选择物料</value>
+  </data>
+  <data name="jxcmsg157" xml:space="preserve">
+    <value>存在物料编码与物料表不一致的物料,请重新选择物料</value>
+  </data>
+  <data name="jxcmsg158" xml:space="preserve">
+    <value>超出调拨单剩余数量!</value>
+  </data>
+  <data name="jxcmsg159" xml:space="preserve">
+    <value>当前单据日期范围需要在第一个期间范围内!</value>
+  </data>
+  <data name="jxcmsg160" xml:space="preserve">
+    <value>存在发票，不能还原记帐!</value>
+  </data>
+  <data name="jxcmsg161" xml:space="preserve">
+    <value>第{0}行,没有选择入库物料，请先选择</value>
+  </data>
+  <data name="jxcmsg162" xml:space="preserve">
+    <value>当前单据必须是'待核准',才能核准</value>
+  </data>
+  <data name="jxcmsg163" xml:space="preserve">
+    <value>当前单据必须是'新建',才能提交</value>
+  </data>
+  <data name="jxcmsg164" xml:space="preserve">
+    <value>当前单据已经删除,不能提交</value>
+  </data>
+  <data name="jxcmsg165" xml:space="preserve">
+    <value>当前单据已经删除,不能取消提交</value>
+  </data>
+  <data name="jxcmsg166" xml:space="preserve">
+    <value>当前单据必须是'待提交',才能取消提交</value>
+  </data>
+  <data name="jxcmsg167" xml:space="preserve">
+    <value>采购单有剩余数量，请选择剩余处理方式</value>
+  </data>
+  <data name="jxcmsg168" xml:space="preserve">
+    <value>物料{0}超出余度数量。</value>
+  </data>
+  <data name="jxcmsg169" xml:space="preserve">
+    <value>物料{0},分段内/中/外之和不等于数量</value>
+  </data>
+  <data name="jxcmsg200" xml:space="preserve">
+    <value>检验单生成报废单已核准，检验单不允许取消核准</value>
+  </data>
+  <data name="jxcmsg201" xml:space="preserve">
+    <value>当前单据已被其他单据引用，不能记帐还原</value>
+  </data>
+  <data name="jxcmsg202" xml:space="preserve">
+    <value>当前单据已生成财务凭证，不能记帐还原</value>
+  </data>
+  <data name="linebatchnoisempty" xml:space="preserve">
+    <value>行，批号不能为空</value>
+  </data>
+  <data name="linedlpanisempty" xml:space="preserve">
+    <value>行,电缆盘不能为空</value>
+  </data>
+  <data name="linefenduanisnotequalqty" xml:space="preserve">
+    <value>行,分段之和必须等于{0}</value>
+  </data>
+  <data name="linehuoweiisempty" xml:space="preserve">
+    <value>行,货位不能为空</value>
+  </data>
+  <data name="mcodevenderduplicate" xml:space="preserve">
+    <value>当前物料编号，供应商重复</value>
+  </data>
+  <data name="mserror_figl_audit_1" xml:space="preserve">
+    <value>单据已经删除,无法审核</value>
+  </data>
+  <data name="mserror_figl_audit_2" xml:space="preserve">
+    <value>单据已审核,不能重复审核</value>
+  </data>
+  <data name="mserror_figl_audit_3" xml:space="preserve">
+    <value>当前单据已经记帐,无法审核</value>
+  </data>
+  <data name="mserror_figl_audit_4" xml:space="preserve">
+    <value>审核人和制单人不能相同</value>
+  </data>
+  <data name="mserror_figl_cypz_1" xml:space="preserve">
+    <value>只有手工凭证才能设置为常用凭证</value>
+  </data>
+  <data name="mserror_figl_deletesysdate_1" xml:space="preserve">
+    <value>当前会计期间年已</value>
+  </data>
+  <data name="mserror_figl_djpass_1" xml:space="preserve">
+    <value>当前单据无效(dj_sys_type,或page_function_id为空)</value>
+  </data>
+  <data name="mserror_figl_djpass_10" xml:space="preserve">
+    <value>单据{0} 已经生成财务凭证</value>
+  </data>
+  <data name="mserror_figl_djpass_11" xml:space="preserve">
+    <value>合并生成时，必须是同一种单据类型</value>
+  </data>
+  <data name="mserror_figl_djpass_12" xml:space="preserve">
+    <value>单据{0},第{1}个配置条，取出的科目{2}不是明细科目</value>
+  </data>
+  <data name="mserror_figl_djpass_2" xml:space="preserve">
+    <value>当前单据已经生成财务凭证</value>
+  </data>
+  <data name="mserror_figl_djpass_3" xml:space="preserve">
+    <value>当前自动记账未配置参数</value>
+  </data>
+  <data name="mserror_figl_djpass_4" xml:space="preserve">
+    <value>单据{0},第{1}个配置条，未取出有效的科目</value>
+  </data>
+  <data name="mserror_figl_djpass_5" xml:space="preserve">
+    <value>单据{0},第{1}个配置条，未取出有效的金额公式</value>
+  </data>
+  <data name="mserror_figl_djpass_6" xml:space="preserve">
+    <value>单据{0},第{1}个配置条，未取出有效的科目公式</value>
+  </data>
+  <data name="mserror_figl_djpass_7" xml:space="preserve">
+    <value>单据{0},第{1}个配置条，未取出对应的金额</value>
+  </data>
+  <data name="mserror_figl_djpass_8" xml:space="preserve">
+    <value>单据{0},第{1}个配置条，未取出对应的科目</value>
+  </data>
+  <data name="mserror_figl_djpass_9" xml:space="preserve">
+    <value>单据{0} 对应的数据无效 (dj_sys_type,或page_function_id为空)</value>
+  </data>
+  <data name="mserror_figl_djundopass_1" xml:space="preserve">
+    <value>当前单据未记账到财务，无法记账还原</value>
+  </data>
+  <data name="mserror_figl_djundopass_2" xml:space="preserve">
+    <value>当前单据对应的财务凭证，已经审核</value>
+  </data>
+  <data name="mserror_figl_djundopass_3" xml:space="preserve">
+    <value>当前单据对应的财务凭证，已经记账</value>
+  </data>
+  <data name="mserror_figl_djundopass_4" xml:space="preserve">
+    <value>当前单据对应的财务凭证，已经删除</value>
+  </data>
+  <data name="mserror_figl_jzpz_1" xml:space="preserve">
+    <value>第{0}行,科目标识不是[明细]</value>
+  </data>
+  <data name="mserror_figl_jzpz_10" xml:space="preserve">
+    <value>凭证编号为空</value>
+  </data>
+  <data name="mserror_figl_jzpz_11" xml:space="preserve">
+    <value>获取凭证编号异常，包含'-'</value>
+  </data>
+  <data name="mserror_figl_jzpz_12" xml:space="preserve">
+    <value>GetPzDeleteSequenceNo 获取凭证编号异常，包含'-'</value>
+  </data>
+  <data name="mserror_figl_jzpz_13" xml:space="preserve">
+    <value>科目代码{0}　未设置辅助/成本中心/现金流量，不能重复</value>
+  </data>
+  <data name="figl_dj_pzpasslist_aspx" xml:space="preserve">
+    <value>凭证记账一览表</value>
+  </data>
+  <data name="figl_dj_pzxsblist_aspx" xml:space="preserve">
+    <value>凭证序时簿一览表</value>
+  </data>
+  <data name="figl_dj_setup_pzbhdetail_aspx" xml:space="preserve">
+    <value>凭证编号设置</value>
+  </data>
+  <data name="figl_dj_setup_pzbhlist_aspx" xml:space="preserve">
+    <value>凭证编号一览表</value>
+  </data>
+  <data name="figl_dj_setup_pzlblist_aspx" xml:space="preserve">
+    <value>凭证类别一览表</value>
+  </data>
+  <data name="figl_dj_setup_pzzylist_aspx" xml:space="preserve">
+    <value>凭证摘要设置一览表</value>
+  </data>
+  <data name="figl_jk_djpasslist_aspx" xml:space="preserve">
+    <value>外系统记账一览表</value>
+  </data>
+  <data name="figl_popup_assistitemsearch_aspx" xml:space="preserve">
+    <value>辅助项目查询</value>
+  </data>
+  <data name="figl_popup_cashflowdetail_aspx" xml:space="preserve">
+    <value>现金流量明细</value>
+  </data>
+  <data name="figl_popup_cashsearch_aspx" xml:space="preserve">
+    <value>现金流量查询</value>
+  </data>
+  <data name="figl_popup_costcentersearch_aspx" xml:space="preserve">
+    <value>成本中心查询</value>
+  </data>
+  <data name="figl_popup_cypzsearch_aspx" xml:space="preserve">
+    <value>常用凭证查询</value>
+  </data>
+  <data name="figl_popup_depsearch_aspx" xml:space="preserve">
+    <value>部门查询</value>
+  </data>
+  <data name="figl_popup_djbatchpass_aspx" xml:space="preserve">
+    <value>单据批量生成</value>
+  </data>
+  <data name="figl_popup_flzysearch_aspx" xml:space="preserve">
+    <value>凭证摘要查找</value>
+  </data>
+  <data name="figl_popup_infolist_aspx" xml:space="preserve">
+    <value>系统信息</value>
+  </data>
+  <data name="figl_popup_jssearch_aspx" xml:space="preserve">
+    <value>结算方式查询</value>
+  </data>
+  <data name="figl_popup_kmdmsearch_aspx" xml:space="preserve">
+    <value>会计科目查询</value>
+  </data>
+  <data name="figl_popup_pzdjreferencelist_aspx" xml:space="preserve">
+    <value>凭证-ERP单据关联明细</value>
+  </data>
+  <data name="figl_popup_pzsummary_aspx" xml:space="preserve">
+    <value>凭证汇总</value>
+  </data>
+  <data name="figl_popup_transfertocypz_aspx" xml:space="preserve">
+    <value>设置常用凭证</value>
+  </data>
+  <data name="figl_setup_assistitemclasslist_aspx" xml:space="preserve">
+    <value>辅助项目类别一览表</value>
+  </data>
+  <data name="figl_setup_assistitemlist_aspx" xml:space="preserve">
+    <value>辅助项目一览表</value>
+  </data>
+  <data name="figl_setup_bmlist_aspx" xml:space="preserve">
+    <value>编码设置一览表</value>
+  </data>
+  <data name="figl_setup_bookformatlist_aspx" xml:space="preserve">
+    <value>账簿格式一览表</value>
+  </data>
+  <data name="figl_setup_cashkmdmlist_aspx" xml:space="preserve">
+    <value>现金流量设置一览表</value>
+  </data>
+  <data name="figl_setup_costcenterlist_aspx" xml:space="preserve">
+    <value>成本中心一览表</value>
+  </data>
+  <data name="figl_setup_deplist_aspx" xml:space="preserve">
+    <value>部门一鉴表</value>
+  </data>
+  <data name="figl_setup_jslist_aspx" xml:space="preserve">
+    <value>结算方式一览表</value>
+  </data>
+  <data name="figl_setup_kmbslist_aspx" xml:space="preserve">
+    <value>科目标识一览表</value>
+  </data>
+  <data name="figl_setup_kmclassdetail_aspx" xml:space="preserve">
+    <value>科目类别明细</value>
+  </data>
+  <data name="figl_setup_kmclasslist_aspx" xml:space="preserve">
+    <value>科目类别一览表</value>
+  </data>
+  <data name="figl_setup_kmdmdetail_aspx" xml:space="preserve">
+    <value>科目设置</value>
+  </data>
+  <data name="figl_setup_kmdmlist_aspx" xml:space="preserve">
+    <value>会计科目一览表</value>
+  </data>
+  <data name="figl_setup_kmdmvalidatelist_aspx" xml:space="preserve">
+    <value>科目代码验证</value>
+  </data>
+  <data name="figl_setup_kmxzlist_aspx" xml:space="preserve">
+    <value>科目性质一览表</value>
+  </data>
+  <data name="figl_setup_slunitlist_aspx" xml:space="preserve">
+    <value>数量单位一览表</value>
+  </data>
+  <data name="figl_setup_sysdatelist_aspx" xml:space="preserve">
+    <value>会计期间设置</value>
+  </data>
+  <data name="figl_setup_zwsjinitlist_aspx" xml:space="preserve">
+    <value>期初余额设置</value>
+  </data>
+  <data name="figl_setup_zwsjinitvalidatelist_aspx" xml:space="preserve">
+    <value>期初余额验证</value>
+  </data>
+  <data name="figl_yzzy_zbperiodjzhylist_aspx" xml:space="preserve">
+    <value>账簿月结转还原</value>
+  </data>
+  <data name="figl_yzzy_zbperiodjzlist_aspx" xml:space="preserve">
+    <value>账簿月结转</value>
+  </data>
+  <data name="figl_yzzy_zbvalidatelist_aspx" xml:space="preserve">
+    <value>系统账簿对账</value>
+  </data>
+  <data name="figl_yzzy_zbyearjzlist_aspx" xml:space="preserve">
+    <value>账簿年结转</value>
+  </data>
+  <data name="figl_yzzy_zdypzdetail_aspx" xml:space="preserve">
+    <value>自定义转账凭证设置</value>
+  </data>
+  <data name="figl_yzzy_zdypzdetailparam_aspx" xml:space="preserve">
+    <value>自定义凭证公式参数设置</value>
+  </data>
+  <data name="figl_yzzy_zdypzlist_aspx" xml:space="preserve">
+    <value>自定义转账凭证设置一览表</value>
+  </data>
+  <data name="figl_zb_dlmxzlist_aspx" xml:space="preserve">
+    <value>账簿管理-多栏明细账</value>
+  </data>
+  <data name="figl_zb_kmyeitemlist_aspx" xml:space="preserve">
+    <value>科目余额表(项目)</value>
+  </data>
+  <data name="figl_zb_kmyelist_aspx" xml:space="preserve">
+    <value>科目余额表</value>
+  </data>
+  <data name="figl_zb_rjzlist_aspx" xml:space="preserve">
+    <value>账簿管理-日记账</value>
+  </data>
+  <data name="figl_zb_slmxzlist_aspx" xml:space="preserve">
+    <value>账簿管理-三栏式明细账</value>
+  </data>
+  <data name="figl_zb_zwsjlist_aspx" xml:space="preserve">
+    <value>科目余额一览表</value>
+  </data>
+  <data name="figl_zb_zzlist_aspx" xml:space="preserve">
+    <value>账簿管理-总账</value>
+  </data>
+  <data name="fixsave" xml:space="preserve">
+    <value>封存</value>
+  </data>
+  <data name="generate" xml:space="preserve">
+    <value>生成</value>
+  </data>
+  <data name="goback" xml:space="preserve">
+    <value>返回</value>
+  </data>
+  <data name="jxc_cg_jxccgdetail_qc_aspx" xml:space="preserve">
+    <value>期初采购入库明细</value>
+  </data>
+  <data name="jxc_cg_jxccglist_qc_aspx" xml:space="preserve">
+    <value>期初采购入库一览表</value>
+  </data>
+  <data name="jxc_cg_jxcdlcgrkrkdetail_aspx" xml:space="preserve">
+    <value>电缆采购入库</value>
+  </data>
+  <data name="jxc_cg_jxcdlcgtckckdetail_aspx" xml:space="preserve">
+    <value>电缆采购退回出库</value>
+  </data>
+  <data name="jxc_ck_jxcbfddetail_aspx" xml:space="preserve">
+    <value>报废单明细</value>
+  </data>
+  <data name="jxc_ck_jxcbfdlist_aspx" xml:space="preserve">
+    <value>报废单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcdldbckckdetail_aspx" xml:space="preserve">
+    <value>电缆调拨出库</value>
+  </data>
+  <data name="jxc_ck_jxcdldbckdetail_aspx" xml:space="preserve">
+    <value>电缆调拨出库明细</value>
+  </data>
+  <data name="jxc_ck_jxcdldbcklist_aspx" xml:space="preserve">
+    <value>电缆调拨出库一览表</value>
+  </data>
+  <data name="jxc_ck_jxcdldbrkdetail_aspx" xml:space="preserve">
+    <value>电缆调拨入库明细</value>
+  </data>
+  <data name="mserror_figl_jzpz_14" xml:space="preserve">
+    <value>第{0}行，分录摘要不能为空</value>
+  </data>
+  <data name="mserror_figl_jzpz_15" xml:space="preserve">
+    <value>科目代码{0}　有重复的现金流量</value>
+  </data>
+  <data name="mserror_figl_jzpz_16" xml:space="preserve">
+    <value>科目代码{0}　有重复的辅助项目</value>
+  </data>
+  <data name="mserror_figl_jzpz_17" xml:space="preserve">
+    <value>科目代码{0}　有重复的成本中心</value>
+  </data>
+  <data name="mserror_figl_jzpz_18" xml:space="preserve">
+    <value>科目代码{0},cashcode not equal cashid</value>
+  </data>
+  <data name="mserror_figl_jzpz_19" xml:space="preserve">
+    <value>第{0}行,CostCenter not equal CostCenterId</value>
+  </data>
+  <data name="mserror_figl_jzpz_2" xml:space="preserve">
+    <value>凭证借方金额[{0}] 和 贷金额[{1}] 不相等</value>
+  </data>
+  <data name="mserror_figl_jzpz_20" xml:space="preserve">
+    <value>第{0}行,AssistItemCode not equal AssistItemId</value>
+  </data>
+  <data name="mserror_figl_jzpz_21" xml:space="preserve">
+    <value>科目{0},没有设置辅助项目标识，辅助项目不能有值</value>
+  </data>
+  <data name="mserror_figl_jzpz_22" xml:space="preserve">
+    <value>科目{0},没有设置成本中心标识，成本中心不能有值</value>
+  </data>
+  <data name="mserror_figl_jzpz_23" xml:space="preserve">
+    <value>科目{0},没有设置现金流量标识，现金流量不能有值</value>
+  </data>
+  <data name="mserror_figl_jzpz_24" xml:space="preserve">
+    <value>第{0}行，借货方不能同时填写金额</value>
+  </data>
+  <data name="mserror_figl_jzpz_25" xml:space="preserve">
+    <value>科目{0}，未设置现金流量明细</value>
+  </data>
+  <data name="mserror_figl_jzpz_26" xml:space="preserve">
+    <value>科目{0}，已设置的现金流量的金额，和明细中的金额不相等</value>
+  </data>
+  <data name="mserror_figl_jzpz_27" xml:space="preserve">
+    <value>科目{0}，无效，在凭证明细中不存在,在现金流量明细表中不能有值</value>
+  </data>
+  <data name="mserror_figl_jzpz_29" xml:space="preserve">
+    <value>第{0}行,js_code not equal js_id</value>
+  </data>
+  <data name="mserror_figl_jzpz_3" xml:space="preserve">
+    <value>第{0}行，科目设置了成本中心标识，成本中心子项不能为空</value>
+  </data>
+  <data name="mserror_figl_jzpz_4" xml:space="preserve">
+    <value>科目{0},未设置现金流量标识代码</value>
+  </data>
+  <data name="mserror_figl_jzpz_5" xml:space="preserve">
+    <value>第{0}行，科目设置了辅助项目标识，辅助项目项不能为空</value>
+  </data>
+  <data name="mserror_figl_jzpz_6" xml:space="preserve">
+    <value>未获取有效的凭证编号</value>
+  </data>
+  <data name="mserror_figl_jzpz_7" xml:space="preserve">
+    <value>凭证抬头金额[{0}]和明细汇总[ {1} ]不相等</value>
+  </data>
+  <data name="mserror_figl_jzpz_8" xml:space="preserve">
+    <value>凭证会计年度为空</value>
+  </data>
+  <data name="mserror_figl_jzpz_9" xml:space="preserve">
+    <value>凭证会计期间为空</value>
+  </data>
+  <data name="mserror_figl_kmdm_1" xml:space="preserve">
+    <value>当前会计科目没有上级科目</value>
+  </data>
+  <data name="mserror_figl_kmdm_2" xml:space="preserve">
+    <value>当前会计科目有子科目，不能删除</value>
+  </data>
+  <data name="mserror_figl_kmdm_3" xml:space="preserve">
+    <value>当前科目在当前期间有‘期初余额'　不能添加子科目</value>
+  </data>
+  <data name="mserror_figl_kmdm_4" xml:space="preserve">
+    <value>当前科目，在当前会计年度已输入了凭证，不能删除</value>
+  </data>
+  <data name="mserror_figl_newpzno_1" xml:space="preserve">
+    <value>当前会计期间已超出系统维护的期间</value>
+  </data>
+  <data name="mserror_figl_newpzno_2" xml:space="preserve">
+    <value>当前有其他用户正在取号，请稍候!</value>
+  </data>
+  <data name="mserror_figl_newpzno_3" xml:space="preserve">
+    <value>用户手工编号长度超过凭证编号长度</value>
+  </data>
+  <data name="mserror_figl_newpzno_4" xml:space="preserve">
+    <value>手工填写编号时，必须是数字</value>
+  </data>
+  <data name="mserror_figl_pass_1" xml:space="preserve">
+    <value>当前单据已经删除,无法记帐</value>
+  </data>
+  <data name="mserror_figl_pass_2" xml:space="preserve">
+    <value>当前单据已经记帐,不能重复记账</value>
+  </data>
+  <data name="mserror_figl_pass_3" xml:space="preserve">
+    <value>当前单据没有审核,不允许记账</value>
+  </data>
+  <data name="mserror_figl_pass_4" xml:space="preserve">
+    <value>当前会计期间不允许记账</value>
+  </data>
+  <data name="mserror_figl_pass_5" xml:space="preserve">
+    <value>当前有其他用户正在同时记账，请稍候</value>
+  </data>
+  <data name="mserror_figl_pzdelete_1" xml:space="preserve">
+    <value>已经核准或记帐的单据不允许删除</value>
+  </data>
+  <data name="mserror_figl_pzdelete_2" xml:space="preserve">
+    <value>ERP自动记账的凭证不能直接删除</value>
+  </data>
+  <data name="mserror_figl_pzdelete_3" xml:space="preserve">
+    <value>当前有多个用户在操作凭证编号删除序列号表，请稍候</value>
+  </data>
+  <data name="mserror_figl_undoaudit_1" xml:space="preserve">
+    <value>当前单据已经删除,无法取消审核</value>
+  </data>
+  <data name="mserror_figl_undoaudit_2" xml:space="preserve">
+    <value>当前单据已经记帐,无法取消审核</value>
+  </data>
+  <data name="mserror_figl_undoaudit_3" xml:space="preserve">
+    <value>当前单据未审核，无法取消审核</value>
+  </data>
+  <data name="mserror_figl_undopass_1" xml:space="preserve">
+    <value>当前单据已经删除,无法记帐</value>
+  </data>
+  <data name="mserror_figl_undopass_2" xml:space="preserve">
+    <value>当前单据未记帐,不能记账还原</value>
+  </data>
+  <data name="mserror_figl_undopass_3" xml:space="preserve">
+    <value>当前会计期间不能取消记账</value>
+  </data>
+  <data name="mserror_figl_zwsjinit_1" xml:space="preserve">
+    <value>科目{0} 未获取有效的余额方向</value>
+  </data>
+  <data name="mustonlyonekmclasscode" xml:space="preserve">
+    <value>科目类别代码不能重复</value>
+  </data>
+  <data name="pleasechosecustomer" xml:space="preserve">
+    <value>请先选择客户，再做其他操作</value>
+  </data>
+  <data name="pleaseinputdetailaccountcode" xml:space="preserve">
+    <value>请输入明细中的[会计科目]，再进行操作!</value>
+  </data>
+  <data name="qtylessthenzero" xml:space="preserve">
+    <value>数量不能小于0</value>
+  </data>
+  <data name="stillgoingon" xml:space="preserve">
+    <value>是否继续</value>
+  </data>
+  <data name="submittzzjsuccess" xml:space="preserve">
+    <value>单据{0} 已通知质检</value>
+  </data>
+  <data name="totalcxpayamount" xml:space="preserve">
+    <value>总冲销金额</value>
+  </data>
+  <data name="totalcxprepayamount" xml:space="preserve">
+    <value>总冲销金额</value>
+  </data>
+  <data name="totalcxprereceiveamount" xml:space="preserve">
+    <value>总冲销金额</value>
+  </data>
+  <data name="totalcxreceiveamount" xml:space="preserve">
+    <value>总冲销金额</value>
+  </data>
+  <data name="totalleftprepayamount" xml:space="preserve">
+    <value>总剩余冲销金额</value>
+  </data>
+  <data name="totalleftprereceiveamount" xml:space="preserve">
+    <value>总剩余冲销金额</value>
+  </data>
+  <data name="totaltamount" xml:space="preserve">
+    <value>总金额</value>
+  </data>
+  <data name="tzzjsuccess" xml:space="preserve">
+    <value>已生成质检单,请等待质检完成</value>
+  </data>
+  <data name="uniongeneratesuccess" xml:space="preserve">
+    <value>合并生成成功</value>
+  </data>
+  <data name="zjstatusisnotcomplete" xml:space="preserve">
+    <value>质检没有完成，不能进行操作</value>
+  </data>
+  <data name="1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="adjust_information" xml:space="preserve">
+    <value>调整信息</value>
+  </data>
+  <data name="after_adjust_information" xml:space="preserve">
+    <value>调整后信息</value>
+  </data>
+  <data name="cashflow" xml:space="preserve">
+    <value>现金流量</value>
+  </data>
+  <data name="checkcontent1" xml:space="preserve">
+    <value>检查内容1</value>
+  </data>
+  <data name="checkcontent2" xml:space="preserve">
+    <value>检查内容2</value>
+  </data>
+  <data name="checkcontent3" xml:space="preserve">
+    <value>检查内容3</value>
+  </data>
+  <data name="checkcontent4" xml:space="preserve">
+    <value>检查内容4</value>
+  </data>
+  <data name="checkcontent5" xml:space="preserve">
+    <value>检查内容5</value>
+  </data>
+  <data name="commonui_webform_multisort_aspx" xml:space="preserve">
+    <value>多项排序</value>
+  </data>
+  <data name="cypz" xml:space="preserve">
+    <value>常用凭证</value>
+  </data>
+  <data name="djbatchpass" xml:space="preserve">
+    <value>单据批量生成</value>
+  </data>
+  <data name="fa_faassetchangedetail_aspx" xml:space="preserve">
+    <value>资产变更单明细</value>
+  </data>
+  <data name="fa_faassetchangelist_aspx" xml:space="preserve">
+    <value>资产变更单一览表</value>
+  </data>
+  <data name="fa_faassethandledetail_aspx" xml:space="preserve">
+    <value>资产处置单明细</value>
+  </data>
+  <data name="fa_faassethandlelist_aspx" xml:space="preserve">
+    <value>资产处置单一览表</value>
+  </data>
+  <data name="fa_faassetpddetail_aspx" xml:space="preserve">
+    <value>资产盘点单明细</value>
+  </data>
+  <data name="fa_faassetpdlist_aspx" xml:space="preserve">
+    <value>资产盘点单一览表</value>
+  </data>
+  <data name="fa_faassetqgdetail_aspx" xml:space="preserve">
+    <value>资产请购单明细</value>
+  </data>
+  <data name="fa_faassetqglist_aspx" xml:space="preserve">
+    <value>资产请购单一览表</value>
+  </data>
+  <data name="fa_faassettransferdetail_aspx" xml:space="preserve">
+    <value>资产转移单明细</value>
+  </data>
+  <data name="fa_faassettransferlist_aspx" xml:space="preserve">
+    <value>资产转移单一览表</value>
+  </data>
+  <data name="fa_popup_assetsearch_aspx" xml:space="preserve">
+    <value>资产查询</value>
+  </data>
+  <data name="fa_setup_faassetdetail_aspx" xml:space="preserve">
+    <value>资产卡片明细</value>
+  </data>
+  <data name="fa_setup_faassetlist_aspx" xml:space="preserve">
+    <value>资产卡片定义</value>
+  </data>
+  <data name="fa_setup_fadalei_aspx" xml:space="preserve">
+    <value>资产类别定义</value>
+  </data>
+  <data name="fa_setup_fadaleidetail_aspx" xml:space="preserve">
+    <value>资产类别定义明细</value>
+  </data>
+  <data name="fa_setup_fadefplaces_aspx" xml:space="preserve">
+    <value>资产位置定义</value>
+  </data>
+  <data name="fa_setup_fadefplacesdetail_aspx" xml:space="preserve">
+    <value>资产状态明细表</value>
+  </data>
+  <data name="fa_setup_fastatuslist_aspx" xml:space="preserve">
+    <value>资产状态定义</value>
+  </data>
+  <data name="fa_setup_fazjtypelist_aspx" xml:space="preserve">
+    <value>资产折旧方式</value>
+  </data>
+  <data name="figl_dj_cypzdetail_aspx" xml:space="preserve">
+    <value>常用凭证设置</value>
+  </data>
+  <data name="figl_dj_cypzlist_aspx" xml:space="preserve">
+    <value>常用凭证一览表</value>
+  </data>
+  <data name="figl_dj_pzauditlist_aspx" xml:space="preserve">
+    <value>凭证审核一览表</value>
+  </data>
+  <data name="figl_dj_pzdetail_aspx" xml:space="preserve">
+    <value>凭证制单</value>
+  </data>
+  <data name="figl_dj_pzlist_aspx" xml:space="preserve">
+    <value>凭证一览表</value>
+  </data>
+  <data name="figl_dj_pznodeletelist_aspx" xml:space="preserve">
+    <value>凭证已删除编号管理</value>
+  </data>
+  <data name="jxc_jx_jxcjxrkdetail_aspx" xml:space="preserve">
+    <value>检修入库单明细</value>
+  </data>
+  <data name="jxc_jx_jxcjxrklist_aspx" xml:space="preserve">
+    <value>检修入库单一览表</value>
+  </data>
+  <data name="jxc_period_jxccostallocdetail_aspx" xml:space="preserve">
+    <value>期末成本费用分摊明细</value>
+  </data>
+  <data name="jxc_period_jxccostalloclist_aspx" xml:space="preserve">
+    <value>期末成本费用分摊一览表</value>
+  </data>
+  <data name="jxc_period_jxccpcbtjdetail_aspx" xml:space="preserve">
+    <value>产品成本调节单明细</value>
+  </data>
+  <data name="jxc_period_jxccpcbtjlist_aspx" xml:space="preserve">
+    <value>产品成本调节单一览表</value>
+  </data>
+  <data name="jxc_period_jxcfcsptzdetail_aspx" xml:space="preserve">
+    <value>发出商品调整单明细</value>
+  </data>
+  <data name="jxc_period_jxcfcsptzlist_aspx" xml:space="preserve">
+    <value>发出商品调整单一览表</value>
+  </data>
+  <data name="jxc_period_jxcnopassdjlist_aspx" xml:space="preserve">
+    <value>没记账单据一览表</value>
+  </data>
+  <data name="jxc_period_jxcperioddetail_aspx" xml:space="preserve">
+    <value>期间明细</value>
+  </data>
+  <data name="jxc_period_jxcperiodlist_aspx" xml:space="preserve">
+    <value>期间列表</value>
+  </data>
+  <data name="jxc_popup_cgfpmaterialsearch_aspx" xml:space="preserve">
+    <value>采购发票物料查询列表</value>
+  </data>
+  <data name="jxc_popup_cgjhsearch_aspx" xml:space="preserve">
+    <value>采购计划单查询</value>
+  </data>
+  <data name="jxc_popup_cgrksearch_aspx" xml:space="preserve">
+    <value>采购入库查询</value>
+  </data>
+  <data name="jxc_popup_customersearch_aspx" xml:space="preserve">
+    <value>客户查询</value>
+  </data>
+  <data name="jxc_popup_customersitesearch_aspx" xml:space="preserve">
+    <value>用户查询</value>
+  </data>
+  <data name="jxc_popup_dlpansearch_aspx" xml:space="preserve">
+    <value>电览盘查询</value>
+  </data>
+  <data name="jxc_popup_infolist_aspx" xml:space="preserve">
+    <value>系统信息</value>
+  </data>
+  <data name="jxc_popup_llcksearch_aspx" xml:space="preserve">
+    <value>领料出库查询</value>
+  </data>
+  <data name="jxc_popup_materialsearch_aspx" xml:space="preserve">
+    <value>物料查询</value>
+  </data>
+  <data name="jxc_popup_matsearch_cgjh_aspx" xml:space="preserve">
+    <value>物料查找</value>
+  </data>
+  <data name="jxc_popup_prepaysearch_aspx" xml:space="preserve">
+    <value>预付款查询</value>
+  </data>
+  <data name="jxc_popup_prereceivesearch_aspx" xml:space="preserve">
+    <value>预收款查询</value>
+  </data>
+  <data name="jxc_popup_prodserialnumlist_aspx" xml:space="preserve">
+    <value>产品编号列表</value>
+  </data>
+  <data name="jxc_popup_prodserialnumsearch_aspx" xml:space="preserve">
+    <value>产品编号查询</value>
+  </data>
+  <data name="jxc_popup_projectmatsearch_aspx" xml:space="preserve">
+    <value>项目物料清册查询</value>
+  </data>
+  <data name="jxc_popup_taskmatsearch_aspx" xml:space="preserve">
+    <value>任务单物料清册查询</value>
+  </data>
+  <data name="jxc_popup_vendermatsearch_aspx" xml:space="preserve">
+    <value>供应商物料查询</value>
+  </data>
+  <data name="jxc_popup_vendersearch_aspx" xml:space="preserve">
+    <value>供应商查询</value>
+  </data>
+  <data name="jxc_popup_wgrksearch_aspx" xml:space="preserve">
+    <value>产品完工单查询</value>
+  </data>
+  <data name="jxc_popup_xscksearch_aspx" xml:space="preserve">
+    <value>销售出库单查询</value>
+  </data>
+  <data name="jxc_project_matdesigncopy_aspx" xml:space="preserve">
+    <value>从设计单导入子节点</value>
+  </data>
+  <data name="jxc_project_matdesigndetail_aspx" xml:space="preserve">
+    <value>工艺材料设计单明细</value>
+  </data>
+  <data name="jxc_project_matdesignimport_aspx" xml:space="preserve">
+    <value>导入设计单</value>
+  </data>
+  <data name="jxc_project_matdesignlist_aspx" xml:space="preserve">
+    <value>工艺材料设计单一览表</value>
+  </data>
+  <data name="jxc_project_matdesignsearch_aspx" xml:space="preserve">
+    <value>设计单查询</value>
+  </data>
+  <data name="jxc_project_projectdetail_aspx" xml:space="preserve">
+    <value>项目定义明细</value>
+  </data>
+  <data name="jxc_project_projectlist_aspx" xml:space="preserve">
+    <value>项目定义一览表</value>
+  </data>
+  <data name="jxc_project_projectproductdetail_aspx" xml:space="preserve">
+    <value>产品明细</value>
+  </data>
+  <data name="jxc_project_projecttaskdetail_aspx" xml:space="preserve">
+    <value>任务单明细</value>
+  </data>
+  <data name="jxc_project_projecttasklist_aspx" xml:space="preserve">
+    <value>任务单一览表</value>
+  </data>
+  <data name="jxc_project_projecttaskqty_aspx" xml:space="preserve">
+    <value>更改任务下达数量</value>
+  </data>
+  <data name="jxc_report_cg_cgandzgreport_aspx" xml:space="preserve">
+    <value>采购及暂估入库分析表</value>
+  </data>
+  <data name="jxc_report_cg_cgfxreport_aspx" xml:space="preserve">
+    <value>采购分析表</value>
+  </data>
+  <data name="jxc_report_cgaccount_aspx" xml:space="preserve">
+    <value>月采购台帐表</value>
+  </data>
+  <data name="jxc_report_costaccount_aspx" xml:space="preserve">
+    <value>产成品成本核算表</value>
+  </data>
+  <data name="jxc_report_customerdetail_aspx" xml:space="preserve">
+    <value>客户销售明细表</value>
+  </data>
+  <data name="jxc_report_customerstatisticslist_aspx" xml:space="preserve">
+    <value>客户销售统计表</value>
+  </data>
+  <data name="jxc_report_customersummary_aspx" xml:space="preserve">
+    <value>客户销售汇总表</value>
+  </data>
+  <data name="jxc_report_daleiinoutsummary_aspx" xml:space="preserve">
+    <value>大类出入库汇总分析表</value>
+  </data>
+  <data name="jxc_report_daleisrssummary_aspx" xml:space="preserve">
+    <value>大类收发存汇总表</value>
+  </data>
+  <data name="jxc_report_duebalance_aspx" xml:space="preserve">
+    <value>应付账款余额明细表</value>
+  </data>
+  <data name="jxc_report_duedetail_aspx" xml:space="preserve">
+    <value>应付账款明细表</value>
+  </data>
+  <data name="jxc_report_duesummary_aspx" xml:space="preserve">
+    <value>应付账款汇总表</value>
+  </data>
+  <data name="jxc_report_fzllsummary_aspx" xml:space="preserve">
+    <value>辅材领用月报表</value>
+  </data>
+  <data name="jxc_report_materialaccount_aspx" xml:space="preserve">
+    <value>物料台帐表</value>
+  </data>
+  <data name="jxc_report_materialcgdetail_aspx" xml:space="preserve">
+    <value>物料采购明细表</value>
+  </data>
+  <data name="jxc_report_materialcgsummary_aspx" xml:space="preserve">
+    <value>物料采购汇总表</value>
+  </data>
+  <data name="jxc_report_materiallist_aspx" xml:space="preserve">
+    <value>物料信息一览表</value>
+  </data>
+  <data name="jxc_report_materialtj_aspx" xml:space="preserve">
+    <value>物料调价表</value>
+  </data>
+  <data name="jxc_report_materialwhamount_aspx" xml:space="preserve">
+    <value>商品在库量分析表</value>
+  </data>
+  <data name="jxc_report_materialwhcost_aspx" xml:space="preserve">
+    <value>商品库存成分析表</value>
+  </data>
+  <data name="jxc_report_materialxsdetail_aspx" xml:space="preserve">
+    <value>产品销售明细表</value>
+  </data>
+  <data name="jxc_report_materialxssummary_aspx" xml:space="preserve">
+    <value>产品销售汇总表</value>
+  </data>
+  <data name="jxc_report_newpordllsummary_aspx" xml:space="preserve">
+    <value>新产品领料月报表</value>
+  </data>
+  <data name="jxc_report_productsrsdetail_aspx" xml:space="preserve">
+    <value>在产品收发存明细表</value>
+  </data>
+  <data name="jxc_report_profitcstm_aspx" xml:space="preserve">
+    <value>客户销售利润排行</value>
+  </data>
+  <data name="jxc_report_profitdalei_aspx" xml:space="preserve">
+    <value>商品大类销售利润排行</value>
+  </data>
+  <data name="jxc_report_profitmat_aspx" xml:space="preserve">
+    <value>库存商品销售利润排行</value>
+  </data>
+  <data name="jxc_report_profitsaler_aspx" xml:space="preserve">
+    <value>销售员利润分析</value>
+  </data>
+  <data name="jxc_report_projectllsummary_aspx" xml:space="preserve">
+    <value>项目领料月报表</value>
+  </data>
+  <data name="jxc_report_projectundertakelist_aspx" xml:space="preserve">
+    <value>当月承接项目列表</value>
+  </data>
+  <data name="jxc_report_receivedbalance_aspx" xml:space="preserve">
+    <value>应收账款余额明细表</value>
+  </data>
+  <data name="jxc_report_receiveddetail_aspx" xml:space="preserve">
+    <value>应收账款明细表</value>
+  </data>
+  <data name="jxc_report_receivedsummary_aspx" xml:space="preserve">
+    <value>应收账款汇总表</value>
+  </data>
+  <data name="jxc_report_taskllaudit_aspx" xml:space="preserve">
+    <value>任务单材料清册与领料核对</value>
+  </data>
+  <data name="jxc_report_venderdetail_aspx" xml:space="preserve">
+    <value>供应商供货明细表</value>
+  </data>
+  <data name="jxc_report_venderstatisticsdetail_aspx" xml:space="preserve">
+    <value>供应商供货明细表</value>
+  </data>
+  <data name="jxc_report_venderstatisticslist_aspx" xml:space="preserve">
+    <value>供应商供货统计表</value>
+  </data>
+  <data name="jxc_report_venderstatisticssummary_aspx" xml:space="preserve">
+    <value>供应商供货汇总表</value>
+  </data>
+  <data name="jxc_report_vendersummary_aspx" xml:space="preserve">
+    <value>供应商供货汇总表</value>
+  </data>
+  <data name="jxc_report_whinoutsummary_aspx" xml:space="preserve">
+    <value>出入库汇总分析表</value>
+  </data>
+  <data name="jxc_report_whleftsummary_aspx" xml:space="preserve">
+    <value>仓库余额汇总表</value>
+  </data>
+  <data name="jxc_report_xs_cnyxsfxreport_aspx" xml:space="preserve">
+    <value>产能与销售分析</value>
+  </data>
+  <data name="jxc_report_xs_fcspxsfxreport_aspx" xml:space="preserve">
+    <value>发出商品销售统计表</value>
+  </data>
+  <data name="jxc_report_xs_xsreport_aspx" xml:space="preserve">
+    <value>销售收入统计分析</value>
+  </data>
+  <data name="jxc_report_xsaccount_aspx" xml:space="preserve">
+    <value>月销售台帐表</value>
+  </data>
+  <data name="jxc_report_xsmatsummary_aspx" xml:space="preserve">
+    <value>产品销售汇总表</value>
+  </data>
+  <data name="jxc_report_xsmatsummary1_aspx" xml:space="preserve">
+    <value>产品销售汇总表</value>
+  </data>
+  <data name="jxc_setup_jxccurrencyaccountlist_aspx" xml:space="preserve">
+    <value>货币账户定义</value>
+  </data>
+  <data name="jxc_setup_jxccustomerdetail_aspx" xml:space="preserve">
+    <value>客户明细</value>
+  </data>
+  <data name="jxc_setup_jxccustomerlist_aspx" xml:space="preserve">
+    <value>客户定义</value>
+  </data>
+  <data name="jxc_setup_jxccustomersitedetail_aspx" xml:space="preserve">
+    <value>用户明细</value>
+  </data>
+  <data name="jxc_setup_jxccustomersitelinkdetail_aspx" xml:space="preserve">
+    <value>用户转出明细</value>
+  </data>
+  <data name="jxc_setup_jxccustomersitelinklist_aspx" xml:space="preserve">
+    <value>用户转出一览表</value>
+  </data>
+  <data name="jxc_setup_jxccustomertypelist_aspx" xml:space="preserve">
+    <value>客户类别定义</value>
+  </data>
+  <data name="jxc_setup_jxcdalei_aspx" xml:space="preserve">
+    <value>大类定义</value>
+  </data>
+  <data name="jxc_setup_jxcdaleidetail_aspx" xml:space="preserve">
+    <value>大类明细</value>
+  </data>
+  <data name="jxc_setup_jxchuowei_aspx" xml:space="preserve">
+    <value>货位定义</value>
+  </data>
+  <data name="jxc_setup_jxchuoweidetail_aspx" xml:space="preserve">
+    <value>货位定义明细</value>
+  </data>
+  <data name="jxc_setup_jxcmaterialdetail_aspx" xml:space="preserve">
+    <value>物料明细</value>
+  </data>
+  <data name="jxc_setup_jxcmateriallist_aspx" xml:space="preserve">
+    <value>物料定义</value>
+  </data>
+  <data name="jxc_setup_jxcotherpaytypelist_aspx" xml:space="preserve">
+    <value>其他应付款类型定义</value>
+  </data>
+  <data name="jxc_setup_jxcotherreceivetypelist_aspx" xml:space="preserve">
+    <value>其他应收款类型定义</value>
+  </data>
+  <data name="jxc_setup_jxcsitelist_aspx" xml:space="preserve">
+    <value>用户定义一览表</value>
+  </data>
+  <data name="jxc_setup_jxctaskteamlist_aspx" xml:space="preserve">
+    <value>生产部门设置</value>
+  </data>
+  <data name="jxc_setup_jxcunitlist_aspx" xml:space="preserve">
+    <value>计量单位</value>
+  </data>
+  <data name="jxc_setup_jxcvenderdetail_aspx" xml:space="preserve">
+    <value>供应商明细</value>
+  </data>
+  <data name="jxc_setup_jxcvenderlist_aspx" xml:space="preserve">
+    <value>供应商定义</value>
+  </data>
+  <data name="jxc_setup_jxcvendertypelist_aspx" xml:space="preserve">
+    <value>供应商类别定义</value>
+  </data>
+  <data name="jxc_setup_jxcwhlist_aspx" xml:space="preserve">
+    <value>仓库定义</value>
+  </data>
+  <data name="jxc_setup_jxcwhmatinit_aspx" xml:space="preserve">
+    <value>仓库期初余额设置</value>
+  </data>
+  <data name="jxc_snapshot_matdesigndetailbak_aspx" xml:space="preserve">
+    <value>工艺材料设计单明细</value>
+  </data>
+  <data name="jxc_snapshot_matdesignsnapshot_aspx" xml:space="preserve">
+    <value>数据快照</value>
+  </data>
+  <data name="jxc_tj_history" xml:space="preserve">
+    <value>物料调价记录</value>
+  </data>
+  <data name="jxc_wtjg_jxcdlwtjgckdetail_aspx" xml:space="preserve">
+    <value>电缆委托加工出库单明细表</value>
+  </data>
+  <data name="jxc_wtjg_jxcdlwtjgcklist_aspx" xml:space="preserve">
+    <value>电缆委托加工出库单一览表</value>
+  </data>
+  <data name="jxc_wtjg_jxcdlwtjgrkdetail_aspx" xml:space="preserve">
+    <value>电缆委托加工入库单明细表</value>
+  </data>
+  <data name="jxc_wtjg_jxcdlwtjgrklist_aspx" xml:space="preserve">
+    <value>电缆委托加工入库单一览表</value>
+  </data>
+  <data name="jxc_wtjg_jxcwtjgckdetail_aspx" xml:space="preserve">
+    <value>委托加工出库单明细</value>
+  </data>
+  <data name="jxc_wtjg_jxcwtjgcklist_aspx" xml:space="preserve">
+    <value>委托加工出库单一览表</value>
+  </data>
+  <data name="jxc_wtjg_jxcwtjgdetail_aspx" xml:space="preserve">
+    <value>委托加工单明细</value>
+  </data>
+  <data name="jxc_wtjg_jxcwtjglist_aspx" xml:space="preserve">
+    <value>委托加工单一览表</value>
+  </data>
+  <data name="jxc_wtjg_jxcwtjgrkdetail_aspx" xml:space="preserve">
+    <value>委托加工入库单明细</value>
+  </data>
+  <data name="jxc_wtjg_jxcwtjgrklist_aspx" xml:space="preserve">
+    <value>委托加工入库单一览表</value>
+  </data>
+  <data name="jxc_xs_jxccgfplinkdjsearch_aspx" xml:space="preserve">
+    <value>销售发票关联单据查询</value>
+  </data>
+  <data name="jxc_xs_jxcdlxsckdetail_aspx" xml:space="preserve">
+    <value>电缆销售出库单明细表</value>
+  </data>
+  <data name="jxc_xs_jxcdlxscklist_aspx" xml:space="preserve">
+    <value>电缆销售出库单一览表</value>
+  </data>
+  <data name="jxc_xs_jxcdlxstrkdetail_aspx" xml:space="preserve">
+    <value>电缆销售退回入库单明细</value>
+  </data>
+  <data name="jxc_xs_jxcdlxstrklist_aspx" xml:space="preserve">
+    <value>电缆销售退回入库单一览表</value>
+  </data>
+  <data name="jxc_xs_jxctsxsdetail_aspx" xml:space="preserve">
+    <value>特殊销售单明细</value>
+  </data>
+  <data name="jxc_xs_jxctsxslist_aspx" xml:space="preserve">
+    <value>特殊销售单一览表</value>
+  </data>
+  <data name="jxc_xs_jxcxsbjdetail_aspx" xml:space="preserve">
+    <value>报价单明细</value>
+  </data>
+  <data name="jxc_xs_jxcxsbjlist_aspx" xml:space="preserve">
+    <value>报价单一览表</value>
+  </data>
+  <data name="jxc_xs_jxcxscbtzdetail_aspx" xml:space="preserve">
+    <value>销售成本调整单明细</value>
+  </data>
+  <data name="jxc_xs_jxcxscbtzlist_aspx" xml:space="preserve">
+    <value>销售成本调整单一览表</value>
+  </data>
+  <data name="jxc_xs_jxcxsckdetail_aspx" xml:space="preserve">
+    <value>销售出库单明细</value>
+  </data>
+  <data name="jxc_xs_jxcxscklist_aspx" xml:space="preserve">
+    <value>销售出库单一览表</value>
+  </data>
+  <data name="jxc_xs_jxcxsdetail_aspx" xml:space="preserve">
+    <value>销售单明细</value>
+  </data>
+  <data name="jxc_xs_jxcxsfpdetail_aspx" xml:space="preserve">
+    <value>销售发票单明细</value>
+  </data>
+  <data name="jxc_xs_jxcxsfplinkdj_aspx" xml:space="preserve">
+    <value>销售发票关联单据列表</value>
+  </data>
+  <data name="jxc_xs_jxcxsfplinkdjsearch_aspx" xml:space="preserve">
+    <value>销售发票关联单据查询</value>
+  </data>
+  <data name="jxc_xs_jxcxsfplist_aspx" xml:space="preserve">
+    <value>销售发票单一览表</value>
+  </data>
+  <data name="jxc_xs_jxcxslist_aspx" xml:space="preserve">
+    <value>销售单一览表</value>
+  </data>
+  <data name="jxc_xs_jxcxsorderdetail_aspx" xml:space="preserve">
+    <value>产品明细</value>
+  </data>
+  <data name="jxc_xs_jxcxsorderheaddetail_aspx" xml:space="preserve">
+    <value>销售预定单明细</value>
+  </data>
+  <data name="jxc_xs_jxcxsorderlist_aspx" xml:space="preserve">
+    <value>销售预定单一览表</value>
+  </data>
+  <data name="jxc_xs_jxcxsordersearch_aspx" xml:space="preserve">
+    <value>销售预订单查询</value>
+  </data>
+  <data name="jxc_xs_jxcxstdetail_aspx" xml:space="preserve">
+    <value>销售退回单明细</value>
+  </data>
+  <data name="jxc_xs_jxcxstlist_aspx" xml:space="preserve">
+    <value>销售退回单一览表</value>
+  </data>
+  <data name="jxc_xs_jxcxstrkdetail_aspx" xml:space="preserve">
+    <value>销售退回入库单明细</value>
+  </data>
+  <data name="jxc_xs_jxcxstrklist_aspx" xml:space="preserve">
+    <value>销售退回入库单一览表</value>
+  </data>
+  <data name="leasing_contract" xml:space="preserve">
+    <value>租赁合同</value>
+  </data>
+  <data name="leaveformdetail_5021000" xml:space="preserve">
+    <value>加班申请明细</value>
+  </data>
+  <data name="leaveformdetail_5022000" xml:space="preserve">
+    <value>特殊考勤申请明细</value>
+  </data>
+  <data name="leaveformdetail_5023000" xml:space="preserve">
+    <value>出差申请明细</value>
+  </data>
+  <data name="leaveformdetail_5024000" xml:space="preserve">
+    <value>休假申请明细</value>
+  </data>
+  <data name="leaveformlist_5021000" xml:space="preserve">
+    <value>加班申请一览表</value>
+  </data>
+  <data name="leaveformlist_5022000" xml:space="preserve">
+    <value>特殊考勤申请一览表</value>
+  </data>
+  <data name="leaveformlist_5023000" xml:space="preserve">
+    <value>出差申请一览表</value>
+  </data>
+  <data name="leaveformlist_5024000" xml:space="preserve">
+    <value>休假申请一览表</value>
+  </data>
+  <data name="linkfunction" xml:space="preserve">
+    <value>菜单权限</value>
+  </data>
+  <data name="linkresource" xml:space="preserve">
+    <value>数据资源</value>
+  </data>
+  <data name="linksubrole" xml:space="preserve">
+    <value>子角色</value>
+  </data>
+  <data name="linkuser" xml:space="preserve">
+    <value>用户列表</value>
+  </data>
+  <data name="login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="logout" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="managercomment" xml:space="preserve">
+    <value>经理评语</value>
+    <comment>SFA</comment>
+  </data>
+  <data name="matdesign_copy" xml:space="preserve">
+    <value>从设计单添加子节点</value>
+  </data>
+  <data name="matdesign_import" xml:space="preserve">
+    <value>导入设计单</value>
+  </data>
+  <data name="menu" xml:space="preserve">
+    <value>菜单</value>
+  </data>
+  <data name="menu_add" xml:space="preserve">
+    <value>新增...</value>
+  </data>
+  <data name="menu_addaccount" xml:space="preserve">
+    <value>添加集团客户</value>
+  </data>
+  <data name="menu_addmat" xml:space="preserve">
+    <value>添加物料...</value>
+  </data>
+  <data name="menu_assignestablish" xml:space="preserve">
+    <value>分配客户</value>
+  </data>
+  <data name="menu_copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="menu_cut" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="menu_delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="menu_edit" xml:space="preserve">
+    <value>修改...</value>
+  </data>
+  <data name="menu_paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="menu_refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="menu_view" xml:space="preserve">
+    <value>查看...</value>
+  </data>
+  <data name="mif_quantity" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="modify" xml:space="preserve">
+    <value>重新修改</value>
+  </data>
+  <data name="modifyqty" xml:space="preserve">
+    <value>更改数量</value>
+  </data>
+  <data name="month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="month_end_checking" xml:space="preserve">
+    <value>月终作业检查</value>
+  </data>
+  <data name="monthlyactivity" xml:space="preserve">
+    <value>每月活动</value>
+    <comment>SFA</comment>
+  </data>
+  <data name="more" xml:space="preserve">
+    <value>更多...</value>
+  </data>
+  <data name="new" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="new_attachment" xml:space="preserve">
+    <value>添加附件</value>
+  </data>
+  <data name="new_estab_request" xml:space="preserve">
+    <value>申请新增当前客户</value>
+  </data>
+  <data name="new_state_cn" xml:space="preserve">
+    <value>新状态中文名称</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="new_state_en" xml:space="preserve">
+    <value>新状态英文名称</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="newactionplan" xml:space="preserve">
+    <value>添加执行计划</value>
+  </data>
+  <data name="newactivity" xml:space="preserve">
+    <value>新建活动</value>
+  </data>
+  <data name="newactivityplan" xml:space="preserve">
+    <value>新建活动计划</value>
+  </data>
+  <data name="newcase" xml:space="preserve">
+    <value>新建案例</value>
+  </data>
+  <data name="newcompetitorproposal" xml:space="preserve">
+    <value>添加新竞争对手案例</value>
+  </data>
+  <data name="newcontact" xml:space="preserve">
+    <value>新建联系</value>
+  </data>
+  <data name="newobjective" xml:space="preserve">
+    <value>添加新目标</value>
+  </data>
+  <data name="newproposal" xml:space="preserve">
+    <value>添加新方案</value>
+  </data>
+  <data name="next" xml:space="preserve">
+    <value>下一条记录</value>
+  </data>
+  <data name="next_step" xml:space="preserve">
+    <value>下一步操作</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="node_id" xml:space="preserve">
+    <value>节点标号</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="node_name_cn" xml:space="preserve">
+    <value>节点中文名称</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="node_name_en" xml:space="preserve">
+    <value>节点英文名称</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="node_state_id" xml:space="preserve">
+    <value>节点对应状态</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="node_type" xml:space="preserve">
+    <value>节点类型</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="notifyissue" xml:space="preserve">
+    <value>通告发布</value>
+  </data>
+  <data name="notifymanage" xml:space="preserve">
+    <value>通告管理</value>
+  </data>
+  <data name="offduty" xml:space="preserve">
+    <value>下班</value>
+  </data>
+  <data name="ok" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="onduty" xml:space="preserve">
+    <value>上班</value>
+  </data>
+  <data name="operation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="operations" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="pagingfirst" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="paginglast" xml:space="preserve">
+    <value>末页</value>
+  </data>
+  <data name="pagingnext" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="pagingpre" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="parent_node_name" xml:space="preserve">
+    <value>父节点名称</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="pass" xml:space="preserve">
+    <value>记帐</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="paste" xml:space="preserve">
+    <value>拷贝</value>
+  </data>
+  <data name="pay_expense" xml:space="preserve">
+    <value>支付报销单</value>
+    <comment>eExpense</comment>
+  </data>
+  <data name="persontype_id" xml:space="preserve">
+    <value>乘客类别</value>
+  </data>
+  <data name="plan" xml:space="preserve">
+    <value>活动计划</value>
+  </data>
+  <data name="please_select_list" xml:space="preserve">
+    <value>请选择一个分类</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="previous" xml:space="preserve">
+    <value>前一条记录</value>
+  </data>
+  <data name="print" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="processinfo" xml:space="preserve">
+    <value>流程信息</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="product_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="project_statistics" xml:space="preserve">
+    <value>项目统计</value>
+  </data>
+  <data name="projectmatsearch" xml:space="preserve">
+    <value>项目物料清册查询</value>
+  </data>
+  <data name="proposal" xml:space="preserve">
+    <value>方案</value>
+  </data>
+  <data name="public_notification_aspx" xml:space="preserve">
+    <value>通告发布</value>
+  </data>
+  <data name="public_notificationlist_aspx" xml:space="preserve">
+    <value>通告</value>
+  </data>
+  <data name="query" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="readnokquser" xml:space="preserve">
+    <value>查看不参与考勤的员工列表</value>
+  </data>
+  <data name="readnopauser" xml:space="preserve">
+    <value>查看不参与绩效考核的员工列表</value>
+  </data>
+  <data name="refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="repair_qty" xml:space="preserve">
+    <value>返修数量</value>
+  </data>
+  <data name="reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="resubmit" xml:space="preserve">
+    <value>再次提交</value>
+  </data>
+  <data name="run_depreciate" xml:space="preserve">
+    <value>运行折旧</value>
+    <comment>eFA</comment>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="score" xml:space="preserve">
+    <value>评分标准</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>查找</value>
+  </data>
+  <data name="searchkq" xml:space="preserve">
+    <value>考勤记录查询</value>
+  </data>
+  <data name="seatlevel_name" xml:space="preserve">
+    <value>座位等级</value>
+  </data>
+  <data name="security_copyrole_aspx" xml:space="preserve">
+    <value>拷贝角色</value>
+  </data>
+  <data name="security_delegatedefinition_aspx" xml:space="preserve">
+    <value>委托</value>
+  </data>
+  <data name="security_delegatedefinitiondetail_aspx" xml:space="preserve">
+    <value>委托明细</value>
+  </data>
+  <data name="security_functiondefinition_aspx" xml:space="preserve">
+    <value>菜单定义</value>
+  </data>
+  <data name="security_functiondefinitiondetail_aspx" xml:space="preserve">
+    <value>菜单定义明细</value>
+  </data>
+  <data name="security_operationdefinition_aspx" xml:space="preserve">
+    <value>操作方法定义</value>
+  </data>
+  <data name="security_roledefinition_aspx" xml:space="preserve">
+    <value>角色定义</value>
+  </data>
+  <data name="security_roledefinitiondetail_aspx" xml:space="preserve">
+    <value>角色定义明细</value>
+  </data>
+  <data name="security_rolefunctionoperationdetail_aspx" xml:space="preserve">
+    <value>角色菜单操作定义</value>
+  </data>
+  <data name="security_roleusersetting_aspx" xml:space="preserve">
+    <value>用户角色</value>
+  </data>
+  <data name="security_userdefinition_aspx" xml:space="preserve">
+    <value>用户定义</value>
+  </data>
+  <data name="select" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="select_all" xml:space="preserve">
+    <value>全部选中</value>
+  </data>
+  <data name="selecteprodserialnum" xml:space="preserve">
+    <value>选择产品编号</value>
+  </data>
+  <data name="setup" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="setup_company_aspx" xml:space="preserve">
+    <value>公司名称维护</value>
+  </data>
+  <data name="setup_geography_aspx" xml:space="preserve">
+    <value>区域定义</value>
+  </data>
+  <data name="setup_geographydetail_aspx" xml:space="preserve">
+    <value>区域明细</value>
+  </data>
+  <data name="setup_lookupmaster_aspx" xml:space="preserve">
+    <value>简单下拉列表数据定义</value>
+  </data>
+  <data name="setup_sitedetail_aspx" xml:space="preserve">
+    <value>办公地址明细</value>
+  </data>
+  <data name="setup_sitelist_aspx" xml:space="preserve">
+    <value>办公地址定义</value>
+  </data>
+  <data name="setworkflowstep" xml:space="preserve">
+    <value>设置流程步骤</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="show_all_modification" xml:space="preserve">
+    <value>显示所有修改</value>
+  </data>
+  <data name="show_all_wfl" xml:space="preserve">
+    <value>显示所有操作记录</value>
+  </data>
+  <data name="show_default_wfl" xml:space="preserve">
+    <value>显示默认操作记录</value>
+  </data>
+  <data name="show_detail" xml:space="preserve">
+    <value>显示详细信息</value>
+  </data>
+  <data name="show_more" xml:space="preserve">
+    <value>显示更多的信息</value>
+  </data>
+  <data name="site" xml:space="preserve">
+    <value>科室</value>
+  </data>
+  <data name="sn_tracking" xml:space="preserve">
+    <value>跟踪</value>
+  </data>
+  <data name="split" xml:space="preserve">
+    <value>拆分</value>
+  </data>
+  <data name="splitmerge" xml:space="preserve">
+    <value>拆分/合并</value>
+  </data>
+  <data name="state_role_id" xml:space="preserve">
+    <value>节点对应角色</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>状态信息</value>
+  </data>
+  <data name="stepdefine" xml:space="preserve">
+    <value>步骤定义</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="string" xml:space="preserve">
+    <value>Import 导入</value>
+  </data>
+  <data name="submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="suggestline_id" xml:space="preserve">
+    <value>建议行程编号</value>
+  </data>
+  <data name="synchbackdata" xml:space="preserve">
+    <value>同步后台数据</value>
+  </data>
+  <data name="synchtrainingstructure" xml:space="preserve">
+    <value>同步培训体系</value>
+  </data>
+  <data name="system_information" xml:space="preserve">
+    <value>系统信息</value>
+  </data>
+  <data name="tabbommap" xml:space="preserve">
+    <value>子BOM</value>
+  </data>
+  <data name="tabbommaterial" xml:space="preserve">
+    <value>原材料</value>
+  </data>
+  <data name="tabcontact" xml:space="preserve">
+    <value>联系方式</value>
+  </data>
+  <data name="tabcontract" xml:space="preserve">
+    <value>用工信息</value>
+  </data>
+  <data name="tabcourse" xml:space="preserve">
+    <value>课程信息</value>
+  </data>
+  <data name="tabdesignateduser" xml:space="preserve">
+    <value>指定参与培训员工</value>
+  </data>
+  <data name="tabeducation" xml:space="preserve">
+    <value>教育背景</value>
+  </data>
+  <data name="tabevaluator" xml:space="preserve">
+    <value>评估者列表</value>
+  </data>
+  <data name="tabfamily" xml:space="preserve">
+    <value>家庭信息</value>
+  </data>
+  <data name="tabiscs" xml:space="preserve">
+    <value>直接主管评价</value>
+  </data>
+  <data name="tabissue" xml:space="preserve">
+    <value>培训发布</value>
+  </data>
+  <data name="tabjob" xml:space="preserve">
+    <value>职位信息</value>
+  </data>
+  <data name="tabjobpay" xml:space="preserve">
+    <value>薪酬范围</value>
+  </data>
+  <data name="tabkc" xml:space="preserve">
+    <value>库存数量</value>
+  </data>
+  <data name="tabknowledge" xml:space="preserve">
+    <value>专业知识</value>
+  </data>
+  <data name="tabkpi" xml:space="preserve">
+    <value>考评指标</value>
+  </data>
+  <data name="tabkqbatch" xml:space="preserve">
+    <value>特殊考勤数据</value>
+  </data>
+  <data name="tabkqmonthly" xml:space="preserve">
+    <value>考勤数据</value>
+  </data>
+  <data name="tableaderappraise" xml:space="preserve">
+    <value>主管年中评估</value>
+  </data>
+  <data name="tableaderassess" xml:space="preserve">
+    <value>主管年末总评</value>
+  </data>
+  <data name="tableave" xml:space="preserve">
+    <value>休假信息</value>
+  </data>
+  <data name="tablevel" xml:space="preserve">
+    <value>级别</value>
+  </data>
+  <data name="tabmat" xml:space="preserve">
+    <value>物料信息</value>
+  </data>
+  <data name="tabmataccount" xml:space="preserve">
+    <value>物料台账</value>
+  </data>
+  <data name="tabmatdesignbom" xml:space="preserve">
+    <value>半成品</value>
+  </data>
+  <data name="tabmatdesignbommaterial" xml:space="preserve">
+    <value>原材料</value>
+  </data>
+  <data name="tabmayparuser" xml:space="preserve">
+    <value>可参与培训员工</value>
+  </data>
+  <data name="tabnew" xml:space="preserve">
+    <value>新信息</value>
+  </data>
+  <data name="tabothers" xml:space="preserve">
+    <value>其他信息</value>
+  </data>
+  <data name="tabparuser" xml:space="preserve">
+    <value>参与员工</value>
+  </data>
+  <data name="tabpay" xml:space="preserve">
+    <value>薪酬信息</value>
+  </data>
+  <data name="tabpayinititem" xml:space="preserve">
+    <value>初始化项</value>
+  </data>
+  <data name="tabpayinititemadjust" xml:space="preserve">
+    <value>初始化项调整</value>
+  </data>
+  <data name="tabpaymonthlyitem" xml:space="preserve">
+    <value>每月收集数据项</value>
+  </data>
+  <data name="tabpayslipitem" xml:space="preserve">
+    <value>工资栏目</value>
+  </data>
+  <data name="tabpayslipitemadjust" xml:space="preserve">
+    <value>工资栏目调整</value>
+  </data>
+  <data name="tabpersonal" xml:space="preserve">
+    <value>个人信息</value>
+  </data>
+  <data name="tabpresent" xml:space="preserve">
+    <value>现有信息</value>
+  </data>
+  <data name="tabproductdetail" xml:space="preserve">
+    <value>产品明细</value>
+  </data>
+  <data name="tabquality" xml:space="preserve">
+    <value>职业素养</value>
+  </data>
+  <data name="tabregistuser" xml:space="preserve">
+    <value>培训申请员工</value>
+  </data>
+  <data name="tabresponsibility" xml:space="preserve">
+    <value>岗位说明书</value>
+  </data>
+  <data name="tabrewards" xml:space="preserve">
+    <value>奖惩信息</value>
+  </data>
+  <data name="tabsalary" xml:space="preserve">
+    <value>福利信息</value>
+  </data>
+  <data name="tabsite" xml:space="preserve">
+    <value>办公地址</value>
+  </data>
+  <data name="tabskill" xml:space="preserve">
+    <value>职业技能/能力</value>
+  </data>
+  <data name="tabsystem" xml:space="preserve">
+    <value>系统信息</value>
+  </data>
+  <data name="tabtraining" xml:space="preserve">
+    <value>培训信息</value>
+  </data>
+  <data name="tabuser" xml:space="preserve">
+    <value>员工列表</value>
+  </data>
+  <data name="tabuserappraise" xml:space="preserve">
+    <value>员工年中自评</value>
+  </data>
+  <data name="tabuserassess" xml:space="preserve">
+    <value>员工年末自评</value>
+  </data>
+  <data name="tabuserfeedback" xml:space="preserve">
+    <value>员工反馈确认</value>
+  </data>
+  <data name="tabuserinfo" xml:space="preserve">
+    <value>用户信息</value>
+  </data>
+  <data name="tabvender" xml:space="preserve">
+    <value>供应商信息</value>
+  </data>
+  <data name="tabwork" xml:space="preserve">
+    <value>工作经历</value>
+  </data>
+  <data name="team" xml:space="preserve">
+    <value>Team</value>
+  </data>
+  <data name="templatefilelist" xml:space="preserve">
+    <value>模板文件列表</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="territory" xml:space="preserve">
+    <value>Territory</value>
+  </data>
+  <data name="territory_detail" xml:space="preserve">
+    <value>销售域</value>
+  </data>
+  <data name="ticket_line_number" xml:space="preserve">
+    <value>航班号</value>
+  </data>
+  <data name="ticket_type_name" xml:space="preserve">
+    <value>交通方式</value>
+  </data>
+  <data name="ticketappactuallinelist" xml:space="preserve">
+    <value>订票信息</value>
+  </data>
+  <data name="ticketappjourneylist" xml:space="preserve">
+    <value>行程信息</value>
+  </data>
+  <data name="ticketapppersonlist" xml:space="preserve">
+    <value>人员信息</value>
+  </data>
+  <data name="ticketappsuggestlinelist" xml:space="preserve">
+    <value>建议行程</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="to_inspect_qty" xml:space="preserve">
+    <value>待检验数量</value>
+  </data>
+  <data name="to_test_qty" xml:space="preserve">
+    <value>待测试数量</value>
+  </data>
+  <data name="todo" xml:space="preserve">
+    <value>待办事项</value>
+  </data>
+  <data name="totalrow" xml:space="preserve">
+    <value>总行数:</value>
+  </data>
+  <data name="tripdetail" xml:space="preserve">
+    <value>Trip详细信息</value>
+    <comment>eExpense</comment>
+  </data>
+  <data name="uclnkperson" xml:space="preserve">
+    <value>同行人员信息</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="uclnkplanflight" xml:space="preserve">
+    <value>建议航班车次</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="undoaudit" xml:space="preserve">
+    <value>取消核准</value>
+  </data>
+  <data name="undobuild" xml:space="preserve">
+    <value>取消生成</value>
+  </data>
+  <data name="undopass" xml:space="preserve">
+    <value>记帐还原</value>
+  </data>
+  <data name="undosubmit" xml:space="preserve">
+    <value>取消提交</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="uploadfile" xml:space="preserve">
+    <value>上传文件</value>
+  </data>
+  <data name="uploadfile_fileupload_aspx" xml:space="preserve">
+    <value>文件上传</value>
+  </data>
+  <data name="uploadfile_photooriginal_aspx" xml:space="preserve">
+    <value>源图片</value>
+  </data>
+  <data name="uploadfile_photoupload_aspx" xml:space="preserve">
+    <value>上传图片</value>
+  </data>
+  <data name="uploadfile1" xml:space="preserve">
+    <value>上传文件</value>
+  </data>
+  <data name="uploadphoto" xml:space="preserve">
+    <value>上传照片</value>
+  </data>
+  <data name="usage" xml:space="preserve">
+    <value>读表数</value>
+  </data>
+  <data name="use_new_state" xml:space="preserve">
+    <value>使用新状态</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="user" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="username" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="validatenum" xml:space="preserve">
+    <value>验证码</value>
+  </data>
+  <data name="vehicle_planreturn_time" xml:space="preserve">
+    <value>计划到达时间</value>
+  </data>
+  <data name="vehicle_planstart_time" xml:space="preserve">
+    <value>计划出发时间</value>
+  </data>
+  <data name="vehicle_type_id" xml:space="preserve">
+    <value>用车类型</value>
+  </data>
+  <data name="vehicleaccident" xml:space="preserve">
+    <value>事故记录</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="vehicleactualjourney" xml:space="preserve">
+    <value>实际行程</value>
+  </data>
+  <data name="vehicleappjourneylist" xml:space="preserve">
+    <value>行程信息</value>
+  </data>
+  <data name="vehicleapppersonlist" xml:space="preserve">
+    <value>乘坐人员</value>
+  </data>
+  <data name="vehicleaudit" xml:space="preserve">
+    <value>年审记录</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="vehiclebreakrule" xml:space="preserve">
+    <value>违章记录</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="vehicledispatch" xml:space="preserve">
+    <value>车辆调度</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="vehicleuse" xml:space="preserve">
+    <value>车辆使用情况</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="view" xml:space="preserve">
+    <value>查看</value>
+  </data>
+  <data name="view_process" xml:space="preserve">
+    <value>查看流程步骤设置</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="viewapphire" xml:space="preserve">
+    <value>录用申请单查看</value>
+  </data>
+  <data name="viewinititem" xml:space="preserve">
+    <value>查看初始化项</value>
+  </data>
+  <data name="viewmonthlyitem" xml:space="preserve">
+    <value>查看月度录入数据项</value>
+  </data>
+  <data name="week" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="wh_id" xml:space="preserve">
+    <value>仓库</value>
+  </data>
+  <data name="workflow" xml:space="preserve">
+    <value>操作流程</value>
+  </data>
+  <data name="workflowadmin" xml:space="preserve">
+    <value>流程管理</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="xs_statistics" xml:space="preserve">
+    <value>销售统计</value>
+  </data>
+  <data name="year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="confirmmodifyform" xml:space="preserve">
+    <value>确定要修改当前单据吗?</value>
+  </data>
+  <data name="undosubmitsuccess" xml:space="preserve">
+    <value>取消提交成功！</value>
+  </data>
+  <data name="email_address_error" xml:space="preserve">
+    <value>Email 地址不存在</value>
+    <comment>CMDB</comment>
+  </data>
+  <data name="email_send_success" xml:space="preserve">
+    <value>Email 发送成功!</value>
+    <comment>CMDB</comment>
+  </data>
+  <data name="employee_incorrect" xml:space="preserve">
+    <value>员工错误!</value>
+  </data>
+  <data name="endprocessfailed" xml:space="preserve">
+    <value>流程终止失败！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="endprocesssuccess" xml:space="preserve">
+    <value>流程成功终止！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="exceedmaxlength" xml:space="preserve">
+    <value>输入字符串超出最大长度限制！</value>
+  </data>
+  <data name="existchildnode" xml:space="preserve">
+    <value>有下级结点存在，请先删除下级节点。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="expandfailedtotalrow" xml:space="preserve">
+    <value>{0} 张单据 [标识] 失败!</value>
+  </data>
+  <data name="expandsuccesstotalrow" xml:space="preserve">
+    <value>{0} 张单据 [标识] 成功!</value>
+  </data>
+  <data name="expensedetailsavefailed" xml:space="preserve">
+    <value>详细费用保存失败！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="expenseformsavefailed" xml:space="preserve">
+    <value>关联表单保存失败！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="expensenotfound" xml:space="preserve">
+    <value>没有找到对应的报销单！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="exsitchildcantsetprocess" xml:space="preserve">
+    <value>存在子节点，不允许设为具体流程！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="fileerror" xml:space="preserve">
+    <value>文件错误!</value>
+    <comment>CMDB</comment>
+  </data>
+  <data name="form_id_error" xml:space="preserve">
+    <value>页面 ID 不存在!</value>
+    <comment>CMDB</comment>
+  </data>
+  <data name="form_id_only_num" xml:space="preserve">
+    <value>页面 ID 必须是整数!</value>
+    <comment>CMDB</comment>
+  </data>
+  <data name="idmpconfirmdelete" xml:space="preserve">
+    <value>你确认要删除此条记录吗（不可恢复）？</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpconfirmdeleteagain" xml:space="preserve">
+    <value>请再次确认要删除此条记录。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpisnotapprove" xml:space="preserve">
+    <value>内部决策单未被批准！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="idmpisnotcomplete" xml:space="preserve">
+    <value>内部决策单未结束！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="idmpisnotexists" xml:space="preserve">
+    <value>内部决策单不存在！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="idmpprocesschangetouser" xml:space="preserve">
+    <value>你确定要将此流程改为自定义流程吗？</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpprocessend" xml:space="preserve">
+    <value>你确定要终止此流程吗？</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmprootcanntdelete" xml:space="preserve">
+    <value>根节点不允许删除！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="inputcopytoreason" xml:space="preserve">
+    <value>请填写抄送原因。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="inputfinanceinfofirst" xml:space="preserve">
+    <value>请先填写财务相关信息！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="inputnumber" xml:space="preserve">
+    <value>请输入数字！</value>
+  </data>
+  <data name="inputnumberpointminus" xml:space="preserve">
+    <value>请输入数字,小数点,负号！</value>
+  </data>
+  <data name="inputvehicledispatch" xml:space="preserve">
+    <value>请切换到编辑状态，输入车辆调度信息并保存后再提交流程。</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="inputvehicleused" xml:space="preserve">
+    <value>请切换到编辑状态，输入车辆使用信息并保存后再提交流程。</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="invalidhour" xml:space="preserve">
+    <value>小时输入错误!</value>
+  </data>
+  <data name="invalidminute" xml:space="preserve">
+    <value>分钟输入错误!</value>
+  </data>
+  <data name="invalidnumber" xml:space="preserve">
+    <value>请输入数字！</value>
+  </data>
+  <data name="isexistunfeedcopyto" xml:space="preserve">
+    <value>已经存在发给此人的没有填写反馈意见的抄送记录！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="isuseddontallowdelete" xml:space="preserve">
+    <value>施工队已经参与了项目，不允许删除，请将其设为禁用！</value>
+    <comment>PM</comment>
+  </data>
+  <data name="itisuserdefineprocess" xml:space="preserve">
+    <value>流程已经是用户自定义流程，不需要更改！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="jxcmsg001" xml:space="preserve">
+    <value>当前单据已审核,不能重复审核!</value>
+  </data>
+  <data name="jxcmsg002" xml:space="preserve">
+    <value>当前单据已经删除,无法审核!</value>
+  </data>
+  <data name="jxcmsg003" xml:space="preserve">
+    <value>当前单据已经记帐,无法审核!</value>
+  </data>
+  <data name="jxcmsg004" xml:space="preserve">
+    <value>第{0}行,数量{1} * 单价{2} !=  金额{3}</value>
+  </data>
+  <data name="jxcmsg005" xml:space="preserve">
+    <value>抬头的总金额{0} != 明细的累计金额{1}</value>
+  </data>
+  <data name="jxcmsg006" xml:space="preserve">
+    <value>第{0}行,剩余数量{1} != 数量{2}</value>
+  </data>
+  <data name="jxcmsg007" xml:space="preserve">
+    <value>单据尚未全部核准</value>
+  </data>
+  <data name="jxcmsg008" xml:space="preserve">
+    <value>抬头的总税额{0} != 明细的累计税额{1}.</value>
+  </data>
+  <data name="jxcmsg009" xml:space="preserve">
+    <value>抬头的价税合计{0} != 明细的税合计{1}</value>
+  </data>
+  <data name="jxcmsg010" xml:space="preserve">
+    <value>第{0}行,明细表的金额{1} * 抬头税率{2} != 税额{3}.</value>
+  </data>
+  <data name="jxcmsg011" xml:space="preserve">
+    <value>已经核准或记帐的单据不允许删除!</value>
+  </data>
+  <data name="jxcmsg026" xml:space="preserve">
+    <value>只有使用采购入库便捷设置才能在采购单中记帐!</value>
+  </data>
+  <data name="jxcmsg027" xml:space="preserve">
+    <value>只有使用采购退回便捷设置才能在采购退回中记帐!</value>
+  </data>
+  <data name="jxcmsg028" xml:space="preserve">
+    <value>当前单据已经删除,无法记帐!</value>
+  </data>
+  <data name="jxcmsg029" xml:space="preserve">
+    <value>当前单据已经记帐,不能重复记账!</value>
+  </data>
+  <data name="jxcmsg030" xml:space="preserve">
+    <value>当前单据没有审核,不允许记账!</value>
+  </data>
+  <data name="jxcmsg031" xml:space="preserve">
+    <value>只有当前月份结算区间的单据才能进行记账,请修改单据日期!</value>
+  </data>
+  <data name="jxcmsg032" xml:space="preserve">
+    <value>只有使用销售出库单便捷设置才能在销售单中记帐!</value>
+  </data>
+  <data name="jxcmsg033" xml:space="preserve">
+    <value>只有使用销售退回便捷设置才能在销售退回中记帐!</value>
+  </data>
+  <data name="jxcmsg040" xml:space="preserve">
+    <value>当前单据未审核,无法取消审核!</value>
+  </data>
+  <data name="jxcmsg041" xml:space="preserve">
+    <value>当前单据已经删除,无法取消审核!</value>
+  </data>
+  <data name="jxcmsg042" xml:space="preserve">
+    <value>当前单据已经记帐,无法取消审核!</value>
+  </data>
+  <data name="jxcmsg043" xml:space="preserve">
+    <value>生成的采购入库单已经核准,无法取消核准!</value>
+  </data>
+  <data name="jxcmsg044" xml:space="preserve">
+    <value>生成的采购退回出库单已经核准,无法取消核准!</value>
+  </data>
+  <data name="jxcmsg045" xml:space="preserve">
+    <value>生成的销售出库库单已经核准,无法取消核准!</value>
+  </data>
+  <data name="jxcmsg046" xml:space="preserve">
+    <value>生成的销售退回入库单已经核准,无法取消核准!</value>
+  </data>
+  <data name="jxcmsg047" xml:space="preserve">
+    <value>第{0}行,物料{1},超出当前最低库存限制,当前库存量{2},不允许出库!</value>
+  </data>
+  <data name="jxcmsg048" xml:space="preserve">
+    <value>单据{0} 收款总金额大于应收金额,无法保存!</value>
+  </data>
+  <data name="jxcmsg049" xml:space="preserve">
+    <value>单据{0} 付款总金额大于应付金额,无法保存!</value>
+  </data>
+  <data name="jxcmsg050" xml:space="preserve">
+    <value>当前发票号码已被其它发票使用</value>
+  </data>
+  <data name="jxcmsg051" xml:space="preserve">
+    <value>标准价已经改变,不能进行调价.</value>
+  </data>
+  <data name="jxcmsg052" xml:space="preserve">
+    <value>新标准价= 旧标准价,不能进行调价.</value>
+  </data>
+  <data name="jxcmsg053" xml:space="preserve">
+    <value>物料核算方式不是计划价,不能进行调价.</value>
+  </data>
+  <data name="jxcmsg054" xml:space="preserve">
+    <value>第{0}行,物料{1},不属于{2}大类下的物料!</value>
+  </data>
+  <data name="jxcmsg055" xml:space="preserve">
+    <value>第{0}行,物料{1},盘盈,需要输入入库价格!</value>
+  </data>
+  <data name="jxcmsg056" xml:space="preserve">
+    <value>第{0}行,物料{1},调整金额或者调整税额不能大于{2}!</value>
+  </data>
+  <data name="jxcmsg057" xml:space="preserve">
+    <value>超出采购单剩余数量!</value>
+  </data>
+  <data name="jxcmsg058" xml:space="preserve">
+    <value>超出销售单剩余数量!</value>
+  </data>
+  <data name="jxcmsg059" xml:space="preserve">
+    <value>当前单据未记帐,不能记账还原!</value>
+  </data>
+  <data name="jxcmsg060" xml:space="preserve">
+    <value>当前单据影响库存,不能记账还原!</value>
+  </data>
+  <data name="jxcmsg061" xml:space="preserve">
+    <value>只有当前月份结算区间的单据才能进行记账还原,请修改单据日期.</value>
+  </data>
+  <data name="jxcmsg062" xml:space="preserve">
+    <value>当前单据数据已被引用,不能记账还原!</value>
+  </data>
+  <data name="jxcmsg063" xml:space="preserve">
+    <value>主体的单价{0} != 明细数据金额{1}</value>
+  </data>
+  <data name="jxcmsg064" xml:space="preserve">
+    <value>主体的单价(含税){0} != 明细数据金额(含税){1}</value>
+  </data>
+  <data name="jxcmsg065" xml:space="preserve">
+    <value>数量{0}*单价{1} != 金额合计{2}</value>
+  </data>
+  <data name="jxcmsg066" xml:space="preserve">
+    <value>数量{0}*单价(含税){1} != 税价合计{2}</value>
+  </data>
+  <data name="jxcmsg067" xml:space="preserve">
+    <value>单价{0}*税率{1} != 单价(含税){2}.</value>
+  </data>
+  <data name="jxcmsg068" xml:space="preserve">
+    <value>生成的采购计划单已经核准,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg069" xml:space="preserve">
+    <value>生成的采购单已经核准,无法取消核准!</value>
+  </data>
+  <data name="jxcmsg070" xml:space="preserve">
+    <value>仓库为空,不能核准!</value>
+  </data>
+  <data name="jxcmsg071" xml:space="preserve">
+    <value>生成的领料出库单已经核准,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg072" xml:space="preserve">
+    <value>生成的产品检验单已经核准,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg073" xml:space="preserve">
+    <value>生成的产品完工单已经核准,无法记账还原.</value>
+  </data>
+  <data name="jxcmsg074" xml:space="preserve">
+    <value>生成的产品试验单已经核准,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg075" xml:space="preserve">
+    <value>当前单据已经生成,无法取消审核!</value>
+  </data>
+  <data name="jxcmsg076" xml:space="preserve">
+    <value>已经核准或生成的单据不允许删除!</value>
+  </data>
+  <data name="jxcmsg077" xml:space="preserve">
+    <value>当前单据已经生成,无法审核!</value>
+  </data>
+  <data name="jxcmsg078" xml:space="preserve">
+    <value>当前单据已经删除,无法生成!</value>
+  </data>
+  <data name="jxcmsg079" xml:space="preserve">
+    <value>当前单据已经生成,不能重复生成!</value>
+  </data>
+  <data name="jxcmsg080" xml:space="preserve">
+    <value>当前单据没有审核,不允许生成!</value>
+  </data>
+  <data name="jxcmsg081" xml:space="preserve">
+    <value>当前单据已经删除,无法取消生成!</value>
+  </data>
+  <data name="jxcmsg082" xml:space="preserve">
+    <value>当前单据未生成,不能取消生成!</value>
+  </data>
+  <data name="jxcmsg083" xml:space="preserve">
+    <value>当前单据数据已被引用,不能取消生成!</value>
+  </data>
+  <data name="jxcmsg084" xml:space="preserve">
+    <value>当前单据没有明细数据,无法审核!</value>
+  </data>
+  <data name="jxcmsg085" xml:space="preserve">
+    <value>第{0}行,没有选择供应商,不能核准!</value>
+  </data>
+  <data name="mserror_figl_jzpz_28" xml:space="preserve">
+    <value>第{0}行,借/贷不能同时为空</value>
+  </data>
+  <data name="wasteqtyqualifeidqtynotequalqty" xml:space="preserve">
+    <value>损耗数量 + 合格数量 不等于数量</value>
+  </data>
+  <data name="jxc_ck_jxcdldbrklist_aspx" xml:space="preserve">
+    <value>电缆调拨入库一览表</value>
+  </data>
+  <data name="jxc_report_ck_stockcapitalanalysis_aspx" xml:space="preserve">
+    <value>库存资金分析</value>
+  </data>
+  <data name="jxc_report_fh_materialwhamount_aspx" xml:space="preserve">
+    <value>商品在库量分析表</value>
+  </data>
+  <data name="jxc_report_pd_fh_pdreport_aspx" xml:space="preserve">
+    <value>盘点表</value>
+  </data>
+  <data name="jxc_report_prepaysummary_aspx" xml:space="preserve">
+    <value>预付账款分析表</value>
+  </data>
+  <data name="jxc_report_prereceivesummary_aspx" xml:space="preserve">
+    <value>预收账款分析表</value>
+  </data>
+  <data name="jxc_ck_jxcdldbrkrkdetail_aspx" xml:space="preserve">
+    <value>电缆调拨入库</value>
+  </data>
+  <data name="jxc_ck_jxcdllloutckdetail_aspx" xml:space="preserve">
+    <value>电缆领料出库</value>
+  </data>
+  <data name="jxc_ck_jxcdllltrkrkdetail_aspx" xml:space="preserve">
+    <value>领料退入库</value>
+  </data>
+  <data name="jxc_ck_jxchwtzdetail_aspx" xml:space="preserve">
+    <value>货位调整单明细</value>
+  </data>
+  <data name="jxc_ck_jxchwtzlist_aspx" xml:space="preserve">
+    <value>货位调整单一览表</value>
+  </data>
+  <data name="jxc_cp_jxcdlcpwgrkrkdetail_aspx" xml:space="preserve">
+    <value>电缆成品入库</value>
+  </data>
+  <data name="jxc_jx_jxcjxtckdetail_aspx" xml:space="preserve">
+    <value>检修退回出库单明细</value>
+  </data>
+  <data name="jxc_jx_jxcjxtcklist_aspx" xml:space="preserve">
+    <value>检修退回出库单一览表</value>
+  </data>
+  <data name="jxc_popup_materialhuoweisearch_aspx" xml:space="preserve">
+    <value>物料货位查询</value>
+  </data>
+  <data name="jxc_popup_whandhuoweimaterialsearch_aspx" xml:space="preserve">
+    <value>物料查询</value>
+  </data>
+  <data name="jxc_setup_jxcmatsparemanager_aspx" xml:space="preserve">
+    <value>余度控制一览表</value>
+  </data>
+  <data name="jxc_setup_matsparedetail_aspx" xml:space="preserve">
+    <value>余度控制明细</value>
+  </data>
+  <data name="jxc_wtjg_jxcdlwtjgckckdetail_aspx" xml:space="preserve">
+    <value>电缆委托加工出库</value>
+  </data>
+  <data name="jxc_wtjg_jxcdlwtjgrkrkdetail_aspx" xml:space="preserve">
+    <value>电缆委托加工入库</value>
+  </data>
+  <data name="jxc_xs_jxcdlxsckckdetail_aspx" xml:space="preserve">
+    <value>电缆销售出库</value>
+  </data>
+  <data name="jxc_xs_jxcdlxstrkrkdetail_aspx" xml:space="preserve">
+    <value>电缆销售退回入库</value>
+  </data>
+  <data name="jxc_xs_jxcxsdetail_qc_aspx" xml:space="preserve">
+    <value>期初销售出库明细</value>
+  </data>
+  <data name="jxc_xs_jxcxslist_qc_aspx" xml:space="preserve">
+    <value>期初销售出库一览表</value>
+  </data>
+  <data name="jxc_xs_public_dlckdetail_aspx" xml:space="preserve">
+    <value>电缆出库</value>
+  </data>
+  <data name="jzpz" xml:space="preserve">
+    <value>记账凭证</value>
+  </data>
+  <data name="linkdetail" xml:space="preserve">
+    <value>明细</value>
+  </data>
+  <data name="linkdldetail" xml:space="preserve">
+    <value>电缆明细</value>
+  </data>
+  <data name="linkdlhuoweidetail" xml:space="preserve">
+    <value>电缆盘货位</value>
+  </data>
+  <data name="linkmaterialdetail" xml:space="preserve">
+    <value>物料明细</value>
+  </data>
+  <data name="menu_addasset" xml:space="preserve">
+    <value>增加卡片...</value>
+  </data>
+  <data name="multisort" xml:space="preserve">
+    <value>多项排序</value>
+  </data>
+  <data name="security_wflstate_wflstatedetail_aspx" xml:space="preserve">
+    <value>状态管理明细</value>
+  </data>
+  <data name="security_wflstate_wflstatelist_aspx" xml:space="preserve">
+    <value>状态管理</value>
+  </data>
+  <data name="setup_appinformation_aspx" xml:space="preserve">
+    <value>系统信息</value>
+  </data>
+  <data name="setup_appparameter_appparameter_aspx" xml:space="preserve">
+    <value>系统参数设置</value>
+  </data>
+  <data name="setup_appparameter_appparameterlist_aspx" xml:space="preserve">
+    <value>系统参数一览表</value>
+  </data>
+  <data name="setup_appparameter_parameterdetail_aspx" xml:space="preserve">
+    <value>系统参数定义</value>
+  </data>
+  <data name="setup_appparameter_parameterlist_aspx" xml:space="preserve">
+    <value>系统参数一览表</value>
+  </data>
+  <data name="splitfrompz" xml:space="preserve">
+    <value>从凭证套取</value>
+  </data>
+  <data name="systemblancecheck" xml:space="preserve">
+    <value>系统平衡测试</value>
+  </data>
+  <data name="tabassetinfo" xml:space="preserve">
+    <value>资产详细信息</value>
+  </data>
+  <data name="tabchangeinfo" xml:space="preserve">
+    <value>变更记录</value>
+  </data>
+  <data name="tabczinfo" xml:space="preserve">
+    <value>处置记录</value>
+  </data>
+  <data name="tabpdinfo" xml:space="preserve">
+    <value>盘点记录</value>
+  </data>
+  <data name="areyousuretzzj" xml:space="preserve">
+    <value>是否通知质检</value>
+  </data>
+  <data name="columninuse" xml:space="preserve">
+    <value>当前栏位[{0}]正在被其它表使用，无法删除!</value>
+  </data>
+  <data name="columnrepeat" xml:space="preserve">
+    <value>当前栏位[{0}]重复，请检查!</value>
+  </data>
+  <data name="confirmtzzj" xml:space="preserve">
+    <value>您当前选中了 {0} 张单据,是否要进行 [通知质检] 处理?</value>
+  </data>
+  <data name="detailqtyisnotequalheadqty" xml:space="preserve">
+    <value>明细中的数量必须和抬头数量一致</value>
+  </data>
+  <data name="dlmcodeduplicate" xml:space="preserve">
+    <value>当前物料，货位代码，电缆盘,批号重复</value>
+  </data>
+  <data name="tabtransferinfo" xml:space="preserve">
+    <value>转移记录</value>
+  </data>
+  <data name="tzzj" xml:space="preserve">
+    <value>通知质检</value>
+  </data>
+  <data name="undogenerate" xml:space="preserve">
+    <value>取消生成</value>
+  </data>
+  <data name="uniongenerate" xml:space="preserve">
+    <value>合并生成</value>
+  </data>
+  <data name="validate" xml:space="preserve">
+    <value>验证</value>
+  </data>
+  <data name="fenduanisnotequalqty" xml:space="preserve">
+    <value>分段之和不等于数量</value>
+  </data>
+  <data name="figl_assistitem_error1" xml:space="preserve">
+    <value>辅助项目编码不符合编码规则!</value>
+  </data>
+  <data name="figl_bm_error1" xml:space="preserve">
+    <value>最大级数,必须在1~9之间</value>
+  </data>
+  <data name="figl_bm_error2" xml:space="preserve">
+    <value>每级最大长度，必须在1~9之间</value>
+  </data>
+  <data name="figl_bm_error3" xml:space="preserve">
+    <value>当前设置了共{0}级，第{1}级不能为空</value>
+  </data>
+  <data name="figl_bm_error4" xml:space="preserve">
+    <value>第{0}级设置的长度，超过了每级最大长度{1}</value>
+  </data>
+  <data name="figl_bm_error5" xml:space="preserve">
+    <value>当前设置了共{0}级，第{1}级不能设置值</value>
+  </data>
+  <data name="figl_bm_error6" xml:space="preserve">
+    <value>当前已设置级数的总长度{0}超过了[最大长度]{1}</value>
+  </data>
+  <data name="figl_cypz_error1" xml:space="preserve">
+    <value>请输入常用凭证代码</value>
+  </data>
+  <data name="figl_jzpzdj_error1" xml:space="preserve">
+    <value>当前会计科目不能设置借方金额</value>
+  </data>
+  <data name="figl_jzpzdj_error10" xml:space="preserve">
+    <value>当前凭证明细没有有效数据，不能保存</value>
+  </data>
+  <data name="figl_jzpzdj_error11" xml:space="preserve">
+    <value>第{0}行,摘要不能为空</value>
+  </data>
+  <data name="figl_jzpzdj_error12" xml:space="preserve">
+    <value>第{0}行,借/贷不能同时为空</value>
+  </data>
+  <data name="figl_jzpzdj_error13" xml:space="preserve">
+    <value>只有'新增'的手工凭证才能修改</value>
+  </data>
+  <data name="figl_jzpzdj_error14" xml:space="preserve">
+    <value>第{0}行,借/贷不能同时有值</value>
+  </data>
+  <data name="figl_jzpzdj_error15" xml:space="preserve">
+    <value>凭证的会计年度和期间和 凭证记账不匹配</value>
+  </data>
+  <data name="figl_jzpzdj_error16" xml:space="preserve">
+    <value>未获取有效的凭证编号</value>
+  </data>
+  <data name="figl_jzpzdj_error17" xml:space="preserve">
+    <value>{0}方，必有科目[{1}] 不存在</value>
+  </data>
+  <data name="figl_jzpzdj_error18" xml:space="preserve">
+    <value>{0}方，必无科目[{1}]已存在</value>
+  </data>
+  <data name="figl_jzpzdj_error19" xml:space="preserve">
+    <value>当前科目是ERP自动记账科目，手工凭证不能使用</value>
+  </data>
+  <data name="figl_jzpzdj_error2" xml:space="preserve">
+    <value>当前会计科目不能设置贷方金额</value>
+  </data>
+  <data name="figl_jzpzdj_error20" xml:space="preserve">
+    <value>行，科目设置了辅助项目，辅助项目不能为空</value>
+  </data>
+  <data name="figl_jzpzdj_error21" xml:space="preserve">
+    <value>当前会计科目和相应的项目，只能在凭证中出现一次，不能重复录入</value>
+  </data>
+  <data name="figl_jzpzdj_error22" xml:space="preserve">
+    <value>当前会计科目和相应的部门，只能在凭证中出现一次，不能重复录入</value>
+  </data>
+  <data name="figl_jzpzdj_error23" xml:space="preserve">
+    <value>当前会计科目和相应的现金流量，只能在凭证中出现一次，不能重复录入</value>
+  </data>
+  <data name="figl_jzpzdj_error24" xml:space="preserve">
+    <value>行，科目设置了部门，部门不能为空</value>
+  </data>
+  <data name="figl_jzpzdj_error25" xml:space="preserve">
+    <value>行，科目设置了现金流量，现金流量不能为空</value>
+  </data>
+  <data name="figl_jzpzdj_error26" xml:space="preserve">
+    <value>第{0}行，科目设置了部门标识，部门子项不能为空</value>
+  </data>
+  <data name="figl_jzpzdj_error27" xml:space="preserve">
+    <value>第{0}行，科目设置了现金标识，现金子项不能为空</value>
+  </data>
+  <data name="figl_jzpzdj_error28" xml:space="preserve">
+    <value>第{0}行，科目必须是明细</value>
+  </data>
+  <data name="figl_jzpzdj_error29" xml:space="preserve">
+    <value>借货方金额不能同时为空</value>
+  </data>
+  <data name="figl_jzpzdj_error3" xml:space="preserve">
+    <value>借贷不相等</value>
+  </data>
+  <data name="figl_jzpzdj_error30" xml:space="preserve">
+    <value>借货方金额不能同时填写</value>
+  </data>
+  <data name="figl_jzpzdj_error4" xml:space="preserve">
+    <value>第</value>
+  </data>
+  <data name="figl_jzpzdj_error5" xml:space="preserve">
+    <value>行请填写借/贷方金额　</value>
+  </data>
+  <data name="figl_jzpzdj_error6" xml:space="preserve">
+    <value>每个科目只能设置一个方向的金额,是否清空另一方向的金额</value>
+  </data>
+  <data name="figl_jzpzdj_error7" xml:space="preserve">
+    <value>当前会计科目只能在凭证中出现一次，不能重复录入</value>
+  </data>
+  <data name="figl_jzpzdj_error8" xml:space="preserve">
+    <value>该科目标识为汇总，不能录入</value>
+  </data>
+  <data name="figl_jzpzdj_error9" xml:space="preserve">
+    <value>当前会计科目上一级科目未设置，请先设置</value>
+  </data>
+  <data name="figl_kmdm_error1" xml:space="preserve">
+    <value>会计科目不符合科目编码规则，请检查</value>
+  </data>
+  <data name="figl_kmdm_error4" xml:space="preserve">
+    <value>科目标识为'汇总'时，不能设置现金流量标识</value>
+  </data>
+  <data name="figl_kmdm_error5" xml:space="preserve">
+    <value>科目标识为'汇总'时，不能设置部门账标识</value>
+  </data>
+  <data name="figl_kmdm_error6" xml:space="preserve">
+    <value>科目标识为'汇总'时，不能设置项目账标识</value>
+  </data>
+  <data name="jxcmsg087" xml:space="preserve">
+    <value>生成的产品返修单已经核准,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg088" xml:space="preserve">
+    <value>生成的产品完工入库单已经核准或记账,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg089" xml:space="preserve">
+    <value>成的调拨出库单已经核准,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg090" xml:space="preserve">
+    <value>第{0}行,领用数量{1} &gt; 需求数量{2}!</value>
+  </data>
+  <data name="jxcmsg091" xml:space="preserve">
+    <value>单价或数量为空,不能进行核准!</value>
+  </data>
+  <data name="jxcmsg092" xml:space="preserve">
+    <value>生成的退料入库单已经核准,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg093" xml:space="preserve">
+    <value>第{0}行,拟退数量{1} &gt; 可退数量{2}!</value>
+  </data>
+  <data name="jxcmsg094" xml:space="preserve">
+    <value>第{0}行,拟退数量{1} &gt; 实际入库数量{2}!</value>
+  </data>
+  <data name="jxcmsg095" xml:space="preserve">
+    <value>产品检验单没有核准,不能记账!</value>
+  </data>
+  <data name="jxcmsg096" xml:space="preserve">
+    <value>产品编号为空或不唯一,不能核准或记账!</value>
+  </data>
+  <data name="jxcmsg097" xml:space="preserve">
+    <value>产品检验合格的产品已记账,检验单不能取消核准!</value>
+  </data>
+  <data name="jxcmsg098" xml:space="preserve">
+    <value>产品检验不合格产品生成的入库/出库单已核准,检验单不能取消核准!</value>
+  </data>
+  <data name="jxcmsg099" xml:space="preserve">
+    <value>第{0}行,领料数量{1} &gt; 任务单的数量{2} - 领料出库单的出库数量{3} -未核准的领料单的数量{4} + 已经记账的退料单的数量{5}!</value>
+  </data>
+  <data name="jxcmsg100" xml:space="preserve">
+    <value>第{0}行,出库数量{1} &gt; 任务单的物料数量{2} - 任务单的已领料数量{3}+ 退料数量{4}!</value>
+  </data>
+  <data name="jxcmsg101" xml:space="preserve">
+    <value>第{0}行,请购数量{1} &gt; 项目物料清册的设计数量{2}-已核准的采购请购数量{3}!</value>
+  </data>
+  <data name="jxcmsg102" xml:space="preserve">
+    <value>任务单已经生成领料单,不允许取消核准!</value>
+  </data>
+  <data name="jxcmsg103" xml:space="preserve">
+    <value>任务单已经生成领料单,不允许记账还原!</value>
+  </data>
+  <data name="jxcmsg104" xml:space="preserve">
+    <value>第{0}行,数量{1} * (新成本单价{2} - 原成本单价{3}) != 调节金额{4}</value>
+  </data>
+  <data name="jxcmsg105" xml:space="preserve">
+    <value>当前车间分摊费用 != 辅助车间总费用 * 当前车间人数/生产车间总人数!</value>
+  </data>
+  <data name="jxcmsg106" xml:space="preserve">
+    <value>车间费用总计 != 当前车间分摊费用 +制造费用+人工费用!</value>
+  </data>
+  <data name="jxcmsg107" xml:space="preserve">
+    <value>材料总费用 != 明细物料的材料成本合计金额</value>
+  </data>
+  <data name="jxcmsg108" xml:space="preserve">
+    <value>总成本 != 车间费用总计+材料总费用!</value>
+  </data>
+  <data name="jxcmsg109" xml:space="preserve">
+    <value>第{0}行,制造成本 != 制造费用 * 材料成本/总材料成本!</value>
+  </data>
+  <data name="jxcmsg120" xml:space="preserve">
+    <value>第{0}行,成本 != 材料成本+制造成本+人工成本!</value>
+  </data>
+  <data name="jxcmsg121" xml:space="preserve">
+    <value>产成品的价格为空,要月末成本分摊后进行记账!</value>
+  </data>
+  <data name="jxcmsg122" xml:space="preserve">
+    <value>生成的加工入库单已经核准,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg123" xml:space="preserve">
+    <value>完工数量{0} &gt; 任务单的数量{1} - 已经核准的完工数量{2} !</value>
+  </data>
+  <data name="jxcmsg124" xml:space="preserve">
+    <value>第{0}行,请输入产品是否合格!</value>
+  </data>
+  <data name="jxcmsg125" xml:space="preserve">
+    <value>第{0}行,有产品编号的产品数量 != 产品数量!</value>
+  </data>
+  <data name="jxcmsg126" xml:space="preserve">
+    <value>质量检验单没有核准,不能记账!</value>
+  </data>
+  <data name="jxcmsg127" xml:space="preserve">
+    <value>生成的质量检验单已经核准,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg128" xml:space="preserve">
+    <value>质量检验合格的产品已记账,检验单不能取消核准!</value>
+  </data>
+  <data name="jxcmsg129" xml:space="preserve">
+    <value>质量检验不合格产品生成的入库单已核准,检验单不能取消核准!</value>
+  </data>
+  <data name="jxcmsg130" xml:space="preserve">
+    <value>累计生产数量{0}不能超出设计生产的数量{1}!</value>
+  </data>
+  <data name="jxcmsg131" xml:space="preserve">
+    <value>制造费用 != 制造变动费用 + 制造固定费用</value>
+  </data>
+  <data name="jxcmsg132" xml:space="preserve">
+    <value>人工费用 != 人工变动费用 + 人工固定费用</value>
+  </data>
+  <data name="jxcmsg133" xml:space="preserve">
+    <value>第{0}行,人工成本 != 人工费用 * 材料成本/总材料成本!</value>
+  </data>
+  <data name="jxcmsg134" xml:space="preserve">
+    <value>委托加工出库单已经核准,无法取消核准.</value>
+  </data>
+  <data name="jxcmsg135" xml:space="preserve">
+    <value>生成的检修入库单已经核准,无法取消核准</value>
+  </data>
+  <data name="lendamountmorethanidmpcost" xml:space="preserve">
+    <value>借款金额大于内部决策单的金额！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="lendnotexistorother" xml:space="preserve">
+    <value>借款单不存在，或者流程尚未结束，或者已还款！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="lendnotfound" xml:space="preserve">
+    <value>没有找到对应的借款单!</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="logerror" xml:space="preserve">
+    <value>登录失败,请重新输入正确的用户名和密码!</value>
+  </data>
+  <data name="msgobjecttype" xml:space="preserve">
+    <value>目标类型在新增时可以编辑,修改时不可编辑</value>
+  </data>
+  <data name="need_role_id" xml:space="preserve">
+    <value>如果节点类型是“状态”，必须选择一个对应的角色。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="need_state_id" xml:space="preserve">
+    <value>如果节点类型是“状态”，必须选择一个状态或者输入一个新的状态。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="needappendinfo" xml:space="preserve">
+    <value>需要补充相关信息！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="needbankaccount" xml:space="preserve">
+    <value>员工没有对应的银行帐号信息，请在员工系统中先设置银行帐号或者选择其他支付方式！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="needbankacount" xml:space="preserve">
+    <value>需要填写银行帐号！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="needinputactualticket" xml:space="preserve">
+    <value>每一行程均需要输入实际订票信息, 请点击行程信息的查看按钮,输入实际订票信息,再提交.</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="needinputreturndate" xml:space="preserve">
+    <value>你选择了需要返程票，请输入返程日期！</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="needtravelinfo" xml:space="preserve">
+    <value>请先输入行程信息再提交数据。</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="no_add_right" xml:space="preserve">
+    <value>您没有新增权限,请联系系统管理员!</value>
+  </data>
+  <data name="no_attachment_uploaded" xml:space="preserve">
+    <value>没有文件被更新!</value>
+  </data>
+  <data name="no_delete_right" xml:space="preserve">
+    <value>您没有删除权限,请联系系统管理员!</value>
+  </data>
+  <data name="no_edit_right" xml:space="preserve">
+    <value>您没有编辑权限,请联系系统管理员!</value>
+  </data>
+  <data name="no_read_right" xml:space="preserve">
+    <value>您没有查看权限,请联系系统管理员!</value>
+  </data>
+  <data name="noadddaleiright" xml:space="preserve">
+    <value>大类节点下面已经有物料,不允许在此节点下新增大类!</value>
+  </data>
+  <data name="noaddmatright" xml:space="preserve">
+    <value>您没有足够的权限来新增物料!</value>
+  </data>
+  <data name="noattachmentexist" xml:space="preserve">
+    <value>没有上传附件。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="nodatamove" xml:space="preserve">
+    <value>无数据可跳转!</value>
+  </data>
+  <data name="nodeleteright" xml:space="preserve">
+    <value>您没有足够的权限来删除此行!</value>
+  </data>
+  <data name="nodeleterightforthisrecord" xml:space="preserve">
+    <value>你没有删除这条记录的权限!</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="nodriverforthisuser" xml:space="preserve">
+    <value>该员工没有驾照！</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="nolasttravel" xml:space="preserve">
+    <value>不存在前一行程！</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="nopersoninlasttravel" xml:space="preserve">
+    <value>上一行程不存在人员信息！</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="nosubmitright" xml:space="preserve">
+    <value>您没有足够的权限来提交记录!</value>
+  </data>
+  <data name="notallowdelete" xml:space="preserve">
+    <value>您没有足够的权限来删除记录!</value>
+    <comment>CMDB</comment>
+  </data>
+  <data name="notallowedit" xml:space="preserve">
+    <value>数据不能编辑!</value>
+    <comment>CMDB</comment>
+  </data>
+  <data name="notcopyonlyleaf" xml:space="preserve">
+    <value>只有叶节点才能拷贝</value>
+  </data>
+  <data name="notcutparent" xml:space="preserve">
+    <value>不能剪贴父节点！</value>
+  </data>
+  <data name="notemplatedoc" xml:space="preserve">
+    <value>没有文件存在。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="nothasidmpform" xml:space="preserve">
+    <value>此种报销类型需要关联内部决策单，请输入关联的内部决策单！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="nothasotform" xml:space="preserve">
+    <value>此种报销类型需要关联加班单，请输入关联的加班单！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="nothastravelform" xml:space="preserve">
+    <value>此种报销类型需要关联行程单，请输入关联的行程单！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="nothastripform" xml:space="preserve">
+    <value>此种报销类型需要关联出差申请单，请输入关联的出差申请单！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="notifychangedalei" xml:space="preserve">
+    <value>改变[大类],将清空明细表格中的数据,是否要继续操作?</value>
+  </data>
+  <data name="notifychangewh" xml:space="preserve">
+    <value>改变[仓别],将清空明细表格中的数据,是否要继续操作?</value>
+  </data>
+  <data name="notpasteparent" xml:space="preserve">
+    <value>不能粘贴到父节点！</value>
+  </data>
+  <data name="notpasteself" xml:space="preserve">
+    <value>不能粘贴自己节点！</value>
+  </data>
+  <data name="notsetforward" xml:space="preserve">
+    <value>没有选择转发的人员!</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="numbererror" xml:space="preserve">
+    <value>{0},要以字符 '{1}' 开头!</value>
+  </data>
+  <data name="oilcardisused" xml:space="preserve">
+    <value>加油卡已经开始使用，不允许修改类型！</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="onlyaddinfolder" xml:space="preserve">
+    <value>只有当结点类型为Folder时，才允许添加子结点。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="onlycanuseprocess" xml:space="preserve">
+    <value>只能选择具体的流程！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="onlyprocesscansetstep" xml:space="preserve">
+    <value>只有工作流程节点可以设置流程步骤!</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="passfailedtotalrow" xml:space="preserve">
+    <value> {0} 张单据 [记账] 失败!</value>
+  </data>
+  <data name="passsuccesstotalrow" xml:space="preserve">
+    <value> {0} 张单据 [记账] 成功!</value>
+  </data>
+  <data name="passwod_error" xml:space="preserve">
+    <value>密码错误!</value>
+  </data>
+  <data name="passwod_format" xml:space="preserve">
+    <value>密码长度或者是安全级别太低!</value>
+  </data>
+  <data name="password_input" xml:space="preserve">
+    <value>请输入密码!</value>
+  </data>
+  <data name="password_length" xml:space="preserve">
+    <value>密码长度 &lt; {0}</value>
+  </data>
+  <data name="password_match" xml:space="preserve">
+    <value>新密码和旧密码不匹配!</value>
+  </data>
+  <data name="password_same" xml:space="preserve">
+    <value>密码不要和旧密码重复!</value>
+  </data>
+  <data name="payamountmorethanneedrepay" xml:space="preserve">
+    <value>支付给公司的金额超出了借款单的金额！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="paycompanymorethanlend" xml:space="preserve">
+    <value>支付给公司金额超出了借款金额！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="paycompanymorethantotalamount" xml:space="preserve">
+    <value>支付给公司金额超出了报销单金额！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="paycompanyneedlendcode" xml:space="preserve">
+    <value>填写了支付给公司的金额后，必须填写对应的借款单号！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="paycounterror" xml:space="preserve">
+    <value>支付给个人和支付给公司的金额之和必须等于报销总金额！</value>
+    <comment>EXPENSE</comment>
+  </data>
+  <data name="pleasechoosedalei" xml:space="preserve">
+    <value>请选择大类!再进行其它操作!</value>
+  </data>
+  <data name="pleasechoosevender" xml:space="preserve">
+    <value>请选择供应商!再进行其它操作!</value>
+  </data>
+  <data name="pleasechoosewh" xml:space="preserve">
+    <value>请选择仓别!再进行其它操作!</value>
+  </data>
+  <data name="pleasechoosewhname" xml:space="preserve">
+    <value>请选择仓库!</value>
+  </data>
+  <data name="pleasecopyorcut" xml:space="preserve">
+    <value>请先拷贝或者是剪贴节点！</value>
+  </data>
+  <data name="pleaseinput" xml:space="preserve">
+    <value>请输入</value>
+  </data>
+  <data name="pleaseinputcustcode" xml:space="preserve">
+    <value>请输入客户编号!</value>
+  </data>
+  <data name="pleaseinputdetailmcode" xml:space="preserve">
+    <value>请输入明细中的[物料代码],再进行当前操作!</value>
+  </data>
+  <data name="pleaseinputexpenseguid" xml:space="preserve">
+    <value>请输入报销单查询号码！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="pleaseinputidmpguid" xml:space="preserve">
+    <value>请输入表单编号。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="pleaseinputremark" xml:space="preserve">
+    <value>请输入备注！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="pleaseinputrequirefield" xml:space="preserve">
+    <value>请输入必填项：</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="pleaseinputvendercode" xml:space="preserve">
+    <value>请输入供应商编号!</value>
+  </data>
+  <data name="pleaserefreshdata" xml:space="preserve">
+    <value>数据已改变,请选择条件重新查询!</value>
+  </data>
+  <data name="pleasesaveexpensdetail" xml:space="preserve">
+    <value>请先保存详细费用！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="pleasesaveexpensform" xml:space="preserve">
+    <value>请先保存关联表单！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="pleaseselectexpensetype" xml:space="preserve">
+    <value>请选择一个报销类型。</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="pleaseselectlendtype" xml:space="preserve">
+    <value>请选择一个借款类型!</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="pleaseselectnode" xml:space="preserve">
+    <value>请您选中一个节点</value>
+  </data>
+  <data name="pleaseselectonevalue" xml:space="preserve">
+    <value>请您选择一个值:{0}</value>
+    <comment>SFA</comment>
+  </data>
+  <data name="pleaseselectoperation" xml:space="preserve">
+    <value>请您选择项</value>
+  </data>
+  <data name="pleaseselectperson" xml:space="preserve">
+    <value>请选择一名人员</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="pleaseselectprocess" xml:space="preserve">
+    <value>请选择一个流程！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="pleaseselectrow" xml:space="preserve">
+    <value>请您选中一行</value>
+  </data>
+  <data name="pleseinputcostcenter" xml:space="preserve">
+    <value>请输入新的费用中心代码!</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="process_completed" xml:space="preserve">
+    <value>流程已结束！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="process_not_defined" xml:space="preserve">
+    <value>流程还未定义，不能使用！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="processexistused" xml:space="preserve">
+    <value>流程已经关联到报销分类上！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="processisused" xml:space="preserve">
+    <value>由于此流程正被使用，因此不能编辑此流程</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="processisusedcantchangetofolder" xml:space="preserve">
+    <value>流程正在使用，不允许将其改为流程分类！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="rechargeamountcannotlessthanzero" xml:space="preserve">
+    <value>充值金额不能小于等于0.</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="rechargeamountmorethanpriamrycardamount" xml:space="preserve">
+    <value>充值金额不能超过主卡当前金额 {0}元</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="redefineflowstep" xml:space="preserve">
+    <value>重新定义流程步骤</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="refreshfailed" xml:space="preserve">
+    <value>刷新失败</value>
+  </data>
+  <data name="refreshsuccess" xml:space="preserve">
+    <value>刷新成功</value>
+  </data>
+  <data name="relationformisalreadyadd" xml:space="preserve">
+    <value>该表单已经被关联到报销单。</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="relationformisnotexist" xml:space="preserve">
+    <value>关联表单不存在或者不符合规定条件！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="repayamountmorethanneedamount" xml:space="preserve">
+    <value>填写的还款金额超出了未还款金额！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="requiredfieldnotfilled" xml:space="preserve">
+    <value>请输入必填字段 [{0}]</value>
+  </data>
+  <data name="savefailed" xml:space="preserve">
+    <value>保存失败！</value>
+  </data>
+  <data name="savefirst" xml:space="preserve">
+    <value>请先保存，再继续操作！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="saveoffduty" xml:space="preserve">
+    <value>操作成功！您的下班时间为{0}。</value>
+  </data>
+  <data name="saveonduty" xml:space="preserve">
+    <value>操作成功！您的上班时间为{0}。</value>
+  </data>
+  <data name="savesuccess" xml:space="preserve">
+    <value>保存成功！</value>
+  </data>
+  <data name="savesuccesspleasesubmit" xml:space="preserve">
+    <value>保存成功，请提交流程！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="settlemenuunitnotsame" xml:space="preserve">
+    <value>借款单和报销单的结算单位不一致，不能直接还款！</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="submitauditsuccess" xml:space="preserve">
+    <value>单据{0} 核准成功!</value>
+  </data>
+  <data name="submitbuildsuccess" xml:space="preserve">
+    <value>单据{0} 生成成功!</value>
+  </data>
+  <data name="submitcopytofeed" xml:space="preserve">
+    <value>您确认你要提交反馈意见吗？提交后不再允许修改。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="submitdeletesuccess" xml:space="preserve">
+    <value>{0} 张单据 [删除] 成功!</value>
+  </data>
+  <data name="submitexpandsuccess" xml:space="preserve">
+    <value>单据{0} 标识成功!</value>
+  </data>
+  <data name="submitfailed" xml:space="preserve">
+    <value>提交失败！</value>
+  </data>
+  <data name="submitpasssuccess" xml:space="preserve">
+    <value>单据{0}记帐成功！</value>
+  </data>
+  <data name="submitprocessconfirm" xml:space="preserve">
+    <value>确认需要提交此流程吗？</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="submitprocesssuccess" xml:space="preserve">
+    <value>提交成功！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="submitsuccess" xml:space="preserve">
+    <value>提交成功</value>
+  </data>
+  <data name="submitundoauditsuccess" xml:space="preserve">
+    <value>单据{0} 取消核准成功!</value>
+  </data>
+  <data name="submitundobuildsuccess" xml:space="preserve">
+    <value>单据{0} 取消生成成功!</value>
+  </data>
+  <data name="submitundopasssuccess" xml:space="preserve">
+    <value>单据{0} 取消记帐成功!</value>
+  </data>
+  <data name="terminatecopyto" xml:space="preserve">
+    <value>你确定要终止这条抄送记录吗？</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="toberedefine" xml:space="preserve">
+    <value>等待管理员重定义流程</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="total_cost" xml:space="preserve">
+    <value>总成本</value>
+  </data>
+  <data name="total_fee" xml:space="preserve">
+    <value>总费用合计</value>
+  </data>
+  <data name="total_mat_cost" xml:space="preserve">
+    <value>总材料成本</value>
+  </data>
+  <data name="totalamount" xml:space="preserve">
+    <value>总金额</value>
+  </data>
+  <data name="totalamountnotequalpricecount" xml:space="preserve">
+    <value>总价不等于单价和数量的乘积，请重新输入: </value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="totalamounttax" xml:space="preserve">
+    <value>总价税合计</value>
+  </data>
+  <data name="totalapamount" xml:space="preserve">
+    <value>总应付金额</value>
+  </data>
+  <data name="totalaramount" xml:space="preserve">
+    <value>总税价合计</value>
+  </data>
+  <data name="totalcost" xml:space="preserve">
+    <value>总成本</value>
+  </data>
+  <data name="totaldiffamount" xml:space="preserve">
+    <value>总补差价金额</value>
+  </data>
+  <data name="totalpayamount" xml:space="preserve">
+    <value>总付款</value>
+  </data>
+  <data name="totalprepayamount" xml:space="preserve">
+    <value>总预付款</value>
+  </data>
+  <data name="totalprereceiveamount" xml:space="preserve">
+    <value>总预收款</value>
+  </data>
+  <data name="totalreceiveamount" xml:space="preserve">
+    <value>总收款</value>
+  </data>
+  <data name="totaltax" xml:space="preserve">
+    <value>总税额</value>
+  </data>
+  <data name="undoauditfailedtotalrow" xml:space="preserve">
+    <value> {0} 张单据 [取消审核] 失败!</value>
+  </data>
+  <data name="undoauditsuccesstotalrow" xml:space="preserve">
+    <value> {0} 张单据 [取消审核] 成功!</value>
+  </data>
+  <data name="undobuildfailedtotalrow" xml:space="preserve">
+    <value> {0} 张单据 [取消生成] 失败!</value>
+  </data>
+  <data name="undobuildsuccesstotalrow" xml:space="preserve">
+    <value> {0} 张单据 [取消生成] 成功!</value>
+  </data>
+  <data name="undopassfailedtotalrow" xml:space="preserve">
+    <value> {0} 张单据 [取消记账] 失败!</value>
+  </data>
+  <data name="undopasssuccesstotalrow" xml:space="preserve">
+    <value> {0} 张单据 [取消记账] 成功!</value>
+  </data>
+  <data name="update_user_failed" xml:space="preserve">
+    <value>更新员工失败</value>
+  </data>
+  <data name="upload_file_empty_error" xml:space="preserve">
+    <value>请选择上传文件！</value>
+  </data>
+  <data name="upload_file_format" xml:space="preserve">
+    <value>上传文件格式错误</value>
+  </data>
+  <data name="upload_file_size_limit" xml:space="preserve">
+    <value>上传文件不能超过{0}！</value>
+  </data>
+  <data name="user_readonly" xml:space="preserve">
+    <value>用户只读</value>
+  </data>
+  <data name="user_repeat" xml:space="preserve">
+    <value>用户名重复</value>
+  </data>
+  <data name="userdefinecannotcopy" xml:space="preserve">
+    <value>用户自定义流程不允许复制！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="userdefinecannotsetstep" xml:space="preserve">
+    <value>用户自定义流程不需要设置流程步骤！</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="validateamount" xml:space="preserve">
+    <value>数量 * 单价 !＝金额</value>
+  </data>
+  <data name="validatefirstcheckdate" xml:space="preserve">
+    <value>开始检查日期 &gt;= 当前日期</value>
+  </data>
+  <data name="validateforeignkey" xml:space="preserve">
+    <value>数据输入错误：{0}不存在！</value>
+  </data>
+  <data name="validateidmpguid" xml:space="preserve">
+    <value>表单编号{0}不存在，请检查后重新输入。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="validatenumerror" xml:space="preserve">
+    <value>验证码输入错误！</value>
+  </data>
+  <data name="validatepaweight" xml:space="preserve">
+    <value>当前比重累计值为{0}, 请修改相关比重使其等于100</value>
+  </data>
+  <data name="validatesystemrole" xml:space="preserve">
+    <value>不是系统角色!</value>
+  </data>
+  <data name="vicecardneedprimarycard" xml:space="preserve">
+    <value>副卡需要关联到主卡上，请填写关联主卡卡号。</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="vlidatecheckdate" xml:space="preserve">
+    <value>检查日期不能大于当前日期！</value>
+  </data>
+  <data name="vlidatefirstcheckdate" xml:space="preserve">
+    <value>第一次检查日期不能小于系统日期！</value>
+  </data>
+  <data name="vlidateplancheckdate" xml:space="preserve">
+    <value>计划检查日期不能小于系统日期！</value>
+  </data>
+  <data name="wflmsgtitle" xml:space="preserve">
+    <value>您的{0}已经被{1}于{2}处理，其操作为：{3}。</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="|&lt;" xml:space="preserve">
+    <value>|&lt;</value>
+  </data>
+  <data name="&lt;" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="&gt;" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="&gt;|" xml:space="preserve">
+    <value>&gt;|</value>
+  </data>
+  <data name="action_date" xml:space="preserve">
+    <value>操作时间</value>
+  </data>
+  <data name="actionend" xml:space="preserve">
+    <value>行动完成</value>
+  </data>
+  <data name="actionplan" xml:space="preserve">
+    <value>行动计划</value>
+  </data>
+  <data name="activity" xml:space="preserve">
+    <value>活动</value>
+  </data>
+  <data name="activity_detail_scope_aspx" xml:space="preserve">
+    <value>活动详细报表</value>
+    <comment>EAR</comment>
+  </data>
+  <data name="acutal_ticket_info" xml:space="preserve">
+    <value>实际购票信息</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="add" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="add_attachment" xml:space="preserve">
+    <value>添加附件</value>
+  </data>
+  <data name="add_line" xml:space="preserve">
+    <value>新增行</value>
+  </data>
+  <data name="adddepartment" xml:space="preserve">
+    <value>添加部门</value>
+  </data>
+  <data name="addmode" xml:space="preserve">
+    <value>新增模式</value>
+  </data>
+  <data name="addnew" xml:space="preserve">
+    <value>添加新行</value>
+  </data>
+  <data name="addreturn" xml:space="preserve">
+    <value>添加返程信息</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="adm_ticket_selectprocesstype_aspx" xml:space="preserve">
+    <value>请选择流程</value>
+  </data>
+  <data name="adm_ticket_ticketappdetail_aspx" xml:space="preserve">
+    <value>订票申请详细信息</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="adm_ticket_ticketapplist_aspx" xml:space="preserve">
+    <value>订票申请单</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="adm_ticket_ticketapppersondetail_aspx" xml:space="preserve">
+    <value>人员信息明细</value>
+  </data>
+  <data name="adm_ticket_ticketpersoninfo_aspx" xml:space="preserve">
+    <value>人员信息</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="adm_ticket_tickettravelinfodetail_aspx" xml:space="preserve">
+    <value>行程信息</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="adm_vehicle_oilcarddetail_aspx" xml:space="preserve">
+    <value>加油卡详细信息</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="adm_vehicle_oilcardlist_aspx" xml:space="preserve">
+    <value>加油卡列表</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="adm_vehicle_vehicleaddoildetail_aspx" xml:space="preserve">
+    <value>加油详细信息</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="adm_vehicle_vehicleaddoillist_aspx" xml:space="preserve">
+    <value>车辆加油记录</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="adm_vehicle_vehicleappdetail_aspx" xml:space="preserve">
+    <value>用车申请明细</value>
+  </data>
+  <data name="adm_vehicle_vehicleapppersondetail_aspx" xml:space="preserve">
+    <value>乘坐人员信息</value>
+  </data>
+  <data name="adm_vehicle_vehiclebasicdetail_aspx" xml:space="preserve">
+    <value>车辆基本信息</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="adm_vehicle_vehiclebasiclist_aspx" xml:space="preserve">
+    <value>车辆基本信息列表</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="adm_vehicle_vehicledispatchdetail_aspx" xml:space="preserve">
+    <value>派车单明细</value>
+  </data>
+  <data name="adm_vehicle_vehicledispatchlist_aspx" xml:space="preserve">
+    <value>派车单一览表</value>
+  </data>
+  <data name="adm_vehicle_vehicledriverdetail_aspx" xml:space="preserve">
+    <value>驾驶员详细信息</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="adm_vehicle_vehicledriverlist_aspx" xml:space="preserve">
+    <value>驾驶员列表</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="adm_vehicle_vehiclefeedbackdetail_aspx" xml:space="preserve">
+    <value>用车结果录入明细</value>
+  </data>
+  <data name="adm_vehicle_vehiclefeedbacklist_aspx" xml:space="preserve">
+    <value>用车结果录入一览表</value>
+  </data>
+  <data name="adm_vehicle_vehicleformadd_aspx" xml:space="preserve">
+    <value>选择用车申请流程</value>
+  </data>
+  <data name="adm_vehicle_vehicleformdetail_aspx" xml:space="preserve">
+    <value>用车申请单</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="adm_vehicle_vehicleformlist_aspx" xml:space="preserve">
+    <value>用车申请单列表</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="adm_vehicle_vehicleinspectiondetail_aspx" xml:space="preserve">
+    <value>车辆年检信息</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="adm_vehicle_vehicleinspectionlist_aspx" xml:space="preserve">
+    <value>车辆年检信息列表</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="adm_vehicle_vehicleinsuredetail_aspx" xml:space="preserve">
+    <value>车辆保险信息</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="adm_vehicle_vehicleinsurelist_aspx" xml:space="preserve">
+    <value>车辆保险列表</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="advance_balance" xml:space="preserve">
+    <value>借款余额</value>
+  </data>
+  <data name="all_conformity" xml:space="preserve">
+    <value>全部合格</value>
+  </data>
+  <data name="all_terr" xml:space="preserve">
+    <value>所有销售域</value>
+    <comment>SFA</comment>
+  </data>
+  <data name="analysisinfo" xml:space="preserve">
+    <value>信息分析</value>
+    <comment>SFA</comment>
+  </data>
+  <data name="app_information" xml:space="preserve">
+    <value>企业信息</value>
+  </data>
+  <data name="app_parameter" xml:space="preserve">
+    <value>进销存参数设置</value>
+  </data>
+  <data name="appendfile" xml:space="preserve">
+    <value>添加附件</value>
+  </data>
+  <data name="approve" xml:space="preserve">
+    <value>批准</value>
+  </data>
+  <data name="attachemployee" xml:space="preserve">
+    <value>共同参与者</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="attachment" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="attachmentfile" xml:space="preserve">
+    <value>相关附件</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="audit" xml:space="preserve">
+    <value>核准</value>
+  </data>
+  <data name="autosplittaskqty" xml:space="preserve">
+    <value>拆分未完工任务单</value>
+  </data>
+  <data name="base_appinformation_aspx" xml:space="preserve">
+    <value>系统参数设置</value>
+  </data>
+  <data name="base_appparameter_aspx" xml:space="preserve">
+    <value>系统参数设置</value>
+  </data>
+  <data name="base_djparameter_aspx" xml:space="preserve">
+    <value>系统参数设置</value>
+  </data>
+  <data name="base_parameterdetail_aspx" xml:space="preserve">
+    <value>系统参数定义</value>
+  </data>
+  <data name="base_parameterlist_aspx" xml:space="preserve">
+    <value>系统参数一览表</value>
+  </data>
+  <data name="base_parametersetting_aspx" xml:space="preserve">
+    <value>系统参数设置</value>
+  </data>
+  <data name="base_parametersettingdetail_aspx" xml:space="preserve">
+    <value>系统参数设置</value>
+  </data>
+  <data name="basic_information" xml:space="preserve">
+    <value>基础信息</value>
+  </data>
+  <data name="budgetdetail" xml:space="preserve">
+    <value>预算详细信息</value>
+  </data>
+  <data name="build" xml:space="preserve">
+    <value>生成</value>
+  </data>
+  <data name="buildcx" xml:space="preserve">
+    <value>生成冲销单</value>
+  </data>
+  <data name="builduser" xml:space="preserve">
+    <value>生成员工信息</value>
+  </data>
+  <data name="c_build_project" xml:space="preserve">
+    <value>在建项目数</value>
+  </data>
+  <data name="c_pay_amount" xml:space="preserve">
+    <value>应付账款余额</value>
+  </data>
+  <data name="c_prepay_amount" xml:space="preserve">
+    <value>当前预付账款余额</value>
+  </data>
+  <data name="c_prereceive_amount" xml:space="preserve">
+    <value>当前预收账款余额</value>
+  </data>
+  <data name="c_receive_amount" xml:space="preserve">
+    <value>当前应收账款金额</value>
+  </data>
+  <data name="cachelist_aspx" xml:space="preserve">
+    <value>缓存列表</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="cg_statistics" xml:space="preserve">
+    <value>采购统计</value>
+  </data>
+  <data name="change" xml:space="preserve">
+    <value>更改状态</value>
+  </data>
+  <data name="change_status" xml:space="preserve">
+    <value>更改状态</value>
+  </data>
+  <data name="changetouserdefine" xml:space="preserve">
+    <value>修改为自定义流程</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="changetouserdefinitionprocess" xml:space="preserve">
+    <value>转到用户自定义流程</value>
+  </data>
+  <data name="check" xml:space="preserve">
+    <value>检查</value>
+  </data>
+  <data name="check_budget" xml:space="preserve">
+    <value>检查预算</value>
+    <comment>eExpense</comment>
+  </data>
+  <data name="close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="cm_cg_amount" xml:space="preserve">
+    <value>当月采购金额</value>
+  </data>
+  <data name="cm_complete_project" xml:space="preserve">
+    <value>当月完成项目数</value>
+  </data>
+  <data name="cm_kp_amount" xml:space="preserve">
+    <value>当月开票金额</value>
+  </data>
+  <data name="cm_pay_amount" xml:space="preserve">
+    <value>当月付款金额</value>
+  </data>
+  <data name="cm_receive_amount" xml:space="preserve">
+    <value>当月收款金额</value>
+  </data>
+  <data name="cm_undertake_project" xml:space="preserve">
+    <value>当月承接项目数</value>
+  </data>
+  <data name="cm_xs_amount" xml:space="preserve">
+    <value>当月销售金额</value>
+  </data>
+  <data name="cm_xs_cost" xml:space="preserve">
+    <value>当月销售成本</value>
+  </data>
+  <data name="cm_xs_profit" xml:space="preserve">
+    <value>当月销售利润</value>
+  </data>
+  <data name="cm_xs_profit_rate" xml:space="preserve">
+    <value>当月销售利润率%</value>
+  </data>
+  <data name="cmif_id" xml:space="preserve">
+    <value>竞争对手机器</value>
+  </data>
+  <data name="commonui_webform_getreport_aspx" xml:space="preserve">
+    <value>Get Report</value>
+  </data>
+  <data name="commonui_webform_righterror_aspx" xml:space="preserve">
+    <value>权限配置异常页面</value>
+  </data>
+  <data name="commonui_webform_wflchangestate_aspx" xml:space="preserve">
+    <value>更改状态</value>
+  </data>
+  <data name="competitor_proposal" xml:space="preserve">
+    <value>竞争对手方案</value>
+  </data>
+  <data name="copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="copyinfo" xml:space="preserve">
+    <value>抄送信息</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="copyto" xml:space="preserve">
+    <value>抄送</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="copytoreason" xml:space="preserve">
+    <value>抄送原因</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="cut" xml:space="preserve">
+    <value>剪贴</value>
+  </data>
+  <data name="cx_bill_detail" xml:space="preserve">
+    <value>冲销单明细</value>
+  </data>
+  <data name="cy_cg_amount" xml:space="preserve">
+    <value>当年累计采购金额</value>
+  </data>
+  <data name="cy_complete_project" xml:space="preserve">
+    <value>年度累积完成项目数</value>
+  </data>
+  <data name="cy_kp_amount" xml:space="preserve">
+    <value>当年累计开票金额</value>
+  </data>
+  <data name="cy_pay_amount" xml:space="preserve">
+    <value>当年累计付款金额</value>
+  </data>
+  <data name="cy_receive_amount" xml:space="preserve">
+    <value>当年累计收款金额</value>
+  </data>
+  <data name="cy_undertake_project" xml:space="preserve">
+    <value>年度总承接项目数</value>
+  </data>
+  <data name="cy_xs_amount" xml:space="preserve">
+    <value>当年累计销售金额</value>
+  </data>
+  <data name="cy_xs_cost" xml:space="preserve">
+    <value>当年累计销售成本</value>
+  </data>
+  <data name="cy_xs_profit" xml:space="preserve">
+    <value>当年销售利润</value>
+  </data>
+  <data name="cy_xs_profit_rate" xml:space="preserve">
+    <value>当年销售利润率%</value>
+  </data>
+  <data name="data_source" xml:space="preserve">
+    <value>数据源</value>
+  </data>
+  <data name="day" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="default_aspx" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="delete_line" xml:space="preserve">
+    <value>删除行</value>
+  </data>
+  <data name="deleteall" xml:space="preserve">
+    <value>全部删除</value>
+  </data>
+  <data name="deletenosubmit" xml:space="preserve">
+    <value>删除全部没有提交的数据</value>
+  </data>
+  <data name="deselect_all" xml:space="preserve">
+    <value>全部不选</value>
+  </data>
+  <data name="dj_parameter" xml:space="preserve">
+    <value>单据编号设置</value>
+  </data>
+  <data name="downloadtemplate" xml:space="preserve">
+    <value>下载模板</value>
+  </data>
+  <data name="dss_idmp_copytolist_aspx" xml:space="preserve">
+    <value>抄送信息列表</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_idmpadmin_aspx" xml:space="preserve">
+    <value>内部决策表单管理</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_idmpappendfile_aspx" xml:space="preserve">
+    <value>添加附件</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_idmpappendinfo_aspx" xml:space="preserve">
+    <value>补充信息</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_idmpbuilddetailforprocess_aspx" xml:space="preserve">
+    <value>内部决策流程步骤设置</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_idmpbuilddetialforother_aspx" xml:space="preserve">
+    <value>内部决策流程明细</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_idmpbuildlist_aspx" xml:space="preserve">
+    <value>内部决策流程设置</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_idmpdetail_aspx" xml:space="preserve">
+    <value>表单详细内容</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_idmplist_aspx" xml:space="preserve">
+    <value>内部决策管理表单列表</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_idmpquery_aspx" xml:space="preserve">
+    <value>表单查询</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_idmpquerydetail_aspx" xml:space="preserve">
+    <value>表单详细内容</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_idmptemplatefile_aspx" xml:space="preserve">
+    <value>上传模板文件</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="dss_idmp_reports_idmpshow_aspx" xml:space="preserve">
+    <value>内部决策表单</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="dss_idmp_userdefineprocess_aspx" xml:space="preserve">
+    <value>设置未定义流程步骤</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="eapproval_common_uploadfile_aspx" xml:space="preserve">
+    <value>上传文件</value>
+    <comment>eApproval</comment>
+  </data>
+  <data name="edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="editmode" xml:space="preserve">
+    <value>编辑模式</value>
+  </data>
+  <data name="endcopyto" xml:space="preserve">
+    <value>终止</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="endprocess" xml:space="preserve">
+    <value>终止流程</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="export" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="exportexcel" xml:space="preserve">
+    <value>导出到Excel</value>
+  </data>
+  <data name="exporttravelinfo" xml:space="preserve">
+    <value>导出行程和人员信息</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="favorite" xml:space="preserve">
+    <value>收藏夹</value>
+  </data>
+  <data name="file_name" xml:space="preserve">
+    <value>文件名称</value>
+  </data>
+  <data name="filelist" xml:space="preserve">
+    <value>文件列表</value>
+  </data>
+  <data name="finance_expense_expensedetail_aspx" xml:space="preserve">
+    <value>报销单内容</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_expense_expensedetaildialog_aspx" xml:space="preserve">
+    <value>详细费用</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_expense_expensedetailtypedetail_aspx" xml:space="preserve">
+    <value>报销费用分类明细</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_expense_expensedetailtypelist_aspx" xml:space="preserve">
+    <value>报销费用分类</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_expense_expenselist_aspx" xml:space="preserve">
+    <value>报销表单</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_expense_expensenotfound_aspx" xml:space="preserve">
+    <value>报销单内容</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_expense_expensequery_aspx" xml:space="preserve">
+    <value>报销单查询</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_expense_expensetypedetail_aspx" xml:space="preserve">
+    <value>报销分类明细</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_expense_expensetypelist_aspx" xml:space="preserve">
+    <value>报销分类</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_expense_selectexpensetype_aspx" xml:space="preserve">
+    <value>请选择报销类型和流程</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_lend_lenddetail_aspx" xml:space="preserve">
+    <value>借款单详细内容</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_lend_lendform_aspx" xml:space="preserve">
+    <value>借款单明细</value>
+  </data>
+  <data name="finance_lend_lendlist_aspx" xml:space="preserve">
+    <value>借款单列表</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_lend_selectlendtype_aspx" xml:space="preserve">
+    <value>请选择借款类型</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_repayment_repaymentdetail_aspx" xml:space="preserve">
+    <value>交款单详细内容</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_repayment_repaymentlist_aspx" xml:space="preserve">
+    <value>交款单列表</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_repayment_selectlend_aspx" xml:space="preserve">
+    <value>选择借款单，创建对应的还款单</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_repayment_selectrepaymenttype_aspx" xml:space="preserve">
+    <value>请选择交款单流程</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finance_report_expensereport_aspx" xml:space="preserve">
+    <value>报销统计</value>
+  </data>
+  <data name="finance_report_lendreport_aspx" xml:space="preserve">
+    <value>借款统计</value>
+  </data>
+  <data name="finance_report_repaymentereport_aspx" xml:space="preserve">
+    <value>还款统计</value>
+  </data>
+  <data name="forward_to" xml:space="preserve">
+    <value>转发</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="from" xml:space="preserve">
+    <value>从</value>
+  </data>
+  <data name="get_bank_file" xml:space="preserve">
+    <value>下载文件-银行</value>
+    <comment>eExpense</comment>
+  </data>
+  <data name="get_file" xml:space="preserve">
+    <value>下载文件</value>
+    <comment>eFA</comment>
+  </data>
+  <data name="get_gl_file" xml:space="preserve">
+    <value>下载文件-GL</value>
+    <comment>eExpense</comment>
+  </data>
+  <data name="get_sum" xml:space="preserve">
+    <value>计算合计金额</value>
+  </data>
+  <data name="hide_all_modification" xml:space="preserve">
+    <value>隐藏所有修改</value>
+  </data>
+  <data name="hide_details" xml:space="preserve">
+    <value>隐藏信息</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="history" xml:space="preserve">
+    <value>历史</value>
+  </data>
+  <data name="home" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="home_default_defaulthomepage_aspx" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="home_leftwindow_aspx" xml:space="preserve">
+    <value>左边的窗口</value>
+  </data>
+  <data name="home_notification_notificationlist_aspx" xml:space="preserve">
+    <value>通知明细</value>
+  </data>
+  <data name="hr_base_wflchangestate_aspx" xml:space="preserve">
+    <value>流程状态调整</value>
+  </data>
+  <data name="hr_contract_contractrenewdetail_aspx" xml:space="preserve">
+    <value>劳动合同续订与终止合同明细</value>
+  </data>
+  <data name="hr_contract_contractrenewlist_aspx" xml:space="preserve">
+    <value>劳动合同续订与终止合同一览表</value>
+  </data>
+  <data name="hr_hrapplication_appchangestate_aspx" xml:space="preserve">
+    <value>流程状态调整</value>
+  </data>
+  <data name="hr_hrapplication_appcondition_aspx" xml:space="preserve">
+    <value>表单审批条件设置</value>
+  </data>
+  <data name="hr_hrapplication_appconditionlist_aspx" xml:space="preserve">
+    <value>表单审批条件设置</value>
+  </data>
+  <data name="hr_hrapplication_appdismissdetail_aspx" xml:space="preserve">
+    <value>辞退员工申请明细</value>
+  </data>
+  <data name="hr_hrapplication_appdismisslist_aspx" xml:space="preserve">
+    <value>辞退员工申请一览表</value>
+  </data>
+  <data name="hr_hrapplication_appendprobationdetail_aspx" xml:space="preserve">
+    <value>试用期员工转正申请明细</value>
+  </data>
+  <data name="hr_hrapplication_appendprobationlist_aspx" xml:space="preserve">
+    <value>试用期员工转正申请一览表</value>
+  </data>
+  <data name="hr_hrapplication_appformalitiesdetail_aspx" xml:space="preserve">
+    <value>办理离职手续流程申请明细</value>
+  </data>
+  <data name="hr_hrapplication_appformalitieslist_aspx" xml:space="preserve">
+    <value>办理离职手续流程申请一览表</value>
+  </data>
+  <data name="hr_hrapplication_apphirelist_aspx" xml:space="preserve">
+    <value>新员工录用申请一览表</value>
+  </data>
+  <data name="hr_hrapplication_appnewheadcountdetail_aspx" xml:space="preserve">
+    <value>新增人员需求申请明细</value>
+  </data>
+  <data name="hr_hrapplication_appnewheadcountlist_aspx" xml:space="preserve">
+    <value>新增人员需求一览表</value>
+  </data>
+  <data name="hr_hrapplication_apponboarddetail_aspx" xml:space="preserve">
+    <value>新员工入职准备流程明细</value>
+  </data>
+  <data name="hr_hrapplication_apponboardlist_aspx" xml:space="preserve">
+    <value>新员工入职准备流程一览表</value>
+  </data>
+  <data name="hr_hrapplication_appprocessdetail_aspx" xml:space="preserve">
+    <value>表单工作流明细</value>
+  </data>
+  <data name="hr_hrapplication_appprocesslist_aspx" xml:space="preserve">
+    <value>表单工作流设置</value>
+  </data>
+  <data name="hr_hrapplication_appresigndetail_aspx" xml:space="preserve">
+    <value>员工辞职申请明细</value>
+  </data>
+  <data name="hr_hrapplication_appresignlist_aspx" xml:space="preserve">
+    <value>员工辞职申请一览表</value>
+  </data>
+  <data name="hr_hrapplication_apptypelist_aspx" xml:space="preserve">
+    <value>表单类型设置</value>
+  </data>
+  <data name="hr_kq_kqbatchdetail_aspx" xml:space="preserve">
+    <value>特殊考勤导入明细</value>
+  </data>
+  <data name="hr_kq_kqbatchhead_aspx" xml:space="preserve">
+    <value>特殊考勤导入</value>
+  </data>
+  <data name="hr_kq_kqbatchimport_aspx" xml:space="preserve">
+    <value>特殊考前导入</value>
+  </data>
+  <data name="hr_kq_kqdaily_aspx" xml:space="preserve">
+    <value>电子考勤</value>
+  </data>
+  <data name="hr_kq_kqdailyrule_aspx" xml:space="preserve">
+    <value>工作日设置</value>
+  </data>
+  <data name="hr_kq_kqmonthlydetail_aspx" xml:space="preserve">
+    <value>简易考勤明细</value>
+  </data>
+  <data name="hr_kq_kqmonthlyhead_aspx" xml:space="preserve">
+    <value>简易考勤一览表</value>
+  </data>
+  <data name="hr_kq_kqquery_aspx" xml:space="preserve">
+    <value>考勤查询</value>
+  </data>
+  <data name="hr_kq_kquserrule_aspx" xml:space="preserve">
+    <value>员工考勤设置</value>
+  </data>
+  <data name="hr_kq_kqusersetting_aspx" xml:space="preserve">
+    <value>考勤设置</value>
+  </data>
+  <data name="hr_kq_team_setting" xml:space="preserve">
+    <value>设定部门列表</value>
+  </data>
+  <data name="hr_kq_user_setting" xml:space="preserve">
+    <value>设定员工列表</value>
+  </data>
+  <data name="hr_leave_leavechangestate_aspx" xml:space="preserve">
+    <value>流程状态调整</value>
+  </data>
+  <data name="hr_leave_leaveform_aspx" xml:space="preserve">
+    <value>休假&amp;加班申请一览表</value>
+  </data>
+  <data name="hr_leave_leaveformdetail_aspx" xml:space="preserve">
+    <value>休假&amp;加班申请明细</value>
+  </data>
+  <data name="hr_leave_leaveinit_aspx" xml:space="preserve">
+    <value>休假初始化</value>
+  </data>
+  <data name="hr_leave_leaveinitimport_aspx" xml:space="preserve">
+    <value>休假数据导入</value>
+  </data>
+  <data name="hr_leave_leaveperiod_aspx" xml:space="preserve">
+    <value>休假期间设置</value>
+  </data>
+  <data name="hr_leave_leaveprocess_aspx" xml:space="preserve">
+    <value>休假工作流设置</value>
+  </data>
+  <data name="hr_leave_leaveprocessdetail_aspx" xml:space="preserve">
+    <value>休假工作流设置明细</value>
+  </data>
+  <data name="hr_leave_leavetype_aspx" xml:space="preserve">
+    <value>休假类型设置</value>
+  </data>
+  <data name="hr_leave_leaveversioncompare_aspx" xml:space="preserve">
+    <value>休假版本比较</value>
+  </data>
+  <data name="hr_notification" xml:space="preserve">
+    <value>通告</value>
+  </data>
+  <data name="hr_orgchart_teamdetail_aspx" xml:space="preserve">
+    <value>组织明细</value>
+  </data>
+  <data name="hr_orgchart_teamtree_aspx" xml:space="preserve">
+    <value>组织结构</value>
+  </data>
+  <data name="hr_pa_action_dailywork_plan" xml:space="preserve">
+    <value>日常工作执行计划列表</value>
+  </data>
+  <data name="hr_pa_action_dailywork_plan_check" xml:space="preserve">
+    <value>日常工作执行计划检查结果</value>
+  </data>
+  <data name="hr_pa_action_project" xml:space="preserve">
+    <value>项目执行计划列表</value>
+  </data>
+  <data name="hr_pa_action_project_check" xml:space="preserve">
+    <value>项目执行计划检查结果</value>
+  </data>
+  <data name="hr_pa_objective" xml:space="preserve">
+    <value>绩效目标列表</value>
+  </data>
+  <data name="hr_pa_paactiondailyworkplandetail_aspx" xml:space="preserve">
+    <value>日常工作类执行计划明细</value>
+  </data>
+  <data name="hr_pa_paactiondailyworkplanlist_aspx" xml:space="preserve">
+    <value>日常工作类执行计划列表</value>
+  </data>
+  <data name="hr_pa_paactionprojectdetail_aspx" xml:space="preserve">
+    <value>项目类执行计划明细</value>
+  </data>
+  <data name="hr_pa_paactionprojectlist_aspx" xml:space="preserve">
+    <value>项目类执行计划列表</value>
+  </data>
+  <data name="hr_pa_pachangeprocesslist_aspx" xml:space="preserve">
+    <value>绩效评估表状态管理</value>
+  </data>
+  <data name="hr_pa_pachangeprocessstatesearch_aspx" xml:space="preserve">
+    <value>绩效工作流改变状态</value>
+  </data>
+  <data name="hr_pa_paformdetail_aspx" xml:space="preserve">
+    <value>绩效评估表</value>
+  </data>
+  <data name="hr_pa_paformlist_aspx" xml:space="preserve">
+    <value>绩效评估一览表</value>
+  </data>
+  <data name="hr_pa_paformview_aspx" xml:space="preserve">
+    <value>查看主管的绩效目标</value>
+  </data>
+  <data name="hr_pa_paheadsetup_aspx" xml:space="preserve">
+    <value>绩效设置</value>
+  </data>
+  <data name="hr_pa_paobjectivedetail_aspx" xml:space="preserve">
+    <value>绩效目标明细</value>
+  </data>
+  <data name="hr_pa_paperiod_aspx" xml:space="preserve">
+    <value>绩效期间列表</value>
+  </data>
+  <data name="hr_pa_paperiodsetup_aspx" xml:space="preserve">
+    <value>绩效期间设置</value>
+  </data>
+  <data name="hr_pa_pausersetting_aspx" xml:space="preserve">
+    <value>绩效设置</value>
+  </data>
+  <data name="hr_pa_report_paratingreport_aspx" xml:space="preserve">
+    <value>绩效结果明细表</value>
+  </data>
+  <data name="hr_pa_report_pareport_aspx" xml:space="preserve">
+    <value>员工绩效报表</value>
+  </data>
+  <data name="hr_pa_report_pateamscoredetail_aspx" xml:space="preserve">
+    <value>部门考核评分明细报表</value>
+  </data>
+  <data name="hr_pa_report_pateamscorelist_aspx" xml:space="preserve">
+    <value>部门考核评分结果报表</value>
+  </data>
+  <data name="hr_pa_report_pateamstatusreport_aspx" xml:space="preserve">
+    <value>绩效考核进度表</value>
+  </data>
+  <data name="hr_pa_team_setting" xml:space="preserve">
+    <value>设定部门列表</value>
+  </data>
+  <data name="hr_pa_user_setting" xml:space="preserve">
+    <value>设定员工列表</value>
+  </data>
+  <data name="hr_pa360_pa360formdetail_aspx" xml:space="preserve">
+    <value>360度考评设置明细</value>
+  </data>
+  <data name="hr_pa360_pa360formlist_aspx" xml:space="preserve">
+    <value>360度考评设置一览表</value>
+  </data>
+  <data name="hr_pa360_pa360headdetail_aspx" xml:space="preserve">
+    <value>360度考评评分明细</value>
+  </data>
+  <data name="hr_pa360_pa360headlist_aspx" xml:space="preserve">
+    <value>360度考评评分一览表</value>
+  </data>
+  <data name="hr_pa360_report_pa360detailrpt_aspx" xml:space="preserve">
+    <value>360评分结果明细报表</value>
+  </data>
+  <data name="hr_pa360_report_pa360summaryrpt_aspx" xml:space="preserve">
+    <value>360评分结果汇总报表</value>
+  </data>
+  <data name="hr_pa360_report_pa360synthesizerpt_aspx" xml:space="preserve">
+    <value>360度评估结果分析表</value>
+  </data>
+  <data name="hr_paimprove_paimprovedetail_aspx" xml:space="preserve">
+    <value>绩效改进计划明细表</value>
+  </data>
+  <data name="hr_paimprove_paimprovelist_aspx" xml:space="preserve">
+    <value>绩效改进计划一览表</value>
+  </data>
+  <data name="hr_pateam_pateamformdetail_aspx" xml:space="preserve">
+    <value>部门考核设置明细</value>
+  </data>
+  <data name="hr_pateam_pateamformlist_aspx" xml:space="preserve">
+    <value>部门考核设置一览表</value>
+  </data>
+  <data name="hr_pateam_pateamheaddetail_aspx" xml:space="preserve">
+    <value>部门考评评分明细</value>
+  </data>
+  <data name="hr_pateam_pateamheadlist_aspx" xml:space="preserve">
+    <value>部门考评评分一览表</value>
+  </data>
+  <data name="hr_pateam_pateamprocessdetail_aspx" xml:space="preserve">
+    <value>部门述职报告明细</value>
+  </data>
+  <data name="hr_pateam_pateamprocesslist_aspx" xml:space="preserve">
+    <value>部门述职报告一览表</value>
+  </data>
+  <data name="hr_payroll_payperiod_payperioddetail_aspx" xml:space="preserve">
+    <value>薪资期间明细</value>
+  </data>
+  <data name="hr_payroll_payperiod_payperiodlist_aspx" xml:space="preserve">
+    <value>薪资期间列表</value>
+  </data>
+  <data name="hr_payroll_report_userpayinitrpt_aspx" xml:space="preserve">
+    <value>员工初始化项报表</value>
+  </data>
+  <data name="hr_payroll_report_userpaymonthlyrpt_aspx" xml:space="preserve">
+    <value>员工月度数据录入报表</value>
+  </data>
+  <data name="hr_payroll_report_userpayslipdiffrpt_aspx" xml:space="preserve">
+    <value>薪资差异报表</value>
+  </data>
+  <data name="hr_payroll_report_userpayslipitemrpt_aspx" xml:space="preserve">
+    <value>员工薪资录入报表</value>
+  </data>
+  <data name="hr_payroll_report_userpaysliprpt_aspx" xml:space="preserve">
+    <value>员工薪资报表</value>
+  </data>
+  <data name="hr_payroll_setup_payinititem_aspx" xml:space="preserve">
+    <value>初始化项</value>
+  </data>
+  <data name="hr_payroll_setup_paymonthlyitem_aspx" xml:space="preserve">
+    <value>每月收集数据项</value>
+  </data>
+  <data name="hr_payroll_setup_paysetdetail_aspx" xml:space="preserve">
+    <value>工资结构定义明细</value>
+  </data>
+  <data name="hr_payroll_setup_paysetlist_aspx" xml:space="preserve">
+    <value>工资结构定义</value>
+  </data>
+  <data name="hr_payroll_userpay_userpaydetail_aspx" xml:space="preserve">
+    <value>员工工资单明细</value>
+  </data>
+  <data name="hr_payroll_userpay_userpaylist_aspx" xml:space="preserve">
+    <value>员工工资单</value>
+  </data>
+  <data name="hr_payroll_userpay_userpaysetinitdetail_aspx" xml:space="preserve">
+    <value>初始化项录入明细</value>
+  </data>
+  <data name="hr_payroll_userpay_userpaysetinitlist_aspx" xml:space="preserve">
+    <value>初始化项录入</value>
+  </data>
+  <data name="hr_payroll_userpay_userpaysetmonthlydetail_aspx" xml:space="preserve">
+    <value>月度数据录入明细</value>
+  </data>
+  <data name="hr_payroll_userpay_userpaysetmonthlyexport_aspx" xml:space="preserve">
+    <value>导出模版</value>
+  </data>
+  <data name="hr_payroll_userpay_userpaysetmonthlyimport_aspx" xml:space="preserve">
+    <value>导入数据</value>
+  </data>
+  <data name="hr_payroll_userpay_userpaysetmonthlylist_aspx" xml:space="preserve">
+    <value>月度数据录入</value>
+  </data>
+  <data name="hr_payroll_userpay_userpayslipdetail_aspx" xml:space="preserve">
+    <value>员工工资录入明细</value>
+  </data>
+  <data name="hr_payroll_userpay_userpaysliplist_aspx" xml:space="preserve">
+    <value>员工工资录入</value>
+  </data>
+  <data name="hr_popup_usersearch_aspx" xml:space="preserve">
+    <value>员工查询</value>
+  </data>
+  <data name="hr_recruit_recruitjobissuedetail_aspx" xml:space="preserve">
+    <value>职位发布明细</value>
+  </data>
+  <data name="hr_recruit_recruitjobissuelist_aspx" xml:space="preserve">
+    <value>职位发布一览表</value>
+  </data>
+  <data name="hr_recruit_recruitresumedetail_aspx" xml:space="preserve">
+    <value>简历库明细</value>
+  </data>
+  <data name="hr_recruit_recruitresumelist_aspx" xml:space="preserve">
+    <value>简历库一览表</value>
+  </data>
+  <data name="hr_report_userroster_aspx" xml:space="preserve">
+    <value>员工报表</value>
+  </data>
+  <data name="hr_setup_costcenter_aspx" xml:space="preserve">
+    <value>成本中心定义</value>
+  </data>
+  <data name="hr_setup_jobstructure_aspx" xml:space="preserve">
+    <value>岗位定义</value>
+  </data>
+  <data name="hr_setup_jobstructuredetail_aspx" xml:space="preserve">
+    <value>岗位定义明细</value>
+  </data>
+  <data name="hr_setup_jobstructureimport_aspx" xml:space="preserve">
+    <value>岗位导入</value>
+  </data>
+  <data name="hr_setup_jobstructurelist_aspx" xml:space="preserve">
+    <value>岗位定义</value>
+  </data>
+  <data name="hr_setup_paystructure_aspx" xml:space="preserve">
+    <value>工资级别定义</value>
+  </data>
+  <data name="hr_setup_usermembertype_aspx" xml:space="preserve">
+    <value>员工编号类型定义</value>
+  </data>
+  <data name="hr_setup_workskilldetail_aspx" xml:space="preserve">
+    <value>素质模型明细</value>
+  </data>
+  <data name="hr_setup_workskilllist_aspx" xml:space="preserve">
+    <value>素质模型定义</value>
+  </data>
+  <data name="hr_teamdetail_aspx" xml:space="preserve">
+    <value>组织结构明细</value>
+  </data>
+  <data name="hr_teamuserdetail_aspx" xml:space="preserve">
+    <value>员工明细</value>
+  </data>
+  <data name="hr_teamusertree_aspx" xml:space="preserve">
+    <value>组织结构</value>
+  </data>
+  <data name="hr_training_setup_trainingcoursedetail_aspx" xml:space="preserve">
+    <value>课程定义明细</value>
+  </data>
+  <data name="hr_training_setup_trainingcourselist_aspx" xml:space="preserve">
+    <value>课程定义一览表</value>
+  </data>
+  <data name="hr_training_setup_trainingissuedetail_aspx" xml:space="preserve">
+    <value>课程发布明细</value>
+  </data>
+  <data name="hr_training_setup_trainingissuelist_aspx" xml:space="preserve">
+    <value>课程发布一览表</value>
+  </data>
+  <data name="hr_training_setup_trainingscheduledetail_aspx" xml:space="preserve">
+    <value>培训计划明细</value>
+  </data>
+  <data name="hr_training_setup_trainingschedulelist_aspx" xml:space="preserve">
+    <value>培训计划一览表</value>
+  </data>
+  <data name="hr_training_setup_trainingstructuredetail_aspx" xml:space="preserve">
+    <value>培训体系明细</value>
+  </data>
+  <data name="hr_training_setup_trainingstructuretree_aspx" xml:space="preserve">
+    <value>培训体系</value>
+  </data>
+  <data name="hr_training_structure_role" xml:space="preserve">
+    <value>培训对象</value>
+  </data>
+  <data name="hr_training_usertraining_trainingexternaldetail_aspx" xml:space="preserve">
+    <value>外部培训申请明细</value>
+  </data>
+  <data name="hr_training_usertraining_trainingexternallist_aspx" xml:space="preserve">
+    <value>外部培训申请一览表</value>
+  </data>
+  <data name="hr_training_usertraining_trainingformdetail_aspx" xml:space="preserve">
+    <value>课程申请明细</value>
+  </data>
+  <data name="hr_training_usertraining_trainingformlist_aspx" xml:space="preserve">
+    <value>课程申请一览表</value>
+  </data>
+  <data name="hr_training_usertraining_trainingrecheaddetail_aspx" xml:space="preserve">
+    <value>培训活动记录明细</value>
+  </data>
+  <data name="hr_training_usertraining_trainingrecheadlist_aspx" xml:space="preserve">
+    <value>培训活动记录一览表</value>
+  </data>
+  <data name="hr_user_bankinfo" xml:space="preserve">
+    <value>银行信息</value>
+  </data>
+  <data name="hr_user_contract" xml:space="preserve">
+    <value>用工信息</value>
+  </data>
+  <data name="hr_userinformationdetail_aspx" xml:space="preserve">
+    <value>员工明细</value>
+  </data>
+  <data name="hr_userinformationlist_aspx" xml:space="preserve">
+    <value>员工</value>
+  </data>
+  <data name="hr_userprofile_report_userinsurancelist_aspx" xml:space="preserve">
+    <value>意外险数据导出</value>
+  </data>
+  <data name="hr_userprofile_userdetail_aspx" xml:space="preserve">
+    <value>员工信息明细</value>
+  </data>
+  <data name="hr_userprofile_userlist_aspx" xml:space="preserve">
+    <value>员工列表</value>
+  </data>
+  <data name="hr_usertransfer_usertransferdetail_aspx" xml:space="preserve">
+    <value>员工岗位变动申请明细</value>
+  </data>
+  <data name="hr_usertransfer_usertransferlist_aspx" xml:space="preserve">
+    <value>员工岗位变动申请一览表</value>
+  </data>
+  <data name="hrweb_uploadfile_fileupload_aspx" xml:space="preserve">
+    <value>上传文件</value>
+  </data>
+  <data name="hyperactivity" xml:space="preserve">
+    <value>销售活动信息</value>
+  </data>
+  <data name="hypercase" xml:space="preserve">
+    <value>销售案例信息</value>
+  </data>
+  <data name="hypercompetitormif" xml:space="preserve">
+    <value>竞争对手信息</value>
+  </data>
+  <data name="hypercontact" xml:space="preserve">
+    <value>联系信息</value>
+  </data>
+  <data name="hyperestab" xml:space="preserve">
+    <value>客户信息</value>
+  </data>
+  <data name="idmpappendfile" xml:space="preserve">
+    <value>附加文件</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpappendinfo" xml:space="preserve">
+    <value>增加内容</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpcopylist" xml:space="preserve">
+    <value>抄送反馈列表</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpdelete" xml:space="preserve">
+    <value>删除</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="import" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="inputcopytofeedback" xml:space="preserve">
+    <value>填写抄送反馈意见</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="insert" xml:space="preserve">
+    <value>插入</value>
+  </data>
+  <data name="install_date" xml:space="preserve">
+    <value>装机日期</value>
+  </data>
+  <data name="journey_arrive_city" xml:space="preserve">
+    <value>到达城市</value>
+  </data>
+  <data name="journey_arrive_date" xml:space="preserve">
+    <value>到达时间</value>
+  </data>
+  <data name="journey_start_city" xml:space="preserve">
+    <value>始发城市</value>
+  </data>
+  <data name="journey_type" xml:space="preserve">
+    <value>行程类别</value>
+  </data>
+  <data name="jxc_arap_cxprepaydetail_aspx" xml:space="preserve">
+    <value>预付冲应付明细</value>
+  </data>
+  <data name="jxc_arap_cxprepaylinkdj_aspx" xml:space="preserve">
+    <value>预付冲应付关联单据列表</value>
+  </data>
+  <data name="jxc_arap_cxprepaylinkdjsearch_aspx" xml:space="preserve">
+    <value>预付冲应付关联单据查询</value>
+  </data>
+  <data name="jxc_arap_cxprepaylist_aspx" xml:space="preserve">
+    <value>预付冲应付一览表</value>
+  </data>
+  <data name="jxc_arap_cxprereceivedetail_aspx" xml:space="preserve">
+    <value>预收冲应收明细</value>
+  </data>
+  <data name="jxc_arap_cxprereceivelinkdj_aspx" xml:space="preserve">
+    <value>预收冲应收关联单据列表</value>
+  </data>
+  <data name="jxc_arap_cxprereceivelinkdjsearch_aspx" xml:space="preserve">
+    <value>预收冲应收关联单据查询</value>
+  </data>
+  <data name="jxc_arap_cxprereceivelist_aspx" xml:space="preserve">
+    <value>预收冲应收一览表</value>
+  </data>
+  <data name="jxc_arap_jxcotherpaydetail_aspx" xml:space="preserve">
+    <value>其它应付单明细</value>
+  </data>
+  <data name="jxc_arap_jxcotherpaylist_aspx" xml:space="preserve">
+    <value>其它应付单一览表</value>
+  </data>
+  <data name="jxc_arap_jxcotherreceivedetail_aspx" xml:space="preserve">
+    <value>其它业务收款单明细</value>
+  </data>
+  <data name="jxc_arap_jxcpaydetail_aspx" xml:space="preserve">
+    <value>付款单明细</value>
+  </data>
+  <data name="jxc_arap_jxcpaylinkdj_aspx" xml:space="preserve">
+    <value>付款单关联单据列表</value>
+  </data>
+  <data name="jxc_arap_jxcpaylinkdjsearch_aspx" xml:space="preserve">
+    <value>付款单关联单据查询</value>
+  </data>
+  <data name="jxc_arap_jxcpaylist_aspx" xml:space="preserve">
+    <value>付款单一览表</value>
+  </data>
+  <data name="jxc_arap_jxcreceivedetail_aspx" xml:space="preserve">
+    <value>收款单明细</value>
+  </data>
+  <data name="jxc_arap_jxcreceivelinkdj_aspx" xml:space="preserve">
+    <value>收款单关联单据列表</value>
+  </data>
+  <data name="jxc_arap_jxcreceivelinkdjsearch_aspx" xml:space="preserve">
+    <value>收款单关联单据查询</value>
+  </data>
+  <data name="jxc_arap_otherreceivelist_aspx" xml:space="preserve">
+    <value>其他业务收款单一览表</value>
+  </data>
+  <data name="jxc_arap_prepaydetail_aspx" xml:space="preserve">
+    <value>预付款明细</value>
+  </data>
+  <data name="jxc_arap_prepaylist_aspx" xml:space="preserve">
+    <value>预付款一览表</value>
+  </data>
+  <data name="jxc_arap_prereceivedetail_aspx" xml:space="preserve">
+    <value>预收款明细</value>
+  </data>
+  <data name="jxc_arap_prereceivelist_aspx" xml:space="preserve">
+    <value>预收款一览表</value>
+  </data>
+  <data name="jxc_base_wflchangestate_aspx" xml:space="preserve">
+    <value>流程状态调整</value>
+  </data>
+  <data name="jxc_bom_jxcbomdetail_aspx" xml:space="preserve">
+    <value>物料清单明细</value>
+  </data>
+  <data name="jxc_bom_jxcbomlist_aspx" xml:space="preserve">
+    <value>物料清单一览表</value>
+  </data>
+  <data name="jxc_cg_jxccgbcjdetail_aspx" xml:space="preserve">
+    <value>采购补差价单明细</value>
+  </data>
+  <data name="jxc_cg_jxccgbcjlist_aspx" xml:space="preserve">
+    <value>采购补差价单一览表</value>
+  </data>
+  <data name="jxc_cg_jxccgdetail_aspx" xml:space="preserve">
+    <value>采购单明细</value>
+  </data>
+  <data name="jxc_cg_jxccgdetailv2_aspx" xml:space="preserve">
+    <value>采购单明细</value>
+  </data>
+  <data name="jxc_cg_jxccgfpdetail_aspx" xml:space="preserve">
+    <value>采购发票单明细</value>
+  </data>
+  <data name="jxc_cg_jxccgfpdetailv2_aspx" xml:space="preserve">
+    <value>采购发票单明细</value>
+  </data>
+  <data name="jxc_cg_jxccgfplinkdj_aspx" xml:space="preserve">
+    <value>采购发票关联单据列表</value>
+  </data>
+  <data name="jxc_cg_jxccgfplinkdjsearch_aspx" xml:space="preserve">
+    <value>采购发票关联单据查询</value>
+  </data>
+  <data name="jxc_cg_jxccgfplist_aspx" xml:space="preserve">
+    <value>采购发票单一览表</value>
+  </data>
+  <data name="jxc_cg_jxccgfplistv2_aspx" xml:space="preserve">
+    <value>采购发票单一览表</value>
+  </data>
+  <data name="jxc_cg_jxccgjhdetail_aspx" xml:space="preserve">
+    <value>采购计划单明细</value>
+  </data>
+  <data name="jxc_cg_jxccgjhdetailv2_aspx" xml:space="preserve">
+    <value>采购计划明细</value>
+  </data>
+  <data name="jxc_cg_jxccgjhlist_aspx" xml:space="preserve">
+    <value>采购计划单一览表</value>
+  </data>
+  <data name="jxc_cg_jxccgjhlistv2_aspx" xml:space="preserve">
+    <value>采购计划一览表</value>
+  </data>
+  <data name="jxc_cg_jxccgjhsplit_aspx" xml:space="preserve">
+    <value>供应商物料拆分/合并</value>
+  </data>
+  <data name="jxc_cg_jxccglist_aspx" xml:space="preserve">
+    <value>采购单一览表</value>
+  </data>
+  <data name="jxc_cg_jxccglistv2_aspx" xml:space="preserve">
+    <value>采购单一览表</value>
+  </data>
+  <data name="jxc_cg_jxccglxqgdetail_aspx" xml:space="preserve">
+    <value>非项目请购单明细</value>
+  </data>
+  <data name="jxc_cg_jxccglxqglist_aspx" xml:space="preserve">
+    <value>非项目请购单一览表</value>
+  </data>
+  <data name="jxc_cg_jxccgqgdetail_aspx" xml:space="preserve">
+    <value>采购请购单明细</value>
+  </data>
+  <data name="jxc_cg_jxccgqglist_aspx" xml:space="preserve">
+    <value>采购请购单一览表</value>
+  </data>
+  <data name="jxc_cg_jxccgrkdetail_aspx" xml:space="preserve">
+    <value>采购入库单明细</value>
+  </data>
+  <data name="jxc_cg_jxccgrklist_aspx" xml:space="preserve">
+    <value>采购入库单一览表</value>
+  </data>
+  <data name="jxc_cg_jxccgtckdetail_aspx" xml:space="preserve">
+    <value>采购退回出库单明细</value>
+  </data>
+  <data name="jxc_cg_jxccgtcklist_aspx" xml:space="preserve">
+    <value>采购退回出库单一览表</value>
+  </data>
+  <data name="jxc_cg_jxccgtdetail_aspx" xml:space="preserve">
+    <value>采购退回单明细</value>
+  </data>
+  <data name="jxc_cg_jxccgtlist_aspx" xml:space="preserve">
+    <value>采购退回单一览表</value>
+  </data>
+  <data name="jxc_cg_jxcdlcgrkdetail_aspx" xml:space="preserve">
+    <value>电缆采购入库单明细</value>
+  </data>
+  <data name="jxc_cg_jxcdlcgrklist_aspx" xml:space="preserve">
+    <value>电缆采购入库单一览表</value>
+  </data>
+  <data name="jxc_cg_jxcdlcgtckdetail_aspx" xml:space="preserve">
+    <value>电缆采购退回出库单明细表</value>
+  </data>
+  <data name="jxc_cg_jxcdlcgtcklist_aspx" xml:space="preserve">
+    <value>电缆采购退回出库单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcdbckdetail_aspx" xml:space="preserve">
+    <value>调拨出库单明细</value>
+  </data>
+  <data name="jxc_ck_jxcdbcklist_aspx" xml:space="preserve">
+    <value>调拨出库单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcdbdetail_aspx" xml:space="preserve">
+    <value>调拨单明细</value>
+  </data>
+  <data name="jxc_ck_jxcdblist_aspx" xml:space="preserve">
+    <value>调拨单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcdbrkdetail_aspx" xml:space="preserve">
+    <value>调拨入库单明细</value>
+  </data>
+  <data name="jxc_ck_jxcdbrklist_aspx" xml:space="preserve">
+    <value>调拨入库单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcdllloutdetail_aspx" xml:space="preserve">
+    <value>电缆领料出库单明细表</value>
+  </data>
+  <data name="jxc_ck_jxcdllloutlist_aspx" xml:space="preserve">
+    <value>电缆领料出库单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcdllltrkdetail_aspx" xml:space="preserve">
+    <value>电缆退料入库单明细表</value>
+  </data>
+  <data name="jxc_ck_jxcdllltrklist_aspx" xml:space="preserve">
+    <value>电缆退料入库单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcdlpddetail_aspx" xml:space="preserve">
+    <value>电缆盘点单明细表</value>
+  </data>
+  <data name="jxc_ck_jxcdlpdlist_aspx" xml:space="preserve">
+    <value>电缆盘点单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcfzlldetail_aspx" xml:space="preserve">
+    <value>辅助材料领料单明细</value>
+  </data>
+  <data name="jxc_ck_jxcfzlllist_aspx" xml:space="preserve">
+    <value>辅助材料领料单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcjglldetail_aspx" xml:space="preserve">
+    <value>加工领料单明细</value>
+  </data>
+  <data name="jxc_ck_jxcjglllist_aspx" xml:space="preserve">
+    <value>加工领料单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcjgwgdetail_aspx" xml:space="preserve">
+    <value>加工完工单明细</value>
+  </data>
+  <data name="jxc_ck_jxcjgwglist_aspx" xml:space="preserve">
+    <value>加工完工单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcjgwgrkdetail_aspx" xml:space="preserve">
+    <value>加工入库单明细</value>
+  </data>
+  <data name="jxc_ck_jxcjgwgrklist_aspx" xml:space="preserve">
+    <value>加工入库单一览表</value>
+  </data>
+  <data name="jxc_ck_jxclldetail_aspx" xml:space="preserve">
+    <value>项目领料单明细</value>
+  </data>
+  <data name="jxc_ck_jxcllindetail_aspx" xml:space="preserve">
+    <value>加工入库单明细</value>
+  </data>
+  <data name="jxc_ck_jxcllinlist_aspx" xml:space="preserve">
+    <value>加工入库单一览表</value>
+  </data>
+  <data name="jxc_ck_jxclllist_aspx" xml:space="preserve">
+    <value>项目领料单一览表</value>
+  </data>
+  <data name="jxc_ck_jxclloutdetail_aspx" xml:space="preserve">
+    <value>领料出库单明细</value>
+  </data>
+  <data name="jxc_ck_jxclloutlist_aspx" xml:space="preserve">
+    <value>领料出库单一览表</value>
+  </data>
+  <data name="jxc_ck_jxclltdetail_aspx" xml:space="preserve">
+    <value>退料单明细</value>
+  </data>
+  <data name="jxc_ck_jxclltlist_aspx" xml:space="preserve">
+    <value>退料单一览表</value>
+  </data>
+  <data name="jxc_ck_jxclltotherdetail_aspx" xml:space="preserve">
+    <value>其他退料单明细</value>
+  </data>
+  <data name="jxc_ck_jxclltotherlist_aspx" xml:space="preserve">
+    <value>其他退料单一览表</value>
+  </data>
+  <data name="jxc_ck_jxclltrkdetail_aspx" xml:space="preserve">
+    <value>退料入库单明细</value>
+  </data>
+  <data name="jxc_ck_jxclltrklist_aspx" xml:space="preserve">
+    <value>退料入库单一览表</value>
+  </data>
+  <data name="jxc_ck_jxcpddetail_aspx" xml:space="preserve">
+    <value>盘点单明细</value>
+  </data>
+  <data name="jxc_ck_jxcpdlist_aspx" xml:space="preserve">
+    <value>盘点单一览表</value>
+  </data>
+  <data name="jxc_ck_jxctjdetail_aspx" xml:space="preserve">
+    <value>调价单明细</value>
+  </data>
+  <data name="jxc_ck_jxctjlist_aspx" xml:space="preserve">
+    <value>调价单一览表</value>
+  </data>
+  <data name="jxc_cp_jxccpfxdetail_aspx" xml:space="preserve">
+    <value>产品返修单明细</value>
+  </data>
+  <data name="jxc_cp_jxccpfxlist_aspx" xml:space="preserve">
+    <value>产品返修单一览表</value>
+  </data>
+  <data name="jxc_cp_jxccptestdetail_aspx" xml:space="preserve">
+    <value>产品试验单明细</value>
+  </data>
+  <data name="jxc_cp_jxccptestlist_aspx" xml:space="preserve">
+    <value>产品试验单一览表</value>
+  </data>
+  <data name="jxc_cp_jxccpwgdetail_aspx" xml:space="preserve">
+    <value>产品完工单明细</value>
+  </data>
+  <data name="jxc_cp_jxccpwglist_aspx" xml:space="preserve">
+    <value>产品完工单一览表</value>
+  </data>
+  <data name="jxc_cp_jxccpwgrkdetail_aspx" xml:space="preserve">
+    <value>成品入库单明细</value>
+  </data>
+  <data name="jxc_cp_jxccpwgrklist_aspx" xml:space="preserve">
+    <value>成品入库单一览表</value>
+  </data>
+  <data name="jxc_cp_jxccpzljydetail_aspx" xml:space="preserve">
+    <value>产品检验单明细</value>
+  </data>
+  <data name="jxc_cp_jxccpzljylist_aspx" xml:space="preserve">
+    <value>产品检验单一览表</value>
+  </data>
+  <data name="jxc_cp_jxcdlcpwgrkdetail_aspx" xml:space="preserve">
+    <value>电缆成品入库单明细表</value>
+  </data>
+  <data name="jxc_cp_jxcdlcpwgrklist_aspx" xml:space="preserve">
+    <value>电缆成品入库单一览表</value>
+  </data>
+  <data name="jxc_cp_jxcdlcpzljydetail_aspx" xml:space="preserve">
+    <value>电缆检验单明细</value>
+  </data>
+  <data name="jxc_cp_jxcdlcpzljylist_aspx" xml:space="preserve">
+    <value>电缆检验单一览表</value>
+  </data>
+  <data name="jxc_cp_jxcdlwgdetail_aspx" xml:space="preserve">
+    <value>电缆完工单明细</value>
+  </data>
+  <data name="jxc_cp_jxcdlwglist_aspx" xml:space="preserve">
+    <value>电缆完工单一览表</value>
+  </data>
+  <data name="jxc_cp_jxcdlzljydetail_aspx" xml:space="preserve">
+    <value>电缆质量检验单明细表</value>
+  </data>
+  <data name="jxc_cp_jxcdlzljylist_aspx" xml:space="preserve">
+    <value>电缆质量检验单一览表</value>
+  </data>
+  <data name="jxc_cp_jxczljydetail_aspx" xml:space="preserve">
+    <value>质量检验单明细</value>
+  </data>
+  <data name="jxc_cp_jxczljylist_aspx" xml:space="preserve">
+    <value>质量检验单一览表</value>
+  </data>
+  <data name="jxc_jx_jxcjxdetail_aspx" xml:space="preserve">
+    <value>检修单明细</value>
+  </data>
+  <data name="tabasrv" xml:space="preserve">
+    <value>小车信息</value>
+  </data>
+  <data name="tabasrvstatus" xml:space="preserve">
+    <value>小车状态</value>
+  </data>
+  <data name="tabcell" xml:space="preserve">
+    <value>格子信息</value>
+  </data>
+  <data name="tabfloor" xml:space="preserve">
+    <value>楼层信息</value>
+  </data>
+  <data name="tablift" xml:space="preserve">
+    <value>电梯信息</value>
+  </data>
+  <data name="wcs_asrv_asrvdetail_aspx" xml:space="preserve">
+    <value>小车明细</value>
+  </data>
+  <data name="wcs_asrv_asrvlist_aspx" xml:space="preserve">
+    <value>小车一览表</value>
+  </data>
+  <data name="wcs_wh_floordetail_aspx" xml:space="preserve">
+    <value>楼层明细</value>
+  </data>
+  <data name="wcs_wh_wcsstatus_aspx" xml:space="preserve">
+    <value>状态定义</value>
+  </data>
+  <data name="wcs_wh_whdetail_aspx" xml:space="preserve">
+    <value>仓库明细</value>
+  </data>
+  <data name="wcs_wh_whlist_aspx" xml:space="preserve">
+    <value>仓库一览表</value>
+  </data>
+  <data name="TabAsrvPic" xml:space="preserve">
+    <value>小车示意图</value>
+  </data>
+  <data name="RemoteControl" xml:space="preserve">
+    <value>遥控器</value>
+  </data>
+  <data name="WCS_asrv_RemoteControl_aspx" xml:space="preserve">
+    <value>遥控器</value>
+  </data>
+  <data name="TabAsrvError" xml:space="preserve">
+    <value>故障信息</value>
+  </data>
+  <data name="wcs_wh_equipmenttype_aspx" xml:space="preserve">
+    <value>设备类型定义</value>
+  </data>
+  <data name="tabequipment" xml:space="preserve">
+    <value>仓库设备</value>
+  </data>
+  <data name="WCS_wh_EquipmentDetail_aspx" xml:space="preserve">
+    <value>设备明细</value>
+  </data>
+  <data name="WCS_wh_EquipmentList_aspx" xml:space="preserve">
+    <value>设备一览表</value>
+  </data>
+  <data name="tablinkin" xml:space="preserve">
+    <value>入库设备链</value>
+  </data>
+  <data name="tablinkout" xml:space="preserve">
+    <value>出库设备链</value>
+  </data>
+</root>

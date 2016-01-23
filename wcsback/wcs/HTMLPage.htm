@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+<script type="text/javascript">
+alert(f_tobitsNumber(3454.188034*28,2));
+alert(f_tobitsNumber(1234.175,2));
+
+function f_tobitsNumber(flt,length) 
+{ 
+  //  return Math.round((parseFloat(flt)*Math.pow(10,length)).toFixed(length))/Math.pow(10,length) ;   
+    //return (parseFloat(flt)).toFixed(length);//IE 5.5,String
+     return Math.round(parseFloat(flt)*Math.pow(10,length))/Math.pow(10,length) ;   
+} 
+
+</script>
+</head>
+
+<body>
+
+</body>
+</html>

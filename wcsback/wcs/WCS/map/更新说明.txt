@@ -1,0 +1,12 @@
+MapLeftMenu.aspx
+MapLeftMenu.aspx.cs
+MapWh.aspx
+MapWh.aspx.cs
+覆盖在wcs\map 下
+LeftWindowScript.js
+覆盖在wcs\map\js 下
+WsSetup.cs
+覆盖在根目录APP_CODE文件夹下
+
+
+其他存储过程执行就行了

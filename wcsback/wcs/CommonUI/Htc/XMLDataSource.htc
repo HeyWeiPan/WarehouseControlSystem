@@ -1,0 +1,88 @@
+<public:component  tagName="xmlds"  literalcontent="true">
+<public:attach event=ondocumentready onevent="getready()" />
+
+<public:property name="async"  GET="g_async" put="p_async" />
+<public:property name="src"  PUT="p_xmlurl" />
+<public:property name="iscomplete" GET = "g_iscomplete"/>
+<public:property name="xmldocument" GET = "g_objDocument"/>
+<public:property name="datasource"  GET="g_xmlsourcestring" />
+<public:event name="ondataload" id="evDataload" />
+</public:component >
+<SCRIPT LANGUAGE="javascript">
+var xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+//var xmlHttp = new ActiveXObject("Microsoft.XMLHTTP.4.0");
+var _async = true;
+var _XMLSource = "_data";
+var _xmlurl = "";
+var _bcomplete = false;
+var _objDoc ;
+
+function g_async(){
+	return _async;
+}
+function p_async(val){
+	if (val.toLowerCase() == "true")
+		_async = true;
+	else
+		_async = false;
+}
+
+function g_objDocument(){
+	return _objDoc;
+}
+
+function g_iscomplete(){
+	return _bcomplete
+}
+function p_xmlurl(val){
+	_xmlurl = val;
+}
+function g_xmlsourcestring(){
+	return "#" + _XMLSource
+}
+function contentready(){
+	_XMLSource = element.id + _XMLSource 
+	_xmlObj = window.document.createElement("<xml id='" + _XMLSource + "'>");
+	
+	window.document.body.appendChild(_xmlObj);
+	_objDoc = _xmlObj.XMLDocument;
+	_objDoc.onreadystatechange= new Function("onloadstatechange()");     
+
+}
+
+function getready(){
+	contentready()
+	getData();
+}
+
+
+function getData(){
+	if("" == _xmlurl)
+		return ;
+
+	xmlHttp.open("get", _xmlurl, _async);
+	
+
+	xmlHttp.send();
+}
+
+
+function onloadstatechange(){
+	if((4==_objDoc.readyState ||"complete" == _objDoc.readyState) && !_bcomplete){
+		_objDoc.setProperty("SelectionLanguage", "XPath");
+		_bcomplete=true;
+		evDataload.fire(createEventObject());
+	}
+
+}
+
+xmlHttp.onreadystatechange = function onStateChange() {
+    var s = xmlHttp.readyState;
+    if (4 == s) {
+        if (!_objDoc.loadXML(xmlHttp.responseText)) {
+            alert("无法加载XML数据：\n" + xmlHttp.responseText);
+        };
+    }
+}     
+
+</SCRIPT>

@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterMessageList.master.cs"
+    Inherits="CommonUI_MasterPage_MasterMessageList" %>
+
+<%@ Register Assembly="EntpClass.WebControlLib" Namespace="EntpClass.WebControlLib"
+    TagPrefix="cc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <script type="text/javascript">
+        function SetPager(v) {
+            document.getElementById('HidPagerArgument').value = v;
+            __doPostBack('', '');
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="right" style="display: inline;">
+        <asp:ContentPlaceHolder ID="C1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <table id="TabHome" cellpadding="0" cellspacing="0" border="0" style="table-layout: fixed;
+        width: 100%; height: 92%; display: inline; padding: 0px 10px 0px 10px;">
+        <col width="15%" style="vertical-align: top;" />
+        <col width="85%" style="vertical-align: top; padding-left: 1px;" />
+        <tr>
+            <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="height: 100%;
+                    margin: 0 0 0 0; padding: 0 0 0 0;">
+                    <colgroup>
+                        <col width="5px" />
+                        <col style="vertical-align: top;" />
+                        <col width="5px" />
+                    </colgroup>
+                    <tr>
+                        <td style="background: url(images/one_06.jpg) no-repeat; height: 5px;">
+                        </td>
+                        <td style="background: url(images/one_13.jpg) repeat-x;">
+                        </td>
+                        <td style="background: url(images/one_08.jpg) no-repeat; height: 5px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background: url(images/one_11.jpg) repeat-y;">
+                        </td>
+                        <td style="background: url(images/one_15.jpg) no-repeat;">
+                            <asp:ContentPlaceHolder ID="C4" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td style="background: url(images/one_12.jpg) repeat-y;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background: url(images/one_07.jpg) no-repeat; height: 5px;">
+                        </td>
+                        <td style="background: url(images/one_14.jpg) repeat-x;">
+                        </td>
+                        <td style="background: url(images/one_09.jpg) no-repeat; height: 5px;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="height: 100%;
+                    margin: 0 0 0 0; padding: 0 0 0 0; display: inline;">
+                    <colgroup>
+                        <col width="5px" />
+                        <col style="vertical-align: top;" />
+                        <col width="5px" />
+                    </colgroup>
+                    <tr>
+                        <td style="background: url(images/one_06.jpg) no-repeat; height: 5px;">
+                        </td>
+                        <td style="background: url(images/one_13.jpg) repeat-x;">
+                        </td>
+                        <td style="background: url(images/one_08.jpg) no-repeat; height: 5px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background: url(images/one_11.jpg) repeat-y;">
+                        </td>
+                        <td style="background: url(images/one_15.jpg) no-repeat;">                          
+                            <asp:ContentPlaceHolder ID="C2" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <table style="width: 100%; display: inline; table-layout: fixed;" cellpadding="0"
+                                cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <asp:ContentPlaceHolder ID="C3" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="overflow: auto; width: 99%;" id="divScrollGrid">
+                                            <cc1:UcGridView ID="GridList" runat="server" IsSelectable="True" AutoGenerateColumns="False"
+                                                Width="100%" AllowSorting="True" AllowPaging="False" EnableViewState="False"
+                                                OnClientRowDblClick='ShowDetail()' ShowFooter="True">
+                                                <HeaderStyle HorizontalAlign="Left" />
+                                            </cc1:UcGridView>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table id="tablePagging" runat="server" cellpadding="0" cellspacing="0" style="width: 99%;
+                                            table-layout: fixed; border-left: 1px solid #E0E6F8; border-right: 1px solid #A4A4A4;
+                                            border-bottom: 1px solid #A4A4A4;">
+                                            <tr>
+                                                <td style="background-color: #F0F8FF;">
+                                                    <table>
+                                                        <tr>
+                                                            <td align="left">
+                                                                <asp:HyperLink ID="LinkFirst" runat="server" NavigateUrl="javascript:SetPager('First');"
+                                                                    Font-Size="9pt">首页</asp:HyperLink>
+                                                                |<asp:HyperLink ID="LinkPrev" runat="server" NavigateUrl="javascript:SetPager('Prev');"
+                                                                    Font-Size="9pt">前一页</asp:HyperLink>
+                                                                [
+                                                            </td>
+                                                            <td align="left">
+                                                                <asp:DataList ID="NavigateList" runat="server" RepeatDirection="Horizontal" Font-Size="9pt">
+                                                                    <ItemTemplate>
+                                                                        <asp:HyperLink ID="LinkButton" runat="server" Text='<%# Container.DataItem %>' NavigateUrl='<%# GetNavigate(Container.DataItem) %>'
+                                                                            Font-Size="9pt"></asp:HyperLink>
+                                                                    </ItemTemplate>
+                                                                </asp:DataList>
+                                                            </td>
+                                                            <td align="left">
+                                                                ] |<asp:HyperLink ID="LinkNext" runat="server" NavigateUrl="javascript:SetPager('Next');"
+                                                                    Font-Size="9pt">下一页</asp:HyperLink>
+                                                                |<asp:HyperLink ID="LinkLast" runat="server" NavigateUrl="javascript:SetPager('Last');"
+                                                                    Font-Size="9pt">最后一页</asp:HyperLink>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td align="right" style="background-color: #F0F8FF;">
+                                                    <asp:Label ID="LabCaption" runat="server" Font-Size="9pt" Text="Total Rows:" Font-Bold="True"
+                                                        ForeColor="DarkBlue"></asp:Label>
+                                                    <asp:Label ID="lblNavigate" runat="server" Font-Size="9pt" Text="跳转：" Font-Bold="True"
+                                                        ForeColor="DarkBlue"></asp:Label>
+                                                    <cc1:UcTextBox ID="txtNavigate" ClientIDMode="Static" runat="server" Width="34px" />
+                                                    <cc1:UcButton ID="btnGO" runat="server" ColumnName="Go" OnClick="btnGO_Click" OnClientClick="if (!checkNavigate()) return false;"
+                                                        Width="27px" Text="Go" />
+                                                    <asp:Label ID="ForPage" runat="server" Font-Size="9pt" Text="每页：" Font-Bold="True"
+                                                        ForeColor="DarkBlue"></asp:Label>
+                                                    <asp:DropDownList ID="ddlPageRows" ClientIDMode="Static" runat="server" AutoPostBack="true">
+                                                        <asp:ListItem Text="10" Value="10" Selected="True"></asp:ListItem>
+                                                        <asp:ListItem Text="15" Value="15"></asp:ListItem>
+                                                        <asp:ListItem Text="20" Value="20"></asp:ListItem>
+                                                        <asp:ListItem Text="25" Value="25"></asp:ListItem>
+                                                        <asp:ListItem Text="30" Value="30"></asp:ListItem>
+                                                        <asp:ListItem Text="35" Value="35"></asp:ListItem>
+                                                        <asp:ListItem Text="40" Value="40"></asp:ListItem>
+                                                        <asp:ListItem Text="50" Value="50"></asp:ListItem>
+                                                    </asp:DropDownList>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <asp:HiddenField ID="hiddenAllSortColumns" ClientIDMode="Static" runat="server" />
+                            <asp:HiddenField ID="hiddenMultiSortColumns" ClientIDMode="Static" runat="server" />
+                            <asp:HiddenField ID="HidPagerArgument" ClientIDMode="Static" Value="1" runat="server" />
+                        </td>
+                        <td style="background: url(images/one_12.jpg) repeat-y;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background: url(images/one_07.jpg) no-repeat; height: 5px;">
+                        </td>
+                        <td style="background: url(images/one_14.jpg) repeat-x;">
+                        </td>
+                        <td style="background: url(images/one_09.jpg) no-repeat; height: 5px;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

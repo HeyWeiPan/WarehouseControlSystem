@@ -1,0 +1,104 @@
+﻿body
+{
+}
+
+.TabBlueLink
+{
+    text-decoration: none;
+    color:White;
+    font-size: 11pt;
+    font-family: 黑体;
+    
+}
+
+.TabBlueLeft
+{
+    background-image: url(../../../Home/Images/tab_green_left.png);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 22px;
+}
+.TabBlueBody
+{
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 11pt;
+    font-family: 黑体;
+    background: url(../../../Home/Images/tab_green_m.png) repeat;
+}
+.TabBlueRight
+{
+    background-image: url(../../../Home/Images/tab_green_right.png);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 22px;
+}
+
+
+.TabWhiteLink
+{
+    text-decoration: none;
+    color: Black;
+    font-size: 11pt;
+    font-family: 黑体;
+    
+}
+
+.TabWhiteLeft
+{
+    background-image: url(../../../Home/Images/tab_white_left.png);
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 22px;
+}
+.TabWhiteBody
+{
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 11pt;
+    font-family: 黑体;
+    background: url(../../../Home/Images/tab_white_m.png) repeat;
+    
+}
+.TabWhiteRight
+{
+    background-image: url(../../../Home/Images/tab_white_right.png);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 22px;
+}
+
+.TabLeft
+{
+    background-image: url(images/headtable_l2.jpg);
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 25px;
+}
+.TabBody
+{
+    background-image: url(images/headtable_bg2.jpg);
+    background-repeat: repeat;
+    height: 25px;
+    text-align: center;
+}
+.TabRight
+{
+    background-image: url(images/headtable_r2.jpg);
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 25px;
+}
+.ContainerBorder
+{
+    border-right: dimgray 1px solid;
+    border-top: dimgray 1px solid;
+    border-left: dimgray 1px solid;
+    border-bottom: dimgray 1px solid;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}

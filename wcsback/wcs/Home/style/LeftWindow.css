@@ -1,0 +1,58 @@
+﻿    body
+        {
+            background: #f0f0f0 url(../images/sidebar_bg.gif) repeat-y right top;
+        }
+        
+        
+        .btn_jiantou
+        {
+            width: 18px;
+            height: 102px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -52px;
+            background: url(../images/move_left.png) no-repeat left top;
+            cursor: pointer;
+        }
+        
+        .form
+        {
+            height: 29px;
+            width: 100%;
+            padding-top: 3px;
+            text-align: center;
+            background: url('../images/search_bg.jpg') repeat-x left top;
+        }
+        .input
+        {
+            width: 212px;
+            height: 20px;
+            line-height: 20px;
+            border: 1px solid #ccc;
+        }
+        .btns
+        {
+            width: 60px;
+            color: #333;
+            height: 26px;
+            background: url('../images/btn_green.gif') no-repeat left top;
+            border: 0;
+            cursor: pointer;
+        }
+        .btn_hover
+        {
+            width: 60px;
+            height: 26px;
+            color: #fff;
+            cursor: pointer;
+            border: 0;
+            background: url(../images/btn_green2.gif) no-repeat left top;
+            text-decoration: none;
+        }
+        
+        #sidebar_nav
+        {
+            padding: 15px 5px 0 13px;
+            background: url('../images/sidebar_bg2.gif') no-repeat left top;
+        }

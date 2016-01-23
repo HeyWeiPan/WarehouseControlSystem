@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBAD9CD7-AF1A-4C30-94A0-0B7031CD25B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SqlServer</RootNamespace>
+    <AssemblyName>SqlServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>%24/wcs/SqlServer</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://tfs2010:8080/tfs/defaultcollection</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ASRVTopView\xx.png" />
+    <Content Include="ASRVTopView\xy.png" />
+    <Content Include="ASRVTopView\yx.png" />
+    <Content Include="ASRVTopView\yy.png" />
+    <Content Include="ASRVTopView\货道X移动X.png" />
+    <Content Include="ASRVTopView\货道X移动Y.png" />
+    <Content Include="ASRVTopView\货道Y移动X.png" />
+    <Content Include="ASRVTopView\货道Y移动Y.png" />
+    <Content Include="DataImport\DeleteTestData.sql" />
+    <Content Include="DataImport\OldContract.sql" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Functions\wcs.CalculateRouteRight.sql" />
+    <Content Include="Functions\wcs.GetCmdRoute.sql" />
+    <Content Include="iptool\IpTool网络抓包工具\chartdir40.dll" />
+    <Content Include="iptool\IpTool网络抓包工具\config\Packet.dll" />
+    <Content Include="iptool\IpTool网络抓包工具\Decode.dll" />
+    <Content Include="iptool\IpTool网络抓包工具\Infoapi.dll" />
+    <Content Include="iptool\IpTool网络抓包工具\IPAnalyse.exe" />
+    <Content Include="iptool\IpTool网络抓包工具\JmLib.dll" />
+    <Content Include="iptool\IpTool网络抓包工具\Packet.dll" />
+    <Content Include="iptool\IpTool网络抓包工具\TrackNet.dll" />
+    <Content Include="iptool\IpTool网络抓包工具\wlgx.dll" />
+    <Content Include="iptool\IpTool网络抓包工具\使用说明文档.txt" />
+    <Content Include="Programmability\PA.SearchFunction.sql" />
+    <Content Include="Programmability\wcs.AddCellDirection.sql" />
+    <Content Include="Programmability\WCS.CalcTaskLevel.sql" />
+    <Content Include="Programmability\WCS.ClearCellsDirection.sql" />
+    <Content Include="Programmability\WCS.CycleMode.sql" />
+    <Content Include="Programmability\WCS.DeleteCmd.sql" />
+    <Content Include="Programmability\WCS.GetActionType.sql" />
+    <Content Include="Programmability\WCS.GetAsrvParameter.sql" />
+    <Content Include="Programmability\WCS.GetAsrvStatus.sql" />
+    <Content Include="Programmability\wcs.GetCmdId.sql" />
+    <Content Include="Programmability\WCS.GetCommonAToBStepNum.sql" />
+    <Content Include="Programmability\WCS.CheckAsrvInit.sql" />
+    <Content Include="Programmability\WCS.DeleteAsrv.sql" />
+    <Content Include="Programmability\WCS.DeleteFloor.sql" />
+    <Content Include="Programmability\WCS.DeleteWH.sql" />
+    <Content Include="Programmability\WCS.GetAsrvList.sql" />
+    <Content Include="Programmability\WCS.GetAsrvLocation.sql" />
+    <Content Include="Programmability\WCS.GetAsrvRoute.sql" />
+    <Content Include="Programmability\WCS.GetAsrvStatusList.sql" />
+    <Content Include="Programmability\WCS.GetAsrvTask.sql" />
+    <Content Include="Programmability\WCS.GetDirection.sql" />
+    <Content Include="Programmability\WCS.GetEquipmentDetail.sql" />
+    <Content Include="Programmability\WCS.GetEquipmentLinkList.sql" />
+    <Content Include="Programmability\WCS.GetEquipmentList.sql" />
+    <Content Include="Programmability\WCS.GetEquipmentName.sql" />
+    <Content Include="Programmability\WCS.GetEquipmentTypeList.sql" />
+    <Content Include="Programmability\WCS.GetEquipmentTypeName.sql" />
+    <Content Include="Programmability\WCS.GetFloorCellsList.sql" />
+    <Content Include="Programmability\WCS.GetFloorList.sql" />
+    <Content Include="Programmability\WCS.GetRoadRight.sql" />
+    <Content Include="Programmability\WCS.GetRoadRightCMD.sql" />
+    <Content Include="Programmability\WCS.GetTaskCmdByWhCode.sql" />
+    <Content Include="Programmability\WCS.GetTaskDetail.sql" />
+    <Content Include="Programmability\WCS.GetWCSAsrvDetail.sql" />
+    <Content Include="Programmability\WCS.GetWCSAsrvList.sql" />
+    <Content Include="Programmability\WCS.GetWCSFloorDetail.sql" />
+    <Content Include="Programmability\WCS.GetWCSStatus.sql" />
+    <Content Include="Programmability\WCS.GetWCSWHDetail.sql" />
+    <Content Include="Programmability\WCS.GetWCSWHList.sql" />
+    <Content Include="Programmability\wcs.GetWhAsrvLocation.sql" />
+    <Content Include="Programmability\WCS.GetWhCells.sql" />
+    <Content Include="Programmability\WCS.GetWHEquipmentList.sql" />
+    <Content Include="Programmability\WCS.GetWHLiftList.sql" />
+    <Content Include="Programmability\WCS.GetWhMapHtml.sql" />
+    <Content Include="Programmability\WCS.GetWhMapSetupHtml.sql" />
+    <Content Include="Programmability\WCS.GetWhSetup.sql" />
+    <Content Include="Programmability\WCS.GetWhTrafficHtml.sql" />
+    <Content Include="Programmability\WCS.InsertCmdBreakdown.sql" />
+    <Content Include="Programmability\WCS.IsChannel.sql" />
+    <Content Include="Programmability\WCS.NormalMode.sql" />
+    <Content Include="Programmability\WCS.RouteTest.sql" />
+    <Content Include="Programmability\WCS.SaveAsrvTask.sql" />
+    <Content Include="Programmability\WCS.SaveTaskRoute.sql" />
+    <Content Include="Programmability\WCS.SendNextCmd.sql" />
+    <Content Include="Programmability\WCS.SetCurrentCMD.sql" />
+    <Content Include="Programmability\wcs.SetOperateType.sql" />
+    <Content Include="Programmability\wcs.SetRoadRight.sql" />
+    <Content Include="Programmability\WCS.UpdateAsrvStatus.sql" />
+    <Content Include="Programmability\WCS.UpdateCellRight.sql" />
+    <Content Include="Programmability\WCS.UpdateCellsDirection - 复制.sql" />
+    <Content Include="Programmability\WCS.UpdateCellsDirection.sql" />
+    <Content Include="Programmability\WCS.UpdateCellsType.sql" />
+    <Content Include="Programmability\WCS.UpdateCmdSendCnt.sql" />
+    <Content Include="Programmability\WCS.UpdateCmdStatus.sql" />
+    <Content Include="Programmability\WCS.UpdateFloorCells.sql" />
+    <Content Include="Programmability\WCS.UpdateLiftCells.sql" />
+    <Content Include="Programmability\WCS.UpdateAsrvMacAdress.sql" />
+    <Content Include="Programmability\WCS.UpdateRoadRight.sql" />
+    <Content Include="Programmability\wcs.UpdWhMode.sql" />
+    <Content Include="Programmability\wcs.XmlToTable.sql" />
+    <Content Include="wcs.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="90000832_J.pdf" />
+    <None Include="90000976_P.pdf" />
+    <None Include="C#串口程序.pdf" />
+    <None Include="Databackup\basic.bak" />
+    <None Include="Databackup\biz.bak" />
+    <None Include="Databackup\erplog.bak" />
+    <None Include="Databackup\filedb.bak" />
+    <None Include="Databackup\wcs.bak" />
+    <None Include="DigiConnectFamily Users Guide.pdf" />
+    <None Include="iptool\IpTool网络抓包工具\config\tcpinfo.dat" />
+    <None Include="iptool\IpTool网络抓包工具\ETC\office2007.cjstyles" />
+    <None Include="iptool\IpTool网络抓包工具\Iptool网络抓包工具介绍.url" />
+    <None Include="iptool\IpTool网络抓包工具\Iptool网路岗官方网站.url" />
+    <None Include="Visual C#.net网络编程.pdf" />
+    <None Include="wcs.PDM" />
+    <None Include="WCS与ASRV通讯协议   2014.07.26.doc" />
+    <None Include="卸载.bat" />
+    <None Include="安装.bat" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resource", "Resource\Resource.csproj", "{D5C0F87A-97BA-467C-A556-59F0C03CF853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlServer", "SqlServer\SqlServer.csproj", "{FBAD9CD7-AF1A-4C30-94A0-0B7031CD25B1}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "wcs", "http://localhost:41121", "{24390E13-1D70-40DF-9378-738ED7A13479}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{d5c0f87a-97ba-467c-a556-59f0c03cf853}|EntpClass.Resources.dll;{af0d15a3-01b2-4ba1-95b2-91a6f6d649e5}|EntpClass.BizLogic.WCS.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_41121"
+		Debug.AspNetCompiler.PhysicalPath = "wcs\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_41121\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_41121"
+		Release.AspNetCompiler.PhysicalPath = "wcs\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_41121\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "wcs\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizLogic.WCS", "BizLogic.WCS\BizLogic.WCS.csproj", "{AF0D15A3-01B2-4BA1-95B2-91A6F6D649E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCSServer", "..\WCSServer\WCSServer\WCSServer\WCSServer.csproj", "{A7BEDB73-E4B9-4FB0-8761-496407D75041}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2010:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Resource\\Resource.csproj
+		SccProjectName1 = Resource
+		SccLocalPath1 = Resource
+		SccProjectUniqueName2 = SqlServer\\SqlServer.csproj
+		SccProjectName2 = SqlServer
+		SccLocalPath2 = SqlServer
+		SccProjectUniqueName3 = BizLogic.WCS\\BizLogic.WCS.csproj
+		SccProjectName3 = BizLogic.WCS
+		SccLocalPath3 = BizLogic.WCS
+		SccWebProject4 = true
+		SccProjectUniqueName4 = http://localhost:41121
+		SccProjectName4 = wcs
+		SccLocalPath4 = wcs
+		SccProjectEnlistmentChoice4 = 2
+		SccProjectUniqueName5 = ..\\WCSServer\\WCSServer\\WCSServer\\WCSServer.csproj
+		SccProjectName5 = WCSServer
+		SccLocalPath5 = ..\\WCSServer\\WCSServer\\WCSServer
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5C0F87A-97BA-467C-A556-59F0C03CF853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C0F87A-97BA-467C-A556-59F0C03CF853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C0F87A-97BA-467C-A556-59F0C03CF853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBAD9CD7-AF1A-4C30-94A0-0B7031CD25B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBAD9CD7-AF1A-4C30-94A0-0B7031CD25B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBAD9CD7-AF1A-4C30-94A0-0B7031CD25B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24390E13-1D70-40DF-9378-738ED7A13479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24390E13-1D70-40DF-9378-738ED7A13479}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{24390E13-1D70-40DF-9378-738ED7A13479}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{AF0D15A3-01B2-4BA1-95B2-91A6F6D649E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF0D15A3-01B2-4BA1-95B2-91A6F6D649E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF0D15A3-01B2-4BA1-95B2-91A6F6D649E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF0D15A3-01B2-4BA1-95B2-91A6F6D649E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7BEDB73-E4B9-4FB0-8761-496407D75041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7BEDB73-E4B9-4FB0-8761-496407D75041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7BEDB73-E4B9-4FB0-8761-496407D75041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7BEDB73-E4B9-4FB0-8761-496407D75041}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

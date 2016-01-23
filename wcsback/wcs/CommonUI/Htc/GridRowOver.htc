@@ -1,0 +1,565 @@
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//  Copyright 2000 Microsoft Corporation.  All Rights Reserved.
+//
+//  File:         rowover_js.htc
+//
+//  Description:  This behavior adds striping, hovering and other useful
+//                features to regular and data-bound table rows. 
+//
+//  修改日期      2005.3.8
+//
+//  修改人        Justin
+//
+//  修改内容      颜色的操作从CSS中获取，如果不设置CSS类，和未修改之前一样，有默认值
+//                由于无法从CSS中得到 选中项的颜色，所以默认选中className="dg_select"
+//                如果想修改这个属性名称，请全文搜索。被选中行的RowId。
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<PROPERTY NAME="selectable" />
+<PROPERTY NAME="hoverable" />
+<PROPERTY NAME="striped"    />
+<PROPERTY NAME="styletype"    />
+<PROPERTY NAME="allowsorting"   />
+<PROPERTY NAME="beginlight"  PUT="setBeginlight" />
+<PROPERTY NAME="selectedrow"  GET="getselectedrow" />
+<PROPERTY NAME="selectedRowID" GET="getSelectedRowID" />
+<PROPERTY NAME="selectedRowIndex" GET="getSelectedRowIndex" />
+<PROPERTY NAME="firstColIsSequence" PUT="setFirstColIsSequence"    />
+<PROPERTY NAME="firstrowishead" GET="getFirstrowishead" PUT="setFirstrowishead" />
+<PROPERTY NAME="lastrowisfoot" GET="getLastrowisfoot" PUT="setLastrowisfoot" />
+<METHOD   NAME="Format"     />
+<METHOD   NAME="reset"      />
+
+<EVENT    NAME="onrowover"   ID="rowover"  />
+<EVENT    NAME="onrowout"    ID="rowout"   />
+<EVENT    NAME="onrowclick"  ID="rowclick" />
+<EVENT    NAME="onrowdblclick"  ID="rowdblclick" />
+<EVENT    NAME="onerror"     ID="error"    />
+
+<ATTACH   EVENT="ondocumentready" HANDLER="DoInit"     />
+<ATTACH   EVENT="onmouseout"     HANDLER="LeaveTable" />
+<ATTACH   EVENT="onselectstart"  HANDLER="DoSelectStart" />
+
+<SCRIPT LANGUAGE="jscript">
+    var prop_firstrowishead = true;
+    var i_beginlight = 1;
+    var prop_lastrowisfoot = false;
+    var prop_FirstColIsSequence = false;
+    var oCurrRow;               //Tracks current mouseover row
+    var oSelectRow;             //Tracks currently selected row
+    var sSelectBack;            //Tracks previous backgroundColor of selected row
+    var sSelectClr;             //Tracks previous color of selected row
+    var sDefaultBack;           //Tracks previous backgroundColor of mouseover row
+    var sDefaultClr;            //Tracks previous color of mouseover row
+    var sUndoBack; 			//Tracks backgroundColor for unselecting selected row
+    var sUndoClr; 			//Tracks color for unselecting selected row
+    var sTrHeight = "80px";
+    var sLightClass;
+    var sShadeClass;
+    var sSelectClass;
+
+    function getselectedrow() { return oSelectRow; }
+    function getFirstrowishead() { return prop_firstrowishead; }
+    function getlastrowisfoot() { return prop_lastrowisfoot; }
+    function getSelectedRowID() {
+        if (oSelectRow != null) { return oSelectRow.selectedRowID; }
+        else { return ""; }
+    }
+    function getSelectedRowIndex() {
+        if (oSelectRow != null) { return oSelectRow.selectedRowIndex; }
+        else { return ""; }
+    }
+    function setFirstrowishead(value) {
+        if (value == "true" || value == true) { prop_firstrowishead = true; }
+        else { prop_firstrowishead = false; }
+    }
+    function setlastrowisfoot(value) {
+        if (value == "true" || value == true) { prop_lastrowisfoot = true; }
+        else { prop_lastrowisfoot = false; }
+    }
+    function setFirstColIsSequence(value) {
+        if (value == "true" || value == true) { prop_FirstColIsSequence = true; }
+        else { prop_FirstColIsSequence = false; }
+    }
+    function setBeginlight(value) {
+        if (value == "true" || value == true || value == 1 || value == "1") { i_beginlight = 1; }
+        else { i_beginlight = 0; }
+    }
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //Init
+    function DoInit() {
+        SetDefaults();
+        Format();
+    }
+    function SetDefaults() {
+        CustomDefault('ro--hover-background', 'roHoverBackground', '#ffffcc');
+        CustomDefault('ro--hover-color', 'roHoverColor', 'black');
+        CustomDefault('ro--selected-background', 'roSelectedBackground', '#FBE9B8');
+        CustomDefault('ro--selected-color', 'roSelectedColor', 'black');
+        CustomDefault('ro--shade-background', 'roShadeBackground', '#DDECFE');
+        CustomDefault('ro--light-background', 'roLightBackground', '#ffffff');
+        NormalDefault('cursor', 'auto', 'default');
+        if (selectable == null) { selectable = false; }
+        if (hoverable == null) { hoverable = selectable; }
+        if (striped == null) { striped = false; }
+    }
+    function CustomDefault(sCSSName, sScriptName, sDefault) {
+        if (currentStyle[sCSSName] == null) { style[sCSSName] = sDefault; }
+        else { style[sCSSName] = currentStyle[sCSSName]; }
+
+        style[sScriptName] = style[sCSSName];
+    }
+    function NormalDefault(sCSSName, sIEDefault, sDefault) {
+        if (currentStyle[sCSSName] == sIEDefault && (style[sCSSName] == "" || style[sCSSName] == null)) {
+            style[sCSSName] = sDefault;
+        }
+    }
+    function Format() {
+        if (this.readyState != "complete" && this.readyState != 4) {
+            window.setTimeout(uniqueID + ".Format()", 50);
+        }
+        else {
+            if (!regularTable(element, prop_firstrowishead, prop_lastrowisfoot)) return;
+            initSortTable();
+            setTimeout(addFunc, 1);
+        }
+    }
+    function regularTable(oTable, bFirstRowIsHead, bLastRowIsFoot) {
+        //将table规范为<thead></thead><tbody></tbody><tfoot></tfoot>的形式
+        if (oTable.tHead == null && bFirstRowIsHead) {
+            if (oTable.rows.length == 0) {
+                alert("Init table error. No head row.")
+                return false;
+            }
+            oTable.insertBefore(document.createElement("tHead"), element.firstChild);
+            oTable.tHead.appendChild(oTable.tBodies[0].firstChild);
+        }
+        if (oTable.tFoot == null && bLastRowIsFoot) {
+            if (oTable.rows.length == 0) {
+                alert("Init table error. No foot row.")
+                return false;
+            }
+            oTable.appendChild(document.createElement("tFoot"));
+            oTable.tFoot.appendChild(oTable.tBodies[0].lastChild);
+        }
+        return true;
+    }
+    function addFunc() {
+        if (readyState != "complete" && readyState != 4) {
+            window.setTimeout(uniqueID + ".addFunc()", 50);
+        }
+
+        setDefaultStyle(element);
+        Stripes(eval(striped)); //斑纹striped=false
+
+        attachEvent("onmouseover", DoMouseOver);
+        attachEvent("onmouseout", DoMouseOut);
+        attachEvent("onclick", DoClick);
+        attachEvent("ondblclick", DoDblClick);
+        attachEvent("onpropertychange", DoPropChange);
+    }
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //event
+    function DoPropChange() {
+        var propertyName = window.event.propertyName;
+
+        if (propertyName.substring(0, 5) == "style") {
+            switch (propertyName) {
+                case "style.roHoverBackground":
+                    break;
+                case "style.roHoverColor":
+                    break;
+                case "style.roSelectedBackground":
+                    if (oSelectRow != null) {
+                        ColorCells(oSelectRow, style.roSelectedColor, style.roSelectedBackground); //设置选中行的颜色
+                    }
+                    break;
+                case "style.roSelectedColor":
+                    if (oSelectRow != null) {
+                        ColorCells(oSelectRow, style.roSelectedColor, style.roSelectedBackground);
+                    }
+                    break;
+                case "style.roShadeBackground":
+                    Stripes(eval(striped)); //交替行的颜色
+                    break;
+                case "style.roLightBackground":
+                    Stripes(eval(striped));
+                    break;
+                case "style.cursor":
+                    break;
+            }
+        }
+        else {
+            detachEvent("onpropertychange", DoPropChange);
+
+            switch (propertyName) {
+                case "striped":
+                    Stripes(eval(striped));
+                    break;
+                case "selectable":
+                    if (!eval(selectable))//IsSelectable=false
+                    {
+                        ColorCells(oSelectRow, sSelectClr, sSelectBack);
+                    }
+                    break;
+                default:
+                    ReturnError(propertyName + " not a valid property");
+                    break;
+            }
+
+            attachEvent("onpropertychange", DoPropChange);
+        }
+    }
+    function DoMouseOver() {
+        var oRow;
+        if (!(oRow = GetRow(window.event.srcElement))) return true;
+        if (oRow == oCurrRow) return true;
+
+        oCurrRow = oRow;
+
+        if (eval(hoverable) && false) {
+            if (true == prop_firstrowishead) { if (0 == oRow.rowIndex) { return true; } } //Head  
+            if (true == prop_lastrowisfoot) { if (oRow.rowIndex == element.rows.length - 1) { return true; } } //Foot		
+            sDefaultBack = oRow.currentStyle.backgroundColor;
+            sDefaultClr = oRow.currentStyle.color;
+        }
+
+        var oEvent = createEventObject();
+        oEvent.setAttribute("srcRow", oRow);
+        rowover.fire(oEvent);
+    }
+    function DoMouseOut() {
+        if (oCurrRow != null && oCurrRow.contains(window.event.toElement)) return true;
+        if (oCurrRow == null) return true;
+
+        oRow = oCurrRow;
+        oCurrRow = null;
+
+        if (eval(hoverable) && false) {
+            if (true == prop_firstrowishead) { if (0 == oRow.rowIndex) { return true; } } //Head  
+            if (true == prop_lastrowisfoot) { if (oRow.rowIndex == element.rows.length - 1) { return true; } } //Foot						    
+            if (oRow == oSelectRow && eval(selectable)) { ColorCells(oRow, style.roSelectedColor, style.roSelectedBackground); } //鼠标离开的行是SelectRow				
+            else { ColorCells(oRow, sDefaultClr, sDefaultBack); }
+        }
+
+        var oEvent = createEventObject();
+        oEvent.setAttribute("srcRow", oRow);
+        rowout.fire(oEvent);
+    }
+    function DoClick() {
+        var oRow;
+
+        if (!eval(selectable)) return true; //selectable=false
+        if (!(oRow = GetRow(window.event.srcElement))) { return true; }
+        if (oRow.getAttribute("NotSelectable")) { return true; } //NotSelectable
+        if (true == prop_firstrowishead) { if (0 == oRow.rowIndex) { return true; } } //Head
+        if (true == prop_lastrowisfoot) { if (oRow.rowIndex == element.rows.length - 1) { return true; } } //Foot
+        if (oSelectRow == oRow) { return true; } //点击的行已经是选中行
+
+        if (oSelectRow != null)//把选中行的颜色设置为不选中
+        {
+            if (sSelectClass != null && sSelectClass != "") { oSelectRow.className = ""; }
+            else { ColorCells(oSelectRow, sSelectClr, sSelectBack); }
+        }
+
+        sDefaultBack = oRow.currentStyle.backgroundColor;
+        sDefaultClr = oRow.currentStyle.color;
+        sSelectBack = sDefaultBack; //sSelectBack保存选中行的前一个颜色
+        sSelectClr = sDefaultClr;
+        sUndoBack = sDefaultBack;
+        sUndoClr = sDefaultClr;
+
+        oSelectRow = oRow; //新点击的行变为选中行
+
+        if (sSelectClass != "" && sSelectClass != null) { oSelectRow.className = sSelectClass; } //设置新的选中行的颜色
+        else { ColorCells(oSelectRow, style.roSelectedColor, style.roSelectedBackground); }
+
+        Stripes(striped); //交替行颜色设置
+
+        var oEvent = createEventObject();
+        oEvent.setAttribute("srcRow", oRow);
+        rowclick.fire(oEvent);
+    }
+    function DoDblClick() {
+        var oRow;
+
+        if (!(oRow = GetRow(window.event.srcElement))) return true;
+        if (true == prop_firstrowishead) { if (0 == oRow.rowIndex) { return true; } } //Head    
+        if (true == prop_lastrowisfoot) { if (oRow.rowIndex == element.rows.length - 1) { return true; } } //Foot 
+
+        var oEvent = createEventObject();
+        oEvent.setAttribute("srcRow", oRow);
+        rowdblclick.fire(oEvent);
+    }
+    function LeaveTable() {
+        if (window.event.toElement == element.parentElement) oCurrRow = null;
+    }
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //Stripes
+    function Stripes(bColor) {
+        if (!bColor) { return; } //striped=false
+
+        var j = 0;
+
+        var iLength = rows.length;
+        if (true == prop_firstrowishead) { j++; } //Remove Head
+        if (true == prop_lastrowisfoot) { iLength--; } //Remove Foot
+
+        for (; j < iLength; j++)//tBodies部分
+        {
+            if (rows(j) == oSelectRow && eval(selectable)) continue; //如果是选中的行
+            if (rows(j).parentElement.tagName.toLowerCase() != "tbody") continue;
+
+            if (rows(j).rowIndex % 2 == i_beginlight) //设置交替行的颜色
+            {
+                if (sLightClass != null && sLightClass != "")//Light
+                {
+                    rows(j).className = sLightClass;
+                }
+                else {
+                    var sColLight = (bColor ? style.roLightBackground : "transparent");
+                    ColorCells(rows(j), null, sColLight);
+                }
+            }
+            else {
+                if (sShadeClass != null && sShadeClass != "")//Shade
+                {
+                    rows(j).className = sShadeClass;
+                }
+                else {
+                    var sColShade = (bColor ? style.roShadeBackground : "transparent");
+                    ColorCells(rows(j), null, sColShade);
+                }
+            }
+        }
+    }
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //设置默认风格
+    function setDefaultStyle(oTable) {
+        var i = 0;
+        //tHead样式
+        if (oTable.tHead != null) {
+            var className;
+            className = oTable.tHead.rows[0].className; //用户设置的tHead的className
+            if (className != "" && className != null && typeof (className) != "undefined") {
+                for (i = 0; i < oTable.tHead.rows[0].cells.length; i++) {
+                    oTable.tHead.rows[0].cells[i].className = className;
+                }
+                sSelectClass = "dg_select";
+            }
+            else {
+                oTable.tHead.style.cssText = "border-left: 1px solid #d2d2d2;text-overflow: ellipsis; overflow-x: hidden;font-family:宋体; height:25px; font-size:9pt;  font-weight:normal;color:#000000;" + oTable.tHead.style.cssText; //默认设置
+                for (i = 0; i < oTable.tHead.rows[0].cells.length; i++) {
+                    oTable.tHead.rows[0].cells[i].style.cssText += ";filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#FEFEFE', EndColorStr='#C6C6C6')";
+                }
+            }
+        }
+        //tBodies样式
+        if (oTable.tBodies[0].rows.length > 0) {
+            if (oTable.tBodies[0].rows[0].className != null) {
+                sLightClass = oTable.tBodies[0].rows[0].className;
+            }
+        }
+        if (oTable.tBodies[0].rows.length > 1) {
+            if (oTable.tBodies[0].rows[1].className != null) {
+                sShadeClass = oTable.tBodies[0].rows[1].className;
+            }
+        }
+
+        if ((sLightClass == null || sLightClass == "") && (sShadeClass == null || sShadeClass == ""))
+            oTable.tBodies[0].style.cssText = "border-left:1px solid #d2d2d2;background-color:#FFFFFF; font-family:宋体;  font-size:9pt;  font-weight:normal;";
+
+        if (oTable.tFoot != null) {
+            oTable.tFoot.style.cssText = "border-color:#DDECFE;background:#F0F8FF; font-family:宋体;  font-size:9pt;  font-weight:bold; border-bottom: #73A1E4 1px solid;height:20px";
+        }
+
+        setSequenceCol();
+    }
+    function setSequenceCol() {
+        if (!prop_FirstColIsSequence) { return; }
+        var i = 0;
+        element.tHead.rows[0].cells[0].setAttribute("datatype", "Number");
+        for (i = 0; i < element.tBodies[0].rows.length; i++) {
+            element.tBodies[0].rows[i].cells[0].innerText = i + 1;
+        }
+    }
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    function reset() {
+        oCurrRow = null;
+
+        if (oSelectRow != null) { ColorCells(oSelectRow, sUndoClr, sUndoBack); }
+
+        sDefaultBack = sUndoBack;
+        sDefaultClr = sUndoClr;
+        oSelectRow = null;
+    }
+    function GetRow(oElem) {
+        while (oElem) {
+            if (oElem.tagName.toLowerCase() == "tr" && oElem.parentElement.tagName.toLowerCase() == "tbody") { return oElem; }
+            if (oElem.tagName.toLowerCase() == "table") return false;
+            oElem = oElem.parentElement;
+        }
+    }
+    function ColorCells(oRow, sClr, sBack) {
+        if (oRow == false) return false;
+        if (sClr != null) oRow.style.color = sClr;
+        if (sBack != null) oRow.style.backgroundColor = sBack;
+
+        for (i = 0; i < oRow.cells.length; i++) {
+            if (sClr != null) { }
+            if (sBack != null) { oRow.cells(i).style.backgroundColor = sBack; }
+        }
+    }
+    function ReturnError(sMsg) {
+        var oEvent = createEventObject();
+        oEvent.setAttribute("error", sMsg);
+        error.fire(oEvent);
+    }
+    //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //Table Sort
+    var fTypeCast = String;
+    var arrowUp, arrowDown;
+    arrowUp = document.createElement("input");
+    arrowUp.value = 6
+    arrowUp.style.cssText = "position:relative;height:10pt;font-family: webdings;overflow: hidden;width:10pt;BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none;display:inline;top:-3px;";
+    arrowUp.contentEditable = false;
+    arrowUp.style.cursor = 'hand';
+    arrowUp.style.color = 'black';
+    arrowUp.style.fontSize = 12;
+
+    function initSortTable() {
+        if (allowsorting != "true") { return; }
+        if (readyState != "complete" && readyState != 4) {
+            window.setTimeout(uniqueID + ".initSortTable()", 50);
+            return;
+        }
+        var i = 0;
+        element.tHead.attachEvent("onclick", sortColumn);
+        element.tHead.style.cursor = 'hand';
+        if (prop_FirstColIsSequence) { element.tHead.rows[0].cells[0].style.cursor = 'arrow'; }
+    }
+    function sortColumn() {
+        var tmp, el;
+        tmp = window.event.srcElement;
+        //tHeadParent = getParent(tmp, "THEAD");
+        el = getParent(tmp, "TD");
+
+        if (el != null) {
+            var p = el.parentNode;
+            var i;
+            for (i = 0; i < p.childNodes.length; i++) {
+                if (p.childNodes[i] == el) break;
+            }
+            if (prop_FirstColIsSequence && i == 0) {
+                return;
+            }
+            sortByColumn(i, null, el.getAttribute("datatype"));
+
+            Stripes(eval(striped));
+
+            setSequenceCol();
+        }
+    }
+    function sortByColumn(nCol, bDesc, sType) {
+        sortTable(element, nCol, bDesc, sType);
+    }
+    function sortTable(tableNode, nCol, bDesc, sType) {
+        var tHeadParent = element.tHead;
+
+        if (tHeadParent == null)
+            return;
+
+        var el = tHeadParent.rows[0].cells[nCol];
+
+        if (el == null)
+            return;
+
+        if (bDesc != null)
+            el._descending = bDesc;
+        else
+            if (el._descending)	// catch the null
+                el._descending = false;
+            else
+                el._descending = true;
+
+        if (tHeadParent.arrow != null) {
+            if (tHeadParent.arrow.parentNode != el) {
+                tHeadParent.arrow.parentNode._descending = null; //reset sort order		
+            }
+            tHeadParent.arrow.parentNode.removeChild(tHeadParent.arrow);
+        }
+
+        if (el._descending)
+            arrowUp.value = 5
+        else
+            arrowUp.value = 6
+        arrowUp.style.backgroundColor = el.currentStyle.backgroundColor;
+
+        tHeadParent.arrow = arrowUp.cloneNode(true);
+
+        el.appendChild(tHeadParent.arrow);
+
+        var tBody = tableNode.tBodies[0];
+        var trs = tBody.childNodes;
+        var a = new Array();
+
+        for (var i = 0; i < trs.length; i++) {
+            a[i] = trs[i];
+        }
+        setTypeCastFunc(sType);
+        if (el._descending)
+            a.sort(compareByColumnDesc(nCol));
+        else
+            a.sort(compareByColumnAsc(nCol));
+
+        for (var i = 0; i < a.length; i++) {
+            tBody.appendChild(a[i]);
+        }
+    }
+    function getParent(el, pTagName) {
+        if (el == null) return null;
+        else if (el.nodeType == 1 && el.tagName == pTagName)
+            return el;
+        else
+            return getParent(el.parentNode, pTagName);
+    }
+    function setTypeCastFunc(sType) {
+        if (sType == "String")
+            fTypeCast = String;
+        else if (sType == "Number")
+            fTypeCast = Number;
+        else if (sType == "Date")
+            fTypeCast = parseDate;
+        else if (sType == "CaseInsensitiveString")
+            fTypeCast = CaseInsensitiveString;
+        else
+            fTypeCast = function (val) { return val; };
+    }
+    function CaseInsensitiveString(s) {
+        return String(s).toUpperCase();
+    }
+
+    function parseDate(s) {
+        return Date.parse(s.replace(/\-/g, '/'));
+    }
+    function compareByColumnAsc(nCol) {
+        return function (n1, n2) {
+            return compare(n1.cells[nCol].innerText, n2.cells[nCol].innerText);
+        };
+    }
+    function compareByColumnDesc(nCol) {
+        return function (n1, n2) {
+            return compare(n2.cells[nCol].innerText, n1.cells[nCol].innerText);
+        };
+    }
+    function compare(n1, n2) {
+        if (fTypeCast(n1) > fTypeCast(n2))
+            return 1;
+        else if (n1 == n2)
+            return 0;
+        else
+            return -1;
+    }
+</SCRIPT>

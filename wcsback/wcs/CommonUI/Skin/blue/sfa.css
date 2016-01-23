@@ -1,0 +1,272 @@
+.mustfill {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #333333;
+	line-height: 120%;
+	background-color: #FCE4C5;
+}
+.notmustfill {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #333333;
+	line-height: 120%;
+}
+.readonly {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	background-color: #DDDDDD;
+	line-height: 120%;
+}
+.td_label {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	background-color: #DDDDDD;
+	line-height: 200%;
+}
+
+.td_label111 {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	line-height: 200%;
+}
+.dg_table
+{
+border-color:'#D4E5FA';
+border-width:0;
+border-style:solid;
+margin:0;
+}
+.dg_header
+{
+filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#D4E5FA', EndColorStr='#97BAE8');
+font-family: 宋体, serif, Helvetica;
+font-size: 9pt;
+border-width: 1px;
+text-align:center;
+border-style:solid;
+font-weight:bold;
+vertical-align:middle;
+height:25px;
+border-color:'#D4E5FA';
+}
+.dg_item {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #333333;
+	line-height: 200%;
+	background-color: #FFFFFF;
+
+}
+.dg_alter {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #333333;
+	line-height: 200%;
+	background-color: #DFF0FD;
+
+}
+.dg_select {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #333333;
+	line-height: 200%;
+	background-color: #FCE4C5;
+
+}
+.scardlink:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.scardlink:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.scardlink:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #016CBC;
+	text-decoration: none;
+}
+.tablink:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.tablink:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.tablink:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #016CBC;
+	text-decoration: none;
+}
+.genlink:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #125483;
+	text-decoration: none;
+	line-height: 150%;
+	font-weight: bold;
+}
+.genlink:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #12548F;
+	text-decoration: none;
+	line-height: 150%;
+}
+.genlink:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #588FC7;
+	text-decoration: underline;
+	line-height: 150%;
+}
+.abutton:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.abutton:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.abutton:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #016CBC;
+	text-decoration: none;
+}
+/*
+有下划线的LinkButton，字体稍大一些，蓝色，主要用于显示统计的信息 Justin 2004.10.7
+*/
+.lnkunderline:link
+{
+    font-weight: normal;
+    font-size: 9pt;
+    color: #3a6ecd;
+    font-family: 宋体, serif, Helvetica;
+    text-decoration: underline;
+}
+.lnkunderline:visited
+{
+    font-weight: normal;
+    font-size: 9pt;
+    color: #3a6ecd;
+    font-family: 宋体, serif, Helvetica;
+    text-decoration: underline;
+}
+.lnkunderline:hover
+{
+    font-weight: normal;
+    font-size: 9pt;
+    color: #6600ff;
+    font-family: 宋体, serif, Helvetica;
+    text-decoration: underline;
+}
+
+.Normallabel {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	line-height: 200%;
+}
+/*
+    登陆提示，蓝色，较大，加粗
+*/
+.PromptLabel
+{
+    font-weight: bold;
+    font-size: 9pt;
+    color: #3a6ecd;
+    font-family: 宋体, serif, Helvetica;
+    text-decoration: none;
+}
+/*
+    登陆提示，白色，较大，加粗
+*/
+.PromptWhite
+{
+    font-weight: bold;
+    font-size: 9pt;
+    color: #ffffff;
+    font-family: 宋体, serif, Helvetica;
+    text-decoration: none;
+}
+.NotAssignedItem
+{
+    font-size: 9pt;
+    color: background;
+    line-height: 200%;
+    font-style: italic;
+    font-family: 宋体, serif, Helvetica;
+}
+.DeletedItem
+{
+    font-size: 9pt;
+    color: #ff3333;
+    line-height: 200%;
+    font-family: 宋体, serif, Helvetica;
+    text-decoration: line-through;
+}
+/*
+    选中的选项卡颜色
+*/
+.scardlinkselected:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+    font-weight:bold;
+	
+}
+.scardlinkselected:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+    font-weight:bold;
+}
+.scardlinkselected:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #016CBC;
+    font-weight:bold;
+}
+.warninglabel
+{
+    font-weight: bold;
+    font-size: 10pt;
+    color: red;
+    line-height: 200%;
+    font-family: 宋体, serif, Helvetica;
+}

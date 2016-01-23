@@ -1,0 +1,72 @@
+﻿.titles
+{
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    font-weight: normal;
+    color: #fff;
+    background: url(../../Home/images/window_tit_bg.gif) repeat-x left top;
+}
+.titles strong
+{
+    float: left;
+    width: 638px;
+    height: 32px;
+    text-indent: 34px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    background: url(../../Home/images/window_tit_bg2.gif) no-repeat left top;
+}
+.titles .more
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 56px;
+    font-size: 12px;
+    background: url(../../Home/images/window_tit_bg3.gif) no-repeat right top;
+}
+.titles .more a
+{
+    padding-left: 10px;
+    font-weight: normal;
+    color: #5fe3d1;
+    background: url(../../Home/images/02.gif) no-repeat left center;
+}
+.titles .close_window
+{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+.titles .close_window a
+{
+    width: 23px;
+    height: 23px;
+    text-indent: -99em;
+    background: url(../../Home/images/close.gif) no-repeat left top;
+    overflow: hidden;
+    display: block;
+}
+.gonglen
+{
+    height: 19px;
+    padding-top: 6px;
+    background: url(../../Home/images/dh_bg.jpg) repeat-x left top;
+}
+.gonglen ul
+{
+    float: right;
+    padding-right: 40px;
+}
+.gonglen ul li
+{
+    float: left;
+}
+.gonglen ul li a
+{
+    height: 21px;
+    padding: 0 10px;
+    float: left;
+    display: block;
+}

@@ -1,0 +1,27 @@
+/* - - - - - - - - - 全局样式  - - - - - - - - -*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,address,code,
+del,em,img,dl,dt,dd,ol,ul,li,
+fieldset,form,label{
+margin:0;padding:0;border:0;
+font-style:inherit;font-family:inherit;vertical-align:baseline;}
+img{vertical-align:middle;border:none;}
+input,select,button{vertical-align:middle;}
+input{padding:0;}
+body{font-size:12px;background:#fff;}
+ul,ol{list-style-type:none;}
+h3,h4{font-size:14px;}
+em,address{font-style:normal;}
+a{color:#4f4f4f;text-decoration:none;}
+/*链接样式*/
+a:link{}	
+a:hover{text-decoration:underline;}	/*鼠标悬停时*/
+a:active{}  /*鼠标点击与释放之间*/
+a:visited{} /* 已被访问过 */
+/*  - - - - - - - - - 类别样式  - - - - - - - - -*/
+.no_bor{border:none!important;}
+.no_bg{background:none!important;}
+.clear{height:0;line-height:0;font-size:0;clear:both;overflow:hidden;display:block;}
+.f_left{float:left;}
+.f_right{float:right;}
+

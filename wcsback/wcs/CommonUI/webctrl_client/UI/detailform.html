@@ -1,0 +1,235 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Detailform</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+  .pic1{
+	background:url(images/index_25.gif);
+	cursor: hand;
+}  
+  .pic2{background:url(images/index_26.gif);cursor: hand;} 
+  .pic3{background:url(images/index_27.gif);cursor: hand;color: #FFFFFF;} 
+-->
+</style>
+</head>
+
+<body>
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="30" align="left" valign="middle"><span class="img1"><span class="title1">CAPEX REQUISITION</span></span></td>
+  </tr>
+  <tr>
+    <td background="images/line1.gif" bgcolor="#C9DAF1" class="img1" height="5"></td>
+  </tr>
+</table>
+<table width="80%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="6"></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" valign="top"><table width="249" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="60" align="left" valign="top"><table width="55" height="23" border="0" cellpadding="0" cellspacing="0" >
+            <tr>
+              <td width="55" align="center" class="button1" onmouseover="this.className='button1_over'" onMouseOut="this.className='button1'">Reset</td>
+              </tr>
+          </table></td>
+          <td width="60" align="left" valign="top"><table width="55" height="23" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="55" align="center" class="button1"  onmouseover="this.className='button1_over'" onMouseOut="this.className='button1'">Query</td>
+            </tr>
+          </table></td>
+          <td width="30"><table width="25" height="23" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="55" align="center" valign="middle" class="button4">|＜</td>
+            </tr>
+          </table></td>
+          <td width="30"><table width="25" height="23" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="55" align="center" class="button4">＜</td>
+            </tr>
+          </table></td>
+          <td width="30" align="left" valign="top"><table width="25" height="23" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="55" align="center" class="button4">＞</td>
+            </tr>
+          </table></td>
+          <td width="30"><table width="25" height="23" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="55" align="center" valign="middle" class="button3" onmouseover="this.className='button3_over'" onMouseOut="this.className='button3'">＞|</td>
+            </tr>
+          </table></td>
+          <td align="left" valign="top">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td>&nbsp;</td>
+    <td align="right" valign="top"><table width="320" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="30" align="left" valign="top"><table width="25" height="23" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="55" align="center" class="button4">＞</td>
+            </tr>
+        </table></td>
+        <td width="30" align="left" valign="top"><table width="25" height="23" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="55" align="center" valign="middle" class="button4">＞|</td>
+            </tr>
+        </table></td>
+        <td width="60" align="left" valign="top"><table width="55" height="23" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="55" align="center" class="button1" onmouseover="this.className='button1_over'" onMouseOut="this.className='button1'">Delete</td>
+          </tr>
+        </table></td>
+        <td width="60" align="left" valign="top"><table width="55" height="23" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="55" align="center" class="button1" onmouseover="this.className='button1_over'" onMouseOut="this.className='button1'">New</td>
+          </tr>
+        </table></td>
+        <td width="60" align="left" valign="top"><table width="55" height="23" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="55" align="center" class="button2">Save</td>
+          </tr>
+        </table></td>
+        <td width="60" align="left" valign="top"><table width="55" height="23" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="55" align="center" class="button2">Export</td>
+          </tr>
+        </table></td>
+        <td align="left" valign="top">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="80%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table id="Table1" cellspacing="2" cellpadding="4" width="100%" border="0">
+  <tbody>
+    <tr>
+      <td align="right" bgcolor="#E7E7E7"><strong>Asset ID:</strong></td>
+      <td bgcolor="#F7F7F7"><input name="txt_asset_id" class="input1" id="txt_asset_id" id1="id1" /></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Asset Code:</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_asset_code" maxlength="30" name="txt_asset_code" id1="id1" /></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Status:</strong></td>
+      <td><select id="txt_status" name="txt_status" id1="id1">
+        <option value="RETIRED">RETIRED</option>
+        <option value="INUSE" selected="selected">INUSE</option>
+        <option value="CIP">CIP</option>
+        <option value="NONUSED">NONUSED</option>
+        <option value="0">-Please Select-</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#E7E7E7"><strong>Asset Desc:</strong></td>
+      <td colspan="5" bgcolor="#F7F7F7"><input id="txt_asset_desc" maxlength="255" name="txt_asset_desc" id1="id1" /></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#E7E7E7"><strong>Serial   Num:</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_serial_number" maxlength="255" name="txt_serial_number" id1="id1" /></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Bar   Code:</strong></td>
+      <td colspan="5" bgcolor="#F7F7F7"></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#E7E7E7"><strong>Legal Entity:</strong></td>
+      <td bgcolor="#F7F7F7"><select language="javascript" id="txt_company_code" onChange="__doPostBack('txt_company_code','')" name="txt_company_code" id1="id1">
+        <option value="FXCL">FXCL</option>
+        <option value="FXID">FXID</option>
+        <option value="0" selected="selected">-Please Select-</option>
+      </select>
+          <input id="txt_gl_company_code" maxlength="30" name="txt_gl_company_code" id1="id1" /></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Site Code:</strong></td>
+      <td bgcolor="#F7F7F7"><select id="txt_site_code" name="txt_site_code" id1="id1">
+        <option value="SH">SH</option>
+        <option value="BJ">BJ</option>
+        <option value="GZ">GZ</option>
+        <option value="CD">CD</option>
+        <option value="SZ">SZ</option>
+        <option value="WH">WH</option>
+        <option value="SY">SY</option>
+        <option value="NJ">NJ</option>
+        <option value="TJ">TJ</option>
+        <option value="HZ">HZ</option>
+        <option value="QD">QD</option>
+        <option value="DL">DL</option>
+        <option value="0" selected="selected">-Please Select-</option>
+      </select></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Category:</strong></td>
+      <td bgcolor="#F7F7F7"><select language="javascript" id="txt_category_id" onChange="__doPostBack('txt_category_id','')" name="txt_category_id" id1="id1">
+        <option value="82">ADMEQ-new</option>
+        <option value="126">ADMEQ-old</option>
+        <option value="101">Building</option>
+        <option value="83">CAR</option>
+        <option value="84">DEMEQ-new</option>
+        <option value="122">DEMEQ-old</option>
+        <option value="85">F&amp;F</option>
+        <option value="88">IM Related-new</option>
+        <option value="123">IM Related-old</option>
+        <option value="86">Leasing-new</option>
+        <option value="124">Leasing-old</option>
+        <option value="87">OE-new</option>
+        <option value="125">OE-old</option>
+        <option value="89">Plant equip-new</option>
+        <option value="121">Plant equip-old</option>
+        <option value="91">TRIEQ-new</option>
+        <option value="127">TRIEQ-old</option>
+        <option value="90">Tooling</option>
+        <option value="0" selected="selected">-Please Select-</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#E7E7E7"><strong>Oracle Asset ID:</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_oracle_asset_id" name="txt_oracle_asset_id" id1="id1" /></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Asset Owner:</strong></td>
+      <td bgcolor="#F7F7F7"></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Asset User:</strong></td>
+      <td bgcolor="#F7F7F7"></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#E7E7E7"><strong>Original Cost:</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_original_cost" name="txt_original_cost" id1="id1" /></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Salvage Value:</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_salvage_value" name="txt_salvage_value" id1="id1" /></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Life(Month):</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_life" name="txt_life" id1="id1" /></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#E7E7E7"><strong>Accumulate   Depre:</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_accumulate_depre" name="txt_accumulate_depre" id1="id1" /></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Net Book   Value:</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_net_book_value" name="txt_net_book_value" id1="id1" /></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Current Month Depre:</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_current_month_depre" name="txt_current_month_depre" id1="id1" /></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#E7E7E7"><strong>Last Depre Period:</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_last_depre_period" id1="id1" name="txt_last_depre_period" /></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Date In Service:</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_date_in_service" onChange="if (!f_checkdate(this.value)){alert('日期输入错误！');this.value='';f_focus(this);}" name="txt_date_in_service" id1="id1" />        <img src="images/time1.gif" width="19" height="18" align="absmiddle" /></td>
+      <td align="right" bgcolor="#E7E7E7"><strong>Prorate Date:</strong></td>
+      <td bgcolor="#F7F7F7"><input id="txt_prorate_date" onChange="if (!f_checkdate(this.value)){alert('日期输入错误！');this.value='';f_focus(this);}" name="txt_prorate_date" id1="id1" />
+      <img src="images/time1.gif" width="19" height="18" align="absmiddle" /></td>
+    </tr>
+    <tr>
+      <td align="right" bgcolor="#E7E7E7"><strong>Notes:</strong></td>
+      <td bgcolor="#F7F7F7"><textarea id="txt_notes" name="txt_notes" id1="id1"></textarea></td>
+      <td bgcolor="#F7F7F7"></td>
+      <td bgcolor="#F7F7F7">Cost   Center Mapping</td>
+      <td bgcolor="#F7F7F7"></td>
+      <td bgcolor="#F7F7F7">Capex   Mapping</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

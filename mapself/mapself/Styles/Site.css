@@ -1,0 +1,55 @@
+﻿
+/*自定义样式*/    
+.mytable{
+}
+   
+       .lift
+        {
+            background-color: #ff6600;
+            width: 30px!important;
+            height: 30px;
+        }
+        
+        .xd
+        {
+            background-color: #c5da01;
+            width: 30px!important;
+            height: 30px;
+        }
+        
+        .hd
+        {
+            background-color: #CA8EFF;
+            width: 30px!important;
+            height: 30px;
+        }
+        
+        .cell
+        {
+            background-color: #72cfd7;
+            width: 30px!important;
+            height: 30px;
+        }
+        
+        .un
+        {
+            background-color: #d4d4d4;
+            width: 30px!important;
+            height: 30px;
+        }
+        
+        .cd
+        {
+            background-color: #F8F82A;
+            width: 30px!important;
+            height: 30px;
+        }
+        .road
+        {
+            background-color: #808080;
+            width: 30px!important;
+            height: 30px;
+        }
+
+
+

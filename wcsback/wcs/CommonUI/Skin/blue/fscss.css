@@ -1,0 +1,280 @@
+.jjauto {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #666666;
+	line-height: 200%;
+
+
+
+
+
+
+
+}
+.a1:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.a1:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.a1:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #016CBC;
+	text-decoration: none;
+}
+.a2:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #666666;
+	text-decoration: none;
+	line-height: 150%;
+
+}
+.a2:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #000000;
+	text-decoration: none;
+	line-height: 150%;
+
+}
+.a2:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #666666;
+	text-decoration: underline;
+	line-height: 150%;
+
+}
+.td1 {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #333333;
+	line-height: 200%;
+
+}
+.td2 {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #FF6600;
+	line-height: 250%;
+}
+.td3 {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #333333;
+
+
+}
+.td4 {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #325FA9;
+	line-height: 200%;
+	font-weight: normal;
+
+}
+.a3:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #125483;
+	text-decoration: none;
+	line-height: 150%;
+}
+.a3:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #12548F;
+	text-decoration: none;
+	line-height: 150%;
+}
+.a3:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #588FC7;
+	text-decoration: underline;
+	line-height: 150%;
+}
+.a4:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.a4:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #3398CC;
+	text-decoration: underline;
+}
+.a4:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.td5 {
+
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #3398cc;
+	line-height: 150%;
+	font-weight: bold;
+}
+.a5:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	line-height: 150%;
+	color: #3398cc;
+	text-decoration: none;
+}
+.a5:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #3398cc;
+	line-height: 150%;
+	text-decoration: none;
+}
+.a5:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #3398cc;
+	text-decoration: underline;
+	line-height: 150%;
+}
+.a6:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.a6:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.a6:hover
+{
+    font-weight: normal;
+    font-size: 9pt;
+    color: #99ccff;
+    font-family: 宋体, serif, Helvetica;
+    text-decoration: none;
+}.a7:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #333333;
+	text-decoration: none;
+	line-height: 150%;
+}
+.a7:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #666666;
+	text-decoration: none;
+	line-height: 150%;
+}
+.a7:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #FFFFFF;
+	text-decoration: none;
+	line-height: 150%;
+	background-color: #333333;
+}
+bg1 {
+	color: #eeeeee;
+}
+bg2 {
+	color: #CCCCCC;
+}
+.bg1 {
+	background-color: #CCCCCC;
+
+}
+.bg2 {
+	background-color: #3398cc;
+}
+.td6 {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #000000;
+	text-align: left;
+
+
+}
+.bg3 {
+	background-color: #EEF9FF;
+}
+.picbg {
+	background-image: url(images/button_zc6.gif);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.td7 {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #333333;
+	line-height: 200%;
+	background-color: #FFCC99;
+
+}
+.td9 {
+
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #000000;
+	background-color: #DDDDDD;
+}
+.box {
+	background-color: #FFCC99;
+}
+.td1colour {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #333333;
+	line-height: 200%;
+	background-color: #FCE4C5;
+
+}
+.a8:link {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #000000;
+	text-decoration: none;
+	line-height: 150%;
+
+}
+.a8:visited {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #000000;
+	text-decoration: none;
+	line-height: 150%;
+
+}
+.a8:hover {
+	font-family: 宋体, serif, Helvetica;
+	font-size: 9pt;
+	color: #333333;
+	text-decoration: none;
+	line-height: 150%;
+}

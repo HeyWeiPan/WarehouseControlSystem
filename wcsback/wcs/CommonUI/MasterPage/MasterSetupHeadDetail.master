@@ -1,0 +1,190 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterSetupHeadDetail.master.cs"
+    Inherits="MasterSetupHeadDetail" %>
+
+<%@ Register Assembly="EntpClass.WebControlLib" Namespace="EntpClass.WebControlLib"
+    TagPrefix="cc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/CommonUI/MasterPage/MasterDetail.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        // <!CDATA[
+
+        function window_onkeydown() {
+            f_onenterkeydown();
+        }
+
+        function addRow() {
+            var newTr = GrdEditDetail.tbInsertRow(-1);
+            onInertRow(newTr, true);
+            GrdEditDetail.setRowFocus(newTr);
+        }
+
+        function insertRow() {
+            if (GrdEditDetail.selectedsectionrowindex > -1) {
+                var newTr = GrdEditDetail.tbInsertRow(GrdEditDetail.selectedsectionrowindex);
+                onInertRow(newTr, false);
+                GrdEditDetail.setRowFocus(newTr);
+            }
+        }
+        function deleteRow() {
+            if (GrdEditDetail.rows.length == 2) {
+                onClearHeadAndDetailData();
+                return;
+            }
+            if (GrdEditDetail.selectedsectionrowindex > -1)
+                GrdEditDetail.tbDeleteRow(GrdEditDetail.selectedsectionrowindex);
+        }
+        function deleteAllRow() {
+            if (!window.confirm('是否要删除全部的数据')) { window.event.cancelBubble = true; return false; }
+            onClearHeadAndDetailData();
+        }
+
+        function oninputerror() {
+            alert(event.errMsg);
+            event.eventObject.focus();
+        }
+
+
+        // ]]>
+    </script>
+</head>
+<body onkeydown="return window_onkeydown()">
+    <form id="form1" runat="server">
+    <table class="MainTb" border="0" cellpadding="0" cellspacing="0">
+        <tr id="top" class="TopC">
+            <td>
+                <div id="windowBoxTit">
+                    <h2>
+                        <strong>
+                            <img src="~/Home/images/icon16.gif" alt="图片描述" style="vertical-align: middle;"  runat="server"/>
+                            <asp:Label ID="LblTitle" runat="server" Text=""></asp:Label></strong></h2>
+                </div>
+            </td>
+        </tr>
+        <tr id="middle">
+            <td>
+                <table class="MidCTb" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="MidCTbCL">
+                            &nbsp;
+                        </td>
+                        <td id="container" align="left" valign="top">
+                            <div class="DivAutoScroll" id="divAutoScroll">
+                                <table style="display: inline; width: 100%; height: 88%;" border="0" cellpadding="0"
+                                    cellspacing="0">
+                                    <tr style="height: 100px;" id="TrDjHead">
+                                        <td valign="top">
+                                            <asp:ContentPlaceHolder ID="C1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top">
+                                            <asp:PlaceHolder ID="PHV" runat="server">
+                                                <div runat="server" id="DivViewGrid">
+                                                    <cc1:UcGridView ID="GrdViewDetail" runat="server" IsSelectable="False" AutoGenerateColumns="False"
+                                                        AllowPaging="False" AllowSorting="False" EnableViewState="true" ShowNoRecordsMessage="true">
+                                                        <HeaderStyle HorizontalAlign="Left" />
+                                                    </cc1:UcGridView>
+                                                </div>
+                                            </asp:PlaceHolder>
+                                            <asp:PlaceHolder ID="PHE" runat="server">
+                                                <table style="display: inline; width: 100%" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td valign="top">
+                                                            <div id="divEditGrid" runat="server">
+                                                                <asp:Literal ID="LE" runat="server"></asp:Literal>
+                                                                <asp:Panel ID="PLEditGrid" runat="server" Width="98%">
+                                                                </asp:Panel>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="right">
+                                                            <asp:Panel ID="PLDtBtn" runat="server" CssClass="DivGridButton">
+                                                                <cc1:UcButton ID="BtnTbAdd" runat="server" ColumnName="ADD" Width="70px" OnClientClick="addRow();return;"
+                                                                    UseSubmitBehavior="False" />
+                                                                <cc1:UcButton ID="BtnTbInsert" runat="server" ColumnName="Insert" Width="70px" OnClientClick="insertRow();return;"
+                                                                    UseSubmitBehavior="False" />
+                                                                <cc1:UcButton ID="BtnTbDelete" runat="server" ColumnName="Delete" Width="70px" OnClientClick="deleteRow();return;"
+                                                                    UseSubmitBehavior="False" />
+                                                                <cc1:UcButton ID="BtnTbDeletaAll" runat="server" ColumnName="DeleteAll" Width="70px"
+                                                                    OnClientClick="deleteAllRow();return;" UseSubmitBehavior="False" />
+                                                            </asp:Panel>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <cc1:UcHiddenField ID="HidDetailData" RenderToClient="true" runat="server" AllowUpdate="false"
+                                                    AllowInsert="false" />
+                                            </asp:PlaceHolder>
+                                            <asp:ContentPlaceHolder ID="C2" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td class="MidCTbCR">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr style="height: 56px;" id="bottom">
+            <td style="padding: 0 26px 0 26px;">
+                <table class="BottomCTb" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="BottomCTbCM">
+                            <table style="width: 100%; display: inline" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="left">
+                                        <cc1:UcImageButton ID="BtnFirst" runat="server" OnClick="BtnFirst_Click" Width="19px"
+                                            Height="19px" ImageUrl="../../Home/images/home.gif" />
+                                        <cc1:UcImageButton ID="BtnPrevious" runat="server" OnClick="BtnPrevious_Click" Width="19px"
+                                            Height="19px" ImageUrl="../../Home/images/up.gif" />
+                                        <cc1:UcImageButton ID="BtnNext" runat="server" OnClick="BtnNext_Click" Width="19px"
+                                            Height="19px" ImageUrl="../../Home/images/next.gif" />
+                                        <cc1:UcImageButton ID="BtnLast" runat="server" OnClick="BtnLast_Click" Width="19px"
+                                            Height="19px" ImageUrl="../../Home/images/end.gif" />
+                                        <asp:PlaceHolder ID="PLButton" runat="server"></asp:PlaceHolder>
+                                    </td>
+                                    <td align="right">
+                                        <asp:PlaceHolder ID="PHButton" runat="server"></asp:PlaceHolder>
+                                        <cc1:UcButton ID="BtnAdd" runat="server" ColumnName="ADD" Width="70px" OnClick="BtnAdd_Click"
+                                            UseSubmitBehavior="False" InsureClickOnce="True" />
+                                        <cc1:UcButton ID="BtnEdit" runat="server" ColumnName="EDIT" Width="70px" OnClick="BtnEdit_Click"
+                                            UseSubmitBehavior="False" InsureClickOnce="True" /><cc1:UcButton ID="BtnSubmit" runat="server"
+                                                ColumnName="Submit" Width="70px" OnClick="BtnSubmit_Click" UseSubmitBehavior="False"
+                                                OnClientClick="window.returnValue='REFRESH';" InsureClickOnce="True" /><cc1:UcButton
+                                                    ID="BtnUndoSubmit" runat="server" ColumnName="UndoSubmit" Width="70px" OnClick="BtnUndoSubmit_Click"
+                                                    UseSubmitBehavior="False" OnClientClick="window.returnValue='REFRESH';" InsureClickOnce="True" />
+                                        <cc1:UcButton ID="BtnSave" runat="server" ColumnName="Save" InsureClickOnce="true"
+                                            Width="70px" OnClick="BtnSave_Click" UseSubmitBehavior="False" OnClientClick="window.returnValue='REFRESH';" />
+                                        <cc1:UcButton ID="BtnCancel" runat="server" ColumnName="Cancel" Width="70px" OnClick="BtnCancel_Click"
+                                            UseSubmitBehavior="False" InsureClickOnce="True" />
+                                        <cc1:UcButton ID="BtnPrint" ColumnName="Print" runat="server" InsureClickOnce="True"
+                                            Width="70px" OnClick="BtnPrint_Click" OnClientClick="OnClientPrint();return false;" />
+                                        <cc1:UcButton ID="BtnExport" ColumnName="ExportExcel" runat="server" OnClick="BtnExport_Click"
+                                            UseSubmitBehavior="False" />
+                                        <cc1:UcButton ID="BtnClose" runat="server" ColumnName="Close" Width="70px" OnClientClick="window.close();return false;"
+                                            UseSubmitBehavior="False" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" align="center" style="height: 28px;">
+                <div class="footer1">
+                </div>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

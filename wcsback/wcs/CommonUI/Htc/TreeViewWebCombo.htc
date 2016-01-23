@@ -1,0 +1,394 @@
+﻿<public:component tagname="treeviewwebcombo" literalcontent="true">
+	<public:property name="define" />
+    <public:property name="src" />
+    <public:property name="implement" />
+    <public:property name="systemimagespath" />
+	<public:property name="value" get="getValue" put="putValue" />
+	<public:property name="text" get="getText" put="putText" />
+	<public:attach event="oncontentready" onevent="oncontentready()" />
+	<public:attach event="ondocumentready" onevent="ondocumentready()" />
+	<public:event name="onchange" id="_onchange" />
+	<public:method NAME="clickRow" />
+</public:component>
+
+<script language="javascript">
+var _oDefNode;
+var _styleframe=" BORDER-RIGHT: #8080ff 1px solid; BORDER-TOP: #8080ff 1px solid; BACKGROUND: #ffffff; BORDER-LEFT: #8080ff 1px solid; BORDER-BOTTOM: #8080ff 1px solid;"
+//var _oShare;
+var _oInput;
+var _oHidden;
+var _arrRowText;
+var _oldValue = "";
+var _oldText = "";
+var _isArrowClicking = false;
+var _ready = false;
+var _try = 10;
+
+function getValue(){
+	if (_oHidden != null )
+		return _oHidden.value;
+	else
+		return null;
+}
+
+
+function putValue(val){
+	if(_oHidden == null || _ready == false ||element.combo.oTreeView == null){
+		setTimeout(function(){putValue(val);},500);
+		return ;	
+	}
+    //putValueInternal(val);
+    _oldValue = val;
+	_oHidden.value = val;
+	
+	if(value != ""){
+
+    var rootNode = element.combo.oTreeView;
+  
+    firstSyncValue(rootNode, val);
+	
+     }
+    else{
+    putText("");
+    }
+}
+
+var tryTimes = 10;
+function firstSyncValue(oNode, keyValue){
+    var arrayChildren  = oNode.getChildren();
+    if(arrayChildren.length == 0 && tryTimes > 0){
+        tryTimes = tryTimes -1;
+        setTimeout(function(){firstSyncValue(oNode, keyValue);},200);
+        return;
+    }
+    syncValue(oNode, keyValue);
+}
+
+function putValueInternal(val){
+	
+
+	if (val != _oldValue){
+	    var a = _oldValue;
+		window.setTimeout(function(){
+		    var evt	;
+	        evt = element.document.createEventObject();
+	        evt.oldValue = a;
+	        _onchange.fire(evt);
+	        delete a;
+		},1);
+	}
+	_oldValue = val;
+	_oHidden.value = val;
+}
+
+function getText(){
+	if (_oInput != null )
+		return _oInput.value;
+	else
+		return null;
+}
+function putText(val){
+	if(_oInput == null){
+		setTimeout(function(){putText(val);},500);
+		return ;	
+	}
+	_oldText = _oInput.value;
+	_oInput.value = val;
+}
+
+function webcomboshare(){
+	this.oTreeView = null;
+	this.oSelectRow = null;
+	this.odivInfo=null;
+	this.wpp = window.createPopup();
+	this.msg = new msg();
+        //新增下面四个属性
+	this.disabled=false;
+	this.curselectedindex=-1;
+	this.beforeselectedindex=-1;
+	this.cssclass="";
+	
+	this.width = "155px";
+	this.popupwindowwidth = this.width;
+}
+
+function msg(){ 
+	this.loading = "数据加载中，请稍后...";
+	this.loaded = "请选择...";
+}
+function p_define(val){
+	_sDef = val;
+}
+
+function oncontentready(){
+
+}
+function ondocumentready(){
+	if (element.id == null )
+		element.id = document.uniqueID;
+	element.combo= new webcomboshare();
+	//element.combo = new webcomboshare();
+	if(!getXMLDef())
+		return ;
+	drawCombo();
+	_ready = true;
+	//setTimeout(initWppData,1);
+}
+
+function getXMLDef(){
+	var oDef = window.document.all(define);
+	if(null ==oDef){
+		alert("Can not find combo definition!")
+		return false;
+	}
+	_oDefNode = oDef.documentElement;
+
+		//从配置中获取disabled及cssclass属性
+	element.combo.disabled=_oDefNode.selectSingleNode("./data/disabled").text.toLowerCase();
+	element.combo.cssclass=_oDefNode.selectSingleNode("./data/cssclass").text;
+	
+	element.combo.width = _oDefNode.selectSingleNode("./data/width").text;
+	element.combo.popupwindowwidth = _oDefNode.selectSingleNode("./data/popupwindowwidth").text;
+//	
+	return true;
+}
+
+function drawCombo(){
+	
+	var oSpan = window.document.createElement("span");
+	oSpan.style.cssText = _styleframe + "POSITION:relative;width:" + element.combo.width + ";HEIGHT:21px;" + this.style.cssText;	//modify by lxd, 20050425
+	
+	this.style.cssText = "";
+	_oInput = window.document.createElement("input");
+	_oInput.style.cssText = "BORDER-RIGHT: 0px;BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px;display:inline;FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: 宋体;PADDING-LEFT: 3px; FLOAT: left; WIDTH: 100%; PADDING-TOP: 3px; HEIGHT: 15px";
+	_oInput.contentEditable="false";
+	if (element.combo.cssclass!="") _oInput.className=element.combo.cssclass;
+	if (element.combo.disabled=="false") {
+	    _oInput.attachEvent("onclick",onArrowClick); 	
+        //_oInput.attachEvent("onkeyup",onInputKeyUp);
+        //_oInput.attachEvent("onchange",onInputChange);
+    }
+    
+	var oSpanlist = window.document.createElement("span");
+	oSpanlist.style.cssText = "FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #8080ff; CURSOR: hand; COLOR: #e9ebf4; FONT-FAMILY: Webdings;FLOAT: right; WIDTH: 16px; TEXT-ALIGN: center;margin-left:-16px;";
+	oSpanlist.innerText = "6";
+	if (element.combo.disabled=="false")  oSpanlist.attachEvent("onclick",onArrowClick); 	
+	
+//	oSpanlist.attachEvent("onclick",onArrowClick)
+	_oInput.id = element.id + "_text";
+
+	if (element.combo.disabled=="true") 	_oInput.disabled=true; 
+	else  _oInput.disabled=false; 
+
+	_oInput.name = element.id + "_text";
+	oSpan.appendChild(_oInput);
+	oSpan.appendChild(oSpanlist);
+	_oHidden = window.document.createElement("input");
+	_oHidden.type = "hidden";
+	_oHidden.id = element.id + "_value";
+	_oHidden.name = element.id + "_value";
+	oSpan.appendChild(_oHidden);
+
+	element.parentNode.insertBefore(oSpan,element);
+	
+	 initWppData();
+//	alert(oSpan.innerHTML);
+}
+
+function onInputChange(){
+	setValue("","");
+}
+function onInputKeyUp(){
+window.event.returnValue = true;
+window.event.cancelBubble = true;
+var keyID;
+keyID = event.keyCode;
+setValue("","");
+return ;
+}
+
+var _TvInit = false;
+
+function onArrowClick(){
+if(!element.combo.wpp.isOpen){
+	showlist();}
+}
+function showlist(){
+	
+	//对快捷窗口的初试位置进行了重新设置，原因是因为外观进行调整后原来的初试位置不再合适。	
+	element.combo.wpp.show(-3,_oInput.offsetHeight+3,element.combo.popupwindowwidth,300,_oInput);
+
+}
+
+                                
+function initWppData(){    
+	var d =element.combo.wpp.document; 
+	element.combo.oSelectRow = null;	
+	d.open("text/html", "replace");  
+	d.write(getPopupHTML());  
+	d.close();  
+	element.combo.oTreeView = element.combo.wpp.document.all("TVOrg");
+	element.combo.oTreeView.setAttribute("clickRow",clickRow);
+	setTitle(element.combo.msg.loaded);
+}
+
+function getPopupHTML(){
+    var s = "";
+	    s += "<html>"
+        s += "<head>"
+        s += "<style>.Frame { BORDER-RIGHT: #4169e1 1px solid; BORDER-TOP: #4169e1 1px solid; BORDER-LEFT: #4169e1 1px solid; BORDER-BOTTOM: #4169e1 1px solid }"
+        s += ".main{ FONT-WEIGHT: normal; FONT-SIZE: 9pt; FONT-FAMILY: 宋体;table-layout:fixed; }"
+        s += ".ListTitle{ FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #b0c4de; COLOR: #ffffff; FONT-FAMILY: 宋体 }"
+        s += ".Row { HEIGHT: 20px }"
+        s += ".Header {  }"
+        s += "tr{height:20;}</style>"
+        s += "</head>"
+        s +="<body class='Frame' style='margin: 0px; ' >"
+        s +="<table  class='ListTitle' cellspacing=0 cellpadding=0 style='padding: 3px; width: 100%;' >"
+        s +="<tr><td  noWrap width='100%'><span id='spanTitle' style='text-overflow: ellipsis; overflow: hidden; width: 100%'>TeamTree</span></td></tr>"
+        s += "</table>"
+        s += "<div id='divInfo' style='width:100%;height:275px;'>"
+        s += "<?XML:NAMESPACE PREFIX=TVNS />"
+        s +=  "<?IMPORT NAMESPACE=TVNS IMPLEMENTATION='" + implement +" ' />"
+        s +=  "<tvns:treeview  target='_blank' id='TVOrg'  NAME='TVOrg' style='width:100%;height:100%;'"
+        s +=  " DefaultStyle='font-family:宋体;font-size:9pt;' selectedNodeIndex=-1"
+        s +=  " TreeNodeSrc=" + src
+        s +=  " systemImagesPath='" + systemimagespath +"'"
+        s +=  " selectExpands='true' onclick='this.clickRow(this)'" 
+        s +=  "</tvns:treeview>";  
+        s += "</div>"
+	s += "</body></html>";
+
+	return s;
+}
+
+
+ //Menu And Page Synchronization
+function syncValue(oNode, keyValue){
+    var arrayChildren ;
+    var i = 0;
+    
+    if( keyValue =="" || oNode == null)
+    {
+        return false;
+    }
+
+    if (oNode.getAttribute("NodeData") == keyValue )
+    {
+        putText(oNode.getAttribute("text"));
+
+        expand(oNode);
+        element.combo.oTreeView.selectedNodeIndex = oNode.getNodeIndex();
+        return true;
+    }
+
+    arrayChildren  = oNode.getChildren();
+
+    for(i=0;i<arrayChildren.length;i++){
+        if(syncValue(arrayChildren[i], keyValue)){
+            return true;
+        }
+    }
+    return false;
+}
+
+function clickRow(obj){
+	 var index = obj.clickedNodeIndex;  
+    if (index != null && index != '')
+    {                    	
+        var treeNode =obj.getTreeNode(index); 
+        if (treeNode !=null)
+        {
+            setValue(treeNode.getAttribute("text"),treeNode.getAttribute("NodeData"))
+        }
+        else
+        {
+            setValue('','');
+        }
+    }        
+    element.combo.wpp.hide();
+}
+
+//Expand
+function expand(oNode){
+    if(oNode == null) return;
+    var pNode = oNode.getParent();
+    if (pNode != null ){
+         expand(pNode);
+        pNode.setAttribute("expanded", true);
+    }   
+   
+}
+
+function expandAll(oNode){
+ var arrayChildren ;
+    var i = 0;
+    if( oNode == null)
+    {
+        return ;
+    }
+ oNode.setAttribute("expanded", true);
+    arrayChildren  = oNode.getChildren();
+//expand(oNode);
+    for(i=0;i<arrayChildren.length;i++){
+        expandAll(arrayChildren[i])
+    }
+
+}
+//function selectRow(oRow){
+//	if (oRow == null)
+//		return ;
+//	try{	
+//	if (element.combo.oSelectRow!=null){
+//	
+//		element.combo.oSelectRow.style.backgroundColor = "#ffffff";
+//		element.combo.oSelectRow.style.color = "black";
+//		}
+//		}
+//	catch(ex){
+//		element.combo.oSelectRow = null;
+//	}
+//	oRow.style.backgroundColor = "darkblue";
+//	oRow.style.color = "white";
+//	element.combo.oSelectRow = oRow;
+//	setValue(oRow.getAttribute("text"),oRow.getAttribute("value"))
+//	oRow = null;
+////	if(!_isArrowClicking ){
+////		element.combo.wpp.hide();
+////	}
+//alert('click');
+//	element.combo.wpp.hide();
+//}
+
+function setValue(sText,sVal){
+	text = sText;
+	putValueInternal(sVal);
+}	
+
+function GetRow(oElem)
+{
+	while (oElem)
+	{
+	   if (oElem.tagName.toLowerCase() == "tr") 
+		    return oElem;
+		if (oElem.tagName.toLowerCase() == "table") 
+			return null;
+		oElem = oElem.parentElement;
+	}
+}
+function setTitle(val){
+   var divTitle = element.combo.wpp.document.all("spanTitle");
+
+//   if(val == ""){
+//   divTitle.parentNode.parentNode.style.display = "none";
+//   }
+//   else{
+//   divTitle.parentNode.parentNode.style.display = "inline";
+//	
+//	}  
+
+	divTitle.innerText = val;
+}
+
+</script>
+

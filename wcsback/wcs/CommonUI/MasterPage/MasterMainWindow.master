@@ -1,0 +1,76 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterMainWindow.master.cs"
+    Inherits="CommonUI_MasterPage_MasterMain" %>
+
+<%@ Register Assembly="EntpClass.WebControlLib" Namespace="EntpClass.WebControlLib"
+    TagPrefix="cc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/CommonUI/MasterPage/MasterMainWindow.css" rel="stylesheet" type="text/css" />
+    <link href="../../Home/style/reset_css.css" type="text/css" rel="stylesheet" />
+    <link href="MasterHeadStyle.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        function InsertFavorate(s) {
+
+            parent.frames[0].window.InsertFavorate(s);
+
+        }
+
+        function DeleteFavorate(s) {
+            parent.frames[0].window.DeleteFavorate(s);
+        }
+    </script>
+    <style type="text/css">
+        body a
+        {
+            color: Blue;
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" style="padding-left: 8px;">
+    
+    <div>
+        <table style="width: 100%; height: 100%; display: inline; table-layout: fixed;" cellpadding="0"
+            cellspacing="0">
+            <tr style="height: 60px;">
+                <td>
+                    <table class="TbTitle" border="0" cellspacing="0" cellpadding="0" style="height: 60px;">
+                        <tr class="TbTitleR1" style="height: 60px;">
+                            <td>
+                                <h2 class="titles">
+                                    <span class="more">
+                                        <asp:HyperLink ID="LnkHelpTextCN" Visible="false" Target="_blank" NavigateUrl="#"
+                                            runat="server">操作帮助</asp:HyperLink>
+                                        <asp:LinkButton ID="LnkFavorate" runat="server" ClientIDMode="Static">加入收藏</asp:LinkButton><asp:LinkButton
+                                            ID="LnkDeleteFavorate" runat="server" ClientIDMode="Static">取消收藏</asp:LinkButton></span><strong><asp:Label
+                                                ID="LblTitle" runat="server" Text="Label"></asp:Label></strong></h2>
+                                <div class="gonglen">
+                                    <ul>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <div class="DivAutoScroll">
+                        <asp:ContentPlaceHolder ID="C1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

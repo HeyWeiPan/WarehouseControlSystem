@@ -1,0 +1,362 @@
+<%@ register tagprefix="cc1" namespace="CDMSAPP.WebControlLib" assembly="CDMSAPP.WebControlLib" %>
+<html>
+<head>
+    <meta name="GENERATOR" content="Microsoft Visual Studio 8.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>请选择一个日期</title>
+
+    <script id="clientEventHandlersJS" language="javascript">
+		
+<!--
+var tmpstr="";
+function closeMe(index)
+{
+/*  var sData = dialogArguments;
+  
+  sData.fnUpdate(monthArray[index].toLocaleString());
+  event.returnValue = false;
+  window.close();
+ */
+	if (index!=-1 && index!=-2) {
+	    tmpstr =new String(monthArray[index].getYear())
+	if (tmpstr.length == 2 )
+	    window.returnValue = '19' + monthArray[index].getYear() + '/' + (monthArray[index].getMonth()+1 ) + '/' +  monthArray[index].getDate()
+	else if (tmpstr.length > 2)
+	    window.returnValue = monthArray[index].getYear() + '/' + (monthArray[index].getMonth() +1) + '/' +  monthArray[index].getDate()
+	else if (tmpstr.length <2)
+	    window.returnValue='0';
+	}
+	else if (index==-1){
+	    //window.returnValue = '9';
+	}
+	else if (index==-2){
+		window.returnValue = tTdate.getYear() + '/' + (tTdate.getMonth() +1) + '/' +  tTdate.getDate()
+	}
+	event.returnValue = false;
+	window.close(); 
+}
+
+
+var monthArray = new Array(60);
+var cntj
+var Year
+var Mon
+var today 
+var todayflg
+var tTdate
+var mFlag
+var tM
+function SetArray(y,m)
+{
+	var now 
+	var fistdayofweek
+	var tempdate
+	var i
+	tM=m;
+	if (mFlag=='0'){
+	tMonth=m+1;
+	}
+	else {
+	tMonth=m+2;
+	m=m+1;
+	}
+	mFlag='2';
+	//alert(tMonth);
+	if (window.dialogArguments == '')
+	window.returnValue =''
+	else{
+		tmpstr =new String(today.getYear())
+		if (tmpstr.length == 2 ){
+		   
+			window.returnValue = '19' +  today.getYear() + '/' + (today.getMonth()+1) + '/' +  today.getDate();}
+		else{
+			
+			window.returnValue =  today.getYear() + '/' + (today.getMonth()+1 ) + '/' +  today.getDate();}
+		}
+	
+	now = new Date(y,m,1)
+	
+	Year = now.getYear()
+	
+	tmpstr =new String(Year)
+	
+	if (tmpstr.length ==2 ) Year ='19' +Year
+	
+	Mon = now.getMonth()+1
+	todayflg = 0
+	fistdayofweek = new Date(now.getYear(),now.getMonth(),now.getDate()-now.getDay())
+	for(i = 1 ; i <=42; i++)
+	{
+		tempdate = new Date(fistdayofweek.getYear(),fistdayofweek.getMonth(),fistdayofweek.getDate() + i - 1)		
+		monthArray[i] = tempdate	
+		if (tempdate.toLocaleString() ==today.toLocaleString() ) todayflg= i
+		if (i == 36 ){
+		    //alert(tempdate.getMonth());
+		    //alert(tM);
+			if ( tempdate.getMonth()-2 != tM)
+			{
+				cntj = 6;}
+			else{
+				cntj = 5;}				
+		}
+	}
+}
+
+var htmlstr;
+var tMonth;
+
+function Draw()
+{
+
+
+var preMon =1 
+var nextMon =1
+var flg
+var i
+var j
+htmlstr = ' '
+htmlstr = htmlstr + '<table id="Calendar1" cellspacing="0" cellpadding="0" bordercolor="#3366CC" border="0" style="color:#003399;background-color:#C0FFFF;border-color:#3366CC;border-width:1px;border-style:solid;font-family:宋体;font-size:9pt;height:15%;width:100%;border-collapse:collapse;Z-INDEX: 101;POSITION: absolute;top:0px;left:0px">'
+
+htmlstr = htmlstr + '<tr><td colspan="7" style="background-color:#C0FFFF;border-color:#C0FFFF;border-width:1px;border-style:Solid;height:100%;"><table cellspacing="0" border="0" style="color:#CCCCFF;font-family:宋体;font-size:10pt;font-weight:bold;width:100%;border-collapse:collapse;">'
+htmlstr = htmlstr + '<tr><table align="left" style="background-color:#C0FFFF;border-color:#C0FFFF;font-size:9pt;width:50%;"><td style="color:Gray;font-size:9pt;width:8%;"><a href="#" onclick="SetArray(Year-1,Mon-2);Draw();window.event.returnValue = false;" style="color:Gray">&lt;</a></td><td align="Center" style="width:84%;height:100%"><input type="text" align="left" id="text1" value=' + Year + ' onchange="SetArray(value,Mon-2);Draw();window.event.returnValue = false;" style="BORDER-RIGHT:#3366cc thin double;PADDING-RIGHT:0px;BORDER-TOP:#3366cc thin double;PADDING-LEFT:0px;FONT-WEIGHT:normal;FONT-SIZE:9pt;PADDING-BOTTOM:0px;MARGIN:0px;BORDER-LEFT:#3366cc thin double;WIDTH:70%;PADDING-TOP:0px;BORDER-BOTTOM:#3366cc thin double;FONT-FAMILY:宋体;BACKGROUND-COLOR:#c0ffff"/></td><td align="Right" style="color:#CCCCFF;font-size:9pt;width:8%;"><a href="#" onclick="SetArray(' + Year + '+1,Mon-2);Draw();window.event.returnValue = false;" style="color:Gray">&gt;</a></td></table>'
+//htmlstr = htmlstr + '<tr><SELECT align="center" style="background-color:#FF8000;border-color:#0000C0;font-bold:true;font-size:9pt;width:30%;" onchange="SetArray(value,Mon-1);DDraw();window.event.returnValue = false;" ><OPTION value="2002">2002</OPTION><OPTION  value="2003">2003</OPTION><OPTION  value="2004">2004</OPTION><OPTION  value="2005">2005</OPTION><OPTION  value="2006">2006</OPTION></SELECT>&nbsp;&nbsp;'
+htmlstr = htmlstr + '<table align="right" style="background-color:#003399;border-color:#3366CC;font-size:9pt;width:50%;"> <SELECT align="center" style="background-color:#C0FFFF;border-color:#3366CC;font-size:9pt;width:100%;" onchange="SetArray(Year,value-2);Draw();window.event.returnValue = false;"  >'
+//<OPTION Value="2">2</OPTION><OPTION Value="3">3</OPTION><OPTION Value="4">4</OPTION><OPTION Value="5">5</OPTION><OPTION Value="6">6</OPTION><OPTION Value="7">7</OPTION><OPTION Value="8">8</OPTION><OPTION Value="9">9</OPTION><OPTION Value="10">10</OPTION><OPTION Value="11">11</OPTION><OPTION Value="12">12</OPTION></SELECT></tr>'
+//tMonth=tMonth+1;
+if (tMonth=='1')
+   htmlstr = htmlstr + '<OPTION selected  Value="1" >1</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="1" >1</OPTION>'
+   }
+if (tMonth=='2')
+   htmlstr = htmlstr + '<OPTION selected  Value="2" >2</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="2" >2</OPTION>'
+   }
+if (tMonth=='3')
+   htmlstr = htmlstr + '<OPTION selected  Value="3" >3</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="3" >3</OPTION>'
+   }
+if (tMonth=='4')
+   htmlstr = htmlstr + '<OPTION selected  Value="4" >4</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="4" >4</OPTION>'
+   }
+if (tMonth=='5')
+   htmlstr = htmlstr + '<OPTION selected  Value="5" >5</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="5" >5</OPTION>'
+   }
+if (tMonth=='6')
+   htmlstr = htmlstr + '<OPTION selected  Value="6" >6</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="6" >6</OPTION>'
+   }
+if (tMonth=='7')
+   htmlstr = htmlstr + '<OPTION selected  Value="7" >7</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="7" >7</OPTION>'
+   }
+if (tMonth=='8')
+   htmlstr = htmlstr + '<OPTION selected  Value="8" >8</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="8" >8</OPTION>'
+   }
+if (tMonth=='9')
+   htmlstr = htmlstr + '<OPTION selected  Value="9" >9</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="9" >9</OPTION>'
+   }
+if (tMonth=='10')
+   htmlstr = htmlstr + '<OPTION selected  Value="10" >10</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="10" >10</OPTION>'
+   }
+if (tMonth=='11')
+   htmlstr = htmlstr + '<OPTION selected  Value="11" >11</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="11" >11</OPTION>'
+   }
+if (tMonth=='12')
+   htmlstr = htmlstr + '<OPTION selected  Value="12" >12</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="12" >12</OPTION>'
+   }
+   //alert(htmlstr);
+ htmlstr = htmlstr + '</SELECT></table></tr>'
+//htmlstr = htmlstr + '<tr><td style="color:#CCCCFF;font-size:9pt;width:15%;"><a href="#" onclick="SetArray(Year-1,Mon-1);Draw();window.event.returnValue = false;" style="color:#CCCCFF">&lt;</a></td><td align="Center" style="width:70%;"> ' + Year + ' </td><td align="Right" style="color:#CCCCFF;font-size:9pt;width:15%;"><a href="#" onclick="SetArray(Year+1,Mon-1);Draw();window.event.returnValue = false;" style="color:#CCCCFF">&gt;</a></td></tr>'
+//htmlstr = htmlstr + '<tr><td style="color:#CCCCFF;font-size:9pt;width:15%;"><a href="#" onclick="SetArray(Year,Mon-2);Draw();window.event.returnValue = false;" style="color:#CCCCFF">&lt;</a></td><td align="Center" style="width:70%;"> ' + Mon + ' </td><td align="Right" style="color:#CCCCFF;font-size:9pt;width:15%;"><a href="#" onclick="SetArray(Year,Mon);Draw();window.event.returnValue = false;" style="color:#CCCCFF">&gt;</a></td></tr>'
+htmlstr = htmlstr + '</table></td></tr></table>'
+
+htmlstr = htmlstr + '<table id="Calendar1" cellspacing="0" cellpadding="1" bordercolor="#3366CC" border="0" style="color:#003399;background-color:#80FFFF;border-color:#3366CC;border-width:1px;border-style:solid;font-family:宋体;font-size:9pt;height:70%;width:100%;border-collapse:collapse;Z-INDEX: 101; LEFT: 0px; POSITION: absolute; TOP: 15%"><tr><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">S</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">M</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">T</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">W</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">T</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">F</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">S</td></tr>	'
+	for(var i = 1 ; i <=cntj; i++)
+	{
+		htmlstr = htmlstr + '<tr>'
+		for(var j = 1 ; j <=7; j++)
+		{
+		
+			if (todayflg ==7*(i-1)+j)
+				htmlstr = htmlstr + '<td align="Center" style="background-color:#999999;width:14%;">'
+			else{
+				if (j ==1 || j == 7)
+					htmlstr = htmlstr + '<td align="Center" style="background-color:#CCCCFF;width:14%;">'				
+				else
+					htmlstr = htmlstr + '<td align="Center" style="width:14%;">'
+			}
+		
+		if ( monthArray[7*(i-1)+j].getDate() == 1 &&   preMon == 0) nextMon = 0	
+		if ( monthArray[7*(i-1)+j].getDate() == 1 &&   preMon == 1) preMon = 0
+		
+		
+		if ((preMon == 1 && nextMon ==1) || (preMon == 0 && nextMon ==0)) {
+			if (monthArray[7*(i-1)+j].getYear()+'/'+monthArray[7*(i-1)+j].getMonth()+'/'+monthArray[7*(i-1)+j].getDate()==today){
+			htmlstr = htmlstr + '	<a href="#" onclick="javascript:closeMe(' + (7*(i-1)+j) + ')" style="color:red;border-color:#cc66ff;">' + monthArray[7*(i-1)+j].getDate() + '</a>'		
+			}
+			else {
+			htmlstr = htmlstr + '	<a href="#" onclick="javascript:closeMe(' + (7*(i-1)+j) + ')" style="color:#999999">' + monthArray[7*(i-1)+j].getDate() + '</a>'		
+			}
+		}
+		else {
+			if (monthArray[7*(i-1)+j].getYear()+'/'+monthArray[7*(i-1)+j].getMonth()+'/'+monthArray[7*(i-1)+j].getDate()==today){
+			htmlstr = htmlstr + '	<a href="#" onclick="javascript:closeMe(' + (7*(i-1)+j) + ')" style="color:red;border-color:#cc66ff;">' + monthArray[7*(i-1)+j].getDate() + '</a>'		
+			}
+			else{
+			htmlstr = htmlstr + '	<a href="#" onclick="javascript:closeMe(' + (7*(i-1)+j) + ')" style="color:#003399">' + monthArray[7*(i-1)+j].getDate() + '</a>'		
+			}
+		}
+		htmlstr = htmlstr + '</td>';
+		}
+		htmlstr = htmlstr + '</tr>'
+	}
+	
+htmlstr = htmlstr + '</table> ' ;
+if (document.cookie.length>0)
+{
+    var name = "UseLanguage";
+    var useLanguage = "Chinese";
+    var start=document.cookie.indexOf(name+"=")
+    if (start!=-1)
+    { 
+        start=start + name.length+1 
+        var end=document.cookie.indexOf("&",start)
+        if (end==-1) end=document.cookie.length
+        useLanguage = unescape(document.cookie.substring(start,end))
+    } 
+}
+
+if(useLanguage=="Chinese")
+{
+    htmlstr = htmlstr+'<table id="Calendar1" cellspacing="0" cellpadding="0" bordercolor="#3366CC" border="0" style="color:#003399;background-color:#C0FFFF;border-color:#3366CC;border-width:1px;border-style:solid;font-family:宋体;font-size:9pt;height:15%;width:100%;border-collapse:collapse;Z-INDEX: 101; LEFT: 0px; POSITION: absolute;top:85%"><tr><td><input id="Button1" type="button" align="left" style="width:100%;height:100%;font-family:宋体;font-size:9pt;"   onclick="javascript:closeMe(-2)" value="今天" /></td><td><input id="Button2" type="button" align="right" style="width:100%;height:100%;font-family:宋体;font-size:9pt;" value="关闭"  onclick="javascript:closeMe(-1)"/></td></tr></table>';    
+}
+else
+{
+    htmlstr = htmlstr+'<table id="Calendar1" cellspacing="0" cellpadding="0" bordercolor="#3366CC" border="0" style="color:#003399;background-color:#C0FFFF;border-color:#3366CC;border-width:1px;border-style:solid;font-family:宋体;font-size:9pt;height:15%;width:100%;border-collapse:collapse;Z-INDEX: 101; LEFT: 0px; POSITION: absolute;top:85%"><tr><td><input id="Button1" type="button" align="left" style="width:100%;height:100%;font-family:宋体;font-size:9pt;"   onclick="javascript:closeMe(-2)" value="Today" /></td><td><input id="Button2" type="button" align="right" style="width:100%;height:100%;font-family:宋体;font-size:9pt;" value="Close"  onclick="javascript:closeMe(-1)"/></td></tr></table>';    
+}
+
+Div_C.innerHTML =htmlstr
+}
+
+/*function DDraw()
+{
+var Hhtmlstr;
+var preMon =1 
+var nextMon =1
+var flg
+var i
+var j
+Hhtmlstr=' '
+Hhtmlstr = Hhtmlstr + '<table id="Calendar1" cellspacing="0" cellpadding="1" bordercolor="#3366CC" border="0" style="color:#003399;background-color:White;border-color:#3366CC;border-width:1px;border-style:solid;font-family:宋体;font-size:9pt;height:175px;width:220px;border-collapse:collapse;Z-INDEX: 101; LEFT: 8px; POSITION: absolute; TOP: 33px"><tr><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">S</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">M</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">T</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">W</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">T</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">F</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">S</td></tr>	'
+	for(var i = 1 ; i <=cntj; i++)
+	{
+		Hhtmlstr = Hhtmlstr + '<tr>'
+		for(var j = 1 ; j <=7; j++)
+		{
+		
+			if (todayflg ==7*(i-1)+j)
+				Hhtmlstr = Hhtmlstr + '<td align="Center" style="background-color:#999999;width:14%;">'
+			else{
+				if (j ==1 || j == 7)
+					Hhtmlstr = Hhtmlstr + '<td align="Center" style="background-color:#CCCCFF;width:14%;">'				
+				else
+					Hhtmlstr = Hhtmlstr + '<td align="Center" style="width:14%;">'
+			}
+		
+		if ( monthArray[7*(i-1)+j].getDate() == 1 &&   preMon == 0) nextMon = 0	
+		if ( monthArray[7*(i-1)+j].getDate() == 1 &&   preMon == 1) preMon = 0
+		
+		
+		if ((preMon == 1 && nextMon ==1) || (preMon == 0 && nextMon ==0))
+			Hhtmlstr = Hhtmlstr + '	<a href="#" onclick="javascript:closeMe(' + (7*(i-1)+j) + ')" style="color:#999999">' + monthArray[7*(i-1)+j].getDate() + '</a>'		
+		else
+			Hhtmlstr = Hhtmlstr + '	<a href="#" onclick="javascript:closeMe(' + (7*(i-1)+j) + ')" style="color:#003399">' + monthArray[7*(i-1)+j].getDate() + '</a>'		
+
+		Hhtmlstr = Hhtmlstr + '</td>';
+		}
+		Hhtmlstr = Hhtmlstr + '</tr>'
+	}
+
+Hhtmlstr = Hhtmlstr + '</table> ';
+Div_C.innerHTML =Hhtmlstr
+
+}*/
+
+
+function window_onload() {
+window.event.returnValue = false;
+}
+
+function window_onkeydown() {
+if (event.keyCode == 13){
+	if(event.srcElement.tagName.toLowerCase()=="input"){
+		if( event.srcElement.type.toLowerCase() == "button" || event.srcElement.type.toLowerCase() == "submit"  || event.srcElement.type.toLowerCase() == "reset")
+			return ;
+	}
+	else if (event.srcElement.tagName.toLowerCase() == "textarea"){
+		return ;
+	}
+	event.keyCode = 9;
+	document.body.fireEvent("onkeydown");
+	}
+}
+
+
+//-->
+    </script>
+
+</head>
+<body leftmargin="0" topmargin="0" rightmargin="0" bottommargin="0" scroll="no" onkeydown="return window_onkeydown()">
+    <div id="Div_C">
+    </div>
+    <table id="Calendar1" cellspacing="0" cellpadding="0" bordercolor="#3366CC" border="0"
+        style="color: #003399; background-color: White; border-color: #3366CC; border-width: 1px;
+        border-style: solid; font-family: 宋体; font-size: 9pt; height: 200px; width: 220px;
+        border-collapse: collapse; z-index: 101; left: 8px; position: absolute; top: 8px">
+    </table>
+
+    <script language="javascript">
+
+if (window.dialogArguments == '')
+	today = new Date()
+else
+	today = new Date(window.dialogArguments)
+if (today == null) today = new Date()
+if (window.dialogArguments == '')
+	tTdate = new Date()
+if (window.dialogArguments == '')
+    mFlag='0'
+if (window.dialogArguments == '')
+    yFlag='0'
+if (tTdate == null) tTdate = new Date()
+if (window.dialogArguments == ''){
+	SetArray(today.getYear(),today.getMonth());
+	Draw();
+}
+else {
+	SetArray(today.getYear(),today.getMonth()-1);
+	Draw();
+}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,743 @@
+<%@ Register TagPrefix="cc1" Namespace="CDMSAPP.WebControlLib" Assembly="CDMSAPP.WebControlLib" %>
+<HTML>
+	<HEAD>
+		<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+		<TITLE>Please select a datetime</TITLE>
+		<SCRIPT ID="clientEventHandlersJS" LANGUAGE="javascript">
+<!--
+var tmpstr="";
+
+function setDate(index)
+{
+	tTdate.setFullYear(monthArray[index].getYear(),monthArray[index].getMonth() ,monthArray[index].getDate());
+}
+
+function closeMe(index)
+{
+	if (index == -2)
+		window.returnValue = '';		
+	else
+		window.returnValue = tTdate.getYear() + '/' + (tTdate.getMonth() +1) + '/' +  tTdate.getDate() + ' ' + tHH24 + ':' + tMi ;		
+	event.returnValue = false;
+	window.close(); 
+}
+
+
+var monthArray = new Array(60);
+var cntj
+var Year
+var Mon
+var today 
+var todayflg
+var tTdate
+var mFlag
+var tM
+
+function SetArray(y,m,hh24,mi)
+{
+	var now 
+	var fistdayofweek
+	var tempdate
+	var i
+	tM=m;
+	tHH24 = hh24;
+	tMi   = mi;
+	if (mFlag=='0'){
+	tMonth=m+1;
+	}
+	else {
+	tMonth=m+2;
+	m=m+1;
+	}
+	mFlag='2';
+	if (window.dialogArguments == '')
+		window.returnValue =''
+	else
+	{
+		tmpstr =new String(today.getYear())
+		if (tmpstr.length == 2 )
+		{
+			window.returnValue = '19' +  today.getYear() + '/' + (today.getMonth()+1) + '/' +  today.getDate() + ' ' + tHH24 + ':' + tMi;}
+		else{
+			
+			window.returnValue =  today.getYear() + '/' + (today.getMonth()+1 ) + '/' +  today.getDate() + ' ' + tHH24 + ':' + tMi;}
+	}
+	
+		
+	now = new Date(y,m,1)
+		
+	Year = now.getYear()
+	
+	tmpstr =new String(Year)
+	
+	if (tmpstr.length ==2 ) Year ='19' +Year
+	
+	Mon = now.getMonth()+1
+			
+	todayflg = 0
+	fistdayofweek = new Date(now.getYear(),now.getMonth(),now.getDate()-now.getDay())
+		
+	for(i = 1 ; i <=42; i++)
+	{
+		tempdate = new Date(fistdayofweek.getYear(),fistdayofweek.getMonth(),fistdayofweek.getDate() + i - 1)	
+		monthArray[i] = tempdate	
+		if (tempdate.getDate() ==today.getDate() && tempdate.getFullYear() ==today.getFullYear() && tempdate.getMonth() ==today.getMonth()  ) todayflg= i
+		if (i == 36 )
+		{
+			if ( tempdate.getMonth()-2 != tM)
+			{
+				cntj = 6;}
+			else{
+				cntj = 5;}				
+		}
+	}
+	
+	
+	
+}
+
+var htmlstr;
+var tMonth;
+var tHH24;
+var tMi;
+
+function Draw()
+{
+
+
+var preMon =1 
+var nextMon =1
+var flg
+var i
+var j
+htmlstr = ' '
+htmlstr = htmlstr + '<table id="Calendar1" cellspacing="0" cellpadding="0" bordercolor="#3366CC" border="0" style="color:#003399;background-color:#C0FFFF;border-color:#3366CC;border-width:1px;border-style:solid;font-family:宋体;font-size:9pt;height:15%;width:100%;border-collapse:collapse;Z-INDEX: 101;POSITION: absolute;top:0px;left:0px">'
+
+htmlstr = htmlstr + '<tr><td colspan="7" style="background-color:#C0FFFF;border-color:#C0FFFF;border-width:1px;border-style:Solid;height:100%;"><table cellspacing="0" border="0" style="color:#CCCCFF;font-family:宋体;font-size:10pt;font-weight:bold;width:100%;border-collapse:collapse;">'
+htmlstr = htmlstr + '<tr><table align="left" style="background-color:#C0FFFF;border-color:#C0FFFF;font-size:9pt;width:50%;"><td style="color:Gray;font-size:9pt;width:8%;"><a href="#" onclick="SetArray(Year-1,Mon-2,tHH24,tMi);Draw();window.event.returnValue = false;" style="color:Gray">&lt;</a></td><td align="Center" style="width:84%;height:100%"><input type="text" align="left" id="text1" value=' + Year + ' onchange="SetArray(value,Mon-2,tHH24,tMi);Draw();window.event.returnValue = false;" style="BORDER-RIGHT:#3366cc thin double;PADDING-RIGHT:0px;BORDER-TOP:#3366cc thin double;PADDING-LEFT:0px;FONT-WEIGHT:normal;FONT-SIZE:9pt;PADDING-BOTTOM:0px;MARGIN:0px;BORDER-LEFT:#3366cc thin double;WIDTH:70%;PADDING-TOP:0px;BORDER-BOTTOM:#3366cc thin double;FONT-FAMILY:宋体;BACKGROUND-COLOR:#c0ffff"/></td><td align="Right" style="color:#CCCCFF;font-size:9pt;width:8%;"><a href="#" onclick="SetArray(' + Year + '+1,Mon-2,tHH24,tMi);Draw();window.event.returnValue = false;" style="color:Gray">&gt;</a></td></table>'
+htmlstr = htmlstr + '<table align="right" style="background-color:#003399;border-color:#3366CC;font-size:9pt;width:50%;"> <SELECT align="center" style="background-color:#C0FFFF;border-color:#3366CC;font-size:9pt;width:100%;" onchange="SetArray(Year,value-2,tHH24,tMi);Draw();window.event.returnValue = false;"  >'
+if (tMonth=='1')
+   htmlstr = htmlstr + '<OPTION selected  Value="1" >1</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="1" >1</OPTION>'
+   }
+if (tMonth=='2')
+   htmlstr = htmlstr + '<OPTION selected  Value="2" >2</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="2" >2</OPTION>'
+   }
+if (tMonth=='3')
+   htmlstr = htmlstr + '<OPTION selected  Value="3" >3</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="3" >3</OPTION>'
+   }
+if (tMonth=='4')
+   htmlstr = htmlstr + '<OPTION selected  Value="4" >4</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="4" >4</OPTION>'
+   }
+if (tMonth=='5')
+   htmlstr = htmlstr + '<OPTION selected  Value="5" >5</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="5" >5</OPTION>'
+   }
+if (tMonth=='6')
+   htmlstr = htmlstr + '<OPTION selected  Value="6" >6</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="6" >6</OPTION>'
+   }
+if (tMonth=='7')
+   htmlstr = htmlstr + '<OPTION selected  Value="7" >7</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="7" >7</OPTION>'
+   }
+if (tMonth=='8')
+   htmlstr = htmlstr + '<OPTION selected  Value="8" >8</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="8" >8</OPTION>'
+   }
+if (tMonth=='9')
+   htmlstr = htmlstr + '<OPTION selected  Value="9" >9</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="9" >9</OPTION>'
+   }
+if (tMonth=='10')
+   htmlstr = htmlstr + '<OPTION selected  Value="10" >10</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="10" >10</OPTION>'
+   }
+if (tMonth=='11')
+   htmlstr = htmlstr + '<OPTION selected  Value="11" >11</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="11" >11</OPTION>'
+   }
+if (tMonth=='12')
+   htmlstr = htmlstr + '<OPTION selected  Value="12" >12</OPTION>'
+else {
+   htmlstr = htmlstr + '<OPTION Value="12" >12</OPTION>'
+   }
+ htmlstr = htmlstr + '</SELECT></table></tr>'
+ 
+ 
+htmlstr = htmlstr + '</table></td></tr></table>'
+
+
+  
+
+
+htmlstr = htmlstr + '<table id="Calendar1" cellspacing="0" cellpadding="1" bordercolor="#3366CC" border="0" style="color:#003399;background-color:#80FFFF;border-color:#3366CC;border-width:1px;border-style:solid;font-family:宋体;font-size:9pt;height:70%;width:100%;border-collapse:collapse;Z-INDEX: 101; LEFT: 0px; POSITION: absolute; TOP: 15%"><tr><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">S</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">M</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">T</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">W</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">T</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">F</td><td align="Center" style="color:#336666;background-color:#99CCCC;height:1px;">S</td></tr>	'
+	for(var i = 1 ; i <=cntj; i++)
+	{
+		htmlstr = htmlstr + '<tr>'
+		for(var j = 1 ; j <=7; j++)
+		{
+		
+			if (todayflg ==7*(i-1)+j )
+			{
+				htmlstr = htmlstr + '<td align="Center" style="background-color:#999999;width:14%;">'
+			}
+			else
+			{
+				if (j ==1 || j == 7)
+					htmlstr = htmlstr + '<td align="Center" style="background-color:#CCCCFF;width:14%;">'				
+				else
+					htmlstr = htmlstr + '<td align="Center" style="width:14%;">'
+			}
+			
+
+			
+			
+		
+		if ( monthArray[7*(i-1)+j].getDate() == 1 &&   preMon == 0) nextMon = 0	
+		if ( monthArray[7*(i-1)+j].getDate() == 1 &&   preMon == 1) preMon = 0
+		
+		
+		if ((preMon == 1 && nextMon ==1) || (preMon == 0 && nextMon ==0)) {
+			if (monthArray[7*(i-1)+j].getYear()+'/'+monthArray[7*(i-1)+j].getMonth()+'/'+monthArray[7*(i-1)+j].getDate()==today){
+			htmlstr = htmlstr + '	<a href="#" onclick="javascript:setDate(' + (7*(i-1)+j) + ')" style="color:red;border-color:#cc66ff;">' + monthArray[7*(i-1)+j].getDate() + '</a>'		
+			}
+			else {
+			htmlstr = htmlstr + '	<a href="#" onclick="javascript:setDate(' + (7*(i-1)+j) + ')" style="color:#999999">' + monthArray[7*(i-1)+j].getDate() + '</a>'		
+			}
+		}
+		else {
+			if (monthArray[7*(i-1)+j].getYear()+'/'+monthArray[7*(i-1)+j].getMonth()+'/'+monthArray[7*(i-1)+j].getDate()==today){
+			htmlstr = htmlstr + '	<a href="#" onclick="javascript:setDate(' + (7*(i-1)+j) + ')" style="color:red;border-color:#cc66ff;">' + monthArray[7*(i-1)+j].getDate() + '</a>'		
+			}
+			else{
+			htmlstr = htmlstr + '	<a href="#" onclick="javascript:setDate(' + (7*(i-1)+j) + ')"  style="color:#003399">' + monthArray[7*(i-1)+j].getDate() + '</a>'		
+			}
+		}
+		htmlstr = htmlstr + '</td>';
+		}
+		htmlstr = htmlstr + '</tr>'
+	}
+//*
+htmlstr = htmlstr + '<tr><td colspan="1">HH24:</td><td colspan="2">'
+htmlstr = htmlstr + '<SELECT onchange="SetArray(today.getYear(),today.getMonth(),value,tMi)" align="center" style="background-color:#C0FFFF;border-color:#3366CC;font-size:9pt;width:100%;" >'
+
+
+if (tHH24=='00')
+   htmlstr = htmlstr + '<OPTION selected  Value="00" >00</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="00" >00</OPTION>'}
+if (tHH24=='01')
+   htmlstr = htmlstr + '<OPTION selected  Value="01" >01</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="01" >01</OPTION>'}
+if (tHH24=='02')
+   htmlstr = htmlstr + '<OPTION selected  Value="02" >02</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="02" >02</OPTION>'}
+if (tHH24=='03')
+   htmlstr = htmlstr + '<OPTION selected  Value="03" >03</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="03" >03</OPTION>'}
+if (tHH24=='04')
+   htmlstr = htmlstr + '<OPTION selected  Value="04" >04</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="04" >04</OPTION>'}
+if (tHH24=='05')
+   htmlstr = htmlstr + '<OPTION selected  Value="05" >05</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="05" >05</OPTION>'}
+if (tHH24=='06')
+   htmlstr = htmlstr + '<OPTION selected  Value="06" >06</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="06" >06</OPTION>'}
+if (tHH24=='07')
+   htmlstr = htmlstr + '<OPTION selected  Value="07" >07</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="07" >07</OPTION>'}
+if (tHH24=='08')
+   htmlstr = htmlstr + '<OPTION selected  Value="08" >08</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="08" >08</OPTION>'}
+if (tHH24=='09')
+   htmlstr = htmlstr + '<OPTION selected  Value="09" >09</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="09" >09</OPTION>'}
+if (tHH24=='10')
+   htmlstr = htmlstr + '<OPTION selected  Value="10" >10</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="10" >10</OPTION>'}
+if (tHH24=='11')
+   htmlstr = htmlstr + '<OPTION selected  Value="11" >11</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="11" >11</OPTION>'}
+if (tHH24=='12')
+   htmlstr = htmlstr + '<OPTION selected  Value="12" >12</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="12" >12</OPTION>'}
+if (tHH24=='13')
+   htmlstr = htmlstr + '<OPTION selected  Value="13" >13</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="13" >13</OPTION>'}
+if (tHH24=='14')
+   htmlstr = htmlstr + '<OPTION selected  Value="14" >14</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="14" >14</OPTION>'}
+if (tHH24=='15')
+   htmlstr = htmlstr + '<OPTION selected  Value="15" >15</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="15" >15</OPTION>'}
+if (tHH24=='16')
+   htmlstr = htmlstr + '<OPTION selected  Value="16" >16</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="16" >16</OPTION>'}
+if (tHH24=='17')
+   htmlstr = htmlstr + '<OPTION selected  Value="17" >17</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="17" >17</OPTION>'}
+if (tHH24=='18')
+   htmlstr = htmlstr + '<OPTION selected  Value="18" >18</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="18" >18</OPTION>'}
+if (tHH24=='19')
+   htmlstr = htmlstr + '<OPTION selected  Value="19" >19</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="19" >19</OPTION>'}
+if (tHH24=='20')
+   htmlstr = htmlstr + '<OPTION selected  Value="20" >20</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="20" >20</OPTION>'}
+if (tHH24=='21')
+   htmlstr = htmlstr + '<OPTION selected  Value="21" >21</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="21" >21</OPTION>'}
+if (tHH24=='22')
+   htmlstr = htmlstr + '<OPTION selected  Value="22" >22</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="22" >22</OPTION>'}
+if (tHH24=='23')
+   htmlstr = htmlstr + '<OPTION selected  Value="23" >23</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="23" >23</OPTION>'}
+htmlstr = htmlstr + '</SELECT></td>'	
+
+
+htmlstr = htmlstr + '<td colspan="1"></td><td colspan="1">MI:</td><td colspan="2">'
+htmlstr = htmlstr + '<SELECT  onchange="SetArray(today.getYear(),today.getMonth(),tHH24,value)" align="center" style="background-color:#C0FFFF;border-color:#3366CC;font-size:9pt;width:100%;" >'
+//*
+if (tMi=='00')
+   htmlstr = htmlstr + '<OPTION selected  Value="00" >00</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="00" >00</OPTION>'}
+if (tMi=='01')
+   htmlstr = htmlstr + '<OPTION selected  Value="01" >01</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="01" >01</OPTION>'}
+if (tMi=='02')
+   htmlstr = htmlstr + '<OPTION selected  Value="02" >02</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="02" >02</OPTION>'}
+if (tMi=='03')
+   htmlstr = htmlstr + '<OPTION selected  Value="03" >03</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="03" >03</OPTION>'}
+if (tMi=='04')
+   htmlstr = htmlstr + '<OPTION selected  Value="04" >04</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="04" >04</OPTION>'}
+if (tMi=='05')
+   htmlstr = htmlstr + '<OPTION selected  Value="05" >05</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="05" >05</OPTION>'}
+if (tMi=='06')
+   htmlstr = htmlstr + '<OPTION selected  Value="06" >06</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="06" >06</OPTION>'}
+if (tMi=='07')
+   htmlstr = htmlstr + '<OPTION selected  Value="07" >07</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="07" >07</OPTION>'}
+if (tMi=='08')
+   htmlstr = htmlstr + '<OPTION selected  Value="08" >08</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="08" >08</OPTION>'}
+if (tMi=='09')
+   htmlstr = htmlstr + '<OPTION selected  Value="09" >05</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="09" >09</OPTION>'}
+if (tMi=='10')
+   htmlstr = htmlstr + '<OPTION selected  Value="10" >10</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="10" >10</OPTION>'}
+if (tMi=='11')
+   htmlstr = htmlstr + '<OPTION selected  Value="11" >11</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="11" >11</OPTION>'}
+if (tMi=='12')
+   htmlstr = htmlstr + '<OPTION selected  Value="12" >12</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="12" >12</OPTION>'}
+if (tMi=='13')
+   htmlstr = htmlstr + '<OPTION selected  Value="13" >13</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="13" >13</OPTION>'}
+if (tMi=='14')
+   htmlstr = htmlstr + '<OPTION selected  Value="14" >14</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="14" >14</OPTION>'}
+
+if (tMi=='15')
+   htmlstr = htmlstr + '<OPTION selected  Value="15" >15</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="15" >15</OPTION>'}
+if (tMi=='16')
+   htmlstr = htmlstr + '<OPTION selected  Value="16" >16</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="16" >16</OPTION>'}
+if (tMi=='17')
+   htmlstr = htmlstr + '<OPTION selected  Value="17" >17</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="17" >17</OPTION>'}
+if (tMi=='18')
+   htmlstr = htmlstr + '<OPTION selected  Value="18" >18</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="18" >18</OPTION>'}
+if (tMi=='19')
+   htmlstr = htmlstr + '<OPTION selected  Value="19" >19</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="19" >19</OPTION>'}
+if (tMi=='20')
+   htmlstr = htmlstr + '<OPTION selected  Value="20" >20</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="20" >20</OPTION>'}
+if (tMi=='21')
+   htmlstr = htmlstr + '<OPTION selected  Value="21" >21</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="21" >21</OPTION>'}
+if (tMi=='22')
+   htmlstr = htmlstr + '<OPTION selected  Value="22" >22</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="22" >22</OPTION>'}
+if (tMi=='23')
+   htmlstr = htmlstr + '<OPTION selected  Value="23" >23</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="23" >23</OPTION>'}
+if (tMi=='24')
+   htmlstr = htmlstr + '<OPTION selected  Value="24" >24</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="24" >24</OPTION>'}
+
+if (tMi=='25')
+   htmlstr = htmlstr + '<OPTION selected  Value="25" >25</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="25" >25</OPTION>'}
+if (tMi=='26')
+   htmlstr = htmlstr + '<OPTION selected  Value="26" >26</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="26" >26</OPTION>'}
+if (tMi=='27')
+   htmlstr = htmlstr + '<OPTION selected  Value="27" >27</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="27" >27</OPTION>'}
+if (tMi=='28')
+   htmlstr = htmlstr + '<OPTION selected  Value="28" >28</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="28" >28</OPTION>'}
+if (tMi=='29')
+   htmlstr = htmlstr + '<OPTION selected  Value="29" >29</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="29" >29</OPTION>'}
+
+if (tMi=='30')
+   htmlstr = htmlstr + '<OPTION selected  Value="30" >30</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="30" >30</OPTION>'}
+if (tMi=='31')
+   htmlstr = htmlstr + '<OPTION selected  Value="31" >31</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="31" >31</OPTION>'}
+if (tMi=='32')
+   htmlstr = htmlstr + '<OPTION selected  Value="32" >32</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="32" >32</OPTION>'}
+if (tMi=='33')
+   htmlstr = htmlstr + '<OPTION selected  Value="33" >33</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="33" >33</OPTION>'}
+if (tMi=='34')
+   htmlstr = htmlstr + '<OPTION selected  Value="34" >34</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="34" >34</OPTION>'}
+
+if (tMi=='35')
+   htmlstr = htmlstr + '<OPTION selected  Value="35" >35</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="35" >35</OPTION>'}
+if (tMi=='36')
+   htmlstr = htmlstr + '<OPTION selected  Value="36" >36</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="36" >36</OPTION>'}
+
+if (tMi=='37')
+   htmlstr = htmlstr + '<OPTION selected  Value="37" >37</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="37" >37</OPTION>'}
+
+if (tMi=='38')
+   htmlstr = htmlstr + '<OPTION selected  Value="38" >38</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="38" >38</OPTION>'}
+if (tMi=='39')
+   htmlstr = htmlstr + '<OPTION selected  Value="39" >39</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="39" >39</OPTION>'}
+
+
+if (tMi=='40')
+   htmlstr = htmlstr + '<OPTION selected  Value="40" >40</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="40" >40</OPTION>'}
+if (tMi=='41')
+   htmlstr = htmlstr + '<OPTION selected  Value="41" >41</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="41" >41</OPTION>'}
+if (tMi=='42')
+   htmlstr = htmlstr + '<OPTION selected  Value="42" >42</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="42" >42</OPTION>'}
+if (tMi=='43')
+   htmlstr = htmlstr + '<OPTION selected  Value="43" >43</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="43" >43</OPTION>'}
+if (tMi=='44')
+   htmlstr = htmlstr + '<OPTION selected  Value="44" >44</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="44" >44</OPTION>'}
+
+if (tMi=='45')
+   htmlstr = htmlstr + '<OPTION selected  Value="45" >45</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="45" >45</OPTION>'}
+if (tMi=='46')
+   htmlstr = htmlstr + '<OPTION selected  Value="46" >46</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="46" >46</OPTION>'}
+if (tMi=='47')
+   htmlstr = htmlstr + '<OPTION selected  Value="47" >47</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="47" >47</OPTION>'}
+if (tMi=='48')
+   htmlstr = htmlstr + '<OPTION selected  Value="48" >48</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="48" >48</OPTION>'}
+if (tMi=='49')
+   htmlstr = htmlstr + '<OPTION selected  Value="49" >49</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="49" >49</OPTION>'}
+if (tMi=='50')
+   htmlstr = htmlstr + '<OPTION selected  Value="50" >50</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="50" >50</OPTION>'}
+if (tMi=='51')
+   htmlstr = htmlstr + '<OPTION selected  Value="51" >51</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="51" >51</OPTION>'}
+if (tMi=='52')
+   htmlstr = htmlstr + '<OPTION selected  Value="52" >52</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="52" >52</OPTION>'}
+if (tMi=='53')
+   htmlstr = htmlstr + '<OPTION selected  Value="53" >53</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="53" >53</OPTION>'}
+if (tMi=='54')
+   htmlstr = htmlstr + '<OPTION selected  Value="54" >54</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="54" >54</OPTION>'}
+
+if (tMi=='55')
+   htmlstr = htmlstr + '<OPTION selected  Value="55" >55</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="55" >55</OPTION>'}
+if (tMi=='56')
+   htmlstr = htmlstr + '<OPTION selected  Value="56" >56</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="56" >56</OPTION>'}
+if (tMi=='57')
+   htmlstr = htmlstr + '<OPTION selected  Value="57" >57</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="57" >57</OPTION>'}
+if (tMi=='58')
+   htmlstr = htmlstr + '<OPTION selected  Value="58" >58</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="58" >58</OPTION>'}
+if (tMi=='59')
+   htmlstr = htmlstr + '<OPTION selected  Value="59" >59</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="59" >59</OPTION>'}
+//*/
+/*
+if (tMi=='00')
+   htmlstr = htmlstr + '<OPTION selected  Value="00" >00</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="00" >00</OPTION>'}
+if (tMi=='05')
+   htmlstr = htmlstr + '<OPTION selected  Value="05" >05</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="05" >05</OPTION>'}
+if (tMi=='10')
+   htmlstr = htmlstr + '<OPTION selected  Value="10" >10</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="10" >10</OPTION>'}
+if (tMi=='15')
+   htmlstr = htmlstr + '<OPTION selected  Value="15" >15</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="15" >15</OPTION>'}
+if (tMi=='20')
+   htmlstr = htmlstr + '<OPTION selected  Value="20" >20</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="20" >20</OPTION>'}
+if (tMi=='25')
+   htmlstr = htmlstr + '<OPTION selected  Value="25" >25</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="25" >25</OPTION>'}
+if (tMi=='30')
+   htmlstr = htmlstr + '<OPTION selected  Value="30" >30</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="30" >30</OPTION>'}
+if (tMi=='35')
+   htmlstr = htmlstr + '<OPTION selected  Value="35" >35</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="35" >35</OPTION>'}
+if (tMi=='40')
+   htmlstr = htmlstr + '<OPTION selected  Value="40" >40</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="40" >40</OPTION>'}
+if (tMi=='45')
+   htmlstr = htmlstr + '<OPTION selected  Value="45" >45</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="45" >45</OPTION>'}
+if (tMi=='50')
+   htmlstr = htmlstr + '<OPTION selected  Value="50" >50</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="50" >50</OPTION>'}
+if (tMi=='55')
+   htmlstr = htmlstr + '<OPTION selected  Value="55" >55</OPTION>'
+else 
+{   htmlstr = htmlstr + '<OPTION Value="55" >55</OPTION>'}
+//*/
+
+htmlstr = htmlstr + '</SELECT></td></tr>'	
+	
+htmlstr = htmlstr + '</table> ' ;
+
+htmlstr = htmlstr+'<table id="Calendar1" cellspacing="0" cellpadding="0" bordercolor="#3366CC" border="0" style="color:#003399;background-color:#C0FFFF;border-color:#3366CC;border-width:1px;border-style:solid;font-family:宋体;font-size:9pt;height:15%;width:100%;border-collapse:collapse;Z-INDEX: 101; LEFT: 0px; POSITION: absolute;top:85%"><tr><td><input id="Button1" type="button" align="left" style="width:100%;height:100%;font-family:宋体;font-size:9pt;"   onclick="javascript:closeMe(-1)" value="确定" /></td><td><input id="Button2" type="button" align="right" style="width:100%;height:100%;font-family:宋体;font-size:9pt;"    value="取消"  onclick="javascript:closeMe(-2)"/></td></tr></table>';
+
+Div_C.innerHTML =htmlstr
+
+}
+
+function window_onload() {
+window.event.returnValue = false;
+}
+
+function window_onkeydown() {
+if (event.keyCode == 13){
+	if(event.srcElement.tagName.toLowerCase()=="input"){
+		if( event.srcElement.type.toLowerCase() == "button" || event.srcElement.type.toLowerCase() == "submit"  || event.srcElement.type.toLowerCase() == "reset")
+			return ;
+	}
+	else if (event.srcElement.tagName.toLowerCase() == "textarea"){
+		return ;
+	}
+	event.keyCode = 9;
+	document.body.fireEvent("onkeydown");
+	}
+}
+
+function f_formattime(val)
+{
+	var result;
+	if (val < 10) 
+	{
+		result = '0' + val;
+	}
+	else
+		result = val;
+		
+	return result;
+}
+
+
+//-->
+		</SCRIPT>
+	</HEAD>
+	<BODY  leftmargin=0 topmargin=0 rightmargin=0 bottommargin=0 scroll=no  onkeydown="return window_onkeydown()">
+		<div id="Div_C">
+		</div>
+		<table id="Calendar1" cellspacing="0"  cellpadding="0" bordercolor="#3366CC" border="0" style="color:#003399;background-color:White;border-color:#3366CC;border-width:1px;border-style:solid;font-family:宋体;font-size:9pt;height:200px;width:220px;border-collapse:collapse;Z-INDEX: 101; LEFT: 8px; POSITION: absolute; TOP: 8px">
+		</table>
+		<SCRIPT LANGUAGE="javascript">
+
+if (window.dialogArguments == '')
+{
+	today = new Date()
+	tTdate = today
+	tHH24  = today.getHours()
+	tMi    = today.getMinutes()
+	tHH24  = f_formattime(tHH24)
+	tMi    = f_formattime(tMi)
+}
+else
+{
+	today = new Date(window.dialogArguments)
+	tHH24  = today.getHours()
+	tMi    = today.getMinutes()
+	tHH24  = f_formattime(tHH24)
+	tMi    = f_formattime(tMi)
+}
+if (today == null)
+{
+	today = new Date()
+	tHH24  = today.getHours()
+	tMi    = today.getMinutes()
+	tHH24  = f_formattime(tHH24)
+	tMi    =f_formattime(tMi)
+}
+if (tTdate == null) 
+{
+	tTdate = today
+}
+
+if (window.dialogArguments == '')
+    mFlag='0'
+if (window.dialogArguments == '')
+    yFlag='0'
+if (window.dialogArguments == '')
+{
+	SetArray(today.getYear(),today.getMonth(),tHH24,tMi);
+	Draw();
+}
+else 
+{
+	//alert(today.getMonth());
+	SetArray(today.getYear(),today.getMonth()-1,tHH24,tMi);
+	Draw();
+}
+		</SCRIPT>
+	</BODY>
+</HTML>

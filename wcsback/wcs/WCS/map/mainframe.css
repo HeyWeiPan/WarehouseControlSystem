@@ -1,0 +1,55 @@
+﻿body
+{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+td
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+}
+.treeview
+{   
+    text-decoration: none;
+    font-family: 宋体;
+    font-size: 9pt;   
+}
+.TrShow
+{
+    display: inline;
+}
+
+.TrHide
+{
+    display: none;
+}
+
+.parent
+{
+    cursor: pointer;
+    height: 39px;
+    font-family: 宋体;
+    font-weight: bold;
+    color: White;
+    background-image: url(images/leftmenu.png);
+    border: 0px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.DivTrv
+{
+    width: 400px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.showTree
+{
+    width:400px;
+    height:100%;
+    overflow:auto; 
+    display:block;   
+}

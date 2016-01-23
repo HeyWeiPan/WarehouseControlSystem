@@ -1,0 +1,1188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="account_incorrect" xml:space="preserve"><value>Account incorrect</value><comment></comment></data>
+  <data name="alreadyinworkflowcantdelete" xml:space="preserve"><value>This recorder already push to workflow, it can't delete!</value><comment>Vehicle</comment></data>
+  <data name="alreadyrepaycantedit" xml:space="preserve"><value>The repayment form already pay the money, it can't edit!</value><comment>Expense</comment></data>
+  <data name="alreadyuse" xml:space="preserve"><value>This type is already used, it can't delete.Please set it disabled.</value><comment>Expense</comment></data>
+  <data name="amountmorethanlendamount" xml:space="preserve"><value>Repayment amount is more than lend amount!</value><comment>Expense</comment></data>
+  <data name="areyousurecreateexpense" xml:space="preserve"><value>Are you sure add a new expense form?</value><comment>Expense</comment></data>
+  <data name="areyousurecreatelend" xml:space="preserve"><value>Are you sure create a new lend form?</value><comment>Expense</comment></data>
+  <data name="areyousurecreaterepayment" xml:space="preserve"><value>Are you sure create a repayment form?</value><comment>Expense</comment></data>
+  <data name="areyousurecreateticketapp" xml:space="preserve"><value>Are you sure you want to add a new ticket application form?</value><comment></comment></data>
+  <data name="areyousurecreatevehicleapp" xml:space="preserve"><value>确定要新增用车申请吗？</value><comment></comment></data>
+  <data name="atleaseonedetailline" xml:space="preserve"><value>The expense need one detail record at least!</value><comment>Expense</comment></data>
+  <data name="attachmentlist" xml:space="preserve"><value>Attachment List</value><comment>IDMP</comment></data>
+  <data name="cannotappendnothold" xml:space="preserve"><value>Can not append information because the last operation is not HOLD.</value><comment>IDMP</comment></data>
+  <data name="cannotdelete" xml:space="preserve"><value>You can not delete data!</value><comment></comment></data>
+  <data name="cannoteditexceedcreatedate" xml:space="preserve"><value>Can not edit data which is created before {0} days!</value><comment></comment></data>
+  <data name="canotdeletealreadypayment" xml:space="preserve"><value>The repayment form can't delete becuase already payment!</value><comment>Expense</comment></data>
+  <data name="cantaddfoldertypeinprocess" xml:space="preserve"><value>Folder type can't add in process!</value><comment>IDMP</comment></data>
+  <data name="change_passwod_failed" xml:space="preserve"><value>Change Passwod Failed!</value><comment></comment></data>
+  <data name="changeuserdefineprocessfailed" xml:space="preserve"><value>The workflow changed to user define workflow failed!</value><comment>IDMP</comment></data>
+  <data name="changeuserdefineprocesssuccess" xml:space="preserve"><value>The workflow changed to user define workflow sucess!</value><comment>IDMP</comment></data>
+  <data name="checkdatenotpermitinput" xml:space="preserve"><value>Can not input {0} before check date!</value><comment></comment></data>
+  <data name="checkinputdays" xml:space="preserve"><value>Please check the number of days entered the compatibility with the actual number of days!</value><comment></comment></data>
+  <data name="checkpaenddate" xml:space="preserve"><value>Current Date less than PA End Date!</value><comment></comment></data>
+  <data name="checkstringlength" xml:space="preserve"><value>{0} String Length &lt; {1}!</value><comment></comment></data>
+  <data name="checkuserpaerror" xml:space="preserve"><value>Generate PA form error! Please check if the user team setting is right!</value><comment></comment></data>
+  <data name="childcountmustlesspersoncount" xml:space="preserve"><value>Child count must less than or equal person count.</value><comment>Ticket</comment></data>
+  <data name="completesubmitapplication" xml:space="preserve"><value>You have completed the application form!</value><comment>IDMP</comment></data>
+  <data name="confirm_submit_idmpapplication" xml:space="preserve"><value>Do you confirm to submit this process?</value><comment>IDMP</comment></data>
+  <data name="confirm_update" xml:space="preserve"><value>Are you sure you want to update it?</value><comment></comment></data>
+  <data name="confirmapproveform" xml:space="preserve"><value>Are you sure you want to approve the current form?</value><comment></comment></data>
+  <data name="confirmauditrow" xml:space="preserve"><value>Are you sure you want to audit selected {0} rows?</value><comment></comment></data>
+  <data name="confirmbuild" xml:space="preserve"><value>Are you sure you want to build the  data?</value><comment></comment></data>
+  <data name="confirmcancelprocess" xml:space="preserve"><value>Do you confirm to cancel this process?</value><comment>IDMP</comment></data>
+  <data name="confirmclosewindow" xml:space="preserve"><value>Are you sure you want to close the current window?</value><comment></comment></data>
+  <data name="confirmclostpa" xml:space="preserve"><value>当前操作将关闭所有绩效考核表单,同时删除未完成的部门考评和绩效考评,确定要继续吗?</value><comment></comment></data>
+  <data name="confirmcopynode" xml:space="preserve"><value>Are you sure you want to copy the selected node?</value><comment></comment></data>
+  <data name="confirmcutnode" xml:space="preserve"><value>Are you sure you want to cut  the selected node?</value><comment></comment></data>
+  <data name="confirmdeletenode" xml:space="preserve"><value>Are you sure you want to delete the selected node?</value><comment></comment></data>
+  <data name="confirmdeleterow" xml:space="preserve"><value>Are you sure you want to delete the selected row?</value><comment></comment></data>
+  <data name="confirmexport" xml:space="preserve"><value>Are you sure you want to export the  data?</value><comment></comment></data>
+  <data name="confirmsubmitform" xml:space="preserve"><value>Are you sure you want to submit the form?</value><comment></comment></data>
+  <data name="confirmunsubmitform" xml:space="preserve"><value>Are you sure you want to undo submit the form?</value><comment></comment></data>
+  <data name="confirmupdatestatus" xml:space="preserve"><value>Are you sure you want to update the Status?</value><comment></comment></data>
+  <data name="conntimeoutrelogin" xml:space="preserve"><value>Your connection is time out, please re-login system!</value><comment></comment></data>
+  <data name="copypersoninfofailed" xml:space="preserve"><value>Copy person info failed, please checked and re-try!</value><comment>Ticket</comment></data>
+  <data name="copypersoninfosuccess" xml:space="preserve"><value>Copy person info success!</value><comment>Ticket</comment></data>
+  <data name="copyrolefailed" xml:space="preserve"><value>Copy Role Failed</value><comment></comment></data>
+  <data name="copyrolesuccess" xml:space="preserve"><value>Copy Role Success</value><comment></comment></data>
+  <data name="costcenterisnotexist" xml:space="preserve"><value>The cost center is not exist!</value><comment>IDMP</comment></data>
+  <data name="dataerror" xml:space="preserve"><value>Data Error!</value><comment></comment></data>
+  <data name="datareference" xml:space="preserve"><value>Data By Reference,You cannot delete data!</value><comment></comment></data>
+  <data name="dataremove" xml:space="preserve"><value>Data has Remove by another!</value><comment></comment></data>
+  <data name="datarepeat" xml:space="preserve"><value>Data Repeat!</value><comment></comment></data>
+  <data name="deletefailed" xml:space="preserve"><value>Delete Failed!</value><comment></comment></data>
+  <data name="deletesuccess" xml:space="preserve"><value>Delete Succeeded!</value><comment></comment></data>
+  <data name="donot_allow_delete" xml:space="preserve"><value>Current data can not be deleted!</value><comment></comment></data>
+  <data name="don't_allow_delete" xml:space="preserve"><value>Recorder is closed! It can't delete!</value><comment>CMDB</comment></data>
+  <data name="don't_allow_edit" xml:space="preserve"><value>Recorder is closed! It can't edit!</value><comment>CMDB</comment></data>
+  <data name="dontallowdifapplication" xml:space="preserve"><value>Don't allow copy from one application to another application!</value><comment>IDMP</comment></data>
+  <data name="editprocessconfirm" xml:space="preserve"><value>Are you sure you want to edit the current process?\nThe editing process can not be used until it is submited!</value><comment>IDMP</comment></data>
+  <data name="password_incorrect" xml:space="preserve"><value>Old password is incorrect!</value><comment></comment></data>
+  <data name="userdefinecannotdelete" xml:space="preserve"><value>User define process can't delete!</value><comment>IDMP</comment></data>
+  <data name="commonui_webform_scope_aspx" xml:space="preserve"><value>Search ...</value><comment></comment></data>
+  <data name="hr_hrapplication_apphiredetail_aspx" xml:space="preserve"><value>Hire App Detail</value><comment></comment></data>
+  <data name="hr_payroll_setup_payslipitemdetail_aspx" xml:space="preserve"><value>PaySlip Item</value><comment></comment></data>
+  <data name="jxc_arap_jxcreceivelist_aspx" xml:space="preserve"><value>Receive List</value><comment></comment></data>
+  <data name="jxc_report_xsmatdetail_aspx" xml:space="preserve"><value>Mat XS Detail</value><comment></comment></data>
+  <data name="new_terr" xml:space="preserve"><value>New Terr</value><comment></comment></data>
+  <data name="template_file" xml:space="preserve"><value>Template Document</value><comment>IDMP</comment></data>
+  <data name="jxc_cg_jxccgdetail_qc_aspx" xml:space="preserve"><value>Initial Delivery Receipt Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccglist_qc_aspx" xml:space="preserve"><value>Initial Delivery Receipt List</value><comment></comment></data>
+  <data name="jxc_cg_jxcdlcgrkrkdetail_aspx" xml:space="preserve"><value>Cable Delivery Receipt</value><comment></comment></data>
+  <data name="jxc_ck_jxcbfddetail_aspx" xml:space="preserve"><value>Scrap Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcbfdlist_aspx" xml:space="preserve"><value>Scrap List</value><comment></comment></data>
+  <data name="jxc_ck_jxcdldbckckdetail_aspx" xml:space="preserve"><value>Cable Allocate The Outbound</value><comment></comment></data>
+  <data name="jxc_ck_jxcdldbckdetail_aspx" xml:space="preserve"><value>Cable Allocate The Outbound Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcdldbcklist_aspx" xml:space="preserve"><value>Cable Allocate The Outbound List</value><comment></comment></data>
+  <data name="jxc_ck_jxcdldbrkdetail_aspx" xml:space="preserve"><value>Cable Allocate Warehousing Detail</value><comment></comment></data>
+  <data name="adjust_information" xml:space="preserve"><value>Adjust Information</value><comment></comment></data>
+  <data name="after_adjust_information" xml:space="preserve"><value>After Adjust Information</value><comment></comment></data>
+  <data name="fa_faassetpddetail_aspx" xml:space="preserve"><value>Asset Inventory Checking Detail</value><comment></comment></data>
+  <data name="fa_faassetpdlist_aspx" xml:space="preserve"><value>Asset Inventory Checking List</value><comment></comment></data>
+  <data name="jxc_period_jxccostallocdetail_aspx" xml:space="preserve"><value>CostAlloc Detail</value><comment></comment></data>
+  <data name="jxc_period_jxccostalloclist_aspx" xml:space="preserve"><value>CostAlloc List</value><comment></comment></data>
+  <data name="jxc_period_jxccpcbtjdetail_aspx" xml:space="preserve"><value>Cpcbtj Detail</value><comment></comment></data>
+  <data name="jxc_period_jxccpcbtjlist_aspx" xml:space="preserve"><value>Cpcbtj List</value><comment></comment></data>
+  <data name="jxc_period_jxcfcsptzdetail_aspx" xml:space="preserve"><value>Fcsptz Bill Detail</value><comment></comment></data>
+  <data name="jxc_period_jxcfcsptzlist_aspx" xml:space="preserve"><value>Fcsptz Bill List</value><comment></comment></data>
+  <data name="jxc_period_jxcnopassdjlist_aspx" xml:space="preserve"><value>No Pass DJ List</value><comment></comment></data>
+  <data name="jxc_period_jxcperioddetail_aspx" xml:space="preserve"><value>Period Detail</value><comment></comment></data>
+  <data name="jxc_period_jxcperiodlist_aspx" xml:space="preserve"><value>Period List</value><comment></comment></data>
+  <data name="jxc_popup_cgfpmaterialsearch_aspx" xml:space="preserve"><value>Cgfp Material Search List</value><comment></comment></data>
+  <data name="jxc_popup_cgjhsearch_aspx" xml:space="preserve"><value>Cgjh Bill Search</value><comment></comment></data>
+  <data name="jxc_popup_cgrksearch_aspx" xml:space="preserve"><value>Cgrk Search</value><comment></comment></data>
+  <data name="jxc_popup_customersearch_aspx" xml:space="preserve"><value>Customer Search</value><comment></comment></data>
+  <data name="jxc_popup_customersitesearch_aspx" xml:space="preserve"><value>Site Search</value><comment></comment></data>
+  <data name="jxc_popup_llcksearch_aspx" xml:space="preserve"><value>LLck Search</value><comment></comment></data>
+  <data name="jxc_popup_materialsearch_aspx" xml:space="preserve"><value>Material Search</value><comment></comment></data>
+  <data name="jxc_popup_matsearch_cgjh_aspx" xml:space="preserve"><value>Search Material</value><comment></comment></data>
+  <data name="jxc_popup_prepaysearch_aspx" xml:space="preserve"><value>PrePay Dj Search</value><comment></comment></data>
+  <data name="jxc_popup_prereceivesearch_aspx" xml:space="preserve"><value>PreReceive Dj Search</value><comment></comment></data>
+  <data name="jxc_popup_prodserialnumlist_aspx" xml:space="preserve"><value>Prod Serial Num List</value><comment></comment></data>
+  <data name="jxc_popup_prodserialnumsearch_aspx" xml:space="preserve"><value>Prod SerialNum Search</value><comment></comment></data>
+  <data name="jxc_popup_projectmatsearch_aspx" xml:space="preserve"><value>Project Task Mat Search</value><comment></comment></data>
+  <data name="jxc_popup_taskmatsearch_aspx" xml:space="preserve"><value>Task Mat Search</value><comment></comment></data>
+  <data name="jxc_popup_vendermatsearch_aspx" xml:space="preserve"><value>Vender Mat Search</value><comment></comment></data>
+  <data name="jxc_popup_vendersearch_aspx" xml:space="preserve"><value>Vender Search</value><comment></comment></data>
+  <data name="jxc_popup_wgrksearch_aspx" xml:space="preserve"><value>Wgrk Search List</value><comment></comment></data>
+  <data name="jxc_popup_xscksearch_aspx" xml:space="preserve"><value>Xsck Search</value><comment></comment></data>
+  <data name="jxc_project_matdesigncopy_aspx" xml:space="preserve"><value>Mat Design Child Node Copy</value><comment></comment></data>
+  <data name="jxc_project_matdesigndetail_aspx" xml:space="preserve"><value>Mat Design Detail</value><comment></comment></data>
+  <data name="jxc_project_matdesignimport_aspx" xml:space="preserve"><value>Mat Design Import</value><comment></comment></data>
+  <data name="jxc_project_matdesignlist_aspx" xml:space="preserve"><value>Mat Design List</value><comment></comment></data>
+  <data name="jxc_project_matdesignsearch_aspx" xml:space="preserve"><value>Mat Design Search</value><comment></comment></data>
+  <data name="jxc_project_projectdetail_aspx" xml:space="preserve"><value>Project Detail</value><comment></comment></data>
+  <data name="jxc_project_projectlist_aspx" xml:space="preserve"><value>Project List</value><comment></comment></data>
+  <data name="jxc_project_projectproductdetail_aspx" xml:space="preserve"><value>Product Detail</value><comment></comment></data>
+  <data name="jxc_project_projecttaskdetail_aspx" xml:space="preserve"><value>Task Detail</value><comment></comment></data>
+  <data name="jxc_project_projecttasklist_aspx" xml:space="preserve"><value>Task List</value><comment></comment></data>
+  <data name="jxc_project_projecttaskqty_aspx" xml:space="preserve"><value>Modify Task Qty</value><comment></comment></data>
+  <data name="jxc_report_cg_cgandzgreport_aspx" xml:space="preserve"><value>Purchase And Warehousing Analysis List</value><comment></comment></data>
+  <data name="jxc_report_cgaccount_aspx" xml:space="preserve"><value>CG Account List</value><comment></comment></data>
+  <data name="jxc_report_costaccount_aspx" xml:space="preserve"><value>Cost Account List</value><comment></comment></data>
+  <data name="jxc_report_customerdetail_aspx" xml:space="preserve"><value>Customer Sales Detail</value><comment></comment></data>
+  <data name="jxc_report_customerstatisticslist_aspx" xml:space="preserve"><value>CSTM Statistics List</value><comment></comment></data>
+  <data name="jxc_report_customersummary_aspx" xml:space="preserve"><value>Customer Sales Summary</value><comment></comment></data>
+  <data name="jxc_report_daleiinoutsummary_aspx" xml:space="preserve"><value>Dalei InOut Summary</value><comment></comment></data>
+  <data name="jxc_report_daleisrssummary_aspx" xml:space="preserve"><value>Dalei SRS Summary</value><comment></comment></data>
+  <data name="jxc_report_duebalance_aspx" xml:space="preserve"><value>Due Balance</value><comment></comment></data>
+  <data name="jxc_report_duedetail_aspx" xml:space="preserve"><value>Due Detail</value><comment></comment></data>
+  <data name="jxc_report_duesummary_aspx" xml:space="preserve"><value>Due Summary</value><comment></comment></data>
+  <data name="jxc_report_fzllsummary_aspx" xml:space="preserve"><value>Fzll Summary</value><comment></comment></data>
+  <data name="jxc_report_materialaccount_aspx" xml:space="preserve"><value>Material Account List</value><comment></comment></data>
+  <data name="jxc_report_materialcgdetail_aspx" xml:space="preserve"><value>Material CG Detail</value><comment></comment></data>
+  <data name="jxc_report_materialcgsummary_aspx" xml:space="preserve"><value>Material CG Summary</value><comment></comment></data>
+  <data name="jxc_report_materiallist_aspx" xml:space="preserve"><value>Material List</value><comment></comment></data>
+  <data name="jxc_report_materialtj_aspx" xml:space="preserve"><value>Material TJ List</value><comment></comment></data>
+  <data name="jxc_report_materialwhamount_aspx" xml:space="preserve"><value>Material Wh Amount</value><comment></comment></data>
+  <data name="jxc_report_materialwhcost_aspx" xml:space="preserve"><value>Material Wh Cost</value><comment></comment></data>
+  <data name="jxc_report_materialxsdetail_aspx" xml:space="preserve"><value>Material XS Detail</value><comment></comment></data>
+  <data name="jxc_report_materialxssummary_aspx" xml:space="preserve"><value>Material XS Summary</value><comment></comment></data>
+  <data name="jxc_report_newpordllsummary_aspx" xml:space="preserve"><value>New Pord LL Report</value><comment></comment></data>
+  <data name="jxc_report_productsrsdetail_aspx" xml:space="preserve"><value>Product SRS Summary</value><comment></comment></data>
+  <data name="jxc_report_profitcstm_aspx" xml:space="preserve"><value>CSTM Profit Sort</value><comment></comment></data>
+  <data name="jxc_report_profitdalei_aspx" xml:space="preserve"><value>Dalei Profit Sort</value><comment></comment></data>
+  <data name="jxc_report_profitmat_aspx" xml:space="preserve"><value>Mat Profit Sort</value><comment></comment></data>
+  <data name="jxc_report_profitsaler_aspx" xml:space="preserve"><value>Saler Profit Sort</value><comment></comment></data>
+  <data name="jxc_report_projectllsummary_aspx" xml:space="preserve"><value>Project LL Report</value><comment></comment></data>
+  <data name="jxc_report_projectundertakelist_aspx" xml:space="preserve"><value>Project Undertake List</value><comment></comment></data>
+  <data name="jxc_report_receivedbalance_aspx" xml:space="preserve"><value>Received Balance</value><comment></comment></data>
+  <data name="jxc_report_receiveddetail_aspx" xml:space="preserve"><value>Received Detail</value><comment></comment></data>
+  <data name="jxc_report_receivedsummary_aspx" xml:space="preserve"><value>Received Summary</value><comment></comment></data>
+  <data name="jxc_report_taskllaudit_aspx" xml:space="preserve"><value>Task LL Audit</value><comment></comment></data>
+  <data name="jxc_report_venderdetail_aspx" xml:space="preserve"><value>Vender Supply Detail</value><comment></comment></data>
+  <data name="jxc_report_venderstatisticsdetail_aspx" xml:space="preserve"><value>Vender Supply Detail</value><comment></comment></data>
+  <data name="jxc_report_venderstatisticslist_aspx" xml:space="preserve"><value>GYS Statistics List</value><comment></comment></data>
+  <data name="jxc_report_venderstatisticssummary_aspx" xml:space="preserve"><value>Vender Supply Summary</value><comment></comment></data>
+  <data name="jxc_report_vendersummary_aspx" xml:space="preserve"><value>Vender Supply Summary</value><comment></comment></data>
+  <data name="jxc_report_whinoutsummary_aspx" xml:space="preserve"><value>Wh InOut Summary</value><comment></comment></data>
+  <data name="jxc_report_whleftsummary_aspx" xml:space="preserve"><value>Wh Left Summary</value><comment></comment></data>
+  <data name="jxc_report_xs_cnyxsfxreport_aspx" xml:space="preserve"><value>PRODUCTION AND SALES ANALYSIS</value><comment></comment></data>
+  <data name="jxc_report_xs_fcspxsfxreport_aspx" xml:space="preserve"><value>发出商品销售统计表</value><comment></comment></data>
+  <data name="jxc_report_xs_xsreport_aspx" xml:space="preserve"><value>销售收入统计分析</value><comment></comment></data>
+  <data name="jxc_report_xsaccount_aspx" xml:space="preserve"><value>XS Account List</value><comment></comment></data>
+  <data name="jxc_report_xsmatsummary_aspx" xml:space="preserve"><value>Mat XS Summary</value><comment></comment></data>
+  <data name="jxc_report_xsmatsummary1_aspx" xml:space="preserve"><value>Mat XS Summary</value><comment></comment></data>
+  <data name="jxc_setup_jxccustomerdetail_aspx" xml:space="preserve"><value>Customer Detail</value><comment></comment></data>
+  <data name="jxc_setup_jxccustomerlist_aspx" xml:space="preserve"><value>Customer Define</value><comment></comment></data>
+  <data name="jxc_setup_jxccustomersitedetail_aspx" xml:space="preserve"><value>Site Detail</value><comment></comment></data>
+  <data name="jxc_setup_jxccustomersitelinkdetail_aspx" xml:space="preserve"><value>Site Transfer  Detail</value><comment></comment></data>
+  <data name="jxc_setup_jxccustomersitelinklist_aspx" xml:space="preserve"><value>Site Transfer  List</value><comment></comment></data>
+  <data name="jxc_setup_jxcdalei_aspx" xml:space="preserve"><value>Dalei Define</value><comment></comment></data>
+  <data name="jxc_setup_jxcdaleidetail_aspx" xml:space="preserve"><value>Dalei Detail</value><comment></comment></data>
+  <data name="jxc_setup_jxchuowei_aspx" xml:space="preserve"><value>HuoWei Setup</value><comment></comment></data>
+  <data name="jxc_setup_jxchuoweidetail_aspx" xml:space="preserve"><value>HuoWei Detail</value><comment></comment></data>
+  <data name="jxc_setup_jxcmaterialdetail_aspx" xml:space="preserve"><value>Material Detail</value><comment></comment></data>
+  <data name="jxc_setup_jxcmateriallist_aspx" xml:space="preserve"><value>Material Define</value><comment></comment></data>
+  <data name="jxc_setup_jxcsitelist_aspx" xml:space="preserve"><value>Site List</value><comment></comment></data>
+  <data name="jxc_setup_jxctaskteamlist_aspx" xml:space="preserve"><value>Task Team Setup</value><comment></comment></data>
+  <data name="jxc_setup_jxcunitlist_aspx" xml:space="preserve"><value>Unit Define</value><comment></comment></data>
+  <data name="jxc_setup_jxcvenderdetail_aspx" xml:space="preserve"><value>Vender Detail</value><comment></comment></data>
+  <data name="jxc_setup_jxcvenderlist_aspx" xml:space="preserve"><value>Vender Define</value><comment></comment></data>
+  <data name="jxc_setup_jxcvendertypelist_aspx" xml:space="preserve"><value>Vender Type Define</value><comment></comment></data>
+  <data name="jxc_setup_jxcwhlist_aspx" xml:space="preserve"><value>Wh Define</value><comment></comment></data>
+  <data name="jxc_setup_jxcwhmatinit_aspx" xml:space="preserve"><value>Wh Mat Setup</value><comment></comment></data>
+  <data name="jxc_snapshot_matdesigndetailbak_aspx" xml:space="preserve"><value>Mat Design Detail</value><comment></comment></data>
+  <data name="jxc_snapshot_matdesignsnapshot_aspx" xml:space="preserve"><value>Snapshot List</value><comment></comment></data>
+  <data name="jxc_tj_history" xml:space="preserve"><value>Material TJ History</value><comment></comment></data>
+  <data name="jxc_wtjg_jxcdlwtjgckdetail_aspx" xml:space="preserve"><value>Consigned Processing Outbound Sheet Detail</value><comment></comment></data>
+  <data name="jxc_wtjg_jxcdlwtjgcklist_aspx" xml:space="preserve"><value>Consigned Processing Outbound Sheet List</value><comment></comment></data>
+  <data name="jxc_wtjg_jxcdlwtjgrkdetail_aspx" xml:space="preserve"><value>Consigned Processing Inbound Sheet Detail</value><comment></comment></data>
+  <data name="jxc_wtjg_jxcdlwtjgrklist_aspx" xml:space="preserve"><value>Consigned Processing Inbound Sheet List</value><comment></comment></data>
+  <data name="jxc_wtjg_jxcwtjgckdetail_aspx" xml:space="preserve"><value>委托加工出库单明细</value><comment></comment></data>
+  <data name="jxc_wtjg_jxcwtjgcklist_aspx" xml:space="preserve"><value>委托加工出库单一览表</value><comment></comment></data>
+  <data name="jxc_wtjg_jxcwtjgdetail_aspx" xml:space="preserve"><value>委托加工单明细</value><comment></comment></data>
+  <data name="jxc_wtjg_jxcwtjglist_aspx" xml:space="preserve"><value>委托加工单一览表</value><comment></comment></data>
+  <data name="jxc_wtjg_jxcwtjgrkdetail_aspx" xml:space="preserve"><value>委托加工入库单明细</value><comment></comment></data>
+  <data name="jxc_wtjg_jxcwtjgrklist_aspx" xml:space="preserve"><value>委托加工入库单一览表</value><comment></comment></data>
+  <data name="jxc_xs_jxccgfplinkdjsearch_aspx" xml:space="preserve"><value>Xsfp LinkDj Search</value><comment></comment></data>
+  <data name="jxc_xs_jxcdlxsckdetail_aspx" xml:space="preserve"><value>Cable DeliveryOrder Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcdlxscklist_aspx" xml:space="preserve"><value>Cable DeliveryOrder List</value><comment></comment></data>
+  <data name="jxc_xs_jxcdlxstrkdetail_aspx" xml:space="preserve"><value>Cable Sales Return Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcdlxstrklist_aspx" xml:space="preserve"><value>Cable Sales Return List</value><comment></comment></data>
+  <data name="jxc_xs_jxctsxsdetail_aspx" xml:space="preserve"><value>Tsxs Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxctsxslist_aspx" xml:space="preserve"><value>Tsxs List</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsbjdetail_aspx" xml:space="preserve"><value>Xs BJ Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsbjlist_aspx" xml:space="preserve"><value>Xs BJ List</value><comment></comment></data>
+  <data name="jxc_xs_jxcxscbtzdetail_aspx" xml:space="preserve"><value>Xscbtz Bill Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcxscbtzlist_aspx" xml:space="preserve"><value>Xscbtz Bill List</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsckdetail_aspx" xml:space="preserve"><value>Xsck Bill Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcxscklist_aspx" xml:space="preserve"><value>Xsck Bill List</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsdetail_aspx" xml:space="preserve"><value>Xs Bill Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsfpdetail_aspx" xml:space="preserve"><value>Xsfp Bill Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsfplinkdj_aspx" xml:space="preserve"><value>Xsfp LinkDj List</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsfplinkdjsearch_aspx" xml:space="preserve"><value>Xsfp LinkDj Search</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsfplist_aspx" xml:space="preserve"><value>Xsfp Bill List</value><comment></comment></data>
+  <data name="jxc_xs_jxcxslist_aspx" xml:space="preserve"><value>Xs Bill List</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsorderdetail_aspx" xml:space="preserve"><value>Product Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsorderheaddetail_aspx" xml:space="preserve"><value>Xs Order Bill Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsorderlist_aspx" xml:space="preserve"><value>Xs Order Bill List</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsordersearch_aspx" xml:space="preserve"><value>Xs Order Search</value><comment></comment></data>
+  <data name="jxc_xs_jxcxstdetail_aspx" xml:space="preserve"><value>Xst Bill Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcxstlist_aspx" xml:space="preserve"><value>Xst Bill List</value><comment></comment></data>
+  <data name="jxc_xs_jxcxstrkdetail_aspx" xml:space="preserve"><value>Xstrk Bill Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcxstrklist_aspx" xml:space="preserve"><value>Xstrk Bill List</value><comment></comment></data>
+  <data name="leasing_contract" xml:space="preserve"><value>Leasing Contract</value><comment></comment></data>
+  <data name="leaveformdetail_5021000" xml:space="preserve"><value>加班申请明细</value><comment></comment></data>
+  <data name="leaveformdetail_5022000" xml:space="preserve"><value>特殊考勤申请明细</value><comment></comment></data>
+  <data name="leaveformdetail_5023000" xml:space="preserve"><value>出差申请明细</value><comment></comment></data>
+  <data name="leaveformdetail_5024000" xml:space="preserve"><value>休假申请明细</value><comment></comment></data>
+  <data name="leaveformlist_5021000" xml:space="preserve"><value>加班申请一览表</value><comment></comment></data>
+  <data name="leaveformlist_5022000" xml:space="preserve"><value>特殊考勤申请一览表</value><comment></comment></data>
+  <data name="leaveformlist_5023000" xml:space="preserve"><value>出差申请一览表</value><comment></comment></data>
+  <data name="leaveformlist_5024000" xml:space="preserve"><value>休假申请一览表</value><comment></comment></data>
+  <data name="linkfunction" xml:space="preserve"><value>Menu LIst</value><comment></comment></data>
+  <data name="linkresource" xml:space="preserve"><value>Resource LIst</value><comment></comment></data>
+  <data name="linksubrole" xml:space="preserve"><value>Sub Role</value><comment></comment></data>
+  <data name="linkuser" xml:space="preserve"><value>User List</value><comment></comment></data>
+  <data name="login" xml:space="preserve"><value>Login</value><comment></comment></data>
+  <data name="logout" xml:space="preserve"><value>Logout</value><comment></comment></data>
+  <data name="managercomment" xml:space="preserve"><value>Manager Comment</value><comment>SFA</comment></data>
+  <data name="matdesign_copy" xml:space="preserve"><value>Child Node Copy</value><comment></comment></data>
+  <data name="matdesign_import" xml:space="preserve"><value>MatDesign Import</value><comment></comment></data>
+  <data name="menu" xml:space="preserve"><value>Menu</value><comment></comment></data>
+  <data name="menu_add" xml:space="preserve"><value>Add...</value><comment></comment></data>
+  <data name="menu_addmat" xml:space="preserve"><value>Add Mat...</value><comment></comment></data>
+  <data name="menu_copy" xml:space="preserve"><value>Copy</value><comment></comment></data>
+  <data name="menu_cut" xml:space="preserve"><value>Cut</value><comment></comment></data>
+  <data name="menu_delete" xml:space="preserve"><value>Delete</value><comment></comment></data>
+  <data name="menu_edit" xml:space="preserve"><value>Edit...</value><comment></comment></data>
+  <data name="menu_paste" xml:space="preserve"><value>Paste</value><comment></comment></data>
+  <data name="menu_refresh" xml:space="preserve"><value>Refresh</value><comment></comment></data>
+  <data name="menu_view" xml:space="preserve"><value>View...</value><comment></comment></data>
+  <data name="modify" xml:space="preserve"><value>Modify</value><comment></comment></data>
+  <data name="modifyqty" xml:space="preserve"><value>ModifyQty</value><comment></comment></data>
+  <data name="month" xml:space="preserve"><value>Month</value><comment></comment></data>
+  <data name="month_end_checking" xml:space="preserve"><value>Month End Checking</value><comment></comment></data>
+  <data name="monthlyactivity" xml:space="preserve"><value>Monthly Activity</value><comment>SFA</comment></data>
+  <data name="more" xml:space="preserve"><value>More...</value><comment></comment></data>
+  <data name="new" xml:space="preserve"><value>New</value><comment></comment></data>
+  <data name="new_attachment" xml:space="preserve"><value>New Attachment</value><comment></comment></data>
+  <data name="new_estab_request" xml:space="preserve"><value>New Estab Request</value><comment></comment></data>
+  <data name="new_state_cn" xml:space="preserve"><value>New State Chinese Name</value><comment>IDMP</comment></data>
+  <data name="new_state_en" xml:space="preserve"><value>New State English Name</value><comment>IDMP</comment></data>
+  <data name="newactionplan" xml:space="preserve"><value>New Action Plan</value><comment></comment></data>
+  <data name="newcase" xml:space="preserve"><value>New Case</value><comment></comment></data>
+  <data name="newobjective" xml:space="preserve"><value>New Objective</value><comment></comment></data>
+  <data name="next" xml:space="preserve"><value>Next</value><comment></comment></data>
+  <data name="next_step" xml:space="preserve"><value>Next Step</value><comment></comment></data>
+  <data name="no" xml:space="preserve"><value>No</value><comment></comment></data>
+  <data name="node_id" xml:space="preserve"><value>Node ID</value><comment>IDMP</comment></data>
+  <data name="node_name_cn" xml:space="preserve"><value>Node Chinese Name </value><comment>IDMP</comment></data>
+  <data name="node_name_en" xml:space="preserve"><value>Node Englisth Name</value><comment>IDMP</comment></data>
+  <data name="node_state_id" xml:space="preserve"><value>Node Map State</value><comment>IDMP</comment></data>
+  <data name="node_type" xml:space="preserve"><value>Node Type</value><comment>IDMP</comment></data>
+  <data name="notifyissue" xml:space="preserve"><value>Notify Issue</value><comment></comment></data>
+  <data name="notifymanage" xml:space="preserve"><value>Notify Manage</value><comment></comment></data>
+  <data name="offduty" xml:space="preserve"><value>OffDuty</value><comment></comment></data>
+  <data name="ok" xml:space="preserve"><value>Ok</value><comment></comment></data>
+  <data name="onduty" xml:space="preserve"><value>OnDuty</value><comment></comment></data>
+  <data name="operations" xml:space="preserve"><value>Operations</value><comment></comment></data>
+  <data name="pagingfirst" xml:space="preserve"><value>First</value><comment></comment></data>
+  <data name="paginglast" xml:space="preserve"><value>Last</value><comment></comment></data>
+  <data name="pagingnext" xml:space="preserve"><value>Next</value><comment></comment></data>
+  <data name="pagingpre" xml:space="preserve"><value>Pre</value><comment></comment></data>
+  <data name="parent_node_name" xml:space="preserve"><value>Parent Node Name</value><comment>IDMP</comment></data>
+  <data name="pass" xml:space="preserve"><value>Pass</value><comment></comment></data>
+  <data name="password" xml:space="preserve"><value>Password:</value><comment></comment></data>
+  <data name="paste" xml:space="preserve"><value>Paste</value><comment></comment></data>
+  <data name="pay_expense" xml:space="preserve"><value>Pay Expense</value><comment>eExpense</comment></data>
+  <data name="persontype_id" xml:space="preserve"><value>Passenger Category</value><comment></comment></data>
+  <data name="please_select_list" xml:space="preserve"><value>Please select a category</value><comment>IDMP</comment></data>
+  <data name="previous" xml:space="preserve"><value>Previous</value><comment></comment></data>
+  <data name="print" xml:space="preserve"><value>Print</value><comment></comment></data>
+  <data name="processinfo" xml:space="preserve"><value>Process Info</value><comment>IDMP</comment></data>
+  <data name="project_statistics" xml:space="preserve"><value>Project Statistics</value><comment></comment></data>
+  <data name="projectmatsearch" xml:space="preserve"><value>Project Materal Search</value><comment></comment></data>
+  <data name="proposal" xml:space="preserve"><value>Proposal</value><comment></comment></data>
+  <data name="public_notification_aspx" xml:space="preserve"><value>Notify Issue</value><comment></comment></data>
+  <data name="public_notificationlist_aspx" xml:space="preserve"><value>Notification List</value><comment></comment></data>
+  <data name="query" xml:space="preserve"><value>Query</value><comment></comment></data>
+  <data name="readnokquser" xml:space="preserve"><value>Read No KQ User</value><comment></comment></data>
+  <data name="readnopauser" xml:space="preserve"><value>Read No PA User</value><comment></comment></data>
+  <data name="refresh" xml:space="preserve"><value>Refresh</value><comment></comment></data>
+  <data name="repair_qty" xml:space="preserve"><value>Repair Qty</value><comment></comment></data>
+  <data name="reset" xml:space="preserve"><value>Reset</value><comment></comment></data>
+  <data name="resubmit" xml:space="preserve"><value>Re-Submit</value><comment></comment></data>
+  <data name="run_depreciate" xml:space="preserve"><value>Run Depreciate</value><comment>eFA</comment></data>
+  <data name="save" xml:space="preserve"><value>Save</value><comment></comment></data>
+  <data name="score" xml:space="preserve"><value>Rating Standard</value><comment></comment></data>
+  <data name="search" xml:space="preserve"><value>Search</value><comment></comment></data>
+  <data name="searchkq" xml:space="preserve"><value>Search Check on Work Attendance</value><comment></comment></data>
+  <data name="seatlevel_name" xml:space="preserve"><value>Seat Level</value><comment></comment></data>
+  <data name="security_copyrole_aspx" xml:space="preserve"><value>Copy Role</value><comment></comment></data>
+  <data name="security_delegatedefinition_aspx" xml:space="preserve"><value>Delegate</value><comment></comment></data>
+  <data name="security_delegatedefinitiondetail_aspx" xml:space="preserve"><value>Delegate Definition Detail</value><comment></comment></data>
+  <data name="security_functiondefinition_aspx" xml:space="preserve"><value>Function Definetion</value><comment></comment></data>
+  <data name="security_functiondefinitiondetail_aspx" xml:space="preserve"><value>Function Definition</value><comment></comment></data>
+  <data name="security_operationdefinition_aspx" xml:space="preserve"><value>Operation Definetion</value><comment></comment></data>
+  <data name="security_roledefinition_aspx" xml:space="preserve"><value>Role Definetion</value><comment></comment></data>
+  <data name="security_roledefinitiondetail_aspx" xml:space="preserve"><value>Role Definetion Detail</value><comment></comment></data>
+  <data name="security_rolefunctionoperationdetail_aspx" xml:space="preserve"><value>Role Function Operation Define</value><comment></comment></data>
+  <data name="security_roleusersetting_aspx" xml:space="preserve"><value>User In Role</value><comment></comment></data>
+  <data name="security_userdefinition_aspx" xml:space="preserve"><value>User Definetion</value><comment></comment></data>
+  <data name="select" xml:space="preserve"><value>Select</value><comment></comment></data>
+  <data name="select_all" xml:space="preserve"><value>Select All</value><comment></comment></data>
+  <data name="selecteprodserialnum" xml:space="preserve"><value>Selecte Prod SerialNum</value><comment></comment></data>
+  <data name="setup" xml:space="preserve"><value>Setup</value><comment></comment></data>
+  <data name="setup_company_aspx" xml:space="preserve"><value>Company Name maintenance</value><comment></comment></data>
+  <data name="setup_geography_aspx" xml:space="preserve"><value>Geography Define</value><comment></comment></data>
+  <data name="setup_geographydetail_aspx" xml:space="preserve"><value>Geography Detail</value><comment></comment></data>
+  <data name="setup_lookupmaster_aspx" xml:space="preserve"><value>Simple Data Define</value><comment></comment></data>
+  <data name="setup_sitedetail_aspx" xml:space="preserve"><value>Site Detail</value><comment></comment></data>
+  <data name="setup_sitelist_aspx" xml:space="preserve"><value>Site List</value><comment></comment></data>
+  <data name="setworkflowstep" xml:space="preserve"><value>Set Process Step</value><comment>IDMP</comment></data>
+  <data name="show_all_modification" xml:space="preserve"><value>Show All Modification</value><comment></comment></data>
+  <data name="show_all_wfl" xml:space="preserve"><value>Show All Wfl</value><comment></comment></data>
+  <data name="show_default_wfl" xml:space="preserve"><value>Show Default Wfl</value><comment></comment></data>
+  <data name="show_detail" xml:space="preserve"><value>Show Detail</value><comment></comment></data>
+  <data name="show_more" xml:space="preserve"><value>Show More</value><comment></comment></data>
+  <data name="site" xml:space="preserve"><value>Site</value><comment></comment></data>
+  <data name="sn_tracking" xml:space="preserve"><value>SN Tracking</value><comment></comment></data>
+  <data name="split" xml:space="preserve"><value>Split</value><comment></comment></data>
+  <data name="splitmerge" xml:space="preserve"><value>Split Merge</value><comment></comment></data>
+  <data name="state_role_id" xml:space="preserve"><value>State Map Role</value><comment>IDMP</comment></data>
+  <data name="status" xml:space="preserve"><value>Status</value><comment></comment></data>
+  <data name="stepdefine" xml:space="preserve"><value>Step Define</value><comment>IDMP</comment></data>
+  <data name="submit" xml:space="preserve"><value>Submit</value><comment></comment></data>
+  <data name="suggestline_id" xml:space="preserve"><value>Suggested Itinerary ID</value><comment></comment></data>
+  <data name="synchbackdata" xml:space="preserve"><value>Synch Back Data</value><comment></comment></data>
+  <data name="synchtrainingstructure" xml:space="preserve"><value>Synch Training Structure</value><comment></comment></data>
+  <data name="system_information" xml:space="preserve"><value>System Infomation</value><comment></comment></data>
+  <data name="tabbommap" xml:space="preserve"><value>Bom Map List</value><comment></comment></data>
+  <data name="tabbommaterial" xml:space="preserve"><value>Bom Material List</value><comment></comment></data>
+  <data name="tabcontact" xml:space="preserve"><value>Contact Mode</value><comment></comment></data>
+  <data name="tabcontract" xml:space="preserve"><value>Contract</value><comment></comment></data>
+  <data name="tabcourse" xml:space="preserve"><value>Course</value><comment></comment></data>
+  <data name="tabdesignateduser" xml:space="preserve"><value>Designated User</value><comment></comment></data>
+  <data name="tabeducation" xml:space="preserve"><value>Education</value><comment></comment></data>
+  <data name="tabevaluator" xml:space="preserve"><value>Evaluator List</value><comment></comment></data>
+  <data name="tabfamily" xml:space="preserve"><value>Family</value><comment></comment></data>
+  <data name="tabiscs" xml:space="preserve"><value>Manager Appraisal</value><comment></comment></data>
+  <data name="tabissue" xml:space="preserve"><value>Issue</value><comment></comment></data>
+  <data name="tabjob" xml:space="preserve"><value>Job</value><comment></comment></data>
+  <data name="tabjobpay" xml:space="preserve"><value>Job Pay</value><comment></comment></data>
+  <data name="tabkc" xml:space="preserve"><value>KC Qty</value><comment></comment></data>
+  <data name="tabknowledge" xml:space="preserve"><value>Professional Knowledge</value><comment></comment></data>
+  <data name="tabkpi" xml:space="preserve"><value>KPI</value><comment></comment></data>
+  <data name="tabkqbatch" xml:space="preserve"><value>Special KQ Data</value><comment></comment></data>
+  <data name="tabkqmonthly" xml:space="preserve"><value>KQ Data</value><comment></comment></data>
+  <data name="tableaderappraise" xml:space="preserve"><value>Team Leader MidYear Appraise</value><comment></comment></data>
+  <data name="tableaderassess" xml:space="preserve"><value>Team Leader EndYear Appraise</value><comment></comment></data>
+  <data name="tableave" xml:space="preserve"><value>Leave</value><comment></comment></data>
+  <data name="tablevel" xml:space="preserve"><value>Level</value><comment></comment></data>
+  <data name="tabmat" xml:space="preserve"><value>Material</value><comment></comment></data>
+  <data name="tabmataccount" xml:space="preserve"><value>Mat Account</value><comment></comment></data>
+  <data name="tabmatdesignbom" xml:space="preserve"><value>Child Bom</value><comment></comment></data>
+  <data name="tabmatdesignbommaterial" xml:space="preserve"><value>Material</value><comment></comment></data>
+  <data name="tabmayparuser" xml:space="preserve"><value>May Participation User</value><comment></comment></data>
+  <data name="tabnew" xml:space="preserve"><value>New</value><comment></comment></data>
+  <data name="tabothers" xml:space="preserve"><value>Others</value><comment></comment></data>
+  <data name="tabparuser" xml:space="preserve"><value>Participation User</value><comment></comment></data>
+  <data name="tabpay" xml:space="preserve"><value>Pay</value><comment></comment></data>
+  <data name="tabpayinititem" xml:space="preserve"><value>Pay Init Item</value><comment></comment></data>
+  <data name="tabpayinititemadjust" xml:space="preserve"><value>Pay InitItem Adjust</value><comment></comment></data>
+  <data name="tabpaymonthlyitem" xml:space="preserve"><value>Pay Monthly Item</value><comment></comment></data>
+  <data name="tabpayslipitem" xml:space="preserve"><value>PaySlip Item</value><comment></comment></data>
+  <data name="tabpayslipitemadjust" xml:space="preserve"><value>PaySlip Item Adjust</value><comment></comment></data>
+  <data name="tabpersonal" xml:space="preserve"><value>Personal</value><comment></comment></data>
+  <data name="tabpresent" xml:space="preserve"><value>Present</value><comment></comment></data>
+  <data name="tabproductdetail" xml:space="preserve"><value>Product Detail</value><comment></comment></data>
+  <data name="tabquality" xml:space="preserve"><value>Professional Quality</value><comment></comment></data>
+  <data name="tabregistuser" xml:space="preserve"><value>Registration User</value><comment></comment></data>
+  <data name="tabresponsibility" xml:space="preserve"><value>Responsibility</value><comment></comment></data>
+  <data name="tabrewards" xml:space="preserve"><value>RewardsPunish</value><comment></comment></data>
+  <data name="tabsalary" xml:space="preserve"><value>Salary</value><comment></comment></data>
+  <data name="tabsite" xml:space="preserve"><value>Site List</value><comment></comment></data>
+  <data name="tabskill" xml:space="preserve"><value>Professional Skill</value><comment></comment></data>
+  <data name="tabsystem" xml:space="preserve"><value>System Information</value><comment></comment></data>
+  <data name="tabtraining" xml:space="preserve"><value>Training</value><comment></comment></data>
+  <data name="tabuser" xml:space="preserve"><value>User List</value><comment></comment></data>
+  <data name="tabuserappraise" xml:space="preserve"><value>User MidYear Self Appraise</value><comment></comment></data>
+  <data name="tabuserassess" xml:space="preserve"><value>User EndYear Self Appraise</value><comment></comment></data>
+  <data name="tabuserfeedback" xml:space="preserve"><value>User EndYear Feedback</value><comment></comment></data>
+  <data name="tabuserinfo" xml:space="preserve"><value>User Info</value><comment></comment></data>
+  <data name="tabvender" xml:space="preserve"><value>Vender</value><comment></comment></data>
+  <data name="tabwork" xml:space="preserve"><value>Work Experience</value><comment></comment></data>
+  <data name="team" xml:space="preserve"><value>Team</value><comment></comment></data>
+  <data name="templatefilelist" xml:space="preserve"><value>Template document list</value><comment>IDMP</comment></data>
+  <data name="territory" xml:space="preserve"><value>Territory</value><comment></comment></data>
+  <data name="territory_detail" xml:space="preserve"><value>Territory Detail</value><comment></comment></data>
+  <data name="ticket_line_number" xml:space="preserve"><value>Flight Number</value><comment></comment></data>
+  <data name="ticket_type_name" xml:space="preserve"><value>Transportation</value><comment></comment></data>
+  <data name="ticketappactuallinelist" xml:space="preserve"><value>Ticket Ordered</value><comment></comment></data>
+  <data name="ticketappjourneylist" xml:space="preserve"><value>Journey Info</value><comment></comment></data>
+  <data name="ticketapppersonlist" xml:space="preserve"><value>Person List</value><comment></comment></data>
+  <data name="ticketappsuggestlinelist" xml:space="preserve"><value>Suggested Itinerary</value><comment></comment></data>
+  <data name="to" xml:space="preserve"><value>To</value><comment></comment></data>
+  <data name="to_inspect_qty" xml:space="preserve"><value>To Inspect Qty</value><comment></comment></data>
+  <data name="to_test_qty" xml:space="preserve"><value>To Test Qty</value><comment></comment></data>
+  <data name="todo" xml:space="preserve"><value>To Do List</value><comment></comment></data>
+  <data name="totalrow" xml:space="preserve"><value>Total Row:</value><comment></comment></data>
+  <data name="tripdetail" xml:space="preserve"><value>Trip Detail</value><comment>eExpense</comment></data>
+  <data name="uclnkperson" xml:space="preserve"><value>Travel Person</value><comment>Ticket</comment></data>
+  <data name="uclnkplanflight" xml:space="preserve"><value>Plan Flight Train</value><comment>Ticket</comment></data>
+  <data name="undoaudit" xml:space="preserve"><value>UndoAudit</value><comment></comment></data>
+  <data name="undobuild" xml:space="preserve"><value>Undo Build</value><comment></comment></data>
+  <data name="undopass" xml:space="preserve"><value>UndoPass</value><comment></comment></data>
+  <data name="undosubmit" xml:space="preserve"><value>UndoSubmit</value><comment></comment></data>
+  <data name="update" xml:space="preserve"><value>Update</value><comment></comment></data>
+  <data name="uploadfile" xml:space="preserve"><value>Upload File</value><comment></comment></data>
+  <data name="uploadfile_fileupload_aspx" xml:space="preserve"><value>File Upload</value><comment></comment></data>
+  <data name="uploadfile_photooriginal_aspx" xml:space="preserve"><value>Photo Original</value><comment></comment></data>
+  <data name="uploadfile_photoupload_aspx" xml:space="preserve"><value>Photo Upload</value><comment></comment></data>
+  <data name="uploadfile1" xml:space="preserve"><value>Upload File</value><comment></comment></data>
+  <data name="uploadphoto" xml:space="preserve"><value>Upload Photo</value><comment></comment></data>
+  <data name="usage" xml:space="preserve"><value>Usage</value><comment></comment></data>
+  <data name="use_new_state" xml:space="preserve"><value>Use New State</value><comment>IDMP</comment></data>
+  <data name="username" xml:space="preserve"><value>UserName:</value><comment></comment></data>
+  <data name="validatenum" xml:space="preserve"><value>ValidateNum:</value><comment></comment></data>
+  <data name="vehicle_planreturn_time" xml:space="preserve"><value>Plan Arrive Time</value><comment></comment></data>
+  <data name="vehicle_planstart_time" xml:space="preserve"><value>Plan Start Time</value><comment></comment></data>
+  <data name="vehicle_type_id" xml:space="preserve"><value>Vehicle Type</value><comment></comment></data>
+  <data name="vehicleaccident" xml:space="preserve"><value>Accidents</value><comment>Vehicle</comment></data>
+  <data name="vehicleactualjourney" xml:space="preserve"><value>Actual Journey</value><comment></comment></data>
+  <data name="vehicleappjourneylist" xml:space="preserve"><value>Journey List</value><comment></comment></data>
+  <data name="vehicleapppersonlist" xml:space="preserve"><value>Passenger List</value><comment></comment></data>
+  <data name="vehicleaudit" xml:space="preserve"><value>Vehicle Audit</value><comment>Vehicle</comment></data>
+  <data name="vehiclebreakrule" xml:space="preserve"><value>Break Rules</value><comment>Vehicle</comment></data>
+  <data name="vehicledispatch" xml:space="preserve"><value>Vehicle Dispatch</value><comment>Vehicle</comment></data>
+  <data name="vehicleuse" xml:space="preserve"><value>Vehicle Use</value><comment>Vehicle</comment></data>
+  <data name="view" xml:space="preserve"><value>View</value><comment></comment></data>
+  <data name="view_process" xml:space="preserve"><value>View Workflow Step</value><comment>IDMP</comment></data>
+  <data name="viewapphire" xml:space="preserve"><value>Hire Form Details</value><comment></comment></data>
+  <data name="viewinititem" xml:space="preserve"><value>ViewInitItem</value><comment></comment></data>
+  <data name="viewmonthlyitem" xml:space="preserve"><value>ViewMonthlyItem</value><comment></comment></data>
+  <data name="week" xml:space="preserve"><value>Week</value><comment></comment></data>
+  <data name="workflow" xml:space="preserve"><value>Process List</value><comment></comment></data>
+  <data name="workflowadmin" xml:space="preserve"><value>Workflow Admin:</value><comment>IDMP</comment></data>
+  <data name="xs_statistics" xml:space="preserve"><value>XS Statistics</value><comment></comment></data>
+  <data name="year" xml:space="preserve"><value>Year</value><comment></comment></data>
+  <data name="yes" xml:space="preserve"><value>Yes</value><comment></comment></data>
+  <data name="confirmmodifyform" xml:space="preserve"><value>Are you sure you want to modify the form?</value><comment></comment></data>
+  <data name="undosubmitsuccess" xml:space="preserve"><value>Undo Submit Succeeded!</value><comment></comment></data>
+  <data name="email_address_error" xml:space="preserve"><value>Email address is not exist!</value><comment>CMDB</comment></data>
+  <data name="email_send_success" xml:space="preserve"><value>Email send succeeded!</value><comment>CMDB</comment></data>
+  <data name="employee_incorrect" xml:space="preserve"><value>Employee incorrect</value><comment></comment></data>
+  <data name="endprocessfailed" xml:space="preserve"><value>The workflow is terminate failed!</value><comment>IDMP</comment></data>
+  <data name="endprocesssuccess" xml:space="preserve"><value>The workflow is terminate sucess!</value><comment>IDMP</comment></data>
+  <data name="exceedmaxlength" xml:space="preserve"><value>Input string is too long!</value><comment></comment></data>
+  <data name="existchildnode" xml:space="preserve"><value>There are child nodes, please delete the child nodes first.</value><comment>IDMP</comment></data>
+  <data name="expensedetailsavefailed" xml:space="preserve"><value>Expense detail save failed!</value><comment>Expense</comment></data>
+  <data name="expenseformsavefailed" xml:space="preserve"><value>Expense form save failed!</value><comment>Expense</comment></data>
+  <data name="expensenotfound" xml:space="preserve"><value>The expense form don't found!</value><comment>Expense</comment></data>
+  <data name="exsitchildcantsetprocess" xml:space="preserve"><value>There is exists child node, this node can't set at process!</value><comment>IDMP</comment></data>
+  <data name="fileerror" xml:space="preserve"><value>File Error!</value><comment>CMDB</comment></data>
+  <data name="form_id_error" xml:space="preserve"><value>Form Id is not exist!</value><comment>CMDB</comment></data>
+  <data name="form_id_only_num" xml:space="preserve"><value>Form ID must be number!</value><comment>CMDB</comment></data>
+  <data name="idmpconfirmdelete" xml:space="preserve"><value>Do you confirm delete this record?</value><comment>IDMP</comment></data>
+  <data name="idmpconfirmdeleteagain" xml:space="preserve"><value>Please confirm delete again.</value><comment>IDMP</comment></data>
+  <data name="idmpisnotapprove" xml:space="preserve"><value>Idmp form is not approved!</value><comment>Expense</comment></data>
+  <data name="idmpisnotcomplete" xml:space="preserve"><value>Idmp form is not completed!</value><comment>Expense</comment></data>
+  <data name="idmpisnotexists" xml:space="preserve"><value>Idmp form is not exsit!</value><comment>Expense</comment></data>
+  <data name="idmpprocesschangetouser" xml:space="preserve"><value>Are you sure you want to change the workflow to user define workflow?</value><comment>IDMP</comment></data>
+  <data name="idmpprocessend" xml:space="preserve"><value>Are you sure you want to end the workflow?</value><comment>IDMP</comment></data>
+  <data name="idmprootcanntdelete" xml:space="preserve"><value>Can't delete the root node!</value><comment>IDMP</comment></data>
+  <data name="inputcopytoreason" xml:space="preserve"><value>Please input copy to reason.</value><comment>IDMP</comment></data>
+  <data name="inputfinanceinfofirst" xml:space="preserve"><value>Please input the finance information first!</value><comment>Expense</comment></data>
+  <data name="inputnumber" xml:space="preserve"><value>Please input Number!</value><comment></comment></data>
+  <data name="inputnumberpointminus" xml:space="preserve"><value>Please Only input number,point,minus!</value><comment></comment></data>
+  <data name="inputvehicledispatch" xml:space="preserve"><value>Please change to edit mode and input vehicle dispatch info.</value><comment>Vehicle</comment></data>
+  <data name="inputvehicleused" xml:space="preserve"><value>Please change to edit mode and input vehicle used info.</value><comment>Vehicle</comment></data>
+  <data name="invalidhour" xml:space="preserve"><value>Input Hour Error!</value><comment></comment></data>
+  <data name="invalidminute" xml:space="preserve"><value>Input Minute Error!</value><comment></comment></data>
+  <data name="invalidnumber" xml:space="preserve"><value>Invalid number!</value><comment></comment></data>
+  <data name="isexistunfeedcopyto" xml:space="preserve"><value>There is a Un-Feedback copy to exists!</value><comment>IDMP</comment></data>
+  <data name="isuseddontallowdelete" xml:space="preserve"><value>The task team is used, don't allow delete, you can disable it.</value><comment>PM</comment></data>
+  <data name="itisuserdefineprocess" xml:space="preserve"><value>The workflow is user define workflow, can't change it.</value><comment>IDMP</comment></data>
+  <data name="jxc_ck_jxcdldbrklist_aspx" xml:space="preserve"><value>Cable Allocate Warehousing List</value><comment></comment></data>
+  <data name="jxc_report_ck_stockcapitalanalysis_aspx" xml:space="preserve"><value>Stock Capital Analysis</value><comment></comment></data>
+  <data name="jxc_report_fh_materialwhamount_aspx" xml:space="preserve"><value>Material Wh Amount</value><comment></comment></data>
+  <data name="jxc_report_pd_fh_pdreport_aspx" xml:space="preserve"><value>Inventory Checking List</value><comment></comment></data>
+  <data name="jxc_ck_jxcdldbrkrkdetail_aspx" xml:space="preserve"><value>Treasury On Cable</value><comment></comment></data>
+  <data name="jxc_ck_jxcdllltrkrkdetail_aspx" xml:space="preserve"><value>Requisition Treasury Back</value><comment></comment></data>
+  <data name="jxc_ck_jxchwtzdetail_aspx" xml:space="preserve"><value>Storage Space Adjust Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxchwtzlist_aspx" xml:space="preserve"><value>Storage Space Adjust List</value><comment></comment></data>
+  <data name="jxc_popup_materialhuoweisearch_aspx" xml:space="preserve"><value>Material Storage Space Search</value><comment></comment></data>
+  <data name="jxc_popup_whandhuoweimaterialsearch_aspx" xml:space="preserve"><value>Material Search</value><comment></comment></data>
+  <data name="jxc_setup_jxcmatsparemanager_aspx" xml:space="preserve"><value>Redundance Control List</value><comment></comment></data>
+  <data name="jxc_setup_matsparedetail_aspx" xml:space="preserve"><value>Redundance Control Detail</value><comment></comment></data>
+  <data name="jxc_wtjg_jxcdlwtjgrkrkdetail_aspx" xml:space="preserve"><value>Cable by processing GRN</value><comment></comment></data>
+  <data name="jxc_xs_jxcdlxstrkrkdetail_aspx" xml:space="preserve"><value>Cable Sales Return Into The Treasury</value><comment></comment></data>
+  <data name="jxc_xs_jxcxsdetail_qc_aspx" xml:space="preserve"><value>Initial Sales Outbound Detail</value><comment></comment></data>
+  <data name="jxc_xs_jxcxslist_qc_aspx" xml:space="preserve"><value>Initial Sales Outbound List</value><comment></comment></data>
+  <data name="setup_appparameter_appparameter_aspx" xml:space="preserve"><value>App Information</value><comment></comment></data>
+  <data name="setup_appparameter_parameterdetail_aspx" xml:space="preserve"><value>Application Parameter Definition</value><comment></comment></data>
+  <data name="setup_appparameter_parameterlist_aspx" xml:space="preserve"><value>Application Parameter List</value><comment></comment></data>
+  <data name="lendamountmorethanidmpcost" xml:space="preserve"><value>Lend amount is more than idmp cost!</value><comment>Expense</comment></data>
+  <data name="lendnotexistorother" xml:space="preserve"><value>Lend form is not exists or not approved or alreay repayment!</value><comment>Expense</comment></data>
+  <data name="lendnotfound" xml:space="preserve"><value>The lend form don't found!</value><comment>Expense</comment></data>
+  <data name="logerror" xml:space="preserve"><value>Log Error</value><comment></comment></data>
+  <data name="msgobjecttype" xml:space="preserve"><value>object type when addition may edit, when revision cannot edit</value><comment></comment></data>
+  <data name="need_role_id" xml:space="preserve"><value>If node type is state, you must select a role.</value><comment>IDMP</comment></data>
+  <data name="need_state_id" xml:space="preserve"><value>If node type is state, you must select a state or input a new state.</value><comment>IDMP</comment></data>
+  <data name="needappendinfo" xml:space="preserve"><value>Need append some infomation!</value><comment>IDMP</comment></data>
+  <data name="needbankaccount" xml:space="preserve"><value>There is not bank account. Please set bank account in employee information or select other pay type!</value><comment>Expense</comment></data>
+  <data name="needbankacount" xml:space="preserve"><value>Need input bank account!</value><comment>Expense</comment></data>
+  <data name="needinputactualticket" xml:space="preserve"><value>Need input actual ticket info.</value><comment>Ticket</comment></data>
+  <data name="needinputreturndate" xml:space="preserve"><value>You need input return date when you select return ticket!</value><comment>Ticket</comment></data>
+  <data name="needtravelinfo" xml:space="preserve"><value>Need travel info. Please input travel infomation.</value><comment>Ticket</comment></data>
+  <data name="no_add_right" xml:space="preserve"><value>No Add right!</value><comment></comment></data>
+  <data name="no_attachment_uploaded" xml:space="preserve"><value>No attachment uploaded.</value><comment></comment></data>
+  <data name="no_delete_right" xml:space="preserve"><value>No delete right!</value><comment></comment></data>
+  <data name="no_edit_right" xml:space="preserve"><value>No edit right!</value><comment></comment></data>
+  <data name="no_read_right" xml:space="preserve"><value>No View right!</value><comment></comment></data>
+  <data name="noattachmentexist" xml:space="preserve"><value>No attachment uploaded.</value><comment>IDMP</comment></data>
+  <data name="nodeleteright" xml:space="preserve"><value>You have not enough right to delete the current row!</value><comment></comment></data>
+  <data name="nodeleterightforthisrecord" xml:space="preserve"><value>You haven't delete right for this record!</value><comment>Expense</comment></data>
+  <data name="nodriverforthisuser" xml:space="preserve"><value>This employee don't have driver license plate.</value><comment>Vehicle</comment></data>
+  <data name="nolasttravel" xml:space="preserve"><value>Not exists preview travel.</value><comment>Ticket</comment></data>
+  <data name="nopersoninlasttravel" xml:space="preserve"><value>Perview travel doesn't exsit person info!</value><comment>Ticket</comment></data>
+  <data name="nosubmitright" xml:space="preserve"><value>You have not enough right to submit the record!</value><comment></comment></data>
+  <data name="notallowdelete" xml:space="preserve"><value>You have not enough right to delete the record!</value><comment>CMDB</comment></data>
+  <data name="notallowedit" xml:space="preserve"><value>Recorder can't edit!</value><comment>CMDB</comment></data>
+  <data name="notcopyonlyleaf" xml:space="preserve"><value>cannot copy ,but leaf node!</value><comment></comment></data>
+  <data name="notcutparent" xml:space="preserve"><value>cannot cut parent node!</value><comment></comment></data>
+  <data name="notemplatedoc" xml:space="preserve"><value>There is not file.</value><comment>IDMP</comment></data>
+  <data name="nothasidmpform" xml:space="preserve"><value>This expense type need idmp form, please input a relation idmp form!</value><comment>Expense</comment></data>
+  <data name="nothasotform" xml:space="preserve"><value>This expense type need OT form, please input a relation OT form!</value><comment>Expense</comment></data>
+  <data name="nothastravelform" xml:space="preserve"><value>This expense type need travel form, please input a relation travel form!</value><comment>Expense</comment></data>
+  <data name="nothastripform" xml:space="preserve"><value>This expense type need business trip form, please input a relation business trip form!</value><comment>Expense</comment></data>
+  <data name="notpasteparent" xml:space="preserve"><value>cannot  paste to parent node!</value><comment></comment></data>
+  <data name="notpasteself" xml:space="preserve"><value>cannot paste self node!</value><comment></comment></data>
+  <data name="notsetforward" xml:space="preserve"><value>Forward to person is not set!</value><comment>IDMP</comment></data>
+  <data name="numbererror" xml:space="preserve"><value>{0},The first character must is '{1}' !</value><comment></comment></data>
+  <data name="onlyaddinfolder" xml:space="preserve"><value>Only can add child node for folder node.</value><comment>IDMP</comment></data>
+  <data name="onlycanuseprocess" xml:space="preserve"><value>Only can map expense type with process!</value><comment>Expense</comment></data>
+  <data name="onlyprocesscansetstep" xml:space="preserve"><value>Only process node can set step!</value><comment>IDMP</comment></data>
+  <data name="passwod_error" xml:space="preserve"><value>Passwod Error!</value><comment></comment></data>
+  <data name="passwod_format" xml:space="preserve"><value>Passwod Format!</value><comment></comment></data>
+  <data name="password_input" xml:space="preserve"><value>Please input the password!</value><comment></comment></data>
+  <data name="password_length" xml:space="preserve"><value>Password Length &lt; {0}</value><comment></comment></data>
+  <data name="password_match" xml:space="preserve"><value>Password doesn't match!</value><comment></comment></data>
+  <data name="password_same" xml:space="preserve"><value>Password can't be same to old password!</value><comment></comment></data>
+  <data name="payamountmorethanneedrepay" xml:space="preserve"><value>Pay company is more than the need repayment amount!</value><comment>Expense</comment></data>
+  <data name="paycompanymorethanlend" xml:space="preserve"><value>Pay company amount is more than lend amount!</value><comment>Expense</comment></data>
+  <data name="paycompanymorethantotalamount" xml:space="preserve"><value>Pay company amount is more than total amount!</value><comment>Expense</comment></data>
+  <data name="paycompanyneedlendcode" xml:space="preserve"><value>The lend code is required when the pay to company is not null!</value><comment>Expense</comment></data>
+  <data name="paycounterror" xml:space="preserve"><value>The total amount must equal pay to person and pay to company!</value><comment>EXPENSE</comment></data>
+  <data name="pleasecopyorcut" xml:space="preserve"><value>Please copy or cut node!</value><comment></comment></data>
+  <data name="pleaseinput" xml:space="preserve"><value></value><comment></comment></data>
+  <data name="pleaseinputexpenseguid" xml:space="preserve"><value>Please input expense guid!</value><comment>Expense</comment></data>
+  <data name="pleaseinputidmpguid" xml:space="preserve"><value>Please input IDMP guid.</value><comment>IDMP</comment></data>
+  <data name="pleaseinputremark" xml:space="preserve"><value>Pleae input remark!</value><comment>IDMP</comment></data>
+  <data name="pleaseinputrequirefield" xml:space="preserve"><value>Please input required field:</value><comment>Expense</comment></data>
+  <data name="pleasesaveexpensdetail" xml:space="preserve"><value>Please save expense detail first!</value><comment>Expense</comment></data>
+  <data name="pleasesaveexpensform" xml:space="preserve"><value>Please save expense relation form first!</value><comment>Expense</comment></data>
+  <data name="pleaseselectexpensetype" xml:space="preserve"><value>Please select an expense type.</value><comment>Expense</comment></data>
+  <data name="pleaseselectlendtype" xml:space="preserve"><value>Please select a lend type!</value><comment>Expense</comment></data>
+  <data name="pleaseselectnode" xml:space="preserve"><value>Please select a node!</value><comment></comment></data>
+  <data name="pleaseselectonevalue" xml:space="preserve"><value>Please select one {0}!</value><comment>SFA</comment></data>
+  <data name="pleaseselectoperation" xml:space="preserve"><value>Please select operation!</value><comment></comment></data>
+  <data name="pleaseselectperson" xml:space="preserve"><value>Please select a person.</value><comment>IDMP</comment></data>
+  <data name="pleaseselectprocess" xml:space="preserve"><value>Please select a process!</value><comment>Expense</comment></data>
+  <data name="pleaseselectrow" xml:space="preserve"><value>Please select a row!</value><comment></comment></data>
+  <data name="pleseinputcostcenter" xml:space="preserve"><value>Please input cost center!</value><comment>IDMP</comment></data>
+  <data name="process_completed" xml:space="preserve"><value>The workflow is completed!</value><comment>IDMP</comment></data>
+  <data name="process_not_defined" xml:space="preserve"><value>Workflow is not defined!</value><comment>IDMP</comment></data>
+  <data name="processexistused" xml:space="preserve"><value>Process is already used!</value><comment>Expense</comment></data>
+  <data name="processisused" xml:space="preserve"><value>Can't edit this process, because it is used.</value><comment>IDMP</comment></data>
+  <data name="processisusedcantchangetofolder" xml:space="preserve"><value>The process is used, don't allow change to folder type!</value><comment>IDMP</comment></data>
+  <data name="redefineflowstep" xml:space="preserve"><value>Redefin workflow step</value><comment>IDMP</comment></data>
+  <data name="refreshfailed" xml:space="preserve"><value>Refresh Failed!</value><comment></comment></data>
+  <data name="refreshsuccess" xml:space="preserve"><value>Refresh Success!</value><comment></comment></data>
+  <data name="relationformisalreadyadd" xml:space="preserve"><value>Relation form is already add.</value><comment>Expense</comment></data>
+  <data name="relationformisnotexist" xml:space="preserve"><value>Relation form is not exists!</value><comment>Expense</comment></data>
+  <data name="repayamountmorethanneedamount" xml:space="preserve"><value>Repayment amount is more than the need repayment amount!</value><comment>Expense</comment></data>
+  <data name="savefailed" xml:space="preserve"><value>Save failed!</value><comment></comment></data>
+  <data name="savefirst" xml:space="preserve"><value>Please save first!</value><comment>IDMP</comment></data>
+  <data name="saveoffduty" xml:space="preserve"><value>Action succeeded！Your off duty time is {0}。</value><comment></comment></data>
+  <data name="saveonduty" xml:space="preserve"><value>Action succeeded！Your on duty time is {0}。</value><comment></comment></data>
+  <data name="savesuccess" xml:space="preserve"><value>Save succeeded!</value><comment></comment></data>
+  <data name="savesuccesspleasesubmit" xml:space="preserve"><value>Save sucess, please submit to workflow!</value><comment>Expense</comment></data>
+  <data name="settlemenuunitnotsame" xml:space="preserve"><value>The settlement unit of lend form and expense form are not same!</value><comment>Expense</comment></data>
+  <data name="submitcopytofeed" xml:space="preserve"><value>Are you sure you want to submit the copy to feedback? It can't change again.</value><comment>IDMP</comment></data>
+  <data name="submitfailed" xml:space="preserve"><value>Submit failed!</value><comment></comment></data>
+  <data name="submitprocessconfirm" xml:space="preserve"><value>Are you sure you want to submit the current process?</value><comment>IDMP</comment></data>
+  <data name="submitprocesssuccess" xml:space="preserve"><value>Submit sucsess!</value><comment>IDMP</comment></data>
+  <data name="submitsuccess" xml:space="preserve"><value>Submit Succeeded!</value><comment></comment></data>
+  <data name="terminatecopyto" xml:space="preserve"><value>Are you sure you want to terminate the copy to?</value><comment>IDMP</comment></data>
+  <data name="toberedefine" xml:space="preserve"><value>To Be Re-define</value><comment>IDMP</comment></data>
+  <data name="totalamountnotequalpricecount" xml:space="preserve"><value>Total amount don't equal price * count, please re-input: </value><comment>Vehicle</comment></data>
+  <data name="update_user_failed" xml:space="preserve"><value>Update Employee Failed</value><comment></comment></data>
+  <data name="upload_file_empty_error" xml:space="preserve"><value>Please select a file first!</value><comment></comment></data>
+  <data name="upload_file_format" xml:space="preserve"><value>File format error!</value><comment></comment></data>
+  <data name="upload_file_size_limit" xml:space="preserve"><value>File size should be less than {0}!</value><comment></comment></data>
+  <data name="user_readonly" xml:space="preserve"><value>User ReadOnly!</value><comment></comment></data>
+  <data name="user_repeat" xml:space="preserve"><value>User Name Repeat</value><comment></comment></data>
+  <data name="userdefinecannotcopy" xml:space="preserve"><value>User define process can't copy!</value><comment>IDMP</comment></data>
+  <data name="userdefinecannotsetstep" xml:space="preserve"><value>User define process can't set flow step!</value><comment>IDMP</comment></data>
+  <data name="validateforeignkey" xml:space="preserve"><value>Input error: {0} is not exists!</value><comment></comment></data>
+  <data name="validateidmpguid" xml:space="preserve"><value>The IDMP Guid {0} is not exists. Please check and re-input.</value><comment>IDMP</comment></data>
+  <data name="validatepaweight" xml:space="preserve"><value>The total weight is {0},please update weight to equal 100.</value><comment></comment></data>
+  <data name="vlidatecheckdate" xml:space="preserve"><value>Check date could not more than sysdate!</value><comment></comment></data>
+  <data name="vlidatefirstcheckdate" xml:space="preserve"><value>First check date should be after today.</value><comment></comment></data>
+  <data name="vlidateplancheckdate" xml:space="preserve"><value>Plan check date should be after today.</value><comment></comment></data>
+  <data name="wflmsgtitle" xml:space="preserve"><value>Your {0} already done by {1} at {2}. The operator is {3}.</value><comment>IDMP</comment></data>
+  <data name="|&lt;" xml:space="preserve"><value>|&lt;</value><comment></comment></data>
+  <data name="&lt;" xml:space="preserve"><value>&lt;</value><comment></comment></data>
+  <data name="&gt;" xml:space="preserve"><value>&gt;</value><comment></comment></data>
+  <data name="&gt;|" xml:space="preserve"><value>&gt;|</value><comment></comment></data>
+  <data name="action_date" xml:space="preserve"><value>Action Date</value><comment></comment></data>
+  <data name="actionend" xml:space="preserve"><value>Action End</value><comment></comment></data>
+  <data name="actionplan" xml:space="preserve"><value>Action Plan</value><comment></comment></data>
+  <data name="activity" xml:space="preserve"><value>Activity</value><comment></comment></data>
+  <data name="activity_detail_scope_aspx" xml:space="preserve"><value>Activity Detail Report</value><comment>EAR</comment></data>
+  <data name="acutal_ticket_info" xml:space="preserve"><value>Actual Ticket Info</value><comment>Ticket</comment></data>
+  <data name="add" xml:space="preserve"><value>Add New</value><comment></comment></data>
+  <data name="add_attachment" xml:space="preserve"><value>Add Attachment</value><comment></comment></data>
+  <data name="add_line" xml:space="preserve"><value>Add Line</value><comment></comment></data>
+  <data name="adddepartment" xml:space="preserve"><value>Add Department</value><comment></comment></data>
+  <data name="addmode" xml:space="preserve"><value>Add Mode</value><comment></comment></data>
+  <data name="addnew" xml:space="preserve"><value>Add New</value><comment></comment></data>
+  <data name="addreturn" xml:space="preserve"><value>Add Return Travel</value><comment>Ticket</comment></data>
+  <data name="adm_ticket_selectprocesstype_aspx" xml:space="preserve"><value>Please select process</value><comment></comment></data>
+  <data name="adm_ticket_ticketappdetail_aspx" xml:space="preserve"><value>Tickete Application Detail</value><comment>Ticket</comment></data>
+  <data name="adm_ticket_ticketapplist_aspx" xml:space="preserve"><value>Ticket Application List</value><comment>Ticket</comment></data>
+  <data name="adm_ticket_ticketapppersondetail_aspx" xml:space="preserve"><value>Person Information</value><comment></comment></data>
+  <data name="adm_ticket_ticketpersoninfo_aspx" xml:space="preserve"><value>Personal Info</value><comment>Ticket</comment></data>
+  <data name="adm_ticket_tickettravelinfodetail_aspx" xml:space="preserve"><value>Travel Infomation</value><comment>Ticket</comment></data>
+  <data name="adm_vehicle_oilcarddetail_aspx" xml:space="preserve"><value>Oil Card Detail</value><comment>Vehicle</comment></data>
+  <data name="adm_vehicle_oilcardlist_aspx" xml:space="preserve"><value>Oil Card List</value><comment>Vehicle</comment></data>
+  <data name="adm_vehicle_vehicleaddoildetail_aspx" xml:space="preserve"><value>Add Oil Detail</value><comment>Vehicle</comment></data>
+  <data name="adm_vehicle_vehicleaddoillist_aspx" xml:space="preserve"><value>Vehicle Add Oil List</value><comment>Vehicle</comment></data>
+  <data name="adm_vehicle_vehicleappdetail_aspx" xml:space="preserve"><value>Vehicle Application Form</value><comment></comment></data>
+  <data name="adm_vehicle_vehicleapppersondetail_aspx" xml:space="preserve"><value>Passenger Detail</value><comment></comment></data>
+  <data name="adm_vehicle_vehiclebasicdetail_aspx" xml:space="preserve"><value>Vehicle Basic Info Detail</value><comment>Vehicle</comment></data>
+  <data name="adm_vehicle_vehiclebasiclist_aspx" xml:space="preserve"><value>Vehicle Basic Info List</value><comment>Vehicle</comment></data>
+  <data name="adm_vehicle_vehicledriverdetail_aspx" xml:space="preserve"><value>Driver Info Detail</value><comment>Vehicle</comment></data>
+  <data name="adm_vehicle_vehicledriverlist_aspx" xml:space="preserve"><value>Driver Info List</value><comment>Vehicle</comment></data>
+  <data name="adm_vehicle_vehicleformdetail_aspx" xml:space="preserve"><value>Vehicle Form Detail</value><comment>Ticket</comment></data>
+  <data name="adm_vehicle_vehicleformlist_aspx" xml:space="preserve"><value>Vehicle Form List</value><comment>Ticket</comment></data>
+  <data name="adm_vehicle_vehicleinspectiondetail_aspx" xml:space="preserve"><value>Vehicle Annual Inspection Detail</value><comment>Vehicle</comment></data>
+  <data name="adm_vehicle_vehicleinspectionlist_aspx" xml:space="preserve"><value>Vehicle Annual Inspection List</value><comment>Vehicle</comment></data>
+  <data name="adm_vehicle_vehicleinsuredetail_aspx" xml:space="preserve"><value>Vehicle Insure Detail</value><comment>Vehicle</comment></data>
+  <data name="adm_vehicle_vehicleinsurelist_aspx" xml:space="preserve"><value>Vehicle Insure List</value><comment>Vehicle</comment></data>
+  <data name="advance_balance" xml:space="preserve"><value>Advance Balance</value><comment></comment></data>
+  <data name="all_conformity" xml:space="preserve"><value>All Conformity</value><comment></comment></data>
+  <data name="all_terr" xml:space="preserve"><value>All Territory</value><comment>SFA</comment></data>
+  <data name="analysisinfo" xml:space="preserve"><value>Analysis Info</value><comment>SFA</comment></data>
+  <data name="app_information" xml:space="preserve"><value>App Information</value><comment></comment></data>
+  <data name="app_parameter" xml:space="preserve"><value>App Parameter</value><comment></comment></data>
+  <data name="appendfile" xml:space="preserve"><value>Append Attachments</value><comment></comment></data>
+  <data name="approve" xml:space="preserve"><value>Approve</value><comment></comment></data>
+  <data name="attachemployee" xml:space="preserve"><value>Attach Employee</value><comment>Expense</comment></data>
+  <data name="attachment" xml:space="preserve"><value>Attachment</value><comment></comment></data>
+  <data name="attachmentfile" xml:space="preserve"><value>Attachment File</value><comment>Expense</comment></data>
+  <data name="audit" xml:space="preserve"><value>Audit</value><comment></comment></data>
+  <data name="autosplittaskqty" xml:space="preserve"><value>Auto Split Qty</value><comment></comment></data>
+  <data name="base_djparameter_aspx" xml:space="preserve"><value>App Information</value><comment></comment></data>
+  <data name="basic_information" xml:space="preserve"><value>Basic Information</value><comment></comment></data>
+  <data name="budgetdetail" xml:space="preserve"><value>Budget Detail</value><comment></comment></data>
+  <data name="build" xml:space="preserve"><value>Build</value><comment></comment></data>
+  <data name="buildcx" xml:space="preserve"><value>Build CX</value><comment></comment></data>
+  <data name="builduser" xml:space="preserve"><value>Build User</value><comment></comment></data>
+  <data name="c_build_project" xml:space="preserve"><value>C Build Project</value><comment></comment></data>
+  <data name="c_pay_amount" xml:space="preserve"><value>C AP Amount</value><comment></comment></data>
+  <data name="c_prepay_amount" xml:space="preserve"><value>P AP Amount</value><comment></comment></data>
+  <data name="c_prereceive_amount" xml:space="preserve"><value>P AR Amount</value><comment></comment></data>
+  <data name="c_receive_amount" xml:space="preserve"><value>C AR Amount</value><comment></comment></data>
+  <data name="cachelist_aspx" xml:space="preserve"><value>Cache List</value><comment></comment></data>
+  <data name="cancel" xml:space="preserve"><value>Cancel</value><comment></comment></data>
+  <data name="cg_statistics" xml:space="preserve"><value>CG Statistics</value><comment></comment></data>
+  <data name="change" xml:space="preserve"><value>Change</value><comment></comment></data>
+  <data name="change_status" xml:space="preserve"><value>Change Status</value><comment></comment></data>
+  <data name="changetouserdefine" xml:space="preserve"><value>Change to User Defne</value><comment>IDMP</comment></data>
+  <data name="changetouserdefinitionprocess" xml:space="preserve"><value>Change to user definition process</value><comment></comment></data>
+  <data name="check" xml:space="preserve"><value>Check</value><comment></comment></data>
+  <data name="check_budget" xml:space="preserve"><value>Check Budget</value><comment>eExpense</comment></data>
+  <data name="close" xml:space="preserve"><value>Close</value><comment></comment></data>
+  <data name="cm_cg_amount" xml:space="preserve"><value>CM CG Amount</value><comment></comment></data>
+  <data name="cm_complete_project" xml:space="preserve"><value>CM Complete</value><comment></comment></data>
+  <data name="cm_kp_amount" xml:space="preserve"><value>CM KP Amount</value><comment></comment></data>
+  <data name="cm_pay_amount" xml:space="preserve"><value>CM AP Amount</value><comment></comment></data>
+  <data name="cm_receive_amount" xml:space="preserve"><value>CM AR Amount</value><comment></comment></data>
+  <data name="cm_undertake_project" xml:space="preserve"><value>CM Undertake</value><comment></comment></data>
+  <data name="cm_xs_amount" xml:space="preserve"><value>CM XS Amount</value><comment></comment></data>
+  <data name="cm_xs_cost" xml:space="preserve"><value>CM XS Cost</value><comment></comment></data>
+  <data name="cm_xs_profit" xml:space="preserve"><value>CM XS Profit</value><comment></comment></data>
+  <data name="cm_xs_profit_rate" xml:space="preserve"><value>CM Profit Rate(%)</value><comment></comment></data>
+  <data name="commonui_webform_getreport_aspx" xml:space="preserve"><value>Get Report</value><comment></comment></data>
+  <data name="commonui_webform_righterror_aspx" xml:space="preserve"><value>Right Setup Exception</value><comment></comment></data>
+  <data name="commonui_webform_wflchangestate_aspx" xml:space="preserve"><value>Change Status</value><comment></comment></data>
+  <data name="competitor_proposal" xml:space="preserve"><value>Competitor Proposal</value><comment></comment></data>
+  <data name="copy" xml:space="preserve"><value>Copy</value><comment></comment></data>
+  <data name="copyinfo" xml:space="preserve"><value>Copy Info</value><comment>IDMP</comment></data>
+  <data name="copyto" xml:space="preserve"><value>Copy to</value><comment>IDMP</comment></data>
+  <data name="copytoreason" xml:space="preserve"><value>Copy to Reason</value><comment>IDMP</comment></data>
+  <data name="cut" xml:space="preserve"><value>Cut</value><comment></comment></data>
+  <data name="cx_bill_detail" xml:space="preserve"><value>Cx Bill Detail</value><comment></comment></data>
+  <data name="cy_cg_amount" xml:space="preserve"><value>CY CG Amount</value><comment></comment></data>
+  <data name="cy_complete_project" xml:space="preserve"><value>CY Complete</value><comment></comment></data>
+  <data name="cy_kp_amount" xml:space="preserve"><value>CY KP Amount</value><comment></comment></data>
+  <data name="cy_pay_amount" xml:space="preserve"><value>CY AP Amount</value><comment></comment></data>
+  <data name="cy_receive_amount" xml:space="preserve"><value>CY AR Amount</value><comment></comment></data>
+  <data name="cy_undertake_project" xml:space="preserve"><value>CY Undertake</value><comment></comment></data>
+  <data name="cy_xs_amount" xml:space="preserve"><value>CY XS Amount</value><comment></comment></data>
+  <data name="cy_xs_cost" xml:space="preserve"><value>CY XS Cost</value><comment></comment></data>
+  <data name="cy_xs_profit" xml:space="preserve"><value>CY XS Profit</value><comment></comment></data>
+  <data name="cy_xs_profit_rate" xml:space="preserve"><value>CY Profit Rate(%)</value><comment></comment></data>
+  <data name="day" xml:space="preserve"><value>Day</value><comment></comment></data>
+  <data name="default_aspx" xml:space="preserve"><value>Home</value><comment></comment></data>
+  <data name="delete" xml:space="preserve"><value>Delete</value><comment></comment></data>
+  <data name="delete_line" xml:space="preserve"><value>Delete Line</value><comment></comment></data>
+  <data name="deleteall" xml:space="preserve"><value>Delete All</value><comment></comment></data>
+  <data name="deletenosubmit" xml:space="preserve"><value>Delete All No Submit Data</value><comment></comment></data>
+  <data name="deselect_all" xml:space="preserve"><value>Deselect All</value><comment></comment></data>
+  <data name="dj_parameter" xml:space="preserve"><value>Dj Parameter</value><comment></comment></data>
+  <data name="downloadtemplate" xml:space="preserve"><value>DownLoad Template</value><comment></comment></data>
+  <data name="dss_idmp_copytolist_aspx" xml:space="preserve"><value>Copy to List</value><comment>IDMP</comment></data>
+  <data name="dss_idmp_idmpadmin_aspx" xml:space="preserve"><value>IDMP_Admin</value><comment>IDMP</comment></data>
+  <data name="dss_idmp_idmpappendfile_aspx" xml:space="preserve"><value>Append File</value><comment>IDMP</comment></data>
+  <data name="dss_idmp_idmpappendinfo_aspx" xml:space="preserve"><value>Append Information</value><comment>IDMP</comment></data>
+  <data name="dss_idmp_idmpbuilddetialforother_aspx" xml:space="preserve"><value>IDMP Workflow Detail</value><comment>IDMP</comment></data>
+  <data name="dss_idmp_idmpbuildlist_aspx" xml:space="preserve"><value>IDMP Workflow Configure</value><comment>IDMP</comment></data>
+  <data name="dss_idmp_idmpdetail_aspx" xml:space="preserve"><value>IDMP Detail</value><comment>IDMP</comment></data>
+  <data name="dss_idmp_idmplist_aspx" xml:space="preserve"><value>IDMP List</value><comment>IDMP</comment></data>
+  <data name="dss_idmp_idmpquery_aspx" xml:space="preserve"><value>Idmp Query</value><comment>IDMP</comment></data>
+  <data name="dss_idmp_idmpquerydetail_aspx" xml:space="preserve"><value>Idmp Form Detail</value><comment>IDMP</comment></data>
+  <data name="dss_idmp_idmptemplatefile_aspx" xml:space="preserve"><value>Upload Template File</value><comment>IDMP</comment></data>
+  <data name="dss_idmp_reports_idmpshow_aspx" xml:space="preserve"><value>Idmp application form</value><comment>Expense</comment></data>
+  <data name="dss_idmp_userdefineprocess_aspx" xml:space="preserve"><value>Un-define workflow setup</value><comment>IDMP</comment></data>
+  <data name="edit" xml:space="preserve"><value>Edit</value><comment></comment></data>
+  <data name="editmode" xml:space="preserve"><value>Edit Mode</value><comment></comment></data>
+  <data name="endcopyto" xml:space="preserve"><value>Terminate</value><comment>IDMP</comment></data>
+  <data name="endprocess" xml:space="preserve"><value>End Workflow</value><comment>IDMP</comment></data>
+  <data name="export" xml:space="preserve"><value>Export</value><comment></comment></data>
+  <data name="exportexcel" xml:space="preserve"><value>Export To Excel</value><comment></comment></data>
+  <data name="exporttravelinfo" xml:space="preserve"><value>Export Travel and Person Info</value><comment>Ticket</comment></data>
+  <data name="favorite" xml:space="preserve"><value>Favorite</value><comment></comment></data>
+  <data name="filelist" xml:space="preserve"><value>File List</value><comment></comment></data>
+  <data name="finance_expense_expensedetail_aspx" xml:space="preserve"><value>Expense Detail</value><comment>Expense</comment></data>
+  <data name="finance_expense_expensedetaildialog_aspx" xml:space="preserve"><value>Detail expense</value><comment>Expense</comment></data>
+  <data name="finance_expense_expensedetailtypedetail_aspx" xml:space="preserve"><value>Expense Detail Type Detail</value><comment>Expense</comment></data>
+  <data name="finance_expense_expensedetailtypelist_aspx" xml:space="preserve"><value>Expense Detail Type</value><comment>Expense</comment></data>
+  <data name="finance_expense_expenselist_aspx" xml:space="preserve"><value>Expense Application Form</value><comment>Expense</comment></data>
+  <data name="finance_expense_expensenotfound_aspx" xml:space="preserve"><value>Expense Detail</value><comment>Expense</comment></data>
+  <data name="finance_expense_expensequery_aspx" xml:space="preserve"><value>Expense Form Query</value><comment>Expense</comment></data>
+  <data name="finance_expense_expensetypedetail_aspx" xml:space="preserve"><value>Expense Type Detail</value><comment>Expense</comment></data>
+  <data name="finance_expense_expensetypelist_aspx" xml:space="preserve"><value>Expense Type</value><comment>Expense</comment></data>
+  <data name="finance_expense_selectexpensetype_aspx" xml:space="preserve"><value>Please select an expense type and process.</value><comment>Expense</comment></data>
+  <data name="finance_lend_lenddetail_aspx" xml:space="preserve"><value>Lend form detail</value><comment>Expense</comment></data>
+  <data name="finance_lend_lendform_aspx" xml:space="preserve"><value>Lend Form Details</value><comment></comment></data>
+  <data name="finance_lend_lendlist_aspx" xml:space="preserve"><value>Lend List</value><comment>Expense</comment></data>
+  <data name="finance_lend_selectlendtype_aspx" xml:space="preserve"><value>Please select a lend type</value><comment>Expense</comment></data>
+  <data name="finance_repayment_repaymentdetail_aspx" xml:space="preserve"><value>Repayment Form Detail</value><comment>Expense</comment></data>
+  <data name="finance_repayment_repaymentlist_aspx" xml:space="preserve"><value>Repayment List</value><comment>Expense</comment></data>
+  <data name="finance_repayment_selectlend_aspx" xml:space="preserve"><value>Select a lend form, create a repayment form</value><comment>Expense</comment></data>
+  <data name="finance_repayment_selectrepaymenttype_aspx" xml:space="preserve"><value>Select Repayment workflow</value><comment>Expense</comment></data>
+  <data name="finance_report_expensereport_aspx" xml:space="preserve"><value>Expense Analysis Report</value><comment></comment></data>
+  <data name="finance_report_lendreport_aspx" xml:space="preserve"><value>Lend Analysis Report</value><comment></comment></data>
+  <data name="finance_report_repaymentereport_aspx" xml:space="preserve"><value>Repayment Analysis Report</value><comment></comment></data>
+  <data name="forward_to" xml:space="preserve"><value>Forward to</value><comment>IDMP</comment></data>
+  <data name="from" xml:space="preserve"><value>From</value><comment></comment></data>
+  <data name="get_bank_file" xml:space="preserve"><value>Get Bank File</value><comment>eExpense</comment></data>
+  <data name="get_file" xml:space="preserve"><value>Get File</value><comment>eFA</comment></data>
+  <data name="get_gl_file" xml:space="preserve"><value>Get GL File</value><comment>eExpense</comment></data>
+  <data name="get_sum" xml:space="preserve"><value>Get Summary</value><comment></comment></data>
+  <data name="hide_all_modification" xml:space="preserve"><value>Hide All Modification</value><comment></comment></data>
+  <data name="hide_details" xml:space="preserve"><value>Hide Details</value><comment>IDMP</comment></data>
+  <data name="history" xml:space="preserve"><value>History</value><comment></comment></data>
+  <data name="home" xml:space="preserve"><value>Home</value><comment></comment></data>
+  <data name="home_default_defaulthomepage_aspx" xml:space="preserve"><value>Home Page</value><comment></comment></data>
+  <data name="home_leftwindow_aspx" xml:space="preserve"><value>Left Window</value><comment></comment></data>
+  <data name="home_notification_notificationlist_aspx" xml:space="preserve"><value>Notification Details</value><comment></comment></data>
+  <data name="hr_base_wflchangestate_aspx" xml:space="preserve"><value>Wfl Change State</value><comment></comment></data>
+  <data name="hr_contract_contractrenewdetail_aspx" xml:space="preserve"><value>Labor Contract Renew/Termination Detail</value><comment></comment></data>
+  <data name="hr_contract_contractrenewlist_aspx" xml:space="preserve"><value>Labor Contract Renew/Termination List</value><comment></comment></data>
+  <data name="hr_hrapplication_appchangestate_aspx" xml:space="preserve"><value>App Change State</value><comment></comment></data>
+  <data name="hr_hrapplication_appcondition_aspx" xml:space="preserve"><value>App Condition List</value><comment></comment></data>
+  <data name="hr_hrapplication_appconditionlist_aspx" xml:space="preserve"><value>Form Condition Setup</value><comment></comment></data>
+  <data name="hr_hrapplication_appdismissdetail_aspx" xml:space="preserve"><value>Dismiss App Detail</value><comment></comment></data>
+  <data name="hr_hrapplication_appdismisslist_aspx" xml:space="preserve"><value>Dissmiss App List</value><comment></comment></data>
+  <data name="hr_hrapplication_appendprobationdetail_aspx" xml:space="preserve"><value>End Probation Detail</value><comment></comment></data>
+  <data name="hr_hrapplication_appendprobationlist_aspx" xml:space="preserve"><value>EndProbation App List</value><comment></comment></data>
+  <data name="hr_hrapplication_appformalitiesdetail_aspx" xml:space="preserve"><value>Formalities App Detail</value><comment></comment></data>
+  <data name="hr_hrapplication_appformalitieslist_aspx" xml:space="preserve"><value>Formalities App List</value><comment></comment></data>
+  <data name="hr_hrapplication_apphirelist_aspx" xml:space="preserve"><value>Hire App List</value><comment></comment></data>
+  <data name="hr_hrapplication_appnewheadcountdetail_aspx" xml:space="preserve"><value>New HeadCount App Detail</value><comment></comment></data>
+  <data name="hr_hrapplication_appnewheadcountlist_aspx" xml:space="preserve"><value>New HeadCount App List</value><comment></comment></data>
+  <data name="hr_hrapplication_apponboarddetail_aspx" xml:space="preserve"><value>Onboard App Detail</value><comment></comment></data>
+  <data name="hr_hrapplication_apponboardlist_aspx" xml:space="preserve"><value>OnBoard App List</value><comment></comment></data>
+  <data name="hr_hrapplication_appprocessdetail_aspx" xml:space="preserve"><value>App Process Detail</value><comment></comment></data>
+  <data name="hr_hrapplication_appprocesslist_aspx" xml:space="preserve"><value>App Process Setup</value><comment></comment></data>
+  <data name="hr_hrapplication_appresigndetail_aspx" xml:space="preserve"><value>Resign Detail</value><comment></comment></data>
+  <data name="hr_hrapplication_appresignlist_aspx" xml:space="preserve"><value>Resign App List</value><comment></comment></data>
+  <data name="hr_hrapplication_apptypelist_aspx" xml:space="preserve"><value>App Type Setup</value><comment></comment></data>
+  <data name="hr_kq_kqbatchdetail_aspx" xml:space="preserve"><value>Special KQ Import Detail</value><comment></comment></data>
+  <data name="hr_kq_kqbatchhead_aspx" xml:space="preserve"><value>Special KQ Import</value><comment></comment></data>
+  <data name="hr_kq_kqbatchimport_aspx" xml:space="preserve"><value>KQ Import</value><comment></comment></data>
+  <data name="hr_kq_kqdaily_aspx" xml:space="preserve"><value>Check on Work Attendance</value><comment></comment></data>
+  <data name="hr_kq_kqdailyrule_aspx" xml:space="preserve"><value>KQ Daily Rule</value><comment></comment></data>
+  <data name="hr_kq_kqmonthlydetail_aspx" xml:space="preserve"><value>KQ Monthly Detail</value><comment></comment></data>
+  <data name="hr_kq_kqmonthlyhead_aspx" xml:space="preserve"><value>KQ Monthly Head List</value><comment></comment></data>
+  <data name="hr_kq_kqquery_aspx" xml:space="preserve"><value>Check on Work Attendance Search</value><comment></comment></data>
+  <data name="hr_kq_kquserrule_aspx" xml:space="preserve"><value>KQ User Setup</value><comment></comment></data>
+  <data name="hr_kq_kqusersetting_aspx" xml:space="preserve"><value>KQ User Setting</value><comment></comment></data>
+  <data name="hr_kq_team_setting" xml:space="preserve"><value>Team Setting</value><comment></comment></data>
+  <data name="hr_kq_user_setting" xml:space="preserve"><value>User Setting</value><comment></comment></data>
+  <data name="hr_leave_leavechangestate_aspx" xml:space="preserve"><value>Leave Change State</value><comment></comment></data>
+  <data name="hr_leave_leaveform_aspx" xml:space="preserve"><value>Leave &amp; OT</value><comment></comment></data>
+  <data name="hr_leave_leaveformdetail_aspx" xml:space="preserve"><value>Leave &amp; OT Detail</value><comment></comment></data>
+  <data name="hr_leave_leaveinit_aspx" xml:space="preserve"><value>Leave Init</value><comment></comment></data>
+  <data name="hr_leave_leaveinitimport_aspx" xml:space="preserve"><value>Leave Import</value><comment></comment></data>
+  <data name="hr_leave_leaveperiod_aspx" xml:space="preserve"><value>Leave Period Setup</value><comment></comment></data>
+  <data name="hr_leave_leaveprocess_aspx" xml:space="preserve"><value>Leave Process Setup</value><comment></comment></data>
+  <data name="hr_leave_leaveprocessdetail_aspx" xml:space="preserve"><value>Leave Process Setup Detail</value><comment></comment></data>
+  <data name="hr_leave_leavetype_aspx" xml:space="preserve"><value>Leave Type Setup</value><comment></comment></data>
+  <data name="hr_leave_leaveversioncompare_aspx" xml:space="preserve"><value>Leave  Version Compare</value><comment></comment></data>
+  <data name="hr_notification" xml:space="preserve"><value>Notification</value><comment></comment></data>
+  <data name="hr_orgchart_teamdetail_aspx" xml:space="preserve"><value>Organise Detail</value><comment></comment></data>
+  <data name="hr_orgchart_teamtree_aspx" xml:space="preserve"><value>Organise Information</value><comment></comment></data>
+  <data name="hr_pa_action_dailywork_plan" xml:space="preserve"><value>DailyWork Action List</value><comment></comment></data>
+  <data name="hr_pa_action_dailywork_plan_check" xml:space="preserve"><value>PA Action DailyWork Plan Check List</value><comment></comment></data>
+  <data name="hr_pa_action_project" xml:space="preserve"><value>Project Action List</value><comment></comment></data>
+  <data name="hr_pa_action_project_check" xml:space="preserve"><value>PA Action Project Check List</value><comment></comment></data>
+  <data name="hr_pa_objective" xml:space="preserve"><value>PA Obejctive List</value><comment></comment></data>
+  <data name="hr_pa_paactiondailyworkplandetail_aspx" xml:space="preserve"><value>PA Action DailyWork Plan Detail</value><comment></comment></data>
+  <data name="hr_pa_paactiondailyworkplanlist_aspx" xml:space="preserve"><value>DailyWork Action Plan List</value><comment></comment></data>
+  <data name="hr_pa_paactionprojectdetail_aspx" xml:space="preserve"><value>PA Action Project Detail</value><comment></comment></data>
+  <data name="hr_pa_paactionprojectlist_aspx" xml:space="preserve"><value>Project Action Plan List</value><comment></comment></data>
+  <data name="hr_pa_pachangeprocesslist_aspx" xml:space="preserve"><value>PA Form List</value><comment></comment></data>
+  <data name="hr_pa_pachangeprocessstatesearch_aspx" xml:space="preserve"><value>PA Change Process State Search</value><comment></comment></data>
+  <data name="hr_pa_paformdetail_aspx" xml:space="preserve"><value>PA Form Detail</value><comment></comment></data>
+  <data name="hr_pa_paformlist_aspx" xml:space="preserve"><value>PA Form List</value><comment></comment></data>
+  <data name="hr_pa_paformview_aspx" xml:space="preserve"><value>PA Form Detail</value><comment></comment></data>
+  <data name="hr_pa_paheadsetup_aspx" xml:space="preserve"><value>PA Setup</value><comment></comment></data>
+  <data name="hr_pa_paobjectivedetail_aspx" xml:space="preserve"><value>PA Objective Detail</value><comment></comment></data>
+  <data name="hr_pa_paperiod_aspx" xml:space="preserve"><value>PA Period List</value><comment></comment></data>
+  <data name="hr_pa_paperiodsetup_aspx" xml:space="preserve"><value>PA Period Setup</value><comment></comment></data>
+  <data name="hr_pa_pausersetting_aspx" xml:space="preserve"><value>PA User Setting</value><comment></comment></data>
+  <data name="hr_pa_report_paratingreport_aspx" xml:space="preserve"><value>PA User Score Report</value><comment></comment></data>
+  <data name="hr_pa_report_pareport_aspx" xml:space="preserve"><value>PA Report</value><comment></comment></data>
+  <data name="hr_pa_report_pateamscoredetail_aspx" xml:space="preserve"><value>PA Team Score Detail Report</value><comment></comment></data>
+  <data name="hr_pa_report_pateamscorelist_aspx" xml:space="preserve"><value>PA Team Score Summary Report</value><comment></comment></data>
+  <data name="hr_pa_report_pateamstatusreport_aspx" xml:space="preserve"><value>PA Team Status Report</value><comment></comment></data>
+  <data name="hr_pa_team_setting" xml:space="preserve"><value>Team Setting</value><comment></comment></data>
+  <data name="hr_pa_user_setting" xml:space="preserve"><value>User Setting</value><comment></comment></data>
+  <data name="hr_pa360_pa360formdetail_aspx" xml:space="preserve"><value>360 PA Setup Detail</value><comment></comment></data>
+  <data name="hr_pa360_pa360formlist_aspx" xml:space="preserve"><value>PA 360 Setup List</value><comment></comment></data>
+  <data name="hr_pa360_pa360headdetail_aspx" xml:space="preserve"><value>360 PA Score Detail</value><comment></comment></data>
+  <data name="hr_pa360_pa360headlist_aspx" xml:space="preserve"><value>360 PA Score List</value><comment></comment></data>
+  <data name="hr_pa360_report_pa360detailrpt_aspx" xml:space="preserve"><value>360 Detail Report</value><comment></comment></data>
+  <data name="hr_pa360_report_pa360summaryrpt_aspx" xml:space="preserve"><value>360 Summary Report</value><comment></comment></data>
+  <data name="hr_pa360_report_pa360synthesizerpt_aspx" xml:space="preserve"><value>PA 360 Synthesize Rpt</value><comment></comment></data>
+  <data name="hr_paimprove_paimprovedetail_aspx" xml:space="preserve"><value>PA Improve Detail</value><comment></comment></data>
+  <data name="hr_paimprove_paimprovelist_aspx" xml:space="preserve"><value>PA Improve List</value><comment></comment></data>
+  <data name="hr_pateam_pateamformdetail_aspx" xml:space="preserve"><value>PA Team Detail</value><comment></comment></data>
+  <data name="hr_pateam_pateamformlist_aspx" xml:space="preserve"><value>PA Team List</value><comment></comment></data>
+  <data name="hr_pateam_pateamheaddetail_aspx" xml:space="preserve"><value>PA Team Detail</value><comment></comment></data>
+  <data name="hr_pateam_pateamheadlist_aspx" xml:space="preserve"><value>PA Team List</value><comment></comment></data>
+  <data name="hr_pateam_pateamprocessdetail_aspx" xml:space="preserve"><value>PA Team Detail</value><comment></comment></data>
+  <data name="hr_pateam_pateamprocesslist_aspx" xml:space="preserve"><value>PA Team List</value><comment></comment></data>
+  <data name="hr_payroll_payperiod_payperioddetail_aspx" xml:space="preserve"><value>Pay Period Detail</value><comment></comment></data>
+  <data name="hr_payroll_payperiod_payperiodlist_aspx" xml:space="preserve"><value>Pay Period List</value><comment></comment></data>
+  <data name="hr_payroll_report_userpayinitrpt_aspx" xml:space="preserve"><value>User Pay Init Item Rpt</value><comment></comment></data>
+  <data name="hr_payroll_report_userpaymonthlyrpt_aspx" xml:space="preserve"><value>User Pay Monthly Report</value><comment></comment></data>
+  <data name="hr_payroll_report_userpayslipdiffrpt_aspx" xml:space="preserve"><value>PaySlip Diff Report</value><comment></comment></data>
+  <data name="hr_payroll_report_userpayslipitemrpt_aspx" xml:space="preserve"><value>User PaySlip Item Rpt</value><comment></comment></data>
+  <data name="hr_payroll_report_userpaysliprpt_aspx" xml:space="preserve"><value>User Pay Report</value><comment></comment></data>
+  <data name="hr_payroll_setup_payinititem_aspx" xml:space="preserve"><value>Init Item</value><comment></comment></data>
+  <data name="hr_payroll_setup_paymonthlyitem_aspx" xml:space="preserve"><value>Monthly Item</value><comment></comment></data>
+  <data name="hr_payroll_setup_paysetdetail_aspx" xml:space="preserve"><value>PaySet Detail</value><comment></comment></data>
+  <data name="hr_payroll_setup_paysetlist_aspx" xml:space="preserve"><value>PaySet List</value><comment></comment></data>
+  <data name="hr_payroll_userpay_userpaydetail_aspx" xml:space="preserve"><value>User PaySlip Detail</value><comment></comment></data>
+  <data name="hr_payroll_userpay_userpaylist_aspx" xml:space="preserve"><value>User PaySlip List</value><comment></comment></data>
+  <data name="hr_payroll_userpay_userpaysetinitdetail_aspx" xml:space="preserve"><value>User PaySet Init Detail</value><comment></comment></data>
+  <data name="hr_payroll_userpay_userpaysetinitlist_aspx" xml:space="preserve"><value>User PaySet Init List</value><comment></comment></data>
+  <data name="hr_payroll_userpay_userpaysetmonthlydetail_aspx" xml:space="preserve"><value>User PaySet Monthly Detail</value><comment></comment></data>
+  <data name="hr_payroll_userpay_userpaysetmonthlyexport_aspx" xml:space="preserve"><value>Export Template</value><comment></comment></data>
+  <data name="hr_payroll_userpay_userpaysetmonthlyimport_aspx" xml:space="preserve"><value>Import Data</value><comment></comment></data>
+  <data name="hr_payroll_userpay_userpaysetmonthlylist_aspx" xml:space="preserve"><value>User PaySet Monthly List</value><comment></comment></data>
+  <data name="hr_payroll_userpay_userpayslipdetail_aspx" xml:space="preserve"><value>User PaySlip Detail</value><comment></comment></data>
+  <data name="hr_payroll_userpay_userpaysliplist_aspx" xml:space="preserve"><value>User PaySlip List</value><comment></comment></data>
+  <data name="hr_popup_usersearch_aspx" xml:space="preserve"><value>User Search</value><comment></comment></data>
+  <data name="hr_recruit_recruitjobissuedetail_aspx" xml:space="preserve"><value>Job Issue Detail</value><comment></comment></data>
+  <data name="hr_recruit_recruitjobissuelist_aspx" xml:space="preserve"><value>Job Issue List</value><comment></comment></data>
+  <data name="hr_recruit_recruitresumedetail_aspx" xml:space="preserve"><value>Recruit Resume Detail</value><comment></comment></data>
+  <data name="hr_recruit_recruitresumelist_aspx" xml:space="preserve"><value>Recruit Resume List</value><comment></comment></data>
+  <data name="hr_report_userroster_aspx" xml:space="preserve"><value>User Report</value><comment></comment></data>
+  <data name="hr_setup_costcenter_aspx" xml:space="preserve"><value>Cost Center Define</value><comment></comment></data>
+  <data name="hr_setup_jobstructure_aspx" xml:space="preserve"><value>Job Define</value><comment></comment></data>
+  <data name="hr_setup_jobstructuredetail_aspx" xml:space="preserve"><value>Job Structure Detail</value><comment></comment></data>
+  <data name="hr_setup_jobstructureimport_aspx" xml:space="preserve"><value>Job Import</value><comment></comment></data>
+  <data name="hr_setup_jobstructurelist_aspx" xml:space="preserve"><value>Job Structure</value><comment></comment></data>
+  <data name="hr_setup_paystructure_aspx" xml:space="preserve"><value>Pay Structure</value><comment></comment></data>
+  <data name="hr_setup_usermembertype_aspx" xml:space="preserve"><value>User Number Type Define</value><comment></comment></data>
+  <data name="hr_setup_workskilldetail_aspx" xml:space="preserve"><value>Quality Detail</value><comment></comment></data>
+  <data name="hr_setup_workskilllist_aspx" xml:space="preserve"><value>Quality Define</value><comment></comment></data>
+  <data name="hr_teamdetail_aspx" xml:space="preserve"><value>Organise Detail</value><comment></comment></data>
+  <data name="hr_teamuserdetail_aspx" xml:space="preserve"><value>Employee Detail</value><comment></comment></data>
+  <data name="hr_teamusertree_aspx" xml:space="preserve"><value>Organise</value><comment></comment></data>
+  <data name="hr_training_setup_trainingcoursedetail_aspx" xml:space="preserve"><value>Course Detail</value><comment></comment></data>
+  <data name="hr_training_setup_trainingcourselist_aspx" xml:space="preserve"><value>Course List</value><comment></comment></data>
+  <data name="hr_training_setup_trainingissuedetail_aspx" xml:space="preserve"><value>Course Issue Detail</value><comment></comment></data>
+  <data name="hr_training_setup_trainingissuelist_aspx" xml:space="preserve"><value>Course Issue List</value><comment></comment></data>
+  <data name="hr_training_setup_trainingscheduledetail_aspx" xml:space="preserve"><value>Training Schedule Detail</value><comment></comment></data>
+  <data name="hr_training_setup_trainingschedulelist_aspx" xml:space="preserve"><value>Training Schedule List</value><comment></comment></data>
+  <data name="hr_training_setup_trainingstructuredetail_aspx" xml:space="preserve"><value>Training Structure Detail</value><comment></comment></data>
+  <data name="hr_training_setup_trainingstructuretree_aspx" xml:space="preserve"><value>Training Structure</value><comment></comment></data>
+  <data name="hr_training_structure_role" xml:space="preserve"><value>Training Structure Role List</value><comment></comment></data>
+  <data name="hr_training_usertraining_trainingexternaldetail_aspx" xml:space="preserve"><value>Training External Detail</value><comment></comment></data>
+  <data name="hr_training_usertraining_trainingexternallist_aspx" xml:space="preserve"><value>Training External List</value><comment></comment></data>
+  <data name="hr_training_usertraining_trainingformdetail_aspx" xml:space="preserve"><value>Training Form Detail</value><comment></comment></data>
+  <data name="hr_training_usertraining_trainingformlist_aspx" xml:space="preserve"><value>Training Form List</value><comment></comment></data>
+  <data name="hr_training_usertraining_trainingrecheaddetail_aspx" xml:space="preserve"><value>Training Record Detail</value><comment></comment></data>
+  <data name="hr_training_usertraining_trainingrecheadlist_aspx" xml:space="preserve"><value>Training Record List</value><comment></comment></data>
+  <data name="hr_user_bankinfo" xml:space="preserve"><value>Bank Info</value><comment></comment></data>
+  <data name="hr_user_contract" xml:space="preserve"><value>Contract</value><comment></comment></data>
+  <data name="hr_userinformationdetail_aspx" xml:space="preserve"><value>Employee Detail</value><comment></comment></data>
+  <data name="hr_userinformationlist_aspx" xml:space="preserve"><value>Employee</value><comment></comment></data>
+  <data name="hr_userprofile_report_userinsurancelist_aspx" xml:space="preserve"><value>意外险数据导出</value><comment></comment></data>
+  <data name="hr_userprofile_userdetail_aspx" xml:space="preserve"><value>User Detail</value><comment></comment></data>
+  <data name="hr_userprofile_userlist_aspx" xml:space="preserve"><value>User List</value><comment></comment></data>
+  <data name="hr_usertransfer_usertransferdetail_aspx" xml:space="preserve"><value>User Transfer Detail</value><comment></comment></data>
+  <data name="hr_usertransfer_usertransferlist_aspx" xml:space="preserve"><value>User Transfer List</value><comment></comment></data>
+  <data name="hrweb_uploadfile_fileupload_aspx" xml:space="preserve"><value>UpLoad</value><comment></comment></data>
+  <data name="idmpappendfile" xml:space="preserve"><value>Append File</value><comment>IDMP</comment></data>
+  <data name="idmpappendinfo" xml:space="preserve"><value>Append Info</value><comment>IDMP</comment></data>
+  <data name="idmpcopylist" xml:space="preserve"><value>Copy to Feedback List</value><comment>IDMP</comment></data>
+  <data name="idmpdelete" xml:space="preserve"><value>Delete</value><comment>IDMP</comment></data>
+  <data name="import" xml:space="preserve"><value>Import</value><comment></comment></data>
+  <data name="inputcopytofeedback" xml:space="preserve"><value>Input copy to feedbak</value><comment>IDMP</comment></data>
+  <data name="insert" xml:space="preserve"><value>Insert</value><comment></comment></data>
+  <data name="journey_arrive_city" xml:space="preserve"><value>Arrival City</value><comment></comment></data>
+  <data name="journey_arrive_date" xml:space="preserve"><value>Arrival Date</value><comment></comment></data>
+  <data name="journey_start_city" xml:space="preserve"><value>Departure City</value><comment></comment></data>
+  <data name="journey_type" xml:space="preserve"><value>Journey Type</value><comment></comment></data>
+  <data name="jxc_arap_cxprepaydetail_aspx" xml:space="preserve"><value>Cx PreReceive Detail</value><comment></comment></data>
+  <data name="jxc_arap_cxprepaylinkdj_aspx" xml:space="preserve"><value>Cx PrePay Dj List</value><comment></comment></data>
+  <data name="jxc_arap_cxprepaylinkdjsearch_aspx" xml:space="preserve"><value>Cx PrePay Dj Search</value><comment></comment></data>
+  <data name="jxc_arap_cxprepaylist_aspx" xml:space="preserve"><value>Cx PreReceive List</value><comment></comment></data>
+  <data name="jxc_arap_cxprereceivedetail_aspx" xml:space="preserve"><value>Cx PrePay Detail</value><comment></comment></data>
+  <data name="jxc_arap_cxprereceivelinkdj_aspx" xml:space="preserve"><value>Cx PreReceive Dj List</value><comment></comment></data>
+  <data name="jxc_arap_cxprereceivelinkdjsearch_aspx" xml:space="preserve"><value>Cx PreReceive Dj Search</value><comment></comment></data>
+  <data name="jxc_arap_cxprereceivelist_aspx" xml:space="preserve"><value>Cx PrePay List</value><comment></comment></data>
+  <data name="jxc_arap_jxcotherpaydetail_aspx" xml:space="preserve"><value>Other Pay Detail</value><comment></comment></data>
+  <data name="jxc_arap_jxcotherpaylist_aspx" xml:space="preserve"><value>Other Pay List</value><comment></comment></data>
+  <data name="jxc_arap_jxcotherreceivedetail_aspx" xml:space="preserve"><value>Other Receive Detail</value><comment></comment></data>
+  <data name="jxc_arap_jxcpaydetail_aspx" xml:space="preserve"><value>Pay Detail</value><comment></comment></data>
+  <data name="jxc_arap_jxcpaylinkdj_aspx" xml:space="preserve"><value>PayLinkDj List</value><comment></comment></data>
+  <data name="jxc_arap_jxcpaylinkdjsearch_aspx" xml:space="preserve"><value>Pay LinkDj Search</value><comment></comment></data>
+  <data name="jxc_arap_jxcpaylist_aspx" xml:space="preserve"><value>Pay List</value><comment></comment></data>
+  <data name="jxc_arap_jxcreceivedetail_aspx" xml:space="preserve"><value>Receive Detail</value><comment></comment></data>
+  <data name="jxc_arap_jxcreceivelinkdj_aspx" xml:space="preserve"><value>Receive LinkDj Search</value><comment></comment></data>
+  <data name="jxc_arap_jxcreceivelinkdjsearch_aspx" xml:space="preserve"><value>Receive LinkDj Search</value><comment></comment></data>
+  <data name="jxc_arap_otherreceivelist_aspx" xml:space="preserve"><value>Other Receive List</value><comment></comment></data>
+  <data name="jxc_arap_prepaydetail_aspx" xml:space="preserve"><value>Pre Pay Detail</value><comment></comment></data>
+  <data name="jxc_arap_prepaylist_aspx" xml:space="preserve"><value>Pre Pay List</value><comment></comment></data>
+  <data name="jxc_arap_prereceivedetail_aspx" xml:space="preserve"><value>Pre Receive Detail</value><comment></comment></data>
+  <data name="jxc_arap_prereceivelist_aspx" xml:space="preserve"><value>Pre Receive List</value><comment></comment></data>
+  <data name="jxc_base_wflchangestate_aspx" xml:space="preserve"><value>Wfl Change State</value><comment></comment></data>
+  <data name="jxc_bom_jxcbomdetail_aspx" xml:space="preserve"><value>Bom Detail</value><comment></comment></data>
+  <data name="jxc_bom_jxcbomlist_aspx" xml:space="preserve"><value>Bom List</value><comment></comment></data>
+  <data name="jxc_cg_jxccgbcjlist_aspx" xml:space="preserve"><value>Cgbcj Bill</value><comment></comment></data>
+  <data name="jxc_cg_jxccgdetail_aspx" xml:space="preserve"><value>CG Bill Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccgdetailv2_aspx" xml:space="preserve"><value>Purchase List</value><comment></comment></data>
+  <data name="jxc_cg_jxccgfpdetail_aspx" xml:space="preserve"><value>CGFP Bill Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccgfpdetailv2_aspx" xml:space="preserve"><value>Cgfp Bill Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccgfplinkdj_aspx" xml:space="preserve"><value>Cgfp LinkDj List</value><comment></comment></data>
+  <data name="jxc_cg_jxccgfplinkdjsearch_aspx" xml:space="preserve"><value>Cgfp LinkDj Search</value><comment></comment></data>
+  <data name="jxc_cg_jxccgfplist_aspx" xml:space="preserve"><value>CGFP Bill Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccgfplistv2_aspx" xml:space="preserve"><value>Cgfp Bill List</value><comment></comment></data>
+  <data name="jxc_cg_jxccgjhdetail_aspx" xml:space="preserve"><value>Cgjh Bill Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccgjhdetailv2_aspx" xml:space="preserve"><value>Purchase Plan Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccgjhlist_aspx" xml:space="preserve"><value>Cgjh Bill List</value><comment></comment></data>
+  <data name="jxc_cg_jxccgjhlistv2_aspx" xml:space="preserve"><value>Purchase Plan List</value><comment></comment></data>
+  <data name="jxc_cg_jxccgjhsplit_aspx" xml:space="preserve"><value>Vender Mat Split Merge</value><comment></comment></data>
+  <data name="jxc_cg_jxccglist_aspx" xml:space="preserve"><value>CG Bill List </value><comment></comment></data>
+  <data name="jxc_cg_jxccglistv2_aspx" xml:space="preserve"><value>Purchase Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccglxqgdetail_aspx" xml:space="preserve"><value>lxqg Bill Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccglxqglist_aspx" xml:space="preserve"><value>lxqg Bill List</value><comment></comment></data>
+  <data name="jxc_cg_jxccgqgdetail_aspx" xml:space="preserve"><value>Cgqg Bill Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccgqglist_aspx" xml:space="preserve"><value>Cgqg Bill List</value><comment></comment></data>
+  <data name="jxc_cg_jxccgrkdetail_aspx" xml:space="preserve"><value>CGRK Bill Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccgrklist_aspx" xml:space="preserve"><value>CGRK Bill List</value><comment></comment></data>
+  <data name="jxc_cg_jxccgtckdetail_aspx" xml:space="preserve"><value>CGTCK Bill Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccgtcklist_aspx" xml:space="preserve"><value>CGTCK Bill List</value><comment></comment></data>
+  <data name="jxc_cg_jxccgtdetail_aspx" xml:space="preserve"><value>CGT Bill Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxccgtlist_aspx" xml:space="preserve"><value>CGT Bill List</value><comment></comment></data>
+  <data name="jxc_cg_jxcdlcgrkdetail_aspx" xml:space="preserve"><value>Cable Purchase Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxcdlcgrklist_aspx" xml:space="preserve"><value>Cable Purchase List</value><comment></comment></data>
+  <data name="jxc_cg_jxcdlcgtckdetail_aspx" xml:space="preserve"><value>Cable Purchase Return Detail</value><comment></comment></data>
+  <data name="jxc_cg_jxcdlcgtcklist_aspx" xml:space="preserve"><value>Cable Purchase Return List</value><comment></comment></data>
+  <data name="jxc_ck_jxcdbckdetail_aspx" xml:space="preserve"><value>Dbck Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcdbcklist_aspx" xml:space="preserve"><value>Dbck Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxcdbdetail_aspx" xml:space="preserve"><value>Db Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcdblist_aspx" xml:space="preserve"><value>Db Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxcdbrkdetail_aspx" xml:space="preserve"><value>Dbrk Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcdbrklist_aspx" xml:space="preserve"><value>Dbrk Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxcdllloutdetail_aspx" xml:space="preserve"><value>Cable Picking Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcdllloutlist_aspx" xml:space="preserve"><value>Cable Picking List</value><comment></comment></data>
+  <data name="jxc_ck_jxcdllltrkdetail_aspx" xml:space="preserve"><value>Cable Picking Return Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcdllltrklist_aspx" xml:space="preserve"><value>Cable Picking Return List</value><comment></comment></data>
+  <data name="jxc_ck_jxcdlpddetail_aspx" xml:space="preserve"><value>Cable Inventory Checking Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcdlpdlist_aspx" xml:space="preserve"><value>Cable Inventory Checking List</value><comment></comment></data>
+  <data name="jxc_ck_jxcfzlldetail_aspx" xml:space="preserve"><value>Fzll Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcfzlllist_aspx" xml:space="preserve"><value>Fzll Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxcjglldetail_aspx" xml:space="preserve"><value>Jgll Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcjglllist_aspx" xml:space="preserve"><value>Jgll Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxcjgwgdetail_aspx" xml:space="preserve"><value>Jgwg Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcjgwglist_aspx" xml:space="preserve"><value>Jgwg Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxcjgwgrkdetail_aspx" xml:space="preserve"><value>Jgwgrk Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcjgwgrklist_aspx" xml:space="preserve"><value>Jgwgrk Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxclldetail_aspx" xml:space="preserve"><value>Project  LL Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcllindetail_aspx" xml:space="preserve"><value>LLIn Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcllinlist_aspx" xml:space="preserve"><value>LLIn Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxclllist_aspx" xml:space="preserve"><value>Project LL Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxclloutdetail_aspx" xml:space="preserve"><value>LLOut Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxclloutlist_aspx" xml:space="preserve"><value>LLOut Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxclltdetail_aspx" xml:space="preserve"><value>LLT Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxclltlist_aspx" xml:space="preserve"><value>LLT Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxclltotherdetail_aspx" xml:space="preserve"><value>LLT Other Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxclltotherlist_aspx" xml:space="preserve"><value>LLT Other List</value><comment></comment></data>
+  <data name="jxc_ck_jxclltrkdetail_aspx" xml:space="preserve"><value>LLTRk Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxclltrklist_aspx" xml:space="preserve"><value>LLTRK Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxcpddetail_aspx" xml:space="preserve"><value>Pd Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxcpdlist_aspx" xml:space="preserve"><value>Pd Bill List</value><comment></comment></data>
+  <data name="jxc_ck_jxctjdetail_aspx" xml:space="preserve"><value>TJ Bill Detail</value><comment></comment></data>
+  <data name="jxc_ck_jxctjlist_aspx" xml:space="preserve"><value>TJ Bill List</value><comment></comment></data>
+  <data name="jxc_cp_jxccpfxdetail_aspx" xml:space="preserve"><value>Cpfx Bill Detail</value><comment></comment></data>
+  <data name="jxc_cp_jxccpfxlist_aspx" xml:space="preserve"><value>Cpfx Bill List</value><comment></comment></data>
+  <data name="jxc_cp_jxccptestdetail_aspx" xml:space="preserve"><value>CpTest Bill Detail</value><comment></comment></data>
+  <data name="jxc_cp_jxccptestlist_aspx" xml:space="preserve"><value>CpTest Bill List</value><comment></comment></data>
+  <data name="jxc_cp_jxccpwgdetail_aspx" xml:space="preserve"><value>Cpwg Bill Detail</value><comment></comment></data>
+  <data name="jxc_cp_jxccpwglist_aspx" xml:space="preserve"><value>Cpwg Bill List</value><comment></comment></data>
+  <data name="jxc_cp_jxccpwgrkdetail_aspx" xml:space="preserve"><value>Cpwgrk Bill Detail</value><comment></comment></data>
+  <data name="jxc_cp_jxccpwgrklist_aspx" xml:space="preserve"><value>Cpwgrk Bill List</value><comment></comment></data>
+  <data name="jxc_cp_jxccpzljydetail_aspx" xml:space="preserve"><value>Cpzljy Bill Detail</value><comment></comment></data>
+  <data name="jxc_cp_jxccpzljylist_aspx" xml:space="preserve"><value>Cpzljy Bill List</value><comment></comment></data>
+  <data name="jxc_cp_jxcdlcpwgrkdetail_aspx" xml:space="preserve"><value>Cable End Product Stock Sheet Detail</value><comment></comment></data>
+  <data name="jxc_cp_jxcdlcpwgrklist_aspx" xml:space="preserve"><value>Cable End Product Stock Sheet List</value><comment></comment></data>
+  <data name="jxc_cp_jxcdlcpzljydetail_aspx" xml:space="preserve"><value>Cable Survey Report Detail</value><comment></comment></data>
+  <data name="jxc_cp_jxcdlcpzljylist_aspx" xml:space="preserve"><value>Cable Survey Report List</value><comment></comment></data>
+  <data name="jxc_cp_jxcdlzljydetail_aspx" xml:space="preserve"><value>Cable Quality Inspect Detail</value><comment></comment></data>
+  <data name="jxc_cp_jxcdlzljylist_aspx" xml:space="preserve"><value>Cable Quality Inspect List</value><comment></comment></data>
+  <data name="jxc_cp_jxczljydetail_aspx" xml:space="preserve"><value>Zljy Bill Detail</value><comment></comment></data>
+  <data name="jxc_cp_jxczljylist_aspx" xml:space="preserve"><value>Zljy Bill List</value><comment></comment></data>
+</root>

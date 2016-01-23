@@ -1,0 +1,94 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterSetupDetail.master.cs"
+    Inherits="MasterSetupDetail" %>
+
+<%@ Register Assembly="EntpClass.WebControlLib" Namespace="EntpClass.WebControlLib"
+    TagPrefix="cc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../../CommonUI/MasterPage/MasterDetail.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        // <!CDATA[
+
+        function window_onkeydown() {
+            f_onenterkeydown();
+        }
+        // ]]>
+    </script>
+</head>
+<body onkeydown="return window_onkeydown()">
+    <form id="form1" runat="server">
+    <table class="MainTb" border="0" cellpadding="0" cellspacing="0">
+        <tr id="top">
+            <td class="TopC">
+                <div id="windowBoxTit">
+                    <h2>
+                        <strong>
+                            <img src="~/Home/Images/icon17.gif" alt="Í¼Æ¬ÃèÊö" style="vertical-align: middle;" runat="server"  />
+                            <asp:Label ID="LblTitle" runat="server" Text=""></asp:Label></strong></h2>
+                </div>
+            </td>
+        </tr>
+        <tr id="middle">
+            <td style="padding: 0 10px 0 10px;">
+                <div class="DivAutoScroll" id="divAutoScroll">
+                    <asp:ContentPlaceHolder ID="C1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </td>
+        </tr>
+        <tr style="height: 56px;" id="bottom">
+            <td style="padding: 0 10px 0 10px;">
+                <table class="BottomCTb" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td style="border-bottom: 1px solid white; background-color: #EBF2FC;">
+                            <table style="width: 100%; display: inline" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="left">
+                                        <cc1:UcImageButton ID="BtnFirst" runat="server" OnClick="BtnFirst_Click" Width="19px"
+                                            Height="19px" ImageUrl="../../Home/images/home.gif" />
+                                        <cc1:UcImageButton ID="BtnPrevious" runat="server" OnClick="BtnPrevious_Click" Width="19px"
+                                            Height="19px" ImageUrl="../../Home/images/up.gif" />
+                                        <cc1:UcImageButton ID="BtnNext" runat="server" OnClick="BtnNext_Click" Width="19px"
+                                            Height="19px" ImageUrl="../../Home/images/next.gif" />
+                                        <cc1:UcImageButton ID="BtnLast" runat="server" OnClick="BtnLast_Click" Width="19px"
+                                            Height="19px" ImageUrl="../../Home/images/end.gif" />
+                                        <asp:PlaceHolder ID="PLButton" runat="server"></asp:PlaceHolder>
+                                    </td>
+                                    <td align="right">
+                                        <asp:PlaceHolder ID="PHButton" runat="server"></asp:PlaceHolder>
+                                        <cc1:UcButton ID="BtnAdd" runat="server" ColumnName="ADD" Width="70px" OnClick="BtnAdd_Click"
+                                            UseSubmitBehavior="False" InsureClickOnce="True" /><cc1:UcButton ID="BtnEdit" runat="server"
+                                                ColumnName="EDIT" Width="70px" OnClick="BtnEdit_Click" UseSubmitBehavior="False"
+                                                InsureClickOnce="True" /><cc1:UcButton ID="BtnSubmit" runat="server" ColumnName="Submit"
+                                                    Width="70px" OnClick="BtnSubmit_Click" UseSubmitBehavior="False" OnClientClick="window.returnValue='REFRESH';"
+                                                    InsureClickOnce="True" /><cc1:UcButton ID="BtnUndoSubmit" runat="server" ColumnName="UndoSubmit"
+                                                        Width="70px" OnClick="BtnUndoSubmit_Click" UseSubmitBehavior="False" OnClientClick="window.returnValue='REFRESH';"
+                                                        InsureClickOnce="True" />
+                                        <cc1:UcButton ID="BtnSave" runat="server" ColumnName="Save" Width="70px" OnClick="BtnSave_Click"
+                                            UseSubmitBehavior="False" OnClientClick="window.returnValue='REFRESH';" InsureClickOnce="True" /><cc1:UcButton
+                                                ID="BtnCancel" runat="server" ColumnName="Cancel" Width="70px" OnClick="BtnCancel_Click"
+                                                UseSubmitBehavior="False" InsureClickOnce="True" /><cc1:UcButton ID="BtnPrint" ColumnName="Print"
+                                                    runat="server" InsureClickOnce="True" OnClick="BtnPrint_Click" OnClientClick="window.print();return false;" /><cc1:UcButton
+                                                        ID="BtnClose" runat="server" ColumnName="Close" Width="70px" OnClientClick="window.close();return false;"
+                                                        UseSubmitBehavior="False" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="middle" align="center" style="height: 28px;">
+                <div class="footer1">
+                    <div class="footer2">
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

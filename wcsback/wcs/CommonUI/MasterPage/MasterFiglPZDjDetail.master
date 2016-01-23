@@ -1,0 +1,450 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterFiglPZDjDetail.master.cs"
+    Inherits="CommonUI_MasterPage_MasterFiglDjDetail" %>
+
+<%@ Register Assembly="EntpClass.WebControlLib" Namespace="EntpClass.WebControlLib"
+    TagPrefix="cc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/CommonUI/MasterPage/MasterDetail.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        // <!CDATA[
+        function window_onkeydown() {
+            f_onenterkeydownAll();
+        
+            if (event.keyCode == 114) {//F3
+                window.setTimeout(function () {
+                    var btnAdd = document.getElementById('BtnAdd');
+                    if (btnAdd != null) {
+                        btnAdd.focus();
+                        window.setTimeout(btnAdd.click, 80);
+                    }
+                    else
+                        alert('无效的快捷键');
+
+                }, 50);
+            }
+            else if (event.keyCode == 116) {//F5
+                window.setTimeout(function () {
+                    var btnSave = document.getElementById('BtnSave');
+                    if (btnSave != null) {
+                        btnSave.focus();
+                        window.setTimeout(btnSave.click, 80);
+                    }
+                    else
+                        alert('无效的快捷键');
+
+                }, 50);
+            }           
+            else if (event.keyCode == 117) {//F6
+                window.setTimeout(function () {
+                    var btnSave = document.getElementById('BtnSave');
+                    if (btnSave != null && !btnSave.disabled) {
+                        onSetLeftAmount();
+                    }
+                    else
+                        alert('无效的快捷键');
+
+                }, 50);
+            }
+            else if (event.keyCode == 118) {//F7
+                window.setTimeout(function () {
+                    var btnSave = document.getElementById('BtnSave');
+                    if (btnSave != null && !btnSave.disabled) {
+                        showCalculator();
+                    }
+                    else
+                        alert('无效的快捷键');
+
+                }, 50);
+            }
+            else if (event.keyCode == 33) { //PgUp
+                window.setTimeout(function () {
+                    var btnPrevious = document.getElementById('BtnPrevious');
+                    if (btnPrevious != null && !btnPrevious.disabled) {
+                        btnPrevious.focus();
+                        window.setTimeout(btnPrevious.click, 80);
+                    }
+                    else
+                        alert('无效的快捷键,翻页只能在[查看]状态可用');
+
+                }, 50);
+            }
+            else if (event.keyCode == 34) { //PgUp
+                window.setTimeout(function () {
+                    var btnNext = document.getElementById('BtnNext');
+                    if (btnNext != null && !btnNext.disabled) {
+                        btnNext.focus();
+                        window.setTimeout(btnNext.click, 80);
+                    }
+                    else
+                        alert('无效的快捷键,翻页只能在[查看]状态可用');
+
+                }, 50);
+            }
+        }     
+
+        function addRow() {
+            GrdEditDetail.setRowFocus(GrdEditDetail.tbInsertRow(-1, true));
+        }
+
+        function insertRow() {
+            if (GrdEditDetail.selectedsectionrowindex > -1)
+                GrdEditDetail.setRowFocus(GrdEditDetail.tbInsertRow(GrdEditDetail.selectedsectionrowindex, true));
+        }
+        function deleteRow() {
+            if (GrdEditDetail.rows.length == 1) {
+                onClearHeadAndDetailData();
+                onDeleteRow();
+            }
+            else {
+                if (GrdEditDetail.selectedsectionrowindex > -1)
+                    GrdEditDetail.tbDeleteRow(GrdEditDetail.selectedsectionrowindex);
+
+                onDeleteRow();
+            }
+        }
+        function deleteAllRow() {
+            if (!window.confirm('是否要删除全部的数据')) { window.event.cancelBubble = true; return false; }
+            onClearHeadAndDetailData();
+            onDeleteRow();
+
+        }
+
+        function oninputerror() {
+            alert(event.errMsg);
+            event.eventObject.focus();
+        }
+
+        // ]]>
+    </script>
+</head>
+<body onkeydown="return window_onkeydown()">
+    <form id="form1" runat="server">
+    <table class="MainTb" border="0" cellpadding="0" cellspacing="0">
+        <tr id="top" class="TopC">
+            <td>
+                <table class="TopCTb" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="TopCTbL">
+                            &nbsp;
+                        </td>
+                        <td>
+                            <table class="TopCTbMTb" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="TopCTbMTbC1">
+                                        &nbsp;
+                                    </td>
+                                    <td>
+                                        <span class="DialogTitle">
+                                            <asp:Label ID="LblTitle" runat="server" Text=""></asp:Label></span>&nbsp;
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="TopCTbR">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr id="middle">
+            <td>
+                <table class="MidCTb" border="0" cellpadding="0" cellspacing="0" style="background-color: White">
+                    <tr>
+                        <td class="MidCTbCL">
+                            &nbsp;
+                        </td>
+                        <td id="container" align="left" valign="top" style="padding-left: 10px;">
+                            <table style="display: inline; width: 100%; table-layout: fixed;" border="0" cellpadding="0"
+                                cellspacing="0">
+                                <tr style="height: 40px">
+                                    <td>
+                                        <asp:Panel ID="SpanShotKey" runat="server">                                         
+                                          <span runat="server" style="font-weight: bolder">&nbsp;&nbsp;F3:新增 F5:保存 F6:取余额 F7:计算器</span>                                       
+                                        </asp:Panel>
+                                    </td>
+                                    <td style="text-align: right">
+                                        <asp:ContentPlaceHolder ID="CLink" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;" colspan="2">
+                                        <asp:ContentPlaceHolder ID="C1" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                                <tr id="TrDjHead" style="padding-right: 30px;">
+                                    <td colspan="2">
+                                        <asp:ContentPlaceHolder ID="C2" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table cellpadding="0" cellspacing="0" style="table-layout: fixed; border: 1px solid black;
+                                            border-collapse: collapse;">
+                                            <colgroup>
+                                                <col width="30px" />
+                                                <col width="280px" />
+                                                <col width="391px" />
+                                                <col width="110px" />
+                                                <col width="109px" />
+                                            </colgroup>
+                                            <tr style="height: 25pt; font-size: 9pt; font-weight: bolder;">
+                                                <td style="text-align: center; border-right: 1px solid black;">
+                                                    <span>行号</span>
+                                                </td>
+                                                <td style="text-align: center; border-right: 1px solid black;">
+                                                    <span>分  录  摘  要</span>
+                                                </td>
+                                                <td style="text-align: center; border-right: 1px solid black;">
+                                                    <span>会  计  科  目</span>
+                                                </td>
+                                                <td style="text-align: center; border-right: 1px solid black;">
+                                                    <span>借方金额</span>
+                                                </td>
+                                                <td style="text-align: center; border-right: 1px solid black;">
+                                                    <span>贷方金额</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <asp:PlaceHolder ID="PHV" runat="server">
+                                            <div id="DivViewGrid" style="height: 196px; overflow: auto;">
+                                            </div>
+                                        </asp:PlaceHolder>
+                                        <asp:PlaceHolder ID="PHE" runat="server">
+                                            <div id="DivEditGrid" style="height: 196px; overflow: auto;">
+                                                <asp:Literal ID="LE" runat="server"></asp:Literal>
+                                                <%-- <asp:Panel ID="PLEditGrid" runat="server" Width="100%">
+                                                </asp:Panel>--%>
+                                            </div>
+                                            <cc1:UcHiddenField ID="HidDetailData" RenderToClient="true" runat="server" AllowUpdate="false"
+                                                AllowInsert="false" />
+                                        </asp:PlaceHolder>
+                                        <table cellpadding="0" cellspacing="0" style="table-layout: fixed; border: 1px solid black;
+                                            border-collapse: collapse;">
+                                            <colgroup>
+                                                <col width="60px" />
+                                                <col width="140px" />
+                                                <col width="501px" />
+                                                <col width="110px" />
+                                                <col width="109px" />
+                                            </colgroup>
+                                            <tr style="height: 32px">
+                                                <td colspan="2">
+                                                    &nbsp;
+                                                    <cc1:UcLabel ID="UcLabel1" ColumnName="je_hj" runat="server" CssClass="FiglLabel" />
+                                                </td>
+                                                <td style="border-left: 1px solid black;">
+                                                    <cc1:UcTextBox ClientIDMode="Static" ID="TxtPzJeDx" ColumnName="pz_je_dx" TextAlign="Left"
+                                                        ReadOnlyWhenInsert="true" ReadOnlyWhenUpdate="true" Font-Bold="true" Font-Size="10pt"
+                                                        Width="80%" runat="server" Style="border: 0; background-color: transparent;" />
+                                                </td>
+                                                <td style="border-left: 1px solid black">
+                                                    <cc1:UcTextBox ClientIDMode="Static" ID="TxtTotalD" ColumnName="total_m_jfe" DbDataType="Currency"
+                                                        PointLength="2" TextAlign="Right" ReadOnlyWhenInsert="true" ReadOnlyWhenUpdate="true" Font-Bold="true"
+                                                        AllowInsert="false" AllowUpdate="false" Width="100%" runat="server" Style="border: 0;
+                                                        background-color: transparent;" />
+                                                </td>
+                                                <td style="border-left: 1px solid black">
+                                                    <cc1:UcTextBox ClientIDMode="Static" ID="TxtTotalC" ColumnName="total_m_dfe" DbDataType="Currency"
+                                                        PointLength="2" TextAlign="Right" ReadOnlyWhenInsert="true" ReadOnlyWhenUpdate="true" Font-Bold="true"
+                                                        AllowInsert="false" AllowUpdate="false" Width="100%" runat="server" Style="border: 0;
+                                                        background-color: transparent;" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table cellpadding="0" cellspacing="0" style="table-layout: fixed; border-left: 1px solid black;
+                                            border-right: 1px solid black; border-bottom: 1px solid black; border-collapse: collapse;">
+                                            <colgroup>
+                                                <col width="70px" />
+                                                <col width="130px" />
+                                                <col width="60px" />
+                                                <col width="660px" />
+                                            </colgroup>
+                                            <tr style="height: 28px">
+                                                <td>
+                                                    &nbsp;
+                                                    <cc1:UcLabel ID="LblFirstJsName" ColumnName="js_name" runat="server" CssClass="FiglLabel" />
+                                                </td>
+                                                <td>
+                                                    <cc1:UcTextBox ClientIDMode="Static" ID="TxtFirstJsName" ColumnName="first_js_name"
+                                                        Width="130px" Font-Size="9pt" ReadOnlyWhenInsert="true" ReadOnlyWhenUpdate="true"
+                                                        AllowInsert="false" AllowUpdate="false" runat="server" UseDefaultStyle="false"
+                                                        CssClass="FiglText" />
+                                                </td>
+                                                <td rowspan="2" style="border-left: 1px solid black;">
+                                                    &nbsp;
+                                                    <cc1:UcLabel ID="LblRemark" ColumnName="Remark" runat="server" CssClass="FiglLabel" />
+                                                </td>
+                                                <td>
+                                                    <div id="divCostCenterName" style="display: none">
+                                                        <cc1:UcLabel ID="LblCostCenter" ColumnName="cost_center" runat="server" CssClass="FiglLabel" />
+                                                        <cc1:UcTextBox ClientIDMode="Static" ID="TxtCostCenterName" ColumnName="cost_center_name"
+                                                            AllowInsert="false" Width="180px" Font-Size="9pt" AllowUpdate="false" runat="server"
+                                                            UseDefaultStyle="false" CssClass="FiglText" />
+                                                        <cc1:UcHiddenField ClientIDMode="Static" ID="HidCostCenter" ColumnName="cost_center"
+                                                            RenderToClient="true" AllowInsert="false" AllowUpdate="false" runat="server"
+                                                            UseDefaultStyle="false" />
+                                                    </div>
+                                                    <div id="divAssistItemName" style="display: none">
+                                                        <cc1:UcLabel ID="LblAssistItem" ColumnName="assist_item" runat="server" CssClass="FiglLabel" />
+                                                        <cc1:UcTextBox ClientIDMode="Static" ID="TxtAssistItemName" ColumnName="assist_item_name"
+                                                            Width="300px" Font-Size="9pt" AllowInsert="false" AllowUpdate="false" runat="server"
+                                                            UseDefaultStyle="false" CssClass="FiglText" />
+                                                        <cc1:UcHiddenField ClientIDMode="Static" ID="HidAssistItemCode" ColumnName="assist_item_code"
+                                                            AllowInsert="false" AllowUpdate="false" RenderToClient="true" runat="server"
+                                                            UseDefaultStyle="false" />
+                                                    </div>
+                                                    
+                                                    <%--   <div id="divCachName" style="display: none">
+                                                        <span style="font-weight: bolder">现金流量</span>
+                                                        <cc1:UcTextBox ClientIDMode="Static" ID="TxtCashName" ColumnName="cash_name" AllowInsert="false"
+                                                            Width="200px" Font-Size="9pt" AllowUpdate="false" runat="server" UseDefaultStyle="false"
+                                                            CssClass="FiglText" />
+                                                        <cc1:UcHiddenField ClientIDMode="Static" ID="HidCashCode" ColumnName="cash_code"
+                                                            RenderToClient="true" AllowInsert="false" AllowUpdate="false" runat="server"
+                                                            UseDefaultStyle="false" />
+                                                    </div>--%>
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 28px">
+                                                <td>
+                                                    &nbsp;
+                                                    <cc1:UcLabel ID="LblFirstZPNo" ColumnName="zp_no" runat="server" CssClass="FiglLabel" />
+                                                </td>
+                                                <td>
+                                                    <cc1:UcTextBox ClientIDMode="Static" ID="TxtFirstZPNo" ColumnName="first_zp_no" Width="130px"
+                                                        Font-Size="9pt" ReadOnlyWhenInsert="true" ReadOnlyWhenUpdate="true" AllowInsert="false"
+                                                        AllowUpdate="false" runat="server" UseDefaultStyle="false" CssClass="FiglText" />
+                                                </td>
+                                                <td>
+                                                    <div id="divJsName" style="display: none">
+                                                        <cc1:UcLabel ID="LblJsName" ColumnName="js_name" runat="server" CssClass="FiglLabel" />
+                                                        <cc1:UcTextBox ClientIDMode="Static" ID="TxtJsName" ColumnName="js_name" Width="180px"
+                                                            Font-Size="9pt" AllowInsert="false" AllowUpdate="false" runat="server" UseDefaultStyle="false"
+                                                            CssClass="FiglText" />
+                                                        <cc1:UcHiddenField ClientIDMode="Static" ID="HidJsCode" ColumnName="js_code" AllowInsert="false"
+                                                            AllowUpdate="false" RenderToClient="true" runat="server" UseDefaultStyle="false" />
+                                                       <cc1:UcLabel ID="LblZpNo" ColumnName="zp_no" runat="server" CssClass="FiglLabel" />
+                                                        <cc1:UcTextBox ClientIDMode="Static" ID="TxtZpNo" ColumnName="zp_no" Width="180px"
+                                                            Font-Size="9pt" AllowInsert="false" AllowUpdate="false" runat="server" UseDefaultStyle="false"
+                                                            CssClass="FiglText" />
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr id="TrDjFooter" style="padding-right: 30px;">
+                                    <td colspan="2">
+                                        <asp:ContentPlaceHolder ID="C3" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td style="text-align: right">
+                                        <asp:Panel ID="PLDtBtn" runat="server" CssClass="DivGridButton">
+                                            <cc1:UcButton ID="BtnTbCashFlow" runat="server" ColumnName="CashFlow" Width="60px"
+                                                OnClientClick="ShowCashFlowDetail('MODIFY');return;" UseSubmitBehavior="False" />
+                                            <cc1:UcButton ID="BtnTbCypz" runat="server" ColumnName="Cypz" Width="60px" OnClientClick="showCypzDetail();return;"
+                                                UseSubmitBehavior="False" />                                                                                  
+                                            <cc1:UcButton ID="BtnTbAdd" runat="server" ColumnName="ADD" Width="40px" OnClientClick="addRow();return;"
+                                                UseSubmitBehavior="False" />
+                                            <cc1:UcButton ID="BtnTbInsert" runat="server" ColumnName="Insert" Width="40px" OnClientClick="insertRow();return;"
+                                                UseSubmitBehavior="False" />
+                                            <cc1:UcButton ID="BtnTbDelete" runat="server" ColumnName="Delete" Width="40px" OnClientClick="deleteRow();return;"
+                                                UseSubmitBehavior="False" />
+                                            <cc1:UcButton ID="BtnTbDeletaAll" runat="server" ColumnName="DeleteAll" Width="60px"
+                                                OnClientClick="deleteAllRow();return;" UseSubmitBehavior="False" />
+                                        </asp:Panel>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="MidCTbCR">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr style="height: 56px;" id="bottom">
+            <td>
+                <table class="BottomCTb" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="BottomCTbCL">
+                        </td>
+                        <td class="BottomCTbCM">
+                            <table style="width: 100%; display: inline" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="left">
+                                        <cc1:UcButton ID="BtnFirst" runat="server" ColumnName="|<" Text="|<" Width="21px"
+                                            UseSubmitBehavior="False" OnClick="BtnFirst_Click" /><cc1:UcButton ID="BtnPrevious" ClientIDMode="Static"
+                                                runat="server" ToolTip="PageUp" ColumnName="<" Width="21px" UseSubmitBehavior="False" OnClick="BtnPrevious_Click" /><cc1:UcButton
+                                                    ID="BtnNext" runat="server" ColumnName=">" Text=">" Width="21px" UseSubmitBehavior="False" ToolTip="PageDown" ClientIDMode="Static"
+                                                    OnClick="BtnNext_Click" /><cc1:UcButton ID="BtnLast" runat="server" ColumnName=">|"
+                                                        Text=">|" Width="21px" UseSubmitBehavior="False" OnClick="BtnLast_Click" />
+                                    </td>
+                                    <td align="right">
+                                        <asp:PlaceHolder ID="PHButton" runat="server"></asp:PlaceHolder>
+                                        <cc1:UcButton ID="BtnAdd" runat="server" ColumnName="ADD" Width="70px" OnClick="BtnAdd_Click"
+                                            ClientIDMode="Static" UseSubmitBehavior="False" InsureClickOnce="True" />
+                                        <cc1:UcButton ID="BtnEdit" runat="server" ColumnName="EDIT" Width="70px" OnClick="BtnEdit_Click"
+                                            UseSubmitBehavior="False" InsureClickOnce="True" /><cc1:UcButton ID="BtnSubmit" runat="server"
+                                                ColumnName="Submit" Width="70px" OnClick="BtnSubmit_Click" UseSubmitBehavior="False"
+                                                OnClientClick="window.returnValue='REFRESH';" InsureClickOnce="True" /><cc1:UcButton
+                                                    ID="BtnUndoSubmit" runat="server" ColumnName="UndoSubmit" Width="70px" OnClick="BtnUndoSubmit_Click"
+                                                    UseSubmitBehavior="False" OnClientClick="window.returnValue='REFRESH';" InsureClickOnce="True" />
+                                        <cc1:UcButton ID="BtnSave" runat="server" ColumnName="Save" InsureClickOnce="true"
+                                            Width="70px" OnClick="BtnSave_Click" UseSubmitBehavior="False" OnClientClick="window.returnValue='REFRESH';"
+                                            ClientIDMode="Static" />
+                                        <cc1:UcButton ID="BtnCancel" runat="server" ColumnName="Cancel" Width="70px" OnClick="BtnCancel_Click"
+                                            UseSubmitBehavior="False" InsureClickOnce="True" />
+                                        <asp:PlaceHolder ID="PLButton" runat="server"></asp:PlaceHolder>
+                                         <cc1:UcButton ID="BtnAudit" Width="70px" ColumnName="Audit" runat="server" UseSubmitBehavior="False"
+                                            OnClientClick="window.returnValue='REFRESH';"
+                                            InsureClickOnce="True" OnClick="BtnAudit_Click" />
+                                        <cc1:UcButton ID="BtnUndoAudit" Width="70px" ColumnName="UndoAudit" runat="server"
+                                            OnClientClick="if(!CheckUndoAudit()){return false};window.returnValue='REFRESH';"
+                                            InsureClickOnce="True" UseSubmitBehavior="False" OnClick="BtnUndoAudit_Click" />
+                                        <cc1:UcButton ID="BtnPass" Width="70px" ColumnName="Pass" runat="server" UseSubmitBehavior="False"
+                                            OnClientClick="if(!CheckPass()){return false};window.returnValue='REFRESH';"
+                                            InsureClickOnce="True" OnClick="BtnPass_Click" />
+                                        <cc1:UcButton ID="BtnUndoPass" Width="70px" ColumnName="UndoPass" runat="server"
+                                            OnClientClick="if(!CheckUndoPass()){return false};window.returnValue='REFRESH';"
+                                            InsureClickOnce="True" UseSubmitBehavior="False" OnClick="BtnUndoPass_Click" />
+                                       <cc1:UcButton ID="BtnPrint" ColumnName="Print" runat="server" InsureClickOnce="True"
+                                            Width="70px" OnClick="BtnPrint_Click" OnClientClick="OnClientPrint();return false;" />
+                                        <cc1:UcButton ID="BtnExport" ColumnName="ExportExcel" runat="server" OnClick="BtnExport_Click"
+                                            UseSubmitBehavior="False" />
+                                        <cc1:UcButton ID="BtnClose" runat="server" ColumnName="Close" Width="70px" OnClientClick="window.close();return false;"
+                                            UseSubmitBehavior="False" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="BottomCTbCR">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,315 @@
+﻿ #content
+        {
+            margin: 10px auto;
+            width: 1160px;
+            display: block;
+            text-align: left;
+        }
+        /**/
+        #tonggao
+        {
+            float: left;
+            width: 380px;
+            height: 535px;
+            position: relative;
+            background: url(../Home/images/replace_y.jpg) repeat-y left top;
+        }
+        #tonggao h3
+        {
+            width: 374px;
+            height: 33px;
+            line-height: 33px;
+            position: relative;
+            margin: 0 0 0 5px;
+            text-indent: 25px;
+            color: #fff;
+            background:url(../Home/images/titles2.jpg) no-repeat left top;
+            z-index: 50;
+        }
+        #tonggao ul
+        {
+            width: 345px;
+            height: 420px;
+            position: relative;
+            margin: 0 0 0 20px;
+            padding-top: 20px;
+            background: url(../Home/images/line_x4.gif) no-repeat center top;
+            z-index: 100;
+        }
+        #tonggao ul li
+        {
+            height: 30px;
+            line-height: 30px;
+            background: url(../Home/images/line_x3.gif) repeat-x left bottom;
+            padding-top: 5px;
+        }
+        #tonggao ul li span
+        {
+            padding: 0 8px 0 12px;
+            font-weight: bold;
+            color: #007069;
+            background: url(../Home/images/09.gif) no-repeat left center;
+        }
+        
+        #tonggao ul li a
+        {
+        }
+        #tonggao span.more
+        {
+            position: relative;
+            margin: 25px 15px 0 0;
+            text-align: right;
+            display: block;
+            z-index: 100;
+        }
+        #tonggao span.more a
+        {
+            width: 79px;
+            height: 26px;
+            line-height: 25px;
+            text-align: left;
+            text-indent: 30px;
+            font-size: 14px;
+            text-decoration: none;
+            font-family: 黑体;
+            color: #3e5d5b;
+            background: url(../Home/images/btn_green2.png) no-repeat left top;
+            display: inline-block;
+        }
+        #tonggao span.more a:hover
+        {
+            color: white;
+            background: url(../Home/images/btn_green5.png) no-repeat left top;
+        }
+        #tonggao .bom_bg
+        {
+            width: 374px;
+            height: 169px;
+            position: absolute;
+            bottom: 6px;
+            left: 4px;
+            background: url(../Home/images/div_bg1.png) no-repeat left top;
+        }
+        #tonggao .bg_bom
+        {
+            width: 386px;
+            height: 11px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url(../Home/images/bom_bg.jpg) no-repeat left bottom;
+        }
+        #tonggao .bg_top
+        {
+            width: 386px;
+            height: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../Home/images/top_bg.jpg) no-repeat left top;
+        }
+        /**/
+        #content_right
+        {
+            float: left;
+            width: 773px;
+            height: 535px;
+            position: relative;
+            padding: 11px 14px 0 11px;
+            background: url(../Home/images/zhong_bg.jpg) repeat-y left top;
+        }
+        #content_right .bg_bom
+        {
+            width: 773px;
+            height: 11px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url(../Home/images/bom_bg2.jpg) no-repeat left bottom;
+        }
+        #content_right .bg_top
+        {
+            width: 773px;
+            height: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../Home/images/top_bg2.jpg) no-repeat left top;
+        }
+        /*待办事宜*/
+        #daiban
+        {
+            float: left;
+            width: 456px;
+            height: 253px;
+            margin-bottom: 7px;
+            background: #fff url(../Home/images/div_bg2.jpg) repeat-x left bottom;
+        }
+        #daiban h3
+        {
+            width: 456px;
+            height: 35px;
+            padding: 5px 0 0 11px;
+            color: #fff;
+            background: url(../Home/images/titles.jpg) no-repeat left top;
+        }
+        #daiban h3 img
+        {
+            margin-right: 8px;
+        }
+        #daiban div
+        {
+            height: 215px;
+            overflow: auto;
+        }
+        #daiban ul
+        {
+            margin: 0 10px;
+        }
+        #daiban ul li
+        {
+            height: 30px;
+            line-height: 30px;
+            background: url(../Home/images/line_x3.gif) repeat-x left bottom;
+            overflow: hidden;
+        }
+        #daiban ul li a
+        {
+            font-weight: bold;
+            color: #0c6e68;
+            text-decoration: underline;
+        }
+        #daiban ul li span
+        {
+            padding-left: 12px;
+            background: url(../Home/images/09.gif) no-repeat left center;
+        }
+        /*我的收藏*/
+        #shouchang
+        {
+            float: right;
+            width: 283px;
+            height: 513px;
+            background: #fff url(../Home/images/div_bg2.jpg) repeat-x left bottom;
+            margin-top: 2px;
+        }
+        #shouchang h3
+        {
+            width: 283px;
+            height: 32px;
+            padding: 5px 0 0 11px;
+            color: #fff;
+            background: url(../Home/images/titles3.jpg) no-repeat left bottom;
+        }
+        #shouchang div
+        {
+            height: 450px;
+            overflow: auto;
+            width: 283px;
+        }
+        #shouchang h3 img
+        {
+            margin-right: 5px;
+        }
+        #shouchang ul
+        {
+            float: left;
+            width: 260px;
+            padding: 26px 0 0 33px;
+        }
+        #shouchang ul li
+        {
+            float: left;
+            margin: 0 8px 11px 0;
+            display: inline;
+        }
+        #shouchang ul li a
+        {
+            width: 102px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            font-weight: bold;
+            padding-right: 5px;
+            color: #2a796c;
+            background: url(../Home/images/05.gif) no-repeat left top;
+            overflow: hidden;
+            display: block;
+            text-decoration: none;
+        }
+        #shouchang ul li a:hover
+        {
+            background: url(../Home/images/sc_bg01.png) no-repeat left top;
+        }
+        /*消息中心*/
+        #msg
+        {
+            float: left;
+            width: 456px;
+            height: 251px;
+            background: #fff url(../Home/images/div_bg2.jpg) repeat-x left bottom;
+        }
+        #msg div
+        {
+            height: 170px;
+            overflow: auto;
+        }
+        #msg h3
+        {
+            width: 456px;
+            height: 35px;
+            padding: 5px 0 0 11px;
+            color: #fff;
+            background: url(../Home/images/titles.jpg) no-repeat left top;
+        }
+        #msg h3 img
+        {
+            margin-right: 8px;
+        }
+        
+        #msg ul
+        {
+            margin: 0 10px;
+            height: 170px;
+        }
+        #msg ul li
+        {
+            height: 30px;
+            line-height: 30px;
+            background: url(../Home/images/line_x3.gif) repeat-x left bottom;
+            overflow: hidden;
+        }
+        #msg ul li a
+        {
+        }
+        #msg ul li span
+        {
+            padding: 0 8px 0 12px;
+            font-weight: bold;
+            color: #007069;
+            background: url(../Home/images/09.gif) no-repeat left center;
+        }
+        #msg span.more
+        {
+            padding: 3px 10px;
+            text-align: right;
+            display: block;
+        }
+        #msg span.more a
+        {
+            width: 79px;
+            height: 26px;
+            line-height: 25px;
+            text-align: center;
+            background: url(../Home/images/btn_green2.png) no-repeat left top;
+            display: inline-block;
+            font-size: 14px;
+            text-decoration: none;
+            font-family: 黑体;
+            color: #3e5d5b;
+        }
+        #msg span.more a:hover
+        {
+            color: white;
+            background: url(../Home/images/btn_green5.png) no-repeat left top;
+        }

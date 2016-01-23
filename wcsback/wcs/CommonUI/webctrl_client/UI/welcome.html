@@ -1,0 +1,1095 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <form id="form1" name="form1" method="post" action="">
+    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="30" align="left" valign="middle"><span class="img1"><span class="title1">CAPEX REQUISITION</span></span></td>
+      </tr>
+      <tr>
+        <td background="images/line1.gif" bgcolor="#C9DAF1" class="img1" height="5"></td>
+      </tr>
+    </table>
+    <table width="80%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="6"></td>
+      </tr>
+    </table>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="border1">
+    <tr>
+      <td><table width="100%" cellpadding="4" cellspacing="2">
+        <colgroup>
+        <col width="130" />
+        <col width="135" />
+        <col width="130" />
+        <col width="150" />
+        <col width="130" />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td bgcolor="#EBEBEB"><span id="Label14">Reference   No. 编号</span></td>
+            <td bgcolor="#F7F7F7"><input id="txtRefNO" name="txtRefNO" /></td>
+            <td bgcolor="#EFEFEF"><span id="Label1">Planprojet   预算项目</span></td>
+            <td bgcolor="#F7F7F7"><select id="fxdplPlan" name="fxdplPlan">
+                <option value="0" selected="selected">--Please Select--</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB"><span id="Label27">Capex ID   系统编号</span></td>
+            <td bgcolor="#F7F7F7"><input id="txtCapexHID" disabled="disabled" name="txtCapexHID" /></td>
+            <td bgcolor="#EFEFEF"><span id="Label30">Asset   Cat# 资产类别</span></td>
+            <td bgcolor="#F7F7F7"><select id="dplCategory" name="dplCategory">
+                <option value="0" selected="selected">--Please Select--</option>
+                <option value="82">ADMEQ-new</option>
+                <option value="83">CAR</option>
+                <option value="84">DEMEQ-new</option>
+                <option value="85">F&amp;F</option>
+                <option value="86">Leasing-new</option>
+                <option value="87">OE-new</option>
+                <option value="88">IM Related-new</option>
+                <option value="89">Plant equip-new</option>
+                <option value="90">Tooling</option>
+                <option value="91">TRIEQ-new</option>
+                <option value="101">Building</option>
+                <option value="121">Plant equip-old</option>
+                <option value="122">DEMEQ-old</option>
+                <option value="123">IM Related-old</option>
+                <option value="124">Leasing-old</option>
+                <option value="125">OE-old</option>
+                <option value="126">ADMEQ-old</option>
+                <option value="127">TRIEQ-old</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB"><span id="Label5">Comp.   Code 公司编号</span></td>
+            <td bgcolor="#F7F7F7"><select id="dplComp" name="dplComp">
+                <option value="0" selected="selected">--Please Select--</option>
+                <option value="615">615:FXCL - SH BR</option>
+                <option value="620">620:FXCL - GZ BR</option>
+                <option value="625">625:FXCL - CD   BR</option>
+                <option value="630">630:FXCL - WH BR</option>
+                <option value="635">635:FXCL - SY BR</option>
+                <option value="640">640:FXCL - TJ BR</option>
+                <option value="645">645:FXCL - HZ BR</option>
+                <option value="650">650:FXCL - SZ   BR</option>
+                <option value="691">691:FXID MARCO</option>
+                <option value="692">692:FXID   FINCO</option>
+                <option value="694">694:FXID - BJ RO</option>
+                <option value="695">695:FXID - GZ RO</option>
+                <option value="696">696:FXID - CD RO</option>
+                <option value="680">680:FXLCL PRC GAAP Adj</option>
+                <option value="682">682:FXLCL</option>
+                <option value="684">684:FXLCL USGAAP   Adj</option>
+            </select></td>
+            <td bgcolor="#EFEFEF"><span id="Label29">Cost Center   成本中心</span></td>
+            <td bgcolor="#F7F7F7"><select id="dplCostCenter" name="dplCostCenter">
+                <option value="0" selected="selected">--Please Select--</option>
+                <option value="ZA83">ZA83:Seoul   SVC</option>
+                <option value="ZA84">ZA84:ChungCheong Sales</option>
+                <option value="ZA85">ZA85:FXKIS</option>
+                <option value="ZD01">ZD01:FXCL SH</option>
+                <option value="ZD02">ZD02:FXCL BJ</option>
+                <option value="ZD03">ZD03:FXCL GZ</option>
+                <option value="ZD04">ZD04:FXCL HZ</option>
+                <option value="ZD05">ZD05:FXCL   CD</option>
+                <option value="0310">0310:Marketing Administration</option>
+                <option value="0515">0515:Customer Administration 1</option>
+                <option value="0516">0516:Customer Administration 2</option>
+                <option value="0517">0517:Contract</option>
+                <option value="0518">0518:Legal/CA</option>
+                <option value="0519">0519:Collection 1</option>
+                <option value="0520">0520:Collection   2</option>
+                <option value="0521">0521:Collection 3</option>
+                <option value="0703">0703:Purchasing section</option>
+                <option value="1011">1011:Inventory   Services Section</option>
+                <option value="1012">1012:Non -Equipment Support   Section</option>
+                <option value="1013">1013:Equipment Support Section</option>
+                <option value="1014">1014:Machine Transport Section</option>
+                <option value="1015">1015:S/P &quot;&quot; Cons Transport Section</option>
+                <option value="1016">1016:Safety &quot;&quot; Environmental Office</option>
+                <option value="1017">1017:Import Group</option>
+                <option value="1211">1211:Recondition   Operation Department</option>
+                <option value="1212">1212:Production Line   Section</option>
+                <option value="1213">1213:Production Support Section</option>
+                <option value="1214">1214:Production Planning &quot;&quot; Quality Section</option>
+                <option value="1215">1215:Spareparts Repair Section</option>
+                <option value="1605">1605:Technical Support</option>
+                <option value="5021">5021:China   Resident</option>
+                <option value="3732">3732:Regional-Transfer Pricing</option>
+                <option value="D502">D502:Service Call Center</option>
+                <option value="D117">D117:CN&amp;S (Tom Shen)</option>
+                <option value="6000">6000:PSB   GROUP-MARKETING TOTAL</option>
+                <option value="3710">3710:REGIONAL-MARKETING OFFICE   TOTAL</option>
+                <option value="3720">3720:REGIONAL-GLOBAL ACCOUNT MARKETING   TOTAL</option>
+                <option value="3730">3730:REGIONAL-OFFICE PRODUCT   MARKETING</option>
+                <option value="3740">3740:REGIONAL-OFFICE SERVICES BUSINESS   TOTAL</option>
+                <option value="D136">D136:Telesales&amp;CCS (Lily Zhang)</option>
+                <option value="D142">D142:ART2 (Ben Wang Acting)</option>
+                <option value="D153">D153:South F&amp;N</option>
+                <option value="D160">D160:DSO</option>
+                <option value="D161">D161:XBS Sales BJ</option>
+                <option value="D162">D162:XBS Sales   SH</option>
+                <option value="D163">D163:XBS Sales GZ</option>
+                <option value="D170">D170:XBS Sales Operation-Suzey Jiang</option>
+                <option value="D171">D171:Remote-TJ</option>
+                <option value="D182">D182:Remote-JS/AH (Paul   Gong)</option>
+                <option value="D300">D300:PSB Operation</option>
+                <option value="D311">D311:GA1 (Carlos Zhang)</option>
+                <option value="D312">D312:GA2 (Raymond   Su)</option>
+                <option value="D313">D313:GA3 (Steven Yuan)</option>
+                <option value="D314">D314:KA (Dennis Li)</option>
+                <option value="D321">D321:GA1 (Wu Yun   Rong)</option>
+                <option value="D322">D322:GA2 (Stephen Zhao)</option>
+                <option value="D323">D323:GA3 (Eric Yang)</option>
+                <option value="D500">D500:National   Service Operation</option>
+                <option value="D501">D501:Service Planning-Joan   Lee</option>
+                <option value="D503">D503:Service Training-Chen Jian Shun</option>
+                <option value="D505">D505:Service Support (David Acting)</option>
+                <option value="D542">D542:West ODP</option>
+                <option value="D543">D543:West PSG</option>
+                <option value="D544">D544:West Color</option>
+                <option value="D545">D545:West   Remote</option>
+                <option value="D548">D548:West region ES product service</option>
+                <option value="D550">D550:Channel Direct Service(Xu Hang)</option>
+                <option value="D551">D551:North Region</option>
+                <option value="D552">D552:Eastern   Region</option>
+                <option value="D553">D553:South Region</option>
+                <option value="D554">D554:Western Region</option>
+                <option value="D590">D590:XCG   Service(Zhong Qiang)</option>
+                <option value="D704">D704:General XBS   Operation</option>
+                <option value="D028">D028:A&amp;P- Shop Project</option>
+                <option value="D811">D811:ECSC</option>
+                <option value="D820">D820:EXPC   A&amp;P</option>
+                <option value="DCOO">DCOO:Cost center grouping</option>
+                <option value="D381">D381:Industry Marketing</option>
+                <option value="D382">D382:PSG   Marketing</option>
+                <option value="D135">D135:ART3 (Kevin Yang)</option>
+                <option value="D113">D113:KAT2 (Jessie Han)</option>
+                <option value="D115">D115:ART2 (Hattie   Wu)</option>
+                <option value="D116">D116:ART3 (Jessica Wei)</option>
+                <option value="D211">D211:Channel-Wang Wei Ping</option>
+                <option value="D122">D122:KAT2   (Anita Liu)</option>
+                <option value="D125">D125:ART3 (Simon Xue)</option>
+                <option value="D126">D126:ES PS (Li Ye)</option>
+                <option value="D132">D132:KAT2 (Stella   Song)</option>
+                <option value="D134">D134:ART2 (Eric Hu)</option>
+                <option value="3711">3711:Regional-Marketing Office-GM</option>
+                <option value="3712">3712:Regional-Communications &amp; Promotions</option>
+                <option value="3713">3713:Regional-Planning</option>
+                <option value="3714">3714:Regional-Transfer Pricing</option>
+                <option value="3721">3721:Regional-Global Account Marketing-GM</option>
+                <option value="3731">3731:Regional-Office Product Marketing-GM</option>
+                <option value="3741">3741:Regional-Office Services Business-GM</option>
+                <option value="3742">3742:Regional-Document Outsourcing Services (DOS)</option>
+                <option value="3743">3743:Regional-Business Process Innovation (BPI)</option>
+                <option value="3744">3744:Regional-Marketing &amp; Planning Group</option>
+                <option value="6001">6001:Production Services Group-GM</option>
+                <option value="0514">0514:ASEAN Finance</option>
+                <option value="1905">1905:Sales   Training-PSB</option>
+                <option value="1906">1906:Sales Training - X-SMAP</option>
+                <option value="1990">1990:Shared Services - Others</option>
+                <option value="DCSO">DCSO:Cost center grouping for CSSO supporting</option>
+                <option value="1008">1008:Technical Admin</option>
+                <option value="3600">3600:REGIONAL-BUSINESS PLANNING &amp; QUALITY TOTAL</option>
+                <option value="3601">3601:Regional-Business Planning &amp; Quality GM</option>
+                <option value="9999">9999:Allocation Cost Centre</option>
+                <option value="0000">0000:Unspecified</option>
+                <option value="0100">0100:CEO/PRESIDENT   OFFICE TOTAL</option>
+                <option value="0200">0200:INTERNAL AUDIT TOTAL</option>
+                <option value="0300">0300:BUSINESS PLANNING TOTAL</option>
+                <option value="0400">0400:LEGAL TOTAL</option>
+                <option value="0500">0500:FINANCE   TOTAL</option>
+                <option value="0600">0600:HR/PERSONNEL TOTAL</option>
+                <option value="0700">0700:GENERAL AFFAIRS/OFFICE SERVICES TOTAL</option>
+                <option value="0800">0800:INFORMATION MANAGEMENT TOTAL</option>
+                <option value="0900">0900:REGIONAL SUPPLY CHAIN MANAGEMENT TOTAL</option>
+                <option value="1000">1000:LOGISTICS OPERATION TOTAL</option>
+                <option value="1100">1100:REMANUFACTURING TOTAL</option>
+                <option value="1200">1200:REFURBISHING/RECONDITIONING/RECYCLING TOTAL</option>
+                <option value="1300">1300:MANUFACTURING TOTAL</option>
+                <option value="1400">1400:R&amp;D   TOTAL</option>
+                <option value="1500">1500:REGIONAL TECHNICAL SUPPORT TOTAL</option>
+                <option value="1600">1600:TECHNICAL SUPPORT TOTAL</option>
+                <option value="1700">1700:LEASING TOTAL</option>
+                <option value="1800">1800:INTERNATIONAL   BUSINESS COMPANY TOTAL</option>
+                <option value="2000">2000:FXAP - OVERSEAS   OPERATIONS TOTAL</option>
+                <option value="5000">5000:FXAP RESIDENT TOTAL</option>
+                <option value="ZX00">ZX00:FX GROUP</option>
+                <option value="ZC00">ZC00:XC   GROUP</option>
+                <option value="ZF00">ZF00:FPF GROUP</option>
+                <option value="ZZ00">ZZ00:INDO CHINA CUSTOMERS</option>
+                <option value="0101">0101:CEO   Office</option>
+                <option value="0111">0111:President / MD Office</option>
+                <option value="0121">0121:Quality/ Customer Excellance</option>
+                <option value="0122">0122:Change Management</option>
+                <option value="0123">0123:Corporate   Affairs</option>
+                <option value="0125">0125:Entity - GMO</option>
+                <option value="0201">0201:Internal Audit</option>
+                <option value="0301">0301:BP GM</option>
+                <option value="0302">0302:Promotion &amp; Communication</option>
+                <option value="0303">0303:Marketing Planning</option>
+                <option value="0304">0304:Service   Planning</option>
+                <option value="0306">0306:Corporate Planning</option>
+                <option value="0390">0390:BP Other</option>
+                <option value="0401">0401:Legal</option>
+                <option value="0501">0501:Finance GM</option>
+                <option value="0502">0502:Treasury</option>
+                <option value="0503">0503:Accounting</option>
+                <option value="0504">0504:Financial   Planning</option>
+                <option value="0505">0505:Customer Admin Department</option>
+                <option value="0506">0506:Payroll</option>
+                <option value="0507">0507:Finance   Management</option>
+                <option value="0508">0508:Finance Operations Mgt</option>
+                <option value="0509">0509:Billing</option>
+                <option value="0510">0510:Collection/   Leasing</option>
+                <option value="0511">0511:Facilities</option>
+                <option value="0590">0590:Finance Other</option>
+                <option value="0601">0601:Human Resources   GM</option>
+                <option value="0602">0602:Compensation and benefits</option>
+                <option value="0603">0603:ES and staffing</option>
+                <option value="0604">0604:HR Training   &amp; Development</option>
+                <option value="0606">0606:Legal</option>
+                <option value="0607">0607:Sales Training</option>
+                <option value="0608">0608:Recruitment</option>
+                <option value="0609">0609:Personnel &amp;   General Administration</option>
+                <option value="0690">0690:HR Other</option>
+                <option value="0701">0701:General Affairs/Office Services</option>
+                <option value="0702">0702:China Non-selling Total</option>
+                <option value="0801">0801:Information Management - GM</option>
+                <option value="0802">0802:Infrastructure</option>
+                <option value="0803">0803:Application</option>
+                <option value="0804">0804:IT Shared   Service</option>
+                <option value="0805">0805:System Project</option>
+                <option value="0890">0890:IM Other</option>
+                <option value="0901">0901:SCM Head Office -   GM</option>
+                <option value="0902">0902:ALC Operation</option>
+                <option value="0904">0904:ANZ Operation</option>
+                <option value="0905">0905:SCM   Other</option>
+                <option value="1001">1001:Logistics Operation - GM</option>
+                <option value="1002">1002:Logistic Control</option>
+                <option value="1003">1003:Distribution/Delivery</option>
+                <option value="1004">1004:Warehousing</option>
+                <option value="1005">1005:Pre-Run</option>
+                <option value="1006">1006:Order Management</option>
+                <option value="1007">1007:Supply   Planning</option>
+                <option value="1090">1090:Other Logistics</option>
+                <option value="1101">1101:Remanufacturing- GM</option>
+                <option value="1190">1190:Remanufacturing- Others</option>
+                <option value="1201">1201:Refurbishing/Reconditioning/Recycling - GM</option>
+                <option value="1290">1290:Refurbishing/Reprocessing - Others</option>
+                <option value="1301">1301:Manufacturing - GM</option>
+                <option value="1390">1390:Manufacturing - Others</option>
+                <option value="1401">1401:R&amp;D   - GM</option>
+                <option value="1490">1490:R&amp;D - Others</option>
+                <option value="1501">1501:Regional Technical Support - GM</option>
+                <option value="1590">1590:Regional Technical Support Other</option>
+                <option value="1601">1601:Support Planning</option>
+                <option value="1602">1602:Work   Control</option>
+                <option value="1603">1603:Help Desk</option>
+                <option value="1604">1604:Service Training</option>
+                <option value="1690">1690:Service   Other</option>
+                <option value="1701">1701:Leasing</option>
+                <option value="1790">1790:Leasing - Others</option>
+                <option value="1801">1801:IBC</option>
+                <option value="2010">2010:Vietnam Operation (VNO)</option>
+                <option value="3101">3101:PSB Marketing - GM</option>
+                <option value="3201">3201:OSB   Marketing - GM</option>
+                <option value="5001">5001:Australia Resident</option>
+                <option value="5003">5003:New Zealand Resident</option>
+                <option value="5005">5005:Singapore Resident</option>
+                <option value="5007">5007:Malaysia   Resident</option>
+                <option value="5009">5009:Thailand Resident</option>
+                <option value="5011">5011:Philippines Resident</option>
+                <option value="5013">5013:Taiwan   Resident</option>
+                <option value="5015">5015:Korea Resident</option>
+                <option value="5017">5017:Indonesia Resident</option>
+                <option value="5019">5019:FX   Resident</option>
+                <option value="ZA01">ZA01:FXAP</option>
+                <option value="ZA21">ZA21:FXA - Marco</option>
+                <option value="ZA22">ZA22:FXA -   Finco</option>
+                <option value="ZA23">ZA23:FXA - Sales</option>
+                <option value="ZA31">ZA31:FXNZ - Marco</option>
+                <option value="ZA32">ZA32:FXNZ -   Finco</option>
+                <option value="ZA34">ZA34:Expo Media</option>
+                <option value="ZA35">ZA35:College Hill</option>
+                <option value="ZA41">ZA41:FXS -   Marco</option>
+                <option value="ZA42">ZA42:FXS - Finco</option>
+                <option value="ZA51">ZA51:FXM - Marco</option>
+                <option value="ZA52">ZA52:FXM -   Finco</option>
+                <option value="ZA61">ZA61:THFX -Marco</option>
+                <option value="ZA62">ZA62:THFX - Finco</option>
+                <option value="ZA71">ZA71:FXP -   Marco</option>
+                <option value="ZA72">ZA72:FXP - Finco</option>
+                <option value="ZA81">ZA81:FXK</option>
+                <option value="ZA91">ZA91:TFX</option>
+                <option value="ZB01">ZB01:PT Astra Graphia</option>
+                <option value="ZX11">ZX11:FX</option>
+                <option value="ZX12">ZX12:FX Office Supply</option>
+                <option value="ZX21">ZX21:FX HK   - Marco</option>
+                <option value="ZX22">ZX22:FX HK - Finco</option>
+                <option value="ZX23">ZX23:Textronix HK</option>
+                <option value="ZX24">ZX24:Macau   Operations</option>
+                <option value="ZX25">ZX25:Share of Office entity</option>
+                <option value="ZX26">ZX26:Offshore China</option>
+                <option value="ZX27">ZX27:Textronix Offshore China</option>
+                <option value="ZX31">ZX31:FX   ShenZhen-Xerox Buying Office</option>
+                <option value="ZX32">ZX32:FXID Shanghai Co   Ltd</option>
+                <option value="ZX33">ZX33:FX of Shanghai Ltd</option>
+                <option value="ZX34">ZX34:FX China Ltd</option>
+                <option value="ZX35">ZX35:FX Information   System</option>
+                <option value="ZX36">ZX36:FX Far East</option>
+                <option value="ZX37">ZX37:FX Suzhou</option>
+                <option value="ZC01">ZC01:XC</option>
+                <option value="ZC02">ZC02:XE</option>
+                <option value="ZC03">ZC03:XES</option>
+                <option value="ZC04">ZC04:RX Russia</option>
+                <option value="ZC05">ZC05:Modi Xerox</option>
+                <option value="ZC06">ZC06:DES France</option>
+                <option value="ZC07">ZC07:Xerox   Brazil</option>
+                <option value="ZC08">ZC08:Xerox Norway</option>
+                <option value="ZC09">ZC09:Xerox Tektronix</option>
+                <option value="ZC10">ZC10:XEROX   Procurement Office XBO</option>
+                <option value="ZF01">ZF01:Fuji Photo Film</option>
+                <option value="ZF02">ZF02:Fuji Photo Product</option>
+                <option value="ZZ01">ZZ01:Vietnam</option>
+                <option value="ZZ02">ZZ02:Cambodia</option>
+                <option value="ZZ03">ZZ03:Laos</option>
+                <option value="ZZ04">ZZ04:Myanmar</option>
+                <option value="0307">0307:Product Planning</option>
+                <option value="0308">0308:Business Process</option>
+                <option value="ZA02">ZA02:ANZ</option>
+                <option value="0512">0512:Cost &amp; Inventory Accounting</option>
+                <option value="0513">0513:Finco Management</option>
+                <option value="0112">0112:Senior Vice   President</option>
+                <option value="0113">0113:Vice President</option>
+                <option value="999Z">999Z:Total CC for Allocation</option>
+                <option value="1900">1900:SHARED   SERVICES PLANNING TOTAL</option>
+                <option value="1901">1901:Shared Services   Planning</option>
+                <option value="1902">1902:Localisation</option>
+                <option value="1903">1903:Refurbishing and Reconditioning</option>
+                <option value="1904">1904:Sales Training</option>
+                <option value="3602">3602:Regional-Business Planning</option>
+                <option value="3603">3603:Regional-Quality Management</option>
+                <option value="3690">3690:Regional-Business Planning &amp; Quality Other</option>
+                <option value="ZX39">ZX39:Fuji Xerox Distribution Co</option>
+                <option value="ZX38">ZX38:FX Printing Systems Co</option>
+                <option value="3604">3604:Regional-Business Planning   Project</option>
+                <option value="ZX40">ZX40:FX Printing Channel</option>
+                <option value="0102">0102:Quality</option>
+                <option value="0103">0103:Special   Project</option>
+                <option value="3700">3700:REGIONAL-MARKETING PLANNING   TOTAL</option>
+                <option value="3701">3701:Regional-Marketing Planning-GM</option>
+                <option value="4000">4000:PSBG PROJECTS TOTAL</option>
+                <option value="4001">4001:IGEN3</option>
+                <option value="4002">4002:Epicenter (ECSC)</option>
+                <option value="4003">4003:Premier Partner Initiative Task (PPI)</option>
+                <option value="ZP01">ZP01:FXPC - Regional Australia</option>
+                <option value="ZP02">ZP02:FXPC   - Regional Singapore</option>
+                <option value="ZP03">ZP03:FXPC - Australia</option>
+                <option value="ZP04">ZP04:FXPC - New Zealand</option>
+                <option value="ZP05">ZP05:FXPC   - Korea</option>
+                <option value="ZP06">ZP06:FXPC - Hong Kong</option>
+                <option value="ZP07">ZP07:FXPC - Singapore</option>
+                <option value="ZP08">ZP08:FXPC -   Malaysia</option>
+                <option value="ZP09">ZP09:FXPC - Thailand</option>
+                <option value="ZP10">ZP10:FXPC - Philippines</option>
+                <option value="ZP11">ZP11:FXPC - Indonesia</option>
+                <option value="ZP12">ZP12:FXPC - Taiwan</option>
+                <option value="ZP13">ZP13:FXPC - China</option>
+                <option value="ZP14">ZP14:FXPC - IndoChina   Ops</option>
+                <option value="ZP15">ZP15:FXPC - Brunei</option>
+                <option value="DALL">DALL:FXCL Cost Center</option>
+                <option value="D100">D100:OPB Operation</option>
+                <option value="D101">D101:Central Government Team</option>
+                <option value="D110">D110:NRO-Charles Yin</option>
+                <option value="D111">D111:PSB&amp;Military (Bob Chen)</option>
+                <option value="D112">D112:KAT1 (Steven Liu)</option>
+                <option value="D114">D114:ART1 (Larry   Peng)</option>
+                <option value="D118">D118:ES PS (Tony Zhu)</option>
+                <option value="D210">D210:Channel Support</option>
+                <option value="D120">D120:ERO-Hu   Derek</option>
+                <option value="D121">D121:KAT1 (Jim Li)</option>
+                <option value="D123">D123:ART1 (Angel Wu)</option>
+                <option value="D127">D127:CN&amp;SW (Teddy Zheng)</option>
+                <option value="D124">D124:ART2 (Smiling Wu)</option>
+                <option value="D128">D128:PS Team (Derek Acting)</option>
+                <option value="D221">D221:Channel (China Eastern)-Qian Zi Hao</option>
+                <option value="D222">D222:Channel-SH Branch</option>
+                <option value="D130">D130:SRO-Juana   Leung</option>
+                <option value="D131">D131:KAT1 (Maggie Li)</option>
+                <option value="D133">D133:ART1 (Endy Shi)</option>
+                <option value="D138">D138:SZ (David   Li)</option>
+                <option value="D137">D137:PS &amp; CN &amp; SW (Alan Zhang)</option>
+                <option value="D139">D139:SZ-2 (Peter Leung)</option>
+                <option value="D231">D231:Channel Sales-Tian Daiming</option>
+                <option value="D140">D140:WRO-Patrick Dai</option>
+                <option value="D141">D141:ART1 (Ted   Luo)</option>
+                <option value="D241">D241:Channel Sales-Zhang Yu</option>
+                <option value="D150">D150:GNAO</option>
+                <option value="D151">D151:North F &amp; N</option>
+                <option value="D152">D152:East F &amp; N</option>
+                <option value="D188">D188:ESG COMM</option>
+                <option value="D181">D181:Remote-ZJ (Li Ying)</option>
+                <option value="D310">D310:PSB North</option>
+                <option value="D320">D320:PSB East</option>
+                <option value="D330">D330:PSB South &amp; West</option>
+                <option value="D010">D010:General Marketing</option>
+                <option value="D012">D012:Product   Marketing</option>
+                <option value="D013">D013:Strategic Planning</option>
+                <option value="D021">D021:A &amp; P -PR</option>
+                <option value="D022">D022:A &amp; P-ODP</option>
+                <option value="D023">D023:A &amp; P-XES</option>
+                <option value="D024">D024:A &amp; P-XCG</option>
+                <option value="D025">D025:A &amp; P-PSG</option>
+                <option value="D026">D026:A &amp; P-XSG</option>
+                <option value="D027">D027:A &amp; P-CCO</option>
+                <option value="D510">D510:North Region   Service-Wei Frank</option>
+                <option value="D520">D520:East Region Service-Wang Zhen   Yu</option>
+                <option value="D530">D530:South Regional Service-Hu Carl</option>
+                <option value="D540">D540:West Region Service-Hu Carl Acting</option>
+                <option value="D511">D511:North ODPC</option>
+                <option value="D512">D512:North ODP</option>
+                <option value="D513">D513:North PSG</option>
+                <option value="D514">D514:North   Color</option>
+                <option value="D515">D515:North Remote</option>
+                <option value="D518">D518:North region ES product service</option>
+                <option value="D521">D521:East ODPC</option>
+                <option value="D522">D522:East ODP</option>
+                <option value="D523">D523:East PSG</option>
+                <option value="D524">D524:East Color</option>
+                <option value="D525">D525:East Remote</option>
+                <option value="D528">D528:East region ES product service</option>
+                <option value="D531">D531:South ODPC</option>
+                <option value="D532">D532:South ODP</option>
+                <option value="D533">D533:South PSG</option>
+                <option value="D534">D534:South Color</option>
+                <option value="D535">D535:South Remote</option>
+                <option value="D538">D538:South region ES product service</option>
+                <option value="D541">D541:West ODPC</option>
+                <option value="D700">D700:General Site Related</option>
+                <option value="D999">D999:Software center</option>
+                <option value="D701">D701:XBS OPERTION SUPPORT-NORTH</option>
+                <option value="D702">D702:XBS OPERTION SUPPORT-EAST</option>
+                <option value="D703">D703:XBS OPERTION SUPPORT-SOUTH</option>
+                <option value="ZDXX">ZDXX:FXCL</option>
+                <option value="3745">3745:Regional-Xerox Business Services</option>
+                <option value="ZX41">ZX41:FX Eco Mfg (FXEM)</option>
+                <option value="ZX42">ZX42:FX China   Leasing</option>
+                <option value="D831">D831:China Branding</option>
+                <option value="D832">D832:CMC (Marketing Support)</option>
+                <option value="D833">D833:CTC (Training)</option>
+                <option value="D834">D834:Partner Program</option>
+                <option value="0610">0610:Sales Training-PSB</option>
+                <option value="0611">0611:Sales Training-XSMAP</option>
+                <option value="0612">0612:Sales Training-Value &amp;   Volume</option>
+                <option value="0613">0613:Management Development</option>
+                <option value="3733">3733:Regional-ES Marketing</option>
+                <option value="3750">3750:REGIONAL-PRODUCTION SERVICES BUSINESS</option>
+                <option value="3751">3751:Regional-Production Services Business-GM</option>
+                <option value="D223">D223:Channel-05 Commission Accrual</option>
+                <option value="D224">D224:Channel-05 Commission Usage</option>
+                <option value="D001">D001:Business Operation</option>
+                <option value="D014">D014:A&amp;P&amp;PR</option>
+                <option value="D143">D143:KAT (Apple Zhang)</option>
+                <option value="D144">D144:NW&amp;SW C (Jiang Wei)</option>
+                <option value="D145">D145:PS (Patrick Dai Acting)</option>
+                <option value="D156">D156:JAO BJ</option>
+                <option value="D157">D157:JAO SH</option>
+                <option value="D158">D158:JAO GZ</option>
+                <option value="D172">D172:Remote-DL (Fu Liye)</option>
+                <option value="D173">D173:Remote-QD (Peter Zhang Acting)</option>
+                <option value="D174">D174:Remote-SY (TBD)</option>
+                <option value="D183">D183:Remote-HB/HN (Tong Wang)</option>
+                <option value="D281">D281:XSG</option>
+                <option value="D282">D282:OEM</option>
+                <option value="D290">D290:XCG Operation</option>
+                <option value="D291">D291:Major Account &amp; Business Development</option>
+                <option value="D292">D292:Field Marketing &amp; Operation Support</option>
+                <option value="D293">D293:Marketing Support</option>
+                <option value="D315">D315:ID Card Project</option>
+                <option value="D324">D324:KA (Eileen Mei)</option>
+                <option value="D331">D331:GA1 (Freeman Zhu)</option>
+                <option value="D332">D332:GA2 (Peter Laung)</option>
+                <option value="D333">D333:GA3 (Stephen Zhao)</option>
+                <option value="D334">D334:KA (Wendy Wang)</option>
+                <option value="D506">D506:Global Service Team (Japanese Engineer Team)</option>
+                <option value="D835">D835:Service Business Project</option>
+                <option value="D802">D802:Chihiro Repair</option>
+                <option value="ZX43">ZX43:FX Global</option>
+                <option value="0522">0522:Collection 4</option>
+                <option value="0523">0523:Customer Information Section</option>
+                <option value="0524">0524:Customer Admin Section</option>
+                <option value="0614">0614:HR Planning</option>
+                <option value="0806">0806:Systems Development Section</option>
+                <option value="0807">0807:Systems Operations Section</option>
+                <option value="0126">0126:Corporate Services Office Division</option>
+                <option value="0127">0127:Customer Information</option>
+                <option value="0128">0128:General Administration Department</option>
+                <option value="ZA53">ZA53:FXMSB</option>
+                <option value="0114">0114:Chief Executive Resident</option>
+                <option value="D803">D803:Chihiro 44 Set rework</option>
+                <option value="D804">D804:Sheeta 520 M/C Retrofit</option>
+                <option value="ZP00">ZP00:FXPC - Total</option>
+                <option value="1018">1018:ANZHUB CAP Cost</option>
+                <option value="1019">1019:ANZHUB   Warehouse cost-Homebush</option>
+                <option value="ZA86">ZA86:FX HoNam   Co.,Ltd</option>
+                <option value="D705">D705:XOS Help Desk Call center</option>
+                <option value="ZC11">ZC11:Xerox Language Services XLS</option>
+                <option value="9001">9001:XSSC Translation Group</option>
+                <option value="9005">9005:XSSC   Engineering Group</option>
+                <option value="9099">9099:XSSC Other Group</option>
+                <option value="3746">3746:Regional-Managed Office Services (MOS)</option>
+                <option value="D129">D129:ES PS (Paul Lin)</option>
+                <option value="0402">0402:Legal Strategy</option>
+                <option value="D177">D177:SZ-ART3 ( Ken Guan)</option>
+                <option value="D340">D340:PSB WRO</option>
+                <option value="D549">D549:West Outsource Business</option>
+                <option value="D706">D706:XBS Business Analyst</option>
+                <option value="D707">D707:XBS Translation Team</option>
+                <option value="D164">D164:XBS-Operation Support</option>
+                <option value="D119">D119:ES PS (Tony Zhu)</option>
+                <option value="D002">D002:CMC</option>
+                <option value="D508">D508:Service Operation Support ( Ivy Huang)</option>
+                <option value="3747">3747:Regional-Document Management Services (DMS)</option>
+                <option value="D558">D558:ES ASP Support</option>
+                <option value="D155">D155:JAO</option>
+                <option value="3748">3748:Regional-Value Innovation Center (VIC)</option>
+                <option value="D003">D003:Operation Support &amp; Tele Sales</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EBEBEB"><span id="Label3">Currency   币种</span></td>
+            <td bgcolor="#F7F7F7"><input id="txtCurrency" maxlength="3" name="txtCurrency" /></td>
+            <td bgcolor="#EFEFEF"><span id="Label28">Status   状态</span></td>
+            <td bgcolor="#F7F7F7"><input id="txtStatus" disabled="disabled" maxlength="3" name="txtStatus" /></td>
+          </tr>
+          <tr>
+            <td colspan="4" align="right" bgcolor="#E0E0E0"><table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="left" valign="top"><img src="images/button_1_1.gif" width="6" height="23" /></td>
+                  <td background="images/button_1_2.gif"><a id="btnPrint" href="javascript:__doPostBack('btnPrint','')" confirmationmessage="Are you sure you want to print this decapex form?">Print Form</a></td>
+                  <td align="right" valign="top"><img src="images/button_1_3.gif" width="6" height="23" /></td>
+                </tr>
+                          </table></td>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+  </table>
+  <table width="80%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <table width="368" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="left" valign="top"><img src="images/button_1_1.gif" width="6" height="23" /></td>
+          <td background="images/button_1_2.gif">Query</td>
+          <td align="right" valign="top"><img src="images/button_1_3.gif" width="6" height="23" /></td>
+        </tr>
+      </table></td>
+      <td><table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="left" valign="top"><img src="images/button_1_1.gif" width="6" height="23" /></td>
+          <td background="images/button_1_2.gif">Clear</td>
+          <td align="right" valign="top"><img src="images/button_1_3.gif" width="6" height="23" /></td>
+        </tr>
+      </table></td>
+      <td><table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="left" valign="top"><img src="images/button_1_1.gif" width="6" height="23" /></td>
+          <td background="images/button_1_2.gif">Save</td>
+          <td align="right" valign="top"><img src="images/button_1_3.gif" width="6" height="23" /></td>
+        </tr>
+      </table></td>
+      <td><table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="left" valign="top"><img src="images/button_1_1.gif" width="6" height="23" /></td>
+          <td background="images/button_1_2.gif">Delete</td>
+          <td align="right" valign="top"><img src="images/button_1_3.gif" width="6" height="23" /></td>
+        </tr>
+      </table></td>
+      <td><table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="left" valign="top"><img src="images/button_1_1.gif" width="6" height="23" /></td>
+          <td background="images/button_1_2.gif">Close</td>
+          <td align="right" valign="top"><img src="images/button_1_3.gif" width="6" height="23" /></td>
+        </tr>
+      </table></td>
+      <td><table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="left" valign="top"><img src="images/button_1_1.gif" width="6" height="23" /></td>
+          <td background="images/button_1_2.gif">Check Balance </td>
+          <td align="right" valign="top"><img src="images/button_1_3.gif" width="6" height="23" /></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <table width="80%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="border1">
+    <tr>
+      <td><table width="100%" border="0" cellpadding="4" cellspacing="2" rules="all" id="dtgrdCapexLine">
+        <tbody>
+          <tr valign="center" align="middle" nowrap="nowrap">
+            <td bgcolor="#EBEBEB">No.<br />
+              序号</td>
+            <td bgcolor="#EBEBEB">Asset Details<br />
+              品名</td>
+            <td bgcolor="#EBEBEB">Unit Amount<br />
+              单价</td>
+            <td bgcolor="#EBEBEB">Qty<br />
+              数量</td>
+            <td bgcolor="#EBEBEB">Total Amt.<br />
+              金额合计</td>
+            <td bgcolor="#EBEBEB">PO No.<br />
+              订单号</td>
+            <td bgcolor="#EBEBEB">Justification/Reason<br />
+              请购原因</td>
+            <td bgcolor="#EBEBEB">Reason Document URL<br />
+              请购原因文档链接地址</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#F7F7F7">1</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#F5F5F5">2</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#F7F7F7">3</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+            <td bgcolor="#F7F7F7">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" valign="top" bgcolor="#F5F5F5">4</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+            <td bgcolor="#F5F5F5">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="8" align="right" bgcolor="#E0E0E0"><table border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td align="left" valign="top"><img src="images/button_1_1.gif" width="6" height="23" /></td>
+                <td background="images/button_1_2.gif"><a id="dtgrdCapexLine__ctl3_lbtnAdd" href="javascript:__doPostBack('dtgrdCapexLine$_ctl3$lbtnAdd','')">Add New</a></td>
+                <td align="right" valign="top"><img src="images/button_1_3.gif" width="6" height="23" /></td>
+              </tr>
+            </table></td>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+  </table>
+  <table width="80%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="border1">
+    <tr>
+      <td><table width="100%" border="0" cellspacing="2" cellpadding="4">
+        <tr>
+          <td bgcolor="#F7F7F7">Submit By<br />
+            申请人</td>
+          <td bgcolor="#F7F7F7"><input type="text" name="textfield" />
+          </td>
+          <td bgcolor="#F7F7F7">Dept.(部门)</td>
+          <td bgcolor="#F7F7F7"><select id="select" name="select" style="width:160px">
+              <option value="0" selected="selected">--Please Select--</option>
+              <option value="-2">Self Team</option>
+              <option value="-1">All Team</option>
+              <option value="8">Information Management (Acting)</option>
+              <option value="13">Channel & Supplies-Major Ac.&Bus. Dev.</option>
+              <option value="14">Quality&CS</option>
+              <option value="100">Finance-Accounting</option>
+              <option value="102">Finance-AR&Billing-Direct</option>
+              <option value="103">Finance-CA-Direct</option>
+              <option value="104">CSSO-Call Center(acting)</option>
+              <option value="107">CSSO-Training</option>
+              <option value="108">CSSO-Global Account Service</option>
+              <option value="110">PSBO-SA</option>
+              <option value="131">PSBO Marketing & Operation   Support</option>
+              <option value="133">PSG-North-KA</option>
+              <option value="137">PSB-North</option>
+              <option value="138">OPB-XBS Sales-SH</option>
+              <option value="140">JAO-North</option>
+              <option value="141">JAO-East</option>
+              <option value="142">JAO-South</option>
+              <option value="144">BO-NRO-ART1</option>
+              <option value="145">PSB-North-Graphic Arts2</option>
+              <option value="146">BO-NRO-Remote   Team</option>
+              <option value="147">PSB-North-Graphic Arts1</option>
+              <option value="149">FAO East</option>
+              <option value="150">PSB-East-Key Accounts</option>
+              <option value="152">PSB-East-Graphic Arts 1</option>
+              <option value="153">BO-SRO-KAT</option>
+              <option value="155">BO-SRO-PS</option>
+              <option value="156">PSB-SRO-Graphic Arts 1</option>
+              <option value="351">IM-Application Support Team</option>
+              <option value="390">IM-Infrastructure Team</option>
+              <option value="421">CSSO-ERO-PSG&Remote Service</option>
+              <option value="490">CSSO-PSG   Service</option>
+              <option value="495">CSSO-North Service</option>
+              <option value="503">CSSO-South Service</option>
+              <option value="507">CSSO-SRO-ODP SZ (Acting)</option>
+              <option value="508">CSSO-SRO-Operation Support</option>
+              <option value="530">Central Region Support Team</option>
+              <option value="571">PSBO-Marketing   (Acting)</option>
+              <option value="794">Finance-Accounting SH</option>
+              <option value="613">SCM</option>
+              <option value="615">SCM-Equipment Supply/Demand   Planning</option>
+              <option value="616">SCM-Non equipment Supply/Demand Planning</option>
+              <option value="617">SCM-Operations</option>
+              <option value="650">OPB-ERO-Wuhan Branch</option>
+              <option value="692">Channel & Supplies Operation-South Channel</option>
+              <option value="712">PSB-SRO-Graphic Arts 2</option>
+              <option value="791">Marketing-Planning</option>
+              <option value="731">Integrated Supply Chain(FXID)</option>
+              <option value="733">ISO</option>
+              <option value="810">Finance-Accounting BJ</option>
+              <option value="832">CSSO-West Service (acting)</option>
+              <option value="833">CSSO-East Service</option>
+              <option value="834">OPB-XBS ERO</option>
+              <option value="890">CSSO-Channel Service-NRO</option>
+              <option value="891">CSSO-ERO-ODP Service (Low End)</option>
+              <option value="893">CSSO-Channel Service-SRO</option>
+              <option value="894">CSSO-Channel Service-ERO</option>
+              <option value="930">Finance-CA-Channel(Acting)</option>
+              <option value="970">CSSO-Channel Service</option>
+              <option value="976">CSSO-ERO-HZ Branch Service</option>
+              <option value="979">CSSO-Service Planning</option>
+              <option value="1071">SDCC-Development   Unit 1</option>
+              <option value="1073">SDCC-ES2</option>
+              <option value="1075">SDCC-ES1</option>
+              <option value="1076">SDCC-CS1</option>
+              <option value="1078">SDCC-RT ESW</option>
+              <option value="1079">SDCC-QE</option>
+              <option value="1081">SDCC-CS3</option>
+              <option value="1170">OPB-ERO-Nanjing Branch</option>
+              <option value="1191">Channel & Supplies - Value (Color) Sales</option>
+              <option value="1234">PSB-East-Graphic Arts 3</option>
+              <option value="1235">OPB-ERO-Engineering System Sales</option>
+              <option value="1236">OPB-ERO-ART1-SH District1</option>
+              <option value="1237">OPB-ERO-KAT1</option>
+              <option value="1238">Channel & Supplies Operation-East Channel</option>
+              <option value="1242">BO-NRO-ART2</option>
+              <option value="1243">Channel & Supplies Operation-North Channel</option>
+              <option value="1246">BO-NRO-Remote Branch-DL</option>
+              <option value="1251">BO-SRO-ART</option>
+              <option value="1255">BO-SRO-KAT2</option>
+              <option value="1256">BO-SRO-PS</option>
+              <option value="1257">Channel & Supplies Operation-West Channel</option>
+              <option value="1261">FAO North</option>
+              <option value="1263">CSSO-PCO Service</option>
+              <option value="1264">CSSO-ES/ODP NTS</option>
+              <option value="1266">CSSO-ERO-ODP Service(High End)</option>
+              <option value="1267">CSSO-ERO-ODP Service (Low End)2</option>
+              <option value="1268">CSSO-ERO-ODP Service (Low End)1</option>
+              <option value="1269">CSSO-ERO-Color&ES Service</option>
+              <option value="1270">CSSO-ERO-PSG&Remote Service-Remote NJ</option>
+              <option value="1271">CSSO-NRO-ODP</option>
+              <option value="1272">CSSO-NRO-Color Service</option>
+              <option value="1279">CSSO-SRO-Technical Support (Acting)</option>
+              <option value="1280">CSSO-SRO-Color</option>
+              <option value="1285">CSSO-WRO-District Service-ODP/Color</option>
+              <option value="1286">CSSO-WRO-Remote</option>
+              <option value="1287">CSSO-Channel Service-WRO</option>
+              <option value="693">OPB-ERO-Hangzhou   Branch</option>
+              <option value="673">Channel & Supplies Operation-Shanghai Channel</option>
+              <option value="1309">DSO-XBS SRO</option>
+              <option value="1311">OPB-XBS Operation Support</option>
+              <option value="1312">DSO-XBS ERO-Site1</option>
+              <option value="1313">DSO-XBS ERO-Site2</option>
+              <option value="1314">DSO-XBS ERO-Site3</option>
+              <option value="1315">DSO-XBS ERO-Wuxi</option>
+              <option value="1316">DSO-XBS NRO-Site1</option>
+              <option value="1317">DSO-XBS NRO-Site2</option>
+              <option value="1318">DSO-XBS NRO-Site3</option>
+              <option value="1319">DSO-XBS NRO-Site4</option>
+              <option value="1320">DSO-XBS NRO-Site5</option>
+              <option value="1321">DSO-XBS SRO-Site1</option>
+              <option value="1322">DSO-XBS SRO-Site2</option>
+              <option value="1323">DSO-XBS SRO-Site3</option>
+              <option value="1324">DSO-XBS   SRO-Site4</option>
+              <option value="1325">XSG</option>
+              <option value="1329">PSG-SRO-Key Account GZ</option>
+              <option value="1330">PSG-SA-NRO</option>
+              <option value="1331">PSG-SA-ERO</option>
+              <option value="1332">PSG-SA-SRO</option>
+              <option value="1333">Marketing-Product   (acting)</option>
+              <option value="1335">Office Service Group</option>
+              <option value="1336">SCM-Operations-FXID Distribution</option>
+              <option value="1337">SCM-Operations-WGQ Warehouse</option>
+              <option value="1340">Finance-CA-Channel-BJ</option>
+              <option value="1788">CSSO-SRO-PSG   Service</option>
+              <option value="1342">Finance-CA-Channel-HZ</option>
+              <option value="1343">Finance-CA-Channel-CD</option>
+              <option value="1345">Channel & Supplies - Regional(Volume) Sell-out</option>
+              <option value="1346">Channel & Supplies-Field Marketing & Operation Support</option>
+              <option value="1347">Channel & Supplies-Marketing Support</option>
+              <option value="1349">OPB-XBS NRO</option>
+              <option value="1368">Finance-CA-Channel-GZ(Acting)</option>
+              <option value="1390">RO-SRO-KAT1</option>
+              <option value="1429">BO-WRO-ART(Acting)</option>
+              <option value="1489">CSSO-NRO-TJ Region Service</option>
+              <option value="1468">HR-Staffing(Acting)</option>
+              <option value="1469">HR-C & B(acting)</option>
+              <option value="1470">HR-GZ</option>
+              <option value="1471">HR-BJ-Staffing</option>
+              <option value="1488">CSSO-NRO-Operation   Support</option>
+              <option value="1490">CSSO-PCO Service-Regional Support</option>
+              <option value="1508">CSSO-Deputy Director</option>
+              <option value="1528">PSBO-Epicenter</option>
+              <option value="1548">FXSL</option>
+              <option value="1570">Admin-Driver Team</option>
+              <option value="1571">Admin-Cleaner Team</option>
+              <option value="1572">Admin-Receptionist Team</option>
+              <option value="1573">Admin-Admin. Assistant Team</option>
+              <option value="1988">China   Marketing Center</option>
+              <option value="1588">System</option>
+              <option value="1608">Finance-Field Control(Acting)</option>
+              <option value="1628">Channel & Supplies-Consumer Sales</option>
+              <option value="1648">SDCC-Development Unit   3</option>
+              <option value="1669">SDCC-ES3</option>
+              <option value="1688">CSSO-SRO-ODP   GZ</option>
+              <option value="1728">OPB-XBS Sales-BJ</option>
+              <option value="1729">L & D-BJ</option>
+              <option value="1748">SDCC-Development Unit   2</option>
+              <option value="1768">Finance-Accounting CD</option>
+              <option value="1828">OPB-XBS Sales-GZ</option>
+              <option value="1890">BO-NRO-KAT2</option>
+              <option value="1888">BO-NRO-KAT1</option>
+              <option value="1889">BO-NRO-Top   Gun</option>
+              <option value="1891">BO-NRO-XES</option>
+              <option value="2148">BO-WRO-PS   (Acting)</option>
+              <option value="1908">OPB-ERO-KAT2</option>
+              <option value="1909">OPB-ERO-ART2-SH District2</option>
+              <option value="1910">OPB-ERO-ART3-SH   District3</option>
+              <option value="1911">BO-SRO-ART1</option>
+              <option value="1928">BO-SRO-ART2</option>
+              <option value="1929">BO-SRO-ART3</option>
+              <option value="1930">BO-SRO-ART</option>
+              <option value="1912">BO-WRO-KAT2</option>
+              <option value="1913">BO-WRO-KAT1</option>
+              <option value="1915">PSB-North-Graphic   Arts3</option>
+              <option value="1916">PSB-North-ID Card Project</option>
+              <option value="1917">PSB-East (Acting)</option>
+              <option value="1918">PSB-East-Graphic Arts   2</option>
+              <option value="1919">PSB-South/West (Acting)</option>
+              <option value="1920">CSSO-ODP Service</option>
+              <option value="1922">HR-Operation</option>
+              <option value="1923">HR-SH-Staffing</option>
+              <option value="2128">BO-NRO-Remote   Branch-TJ</option>
+              <option value="1990">Marketing-A & P</option>
+              <option value="1991">One Stop Service Center(acting)</option>
+              <option value="1992">Sales   Promotion Group</option>
+              <option value="2008">Planning Group(acting)</option>
+              <option value="2129">BO-NRO-Remote Branch-SY</option>
+              <option value="2010">Marketing   Analysis Group</option>
+              <option value="2011">Marketing Support Group</option>
+              <option value="1994">OPB-ERO-CN & SW</option>
+              <option value="2168">SCM-Operations-Regional Logistics North</option>
+              <option value="2028">OPB-ERO-PS Team (Acting)</option>
+              <option value="2169">SCM-Operations-Regional Logistics South</option>
+              <option value="2049">BO-NRO-Remote Branch-QD</option>
+              <option value="2170">SCM-Operations-Regional Logistics East</option>
+              <option value="2051">Finance-Accounting GZ</option>
+              <option value="2068">FAO South</option>
+              <option value="2088">PSG-SRO-Graphic Arts CD (Acting)</option>
+              <option value="2171">SCM-Operations-Regional Logistics West</option>
+              <option value="2188">CSSO-Call Center (acting)</option>
+              <option value="2130">CSSO-ERO-PSG & Remote Service-PSG Service</option>
+              <option value="2210">CSSO-ERO-PSG & Remote Service-HZ ESG Service</option>
+              <option value="2212">CSSO-ERO-Color & ES Service-Color 32</option>
+              <option value="2213">CSSO-ERO-Color & ES Service-Color 33</option>
+              <option value="2214">CSSO-ERO-Color & ES Service-ES 30</option>
+              <option value="2218">CSSO-ERO-PSG & Remote Service-Remote WH</option>
+              <option value="2131">CSSO-SRO-Training</option>
+              <option value="2329">CSSO-NRO-SY   Region</option>
+              <option value="2328">CSSO-NRO-KA/Trainging</option>
+              <option value="2330">CSSO-NRO-BJ PSG</option>
+              <option value="2348">DSO-XBS ERO-Translation   Team</option>
+              <option value="2368">CSSO-ERO-Color & ES Service-RTS</option>
+              <option value="2369">CSSO-ERO-Color & ES Service-Material Costing   Saving</option>
+              <option value="2309">S/W Product Group</option>
+              <option value="2869">BO-SRO-Shenzhen 2 (Acting)</option>
+              <option value="2408">remote   team</option>
+              <option value="2549">CSSO-SRO-GZ ES/ASP Team1</option>
+              <option value="2409">color team</option>
+              <option value="2428">NT Technical support   center</option>
+              <option value="2448">OPB FAO</option>
+              <option value="2628">Admin-North</option>
+              <option value="2488">CSSO-ERO-ODP Service(High   End)</option>
+              <option value="2508">color team</option>
+              <option value="2528">CSSO-WRO-Training</option>
+              <option value="2529">CSSO-WRO-Remote   Team</option>
+              <option value="2530">CSSO-WRO-Metro Team (D541)</option>
+              <option value="2531">CSSO-WRO-Metro Team (D542)</option>
+              <option value="2532">CSSO-WRO-Metro   Team (D544)</option>
+              <option value="2533">CSSO-WRO-Metro Team (D548)</option>
+              <option value="2255">CSSO-WRO-Operation Support</option>
+              <option value="2256">CSSO-PCO Service-Service Admin (Acting)</option>
+              <option value="2257">CSSO-PCO Service-Technical Support (Acting)</option>
+              <option value="2258">CSSO-PSG (Acting)</option>
+              <option value="2259">CSSO-Operation   Support</option>
+              <option value="2268">XSG-Sales (Acting)</option>
+              <option value="2269">XSG-Product</option>
+              <option value="2288">PSBO-NSS</option>
+              <option value="2308">CSSO-Training-CTO</option>
+              <option value="2310">ES Product   Group</option>
+              <option value="2311">Project Group</option>
+              <option value="2550">CSSO-SRO-GZ ES/ASP Team2</option>
+              <option value="2568">FXPC</option>
+              <option value="2588">OPB-GAO-Global Business Development</option>
+              <option value="2608">Leasing - Admin & Finance</option>
+              <option value="2648">External   Affair</option>
+              <option value="2668">HR-BJ-Operation</option>
+              <option value="2669">HR-SH-Operation</option>
+              <option value="2670">HR-CD-Operation</option>
+              <option value="2671">HR managment</option>
+              <option value="2688">Telesales</option>
+              <option value="3528">CSSO-ERO-ASP Service</option>
+              <option value="2728">SDCC-Human   Resource</option>
+              <option value="2748">SDCC-SPI</option>
+              <option value="2768">SDCC-CS2</option>
+              <option value="2788">HR-GZ-Operation</option>
+              <option value="2808">Telesales-BJ</option>
+              <option value="2809">Telesales-SH</option>
+              <option value="2810">Telesales-GZ</option>
+              <option value="2828">CSSO-SRO-ODP   DG</option>
+              <option value="2868">BO-SRO-Shenzhen 1 (Acting)</option>
+              <option value="2888">BO-NRO-SA</option>
+              <option value="2908">DSO-XBS SRO-Site5</option>
+              <option value="2928">Finance-Treasurer</option>
+              <option value="2948">Finance-FP & A</option>
+              <option value="2968">Finance-Accounting-Consolidation(Acting)</option>
+              <option value="2988">IM-Assistant Manager</option>
+              <option value="3008">Channel & Supplies-South</option>
+              <option value="3028">OPB-Central   Government</option>
+              <option value="3529">CSSO-ERO-Color & ES Service-Color   31</option>
+              <option value="3088">Channel & Supplies Operation-Operation   Program</option>
+              <option value="3108">Indirect Channel Development</option>
+              <option value="3148">Planning&Contract</option>
+              <option value="3208">CSSO-Service Planning-Service System Support</option>
+              <option value="3188">HR-SH-Sales Staffing</option>
+              <option value="3228">HR-CD-Staffing</option>
+              <option value="3548">CSSO-ERO-ODP Service(High   End)-ODP 18</option>
+              <option value="3268">SCM-Operations-Regional Logistics   Operations</option>
+              <option value="3288">SDCC-Solution</option>
+              <option value="3308">OPB-ERO-Sales Support & CCS</option>
+              <option value="3328">Service   Business Project-Project</option>
+              <option value="3348">PCO-PCO Service</option>
+              <option value="3368">Pricing Management (acting)</option>
+              <option value="3369">Commission Management</option>
+              <option value="3370">Event   Support & Showroom Management</option>
+              <option value="3388">Service Business   Project-Project(acting)</option>
+              <option value="3408">CSSO-Training-Customer   Satisfaction & Operation Excellence</option>
+              <option value="3428">Operations   Support/Shanghai</option>
+              <option value="3448">SDCC-</option>
+              <option value="3449">SDCC-QCC</option>
+              <option value="3468">CSSO-ERO-Operation   Support</option>
+              <option value="3488">North Sales (BJ/TJ/Hebei)</option>
+              <option value="3549">CSSO-ERO-ODP Service(High End)-ODP 58</option>
+              <option value="3550">CSSO-ERO-ODP Service(High End)-ODP 98</option>
+              <option value="3551">CSSO-ERO-ODP Service(High End)-ODP 28</option>
+              <option value="3632">SDCC-1T</option>
+              <option value="3532">CSSO-ERO-Hire Training</option>
+              <option value="3552">BO-NRO-ART5</option>
+              <option value="3553">BO-NRO-ART3</option>
+              <option value="3554">BO-NRO-ART4</option>
+              <option value="3572">DSO-XBS NRO</option>
+              <option value="3592">CSSO-NRO-ODP</option>
+              <option value="3612">BO-NRO-PS</option>
+              <option value="3633">SDCC-2T</option>
+              <option value="3652">SDCC-3T</option>
+              <option value="3672">DSO-XBS NRO</option>
+              <option value="3692">OPB-XBS   Sales</option>
+          </select></td>
+          <td bgcolor="#F7F7F7">Date(日期)</td>
+          <td bgcolor="#F7F7F7"><input id="dtMgrDirApv2" onChange="if (!f_checkdate(this.value)){alert('日期输入错误！');this.value='';f_focus(this);}" name="dtMgrDirApv2" />
+              <img src="images/time1.gif" width="19" height="18" align="absmiddle"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#F0F0F0">Approved   By:Director<br>
+            总监批准</td>
+          <td bgcolor="#F0F0F0"><input type="text" name="textfield2" /></td>
+          <td bgcolor="#F0F0F0">Comments
+            (建议)</td>
+          <td bgcolor="#F0F0F0"><label>
+            <textarea name="textarea"></textarea>
+          </label></td>
+          <td bgcolor="#F0F0F0">Date(日期)</td>
+          <td bgcolor="#F0F0F0"><input id="dtMgrDirApv22" onChange="if (!f_checkdate(this.value)){alert('日期输入错误！');this.value='';f_focus(this);}" name="dtMgrDirApv22" />
+              <img src="images/time1.gif" width="19" height="18" align="absmiddle"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#F7F7F7">Budget   Check By P&amp;A Mgr<br />
+            财务预算审核</td>
+          <td bgcolor="#F7F7F7"><input type="text" name="textfield22" /></td>
+          <td bgcolor="#F7F7F7">Comments
+            (建议)</td>
+          <td bgcolor="#F7F7F7"><textarea name="textarea2"></textarea></td>
+          <td bgcolor="#F7F7F7">Date(日期)</td>
+          <td bgcolor="#F7F7F7"><input id="dtMgrDirApv23" onChange="if (!f_checkdate(this.value)){alert('日期输入错误！');this.value='';f_focus(this);}" name="dtMgrDirApv23" />
+              <img src="images/time1.gif" width="19" height="18" align="absmiddle"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#F0F0F0">Approved   By:Fin.Director<br />
+            财务总监批准</td>
+          <td bgcolor="#F0F0F0"><input type="text" name="textfield222" /></td>
+          <td bgcolor="#F0F0F0">Comments
+            (建议)</td>
+          <td bgcolor="#F0F0F0"><textarea name="textarea3"></textarea></td>
+          <td bgcolor="#F0F0F0">Date(日期)</td>
+          <td bgcolor="#F0F0F0"><input id="dtMgrDirApv24" onChange="if (!f_checkdate(this.value)){alert('日期输入错误！');this.value='';f_focus(this);}" name="dtMgrDirApv24" />
+              <img src="images/time1.gif" width="19" height="18" align="absmiddle"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#F7F7F7">Managing Director<br />
+            总经理批准</td>
+          <td bgcolor="#F7F7F7"><input type="text" name="textfield2222" /></td>
+          <td bgcolor="#F7F7F7">Comments
+            (建议)</td>
+          <td bgcolor="#F7F7F7"><textarea name="textarea4"></textarea></td>
+          <td bgcolor="#F7F7F7">Date(日期)</td>
+          <td bgcolor="#F7F7F7"><input id="dtMgrDirApv25" onChange="if (!f_checkdate(this.value)){alert('日期输入错误！');this.value='';f_focus(this);}" name="dtMgrDirApv25" />
+              <img src="images/time1.gif" width="19" height="18" align="absmiddle"></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  </form>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterReportScope.master.cs"
+    Inherits="CommonUI_MasterPage_MasterReportScope" %>
+
+<%@ Register Assembly="EntpClass.WebControlLib" Namespace="EntpClass.WebControlLib"
+    TagPrefix="cc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <script language="javascript" type="text/javascript">
+        // <!CDATA[
+        var SearchBtnClick = false;
+        function onformsubmit(form) {
+            if (SearchBtnClick) {
+                form.target = "_blank";
+            }
+            else {
+                form.target = "_self";
+                form.action = "";
+            }
+  
+            SearchBtnClick = false;
+            return true;
+        }
+
+        function InsertFavorate(s) {
+            WsHome.InsertScrFavorate(s, onInsertFavorate, f_wserror);
+        }
+
+        function onInsertFavorate(result) {
+            alert('收藏成功！');
+            document.getElementById('LnkFavorate').style.display = "none";
+            document.getElementById('LnkDeleteFavorate').style.display = "";
+        }
+        function DeleteFavorate(s) {
+            WsHome.DeleteScrFavorate(s, onDeleteFavorate, f_wserror);
+        }
+
+        function onDeleteFavorate(result) {
+            alert('取消收藏成功！');
+            document.getElementById('LnkFavorate').style.display = "";
+            document.getElementById('LnkDeleteFavorate').style.display = "none";
+        }
+        // ]]>
+    </script>
+    <link href="~/CommonUI/MasterPage/MasterMainWindow.css" rel="stylesheet" type="text/css" />
+    <link href="../../Home/style/reset_css.css" type="text/css" rel="stylesheet" />
+    <link href="MasterHeadStyle.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server" onsubmit="return onformsubmit(this);" style="padding-left: 8px;"
+    target="_blank">
+    <div class="MainDiv">
+        <table class="TbTitle" border="0" cellspacing="0" cellpadding="0">
+            <tr class="TbTitleR1">
+                <td align="left" valign="middle">
+                    <h2 class="titles">
+                        <span class="more">
+                            <asp:LinkButton ID="LnkFavorate" runat="server" ClientIDMode="Static">加入收藏</asp:LinkButton><asp:LinkButton
+                                ID="LnkDeleteFavorate" runat="server" ClientIDMode="Static">取消收藏</asp:LinkButton></span><strong><asp:Label
+                                    ID="LblTitle" runat="server" Text="Label"></asp:Label></strong></h2>
+                    <div class="gonglen">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <span style="vertical-align: top;">
+                        <asp:RadioButton ID="RbtIE" runat="server" GroupName="A" Checked="true" /><label
+                            for="ctl00_RbtIE"><cc1:UcImageButton ID="ImgIE" runat="server" ImageUrl="Images/1_0/ie.png"
+                                disabled="true" OnClientClick="return false;" Width="16px" Height="16px" ToolTip="IE格式"
+                                ImageAlign="Bottom" />IE</label></span>&nbsp;&nbsp; <span style="vertical-align: top;">
+                                    <asp:RadioButton ID="RbtExcel" runat="server" GroupName="A" /><label for="ctl00_RbtExcel"><cc1:UcImageButton
+                                        ID="ImgExcel" runat="server" ImageUrl="Images/1_0/excel.jpg" OnClientClick="return false;"
+                                        disabled="true" Width="16px" Height="16px" ToolTip="Excel格式" ImageAlign="Bottom" />Excel</label></span>&nbsp;&nbsp;
+                    <span style="vertical-align: top;">
+                        <asp:RadioButton ID="RbtPDF" runat="server" GroupName="A" /><label for="ctl00_RbtPDF"><cc1:UcImageButton
+                            ID="ImgPdf" runat="server" ImageUrl="Images/1_0/pdf.bmp" disabled="true" OnClientClick="return false;"
+                            Width="16px" Height="16px" ToolTip="PDF格式" ImageAlign="Bottom" />PDF</label>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <cc1:UcButton ID="BtnSearch" runat="server" ColumnName="Search" OnClientClick="SearchBtnClick=true;"
+                        Width="70px" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <asp:ScriptManager ID="WsHome" runat="server">
+        <Services>
+            <asp:ServiceReference Path="~/HOME/WsHome.asmx" />
+        </Services>
+    </asp:ScriptManager>
+    </form>
+</body>
+</html>

@@ -1,0 +1,297 @@
+﻿
+.DialogTitle {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #663300;
+}
+
+.MainTb {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline;
+    table-layout: fixed;
+}
+
+
+.TopC {
+    height: 48px;
+}
+
+.TopCTb {
+    width: 100%;
+    height: 56px;
+    position: relative;
+    display: inline;
+    background-image: url(Images/1_0/popwindow_1_2.gif);
+}
+
+.TopCTbL {
+    text-align: left;
+    width: 10px;
+    background-image: url(Images/1_0/popwindow_1_1.gif);
+}
+
+.TopCTbMTb {
+    width: 100%;
+    height: 56px;
+    position: relative;
+    display: inline;
+    background-image: url(Images/1_0/popwindow_1_2.gif);
+}
+
+.TopCTbMTbC1 {
+    width: 70px;
+    background-image: url(Images/1_0/TitleIcon.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.TopCTbR {
+    text-align: right;
+    width: 16px;
+    background-image: url(Images/1_0/popwindow_1_3.gif);
+}
+
+.TopC1 {
+    height: 32px;
+}
+
+.TopCTbCL1 {
+    text-align: left;
+    width: 10px;
+    background-image: url(Images/1_0/top_1_1.GIF);
+}
+
+.TopCTbR1 {
+    text-align: right;
+    width: 16px;
+    background-image: url(Images/1_0/top_1_2.GIF);
+}
+
+.TopCTb1 {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    position: relative;
+    display: inline;
+    table-layout: fixed;
+    background-color: #EBF2FC;
+}
+
+.MidCTb {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    position: relative;
+    display: inline;
+    table-layout: fixed;
+    background-color: #EBF2FC;
+}
+
+.MidCTbCL {
+    text-align: left;
+    width: 10px;
+}
+
+.MidCTbCR {
+    text-align: right;
+    width: 16px;
+}
+
+.BottomCTb {
+    width: 100%;
+    height: 56px;
+    position: relative;
+    display: inline;
+}
+
+.BottomCTbCL {
+    text-align: left;
+    width: 10px;
+}
+
+.BottomCTbCM {
+    text-align: right;
+    border-bottom-width: 0px;
+}
+
+.BottomCTbCR {
+    text-align: right;
+    width: 16px;
+}
+
+.TopNoTitle {
+    height: 6px;
+    background-image: url(Images/1_0/topline.JPG);
+    background-repeat: repeat-x;
+}
+
+.NoScroll {
+    overflow: visible;
+}
+
+.DivAutoScroll {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    display: inline;
+}
+
+.MasterDetailGridView {
+    margin-left: 0px;
+}
+
+.DivEditGrid {
+    width: 100%;
+    display: inline;
+    max-height: 380px;
+    min-height: 150px;
+    height: expression(440- TrDjHead.scrollHeight);
+    overflow: auto;
+}
+
+.DivViewGrid {
+    width: 940px;
+    display: inline;
+    max-height: 380px;
+    min-height: 150px;
+    height: expression(440- TrDjHead.scrollHeight);
+    overflow: auto;
+}
+
+.DivGridButton {
+    display: inline;
+}
+
+.old {
+    height: expression( this.scrollHeight + TrDjHead.scrollHeight > 470? 470- TrDjHead.scrollHeight: (this.scrollHeight < 200?  "200px" : "auto" ));
+}
+
+
+#windowBoxTit {
+    height: 48px;
+    background: url(../../Home/images/window_box_top_bg.jpg) repeat-x left -5px;
+}
+
+    #windowBoxTit h2 {
+        height: 55px;
+        font-size: 18px;
+        font-family: "微软雅黑";
+        color: #fff;
+        background: url(../../Home/images/maingreentitle.gif) repeat-x left bottom;
+    }
+
+        #windowBoxTit h2 strong {
+            height: 42px;
+            font-weight: normal;
+            background: url(../../Home/images/maingreentitle2.png) no-repeat left top;
+            display: block;
+            padding: 13px 0 0 26px;
+        }
+
+#windowBox {
+    position: relative;
+    margin: 0 auto;
+    background: url(../../Home/images/window_box_bg.jpg) repeat-y left top;
+}
+
+body {
+    margin: 0 0 0 0;
+    background-color: #EBF2FC;
+}
+
+#windowBoxFooter {
+    height: 67px;
+    position: relative;
+    display: block;
+    padding: 20px 7px 0;
+    background: url(../../Home/images/window_box_bom_bg.jpg) repeat-x left bottom;
+}
+
+    #windowBoxFooter .clear {
+        height: 28px;
+        _width: 100%;
+        position: absolute;
+        right: 7px;
+        bottom: 8px;
+        left: 7px;
+    }
+
+        #windowBoxFooter .clear span {
+            width: 482px;
+            height: 17px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+.footer1 {
+    width: 100%;
+    height: 28px;
+    margin: 0 0 0 0;
+    background: url(../../Home/images/footer_bg.jpg) repeat-x left bottom;
+}
+
+.footer2 {
+    width: 482px;
+    height: 17px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(../../Home/images/window_box_bom_bg2.jpg) no-repeat right top;
+}
+
+.btnGo a {
+    width: 85px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    text-indent: -15px;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #fff;
+    background: url(../../Home/images/green_btn.gif) no-repeat left top;
+    display: inline-block;
+    text-decoration: none;
+}
+
+    .btnGo a:hover {
+        background-position: right top;
+        text-decoration: none;
+    }
+
+
+.GreenTitles {
+    height: 1px;
+    line-height: 1px;
+    text-align: center;
+    color: #fff;
+    background: url(../../Home/images/green_title.jpg) repeat-x;
+}
+
+body {
+    margin: 0 0 0 0;
+}
+
+#BtnList {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+    #BtnList a {
+        width: 85px;
+        height: 23px;
+        line-height: 23px;
+        color: #fff;
+        background: url(../../Home/images/green_btn.gif) no-repeat left top;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+        #BtnList a:hover {
+            background-position: right top;
+            text-decoration: none;
+        }

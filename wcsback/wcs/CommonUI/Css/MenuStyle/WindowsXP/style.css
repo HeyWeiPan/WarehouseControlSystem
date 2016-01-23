@@ -1,0 +1,54 @@
+@media screen
+{
+	.CssStaticMenuStyle
+	{
+		background-color: #FFFFFF;
+		font-size: small;
+		color: blue;
+	}
+
+	.CssStaticMenuItemStyle
+	{
+		background-color: #FFFFFF;
+		font-size: small;
+		color: blue;
+	}
+
+	.CssStaticSelectedStyle
+	{
+		background-color: #FFFFFF;
+		font-size: small;
+		color: blue;
+	}
+
+	.CssStaticHoverStyle
+	{
+	}
+
+	.CssDynamicMenuStyle
+	{
+		background-color: #ffffff;
+		font-size: small;
+		font: Menu;
+		color: blue;
+	}
+
+	.CssDynamicMenuItemStyle
+	{
+		background-color: #FFFFFF;
+		font-size: small;
+		font: Menu;
+		color: Black;
+	}
+
+	.CssDynamicSelectedStyle
+	{
+		background-color: #FFFFFF;
+		font-size: small;
+		color: blue;
+	}
+
+	.CssDynamicHoverStyle
+	{
+	}
+}

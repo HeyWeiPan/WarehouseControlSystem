@@ -1,0 +1,222 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterSetupList.master.cs"
+    Inherits="MasterSetupList" %>
+
+<%@ Register Assembly="EntpClass.WebControlLib" Namespace="EntpClass.WebControlLib"
+    TagPrefix="cc1" %>
+<%@ Import Namespace="System.Data" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/CommonUI/MasterPage/MasterMainWindow.css" rel="stylesheet" type="text/css" />
+    <link href="../../Home/style/reset_css.css" type="text/css" rel="stylesheet" />
+    <link href="MasterHeadStyle.css" type="text/css" rel="stylesheet" />
+    <link href="ListStyle.css" type="text/css" rel="Stylesheet" />
+
+    <script type="text/javascript">
+        function SetPager(v) {
+            document.getElementById('HidPagerArgument').value = v;
+            __doPostBack('', '');
+        }
+        function InsertFavorate(s) {
+
+            parent.frames[0].window.InsertFavorate(s);
+
+        }
+
+        function DeleteFavorate(s) {
+            parent.frames[0].window.DeleteFavorate(s);
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="MainDiv" style="padding: 8px;">
+        <%--<table class="TbTitle" border="0" cellspacing="0" cellpadding="0">
+            <tr class="TbTitleR1">
+                <td align="left" valign="middle">
+                    <asp:Label ID="LblTitle" CssClass="PageTitle" runat="server" Text="Label"></asp:Label>
+                </td>
+                <td style="text-align: left; width: 25px;" valign="middle">
+                    <asp:Image ID="ImgHelpIcon" Visible="false" ImageUrl="~/CommonUI/MasterPage/Images/1_0/help.gif"
+                        runat="server" />
+                </td>
+                <td valign="middle" style="width: 160px;">
+                    <asp:HyperLink ID="LnkHelpTextEn" Visible="false" Target="_blank" NavigateUrl="#"
+                        runat="server">User Guide</asp:HyperLink>&nbsp;
+                    <asp:HyperLink ID="LnkHelpTextCN" Visible="false" Target="_blank" NavigateUrl="#"
+                        runat="server">操作帮助</asp:HyperLink>
+                </td>
+            </tr>
+            <tr class="TbTitleR2">
+                <td style="height: 4px" colspan="3">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    &nbsp;
+                </td>
+            </tr>
+        </table>--%>
+        <h2 class="titles">
+            <span class="more">
+                <asp:HyperLink ID="LnkHelpTextCN" Visible="false" Target="_blank" NavigateUrl="#"
+                    runat="server">操作帮助</asp:HyperLink>
+                <asp:LinkButton ID="LnkFavorate" runat="server" ClientIDMode="Static">加入收藏</asp:LinkButton><asp:LinkButton
+                    ID="LnkDeleteFavorate" runat="server" ClientIDMode="Static">取消收藏</asp:LinkButton></span><strong><asp:Label
+                        ID="LblTitle" runat="server" Text="Label"></asp:Label></strong></h2>
+        <div class="gonglen">
+            <ul>
+                <li>
+                    <cc1:UcLinkButton ID="BtnRefresh" runat="server"><img
+                        src="../../Home/images/icon06.png" />刷新</cc1:UcLinkButton>
+                </li>
+                <li>
+                    <cc1:UcLinkButton ID="BtnPrint" runat="server"><img src="../../Home/images/icon07.png" />打印
+                    </cc1:UcLinkButton>
+                </li>
+                <li>
+                    <cc1:UcLinkButton ID="BtnExport" runat="server" OnClick="BtnExport_Click"><img src="../../Home/images/icon08.png" />导到Excel</cc1:UcLinkButton>
+                </li>
+                <li>
+                    <cc1:UcLinkButton ID="BtnMultiSort" runat="server" EnableViewState="false" CausesValidation="false"
+                        OnClientClick='ShowMultiSort();return false;'><img src="../../Home/images/icon09.png" />
+                    多项排序</cc1:UcLinkButton>
+                </li>
+            </ul>
+        </div>
+        <table style="display: inline; width: 100%;" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td align="left">
+                    <table style="display: inline;" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <cc1:UcButton ID="BtnSearch" Width="80px" ColumnName="Search" runat="server" CausesValidation="False"
+                                    EnableViewState="False" OnClientClick='ShowScope();return false;' UseSubmitBehavior="False" />
+                            </td>
+                            <td>
+                                <cc1:UcButton ID="BtnAdd" Width="80px" ColumnName="Add" runat="server" CausesValidation="False"
+                                    EnableViewState="False" OnClientClick='ShowDetail("ADD");return false;' UseSubmitBehavior="False" />
+                            </td>
+                            <td>
+                                <cc1:UcButton ID="BtnView" Width="80px" ColumnName="View" runat="server" UseSubmitBehavior="False"
+                                    EnableViewState="False" CausesValidation="False" OnClientClick='ShowDetail("VIEW");return false;' />
+                            </td>
+                            <td>
+                                <cc1:UcButton ID="BtnEdit" Width="80px" ColumnName="Edit" runat="server" UseSubmitBehavior="False"
+                                    EnableViewState="False" OnClientClick='ShowDetail("EDIT");return false;' />
+                            </td>
+                            <td>
+                                <cc1:UcButton ID="BtnDelete" Width="80px" ColumnName="Delete" runat="server" UseSubmitBehavior="False"
+                                    EnableViewState="False" OnClick="BtnDelete_Click" InsureClickOnce="True" />
+                            </td>
+                            <td>
+                                <asp:PlaceHolder ID="PHButton" runat="server"></asp:PlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="right">
+                    <table style="display: inline;" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <asp:PlaceHolder ID="PLButton" runat="server"></asp:PlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%; display: inline;" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <cc1:UcGridView ID="GridList" runat="server" IsSelectable="True" AutoGenerateColumns="False"
+                        Width="100%" AllowSorting="True" AllowPaging="False" EnableViewState="False"
+                        OnClientRowDblClick='ShowDetail("VIEW")'>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </cc1:UcGridView>
+                </td>
+            </tr>
+        </table>
+        <table id="tablePagging" runat="server" cellpadding="0" cellspacing="0" style="width: 100%;
+            table-layout: fixed;">
+            <colgroup>
+                <col width="40%" />
+                <col width="60%" />
+            </colgroup>
+            <tr>
+                <td>
+                    <table id="pageFooter">
+                        <tr>
+                            <td align="left">
+                                <a href="javascript:SetPager('First');">第一页</a> | <a href="javascript:SetPager('Prev');">
+                                    &laquo;上页</a>
+                            </td>
+                            <td align="left">
+                                <asp:DataList ID="NavigateList" runat="server" RepeatDirection="Horizontal" Font-Size="9pt">
+                                    <ItemTemplate>
+                                        <asp:HyperLink ID="LinkButton" runat="server" Text='<%# Container.DataItem %>' NavigateUrl='<%# GetNavigate(Container.DataItem) %>'
+                                            Font-Size="9pt"></asp:HyperLink>
+                                    </ItemTemplate>
+                                </asp:DataList>
+                            </td>
+                            <td align="left">
+                                <a href="javascript:SetPager('Next');">下页&raquo;</a> | <a href="javascript:SetPager('Last');">
+                                    最后页</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="right" class="FooterRight">
+                    <cc1:UcLabel ID="LabCaption" runat="server" Font-Size="9pt" Text="Total Rows: " CssClass="pagerFooterText" />
+                    <cc1:UcLabel ID="lblNavigate" runat="server" Font-Size="9pt" ColumnName="GoTo" ResourceFileType="UI"
+                        CssClass="pagerFooterText" />
+                    <cc1:UcTextBox ID="txtNavigate" ClientIDMode="Static" runat="server" />
+                    <%--       <cc1:UcButton ID="btnGO" runat="server" ColumnName="Go" OnClick="btnGO_Click" OnClientClick="if (!checkNavigate()) return false;"
+                        Width="27px" Text="Go" />--%>
+                    <cc1:UcLinkButton ID="BtnGo" runat="server" OnClick="btnGO_Click" OnClientClick="if (!checkNavigate()) return false;"
+                        CssClass="btn_go" Text="Go"></cc1:UcLinkButton>&nbsp;
+                    <cc1:UcLabel ID="ForPage" runat="server" Font-Size="9pt" ColumnName="RowPage" ResourceFileType="UI"
+                        CssClass="pagerFooterText" />
+                    <asp:DropDownList ID="ddlPageRows" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlPageRows_SelectedIndexChanged">
+                        <asp:ListItem Text="10" Value="10" Selected="True"></asp:ListItem>
+                        <asp:ListItem Text="15" Value="15"></asp:ListItem>
+                        <asp:ListItem Text="20" Value="20"></asp:ListItem>
+                        <asp:ListItem Text="25" Value="25"></asp:ListItem>
+                        <asp:ListItem Text="30" Value="30"></asp:ListItem>
+                        <asp:ListItem Text="35" Value="35"></asp:ListItem>
+                        <asp:ListItem Text="40" Value="40"></asp:ListItem>
+                        <asp:ListItem Text="50" Value="50"></asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+        </table>
+        <asp:HiddenField ID="hiddenAllSortColumns" ClientIDMode="Static" runat="server" />
+        <asp:HiddenField ID="hiddenMultiSortColumns" ClientIDMode="Static" runat="server" />
+        <asp:HiddenField ID="HidPagerArgument" ClientIDMode="Static" Value="1" runat="server" />
+    </div>
+    <script type="text/javascript">
+        function checkNavigate() {
+
+            var txtNavigate = document.getElementById('txtNavigate');
+            if (trim(txtNavigate.value) == '') {
+                alert("请输入数字");
+                txtNavigate.value = '';
+                txtNavigate.focus();
+                return false;
+            }
+
+            if (isNaN(txtNavigate.value)) {
+                alert('请输入数字');
+                txtNavigate.value = '';
+                txtNavigate.focus();
+                return false;
+            }
+
+            document.getElementById('HidPagerArgument').value = txtNavigate.value;
+            txtNavigate.value = '';
+            return true;
+        }
+    </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,702 @@
+<public:component tagname="webcombo" literalcontent="true">
+	<public:property name="define" />
+	<public:property name="value" get="getValue" put="putValue" />
+	<public:property name="text" get="getText" put="putText" />
+	<public:property name="textBox" get="getTextBox"/>
+	<public:property name="readOnly" get="getReadOnly" put="setReadOnly" />
+	<public:attach event="oncontentready" onevent="oncontentready()" />
+	<public:attach event="ondocumentready" onevent="ondocumentready()" />
+	<public:event name="onchange" id="_onchange" />
+	<public:method NAME="clickRow" />
+</public:component>
+<script language="javascript">
+    var _oDefNode;
+    var _styleframe = " BORDER-RIGHT: #8080ff 1px solid; BORDER-TOP: #8080ff 1px solid; BACKGROUND: #ffffff; BORDER-LEFT: #8080ff 1px solid; BORDER-BOTTOM: #8080ff 1px solid;"
+    //var _oShare;
+    var _oInput;
+    var _oHidden;
+    var _arrRowText;
+    var _oldValue = "";
+    var _oldText = "";
+    var _isArrowClicking = false;
+    var _ready = false;
+    var _try = 10;
+    var _lfstr = "contains"; //textcolumn的过滤方式，contains or starts-with
+    var _vfstr = "contains"; //valuecolumn的过滤方式，contains or starts-with
+
+    function getValue() {
+        if (_oHidden != null)
+            return _oHidden.value;
+        else
+            return null;
+    }
+
+    function getTextBox() {
+        return _oInput;
+    }
+
+
+    function getReadOnly() {
+        return _oInput.readOnly;
+    }
+
+    function setReadOnly(val) {
+        if (_oHidden == null) {
+            setTimeout(function () { setReadOnly(val); }, 500);
+            return;
+        }
+        _oInput.readOnly = val;
+    }
+
+
+
+    var _initValue = "";
+    function putValue(val) {
+        _initValue = val;
+        putValueDelay(val);
+    }
+    function putValueDelay() {
+        if (_oHidden == null || _ready == false) {
+            setTimeout(function () { putValueDelay(); }, 500);
+            return;
+        }
+
+        //_oldValue = _oHidden.value;
+        _oldValue = _initValue;
+        _oHidden.value = _initValue;
+
+        getTextByValue();
+    }
+
+    function getText() {
+        if (_oInput != null)
+            return _oInput.value;
+        else
+            return null;
+    }
+    function putText(val) {
+        if (_oInput == null) {
+            setTimeout(function () { putText(val); }, 500);
+            return;
+        }
+        _oldText = _oInput.value;
+        _oInput.value = val;
+    }
+
+    function getTextByValue() {
+
+        //element.combo.oDs.ondataload = "";
+        if (element.combo.oDSRoot == null) {
+            if (!element.combo.oDs.iscomplete) {
+                element.combo.oDs.attachEvent("ondataload", function () { getTextByValue(); });
+                return;
+            }
+            element.combo.oDSRoot = element.combo.oDs.xmldocument.documentElement;
+        }
+        var oNode = element.combo.oDSRoot.selectSingleNode("*[" + element.combo.valuecol + "='" + _oHidden.value + "']");
+
+        _oInput.value = "";
+        if (oNode != null) {
+            var oData = oNode.selectSingleNode("./" + element.combo.textcol)
+            if (oData != null) {
+                _oInput.value = oData.text;
+            }
+        }
+
+    }
+
+    function webcomboshare() {
+        this.oDs = null;
+        this.oTbMain = null;
+        this.oSelectRow = null;
+        this.oTbFoot = null;
+        this.odivInfo = null;
+        this.totRows = null;
+        this.hasRows = 0;
+        this.perRows = 30;
+        this.firstRows = 15;
+        this.totRows = 0;
+        this.oDSRoot = null;
+        //this.oCurrNode = null;
+        //this.oNextNode = null;
+        this.oNodes = null;
+        this.filterExpr = "*";
+        this.filter = null;
+        this.listcollength = 0;
+        this.listcols = null;
+        this.valuecol = null;
+        this.textcol = null;
+        this.bHasRetrieved = false;
+        this.wpp = window.createPopup();
+        this.msg = new msg();
+        //新增下面四个属性
+        this.disabled = false;
+        this.curselectedindex = -1;
+        this.beforeselectedindex = -1;
+        this.cssclass = "";
+        this.listcolwidthlength = 0;
+        this.listcolwidths = null;
+
+        this.width = "155px";
+    }
+
+    function msg() {
+        this.loading = "Loading...";
+        this.more = "More records."
+        this.noresults = "No results found.";
+        this.retrieved = "{retrieved} of {totalrows} retrieved."
+        this.search = "Search for"
+    }
+    function p_define(val) {
+        _sDef = val;
+    }
+
+    function oncontentready() {
+
+    }
+    function ondocumentready() {
+        if (element.id == null)
+            element.id = document.uniqueID;
+        element.combo = new webcomboshare();
+        //element.combo = new webcomboshare();
+        if (!getXMLDef())
+            return;
+        drawCombo();
+        _ready = true;
+        //setTimeout(initWppData,1);
+    }
+
+    function getXMLDef() {
+        var oDef = window.document.all(define);
+        if (null == oDef) {
+            alert("Can not find combo definition!")
+            return false;
+        }
+        _oDefNode = oDef.documentElement;
+        try {
+            var sDs = _oDefNode.selectSingleNode("./data/datasource").text;
+            element.combo.oDs = window.document.all(sDs);
+
+        }
+        catch (e) {
+            alert("Can not find data source!\n" + sDs + e.toString());
+            return false;
+        }
+        if (null == element.combo.oDs) {
+            alert("Can not find data source!")
+            return false;
+        }
+
+        try {
+            element.combo.valuecol = _oDefNode.selectSingleNode("./data/value/column").text;
+            element.combo.textcol = _oDefNode.selectSingleNode("./data/text/column").text;
+            //从配置中获取disabled及cssclass属性
+            element.combo.disabled = _oDefNode.selectSingleNode("./data/disabled").text.toLowerCase();
+            element.combo.cssclass = _oDefNode.selectSingleNode("./data/cssclass").text;
+
+            element.combo.width = _oDefNode.selectSingleNode("./data/width").text;
+            _lfstr = _oDefNode.selectSingleNode("./data/lfstr").text;
+            _vfstr = _oDefNode.selectSingleNode("./data/vfstr").text;
+
+            var oCols = _oDefNode.selectNodes("./data/list/column");
+            element.combo.listcollength = oCols.length;
+            element.combo.listcols = new Array(element.combo.listcollength);
+            _arrRowText = new Array(element.combo.listcollength);
+            var valueColName = element.combo.textcol;
+            var colName = "";
+            var sFilterExpr = "*[";
+            if (_lfstr != "nofilter") {
+                for (i = 0; i < element.combo.listcollength; i++) {
+                    colName = oCols[i].text;
+                    element.combo.listcols[i] = colName;
+
+                    if (colName == valueColName && _vfstr != "nofilter") {
+                        //sFilterExpr += _vfstr;
+                        continue;
+                    }
+                    if (sFilterExpr != "*[") { sFilterExpr += " or "; }
+
+                    sFilterExpr += _lfstr;
+
+                    sFilterExpr += "(translate(" + oCols[i].text + ",'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'{?}')"
+
+                }
+            }
+            if (_vfstr != "nofilter") {
+                if (sFilterExpr != "*[") { sFilterExpr += " or "; }
+                sFilterExpr += _vfstr;
+                sFilterExpr += "(translate(" + valueColName + ",'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'),'{?}')";
+            }
+            sFilterExpr += "]";
+            element.combo.filterExpr = sFilterExpr;
+            //add 20091229
+            //获取宽度设置
+            var oColsWidth = _oDefNode.selectNodes("./data/listcolumnwidth/width");
+            element.combo.listcolwidthlength = oColsWidth.length;
+            element.combo.listcolwidths = new Array(element.combo.listcolwidthlength);
+            for (i = 0; i < element.combo.listcolwidthlength; i++) {
+                element.combo.listcolwidths[i] = oColsWidth[i].text
+            }
+        }
+        catch (e) {
+            alert("Can not bind columns!");
+            return false;
+        }
+        if (element.combo.listcollength < 1 || null == element.combo.valuecol || null == element.combo.textcol) {
+            alert("Can not bind columns!");
+            return false;
+        }
+
+        return true;
+    }
+
+    function drawCombo() {
+
+        var oSpan = window.document.createElement("span");
+        oSpan.style.cssText = _styleframe + "POSITION:relative;width:" + element.combo.width + ";HEIGHT:21px;" + this.style.cssText; //modify by lxd, 20050425
+
+        this.style.cssText = "";
+        _oInput = window.document.createElement("input");
+        _oInput.style.cssText = "BORDER-RIGHT: 0px;BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px;display:inline;FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: 宋体;PADDING-LEFT: 3px; FLOAT: left; WIDTH: 100%; PADDING-TOP: 3px; HEIGHT: 15px"
+        if (element.combo.cssclass != "") _oInput.className = element.combo.cssclass;
+        
+        _oInput.attachEvent("onkeyup", onInputKeyUp)
+        //_oInput.attachEvent("onkeydown",onInputKeyUp)
+        _oInput.attachEvent("onchange", onInputChange)
+
+
+        var oSpanlist = window.document.createElement("span");
+        oSpanlist.style.cssText = "FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #8080ff; CURSOR: hand; COLOR: #e9ebf4; FONT-FAMILY: Webdings;FLOAT: right; WIDTH: 16px; TEXT-ALIGN: center;margin-left:-16px;";
+        oSpanlist.innerText = "6";
+        if (element.combo.disabled == "false") oSpanlist.attachEvent("onclick", onArrowClick);
+
+        oSpanlist.attachEvent("onclick", onArrowClick)
+        _oInput.id = element.id + "_text";
+
+        if (element.combo.disabled == "true") _oInput.disabled = true;
+        else _oInput.disabled = false;
+
+        _oInput.name = element.id + "_text";
+        oSpan.appendChild(_oInput);
+        oSpan.appendChild(oSpanlist);
+        _oHidden = window.document.createElement("input");
+        _oHidden.type = "hidden";
+        _oHidden.id = element.id + "_value";
+        _oHidden.name = element.id + "_value";
+        oSpan.appendChild(_oHidden);
+
+        element.parentNode.insertBefore(oSpan, element);
+        //	alert(oSpan.innerHTML);
+
+
+    }
+
+
+    function onArrowClick() {
+        if (_oInput.readOnly || _oInput.disabled) {
+            return;
+        }
+        showlist(true);
+    }
+    function showlist(bIsArrowClicking) {
+        _isArrowClicking = bIsArrowClicking;
+        if (text == "") {
+            setValue("", "");
+        }
+        if (text != element.combo.filter) {
+            initWppData();
+        }
+        //对快捷窗口的初试位置进行了重新设置，原因是因为外观进行调整后原来的初试位置不再合适。
+        element.combo.wpp.show(-3, _oInput.offsetHeight + 3, 450, 220, _oInput);
+        getFirstData();
+        setTimeout(function () { try { _oInput.focus(); } catch (ex) { } }, 1);
+    }
+
+    function getFirstData(bIsArrowClicking) {
+        if (element.combo.bHasRetrieved)
+            return;
+        if (!element.combo.wpp.isOpen)
+            return;
+        setTitle(element.combo.msg.loading);
+        element.combo.oDs.ondataload = "";
+        if (element.combo.oDSRoot == null) {
+            if (!element.combo.oDs.iscomplete) {
+                element.combo.oDs.ondataload = getFirstData;
+                return;
+            }
+            element.combo.oDSRoot = element.combo.oDs.xmldocument.documentElement;
+        }
+        element.combo.oTbMain = element.combo.wpp.document.all("tbmain");
+        element.combo.oTbMain.setAttribute("clickRow", clickRow)
+        //element.combo.oTbMain.style.behavior = "url(/fxclapp/common/htc/fx_rowover.htc)";
+        //element.combo.oTbMain.striped = "false";
+        //element.combo.oTbMain.selectable = "true";
+        element.combo.oTbFoot = element.combo.wpp.document.all("tbFoot");
+        //element.combo.oCurrNode = element.combo.oDSRoot.firstChild;
+        //element.combo.oNextNode = element.combo.oCurrNode;
+        if (bIsArrowClicking) {
+            setFilteredNodes("");
+        }
+        else {
+            setFilteredNodes(text);
+        }
+        element.combo.hasRows = 0;
+        getMoreData(element.combo.firstRows);
+        element.combo.oTbFoot.onclick = getMoreData;
+        element.combo.bHasRetrieved = true;
+        //alert(element.combo.oTbMain.outerHTML);
+    }
+
+
+    function initWppData() {
+        var d = element.combo.wpp.document;
+        element.combo.oSelectRow = null;
+        d.open("text/html", "replace");
+        d.write(getPopupHTML());
+        d.close();
+        element.combo.bHasRetrieved = false;
+    }
+
+    function getPopupHTML() {
+        var s = "";
+        s += "<html>"
+        s += "<head>"
+        s += "<style>.Frame { BORDER-RIGHT: #4169e1 1px solid; BORDER-TOP: #4169e1 1px solid; BORDER-LEFT: #4169e1 1px solid; BORDER-BOTTOM: #4169e1 1px solid }"
+        s += ".main{ FONT-WEIGHT: normal; FONT-SIZE: 9pt; FONT-FAMILY: 宋体;table-layout:fixed; }"
+        s += ".ListTitle{ FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #b0c4de; COLOR: #ffffff; FONT-FAMILY: 宋体 }"
+        s += ".Row { HEIGHT: 20px }"
+        s += ".Header {  }"
+        s += ".Column { OVERFLOW: hidden; TEXT-OVERFLOW: ellipsis }"
+        s += ".SelectedRow { FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND: #000080; COLOR: #ffffff; FONT-FAMILY: 宋体; HEIGHT: 20px }"
+        s += ".foot { BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #ffffff 1px solid }"
+        s += ".footover { BORDER-RIGHT: #b0c4de 1px solid; BORDER-TOP: #b0c4de 1px solid; BACKGROUND: #e9ebf4; BORDER-LEFT: #b0c4de 1px solid; BORDER-BOTTOM: #b0c4de 1px solid }"
+        s += "tr{height:20;}</style>"
+        s += "</head>"
+        s += "<body scroll='no' class='Frame' style='margin: 0px; ' >"
+        s += "<table  class='ListTitle' cellspacing=0 cellpadding=0 style='padding: 3px; width: 100%;' >"
+        s += "<tr><td  noWrap width='100%'><span id='spanTitle' style='text-overflow: ellipsis; overflow: hidden; width: 100%'>Ready.</span></td></tr>"
+        s += "</table>"
+        s += "<div style='width:100%; height: 182px; overflow-y: auto; overflow-x: hidden' id='divInfo'>"
+        s += "<table id='tbmain' class='main' onclick='this.clickRow(window.event.srcElement,false);' cellspacing=0 cellpadding=0 style='width: 100%; cursor: default; '></table>"
+        s += "</div>"
+        s += "<table id='tbfoot' cellspacing=0 cellpadding=0 width='100%' style='cursor:hand' title='More records.' class='foot' clsOver='footOver' clsOff='foot'><tr><td align='center' style='padding: 2px' ><img src='../../CommonUI/htc/wc_more.gif' ></td></tr></table>"
+
+        //if(bReady)
+        //	s += _oDiv.innerHTML;
+        //else
+        //	s += "<div style='font-size:9pt;'>Data loading, please wait...</div>";
+        s += "</body></html>";
+
+        return s;
+    }
+
+    function clickRow(el, bIsArrowClicking) {
+        _isArrowClicking = bIsArrowClicking;
+        if (bIsArrowClicking) return;
+        if (el == null) return;
+        selectRow(GetRow(el));
+    }
+    function selectRow(oRow) {
+        if (oRow == null)
+            return;
+        try {
+            if (element.combo.oSelectRow != null) {
+
+                element.combo.oSelectRow.style.backgroundColor = "#ffffff";
+                element.combo.oSelectRow.style.color = "black";
+            }
+        }
+        catch (ex) {
+            element.combo.oSelectRow = null;
+        }
+        oRow.style.backgroundColor = "darkblue";
+        oRow.style.color = "white";
+        element.combo.oSelectRow = oRow;
+        setValue(oRow.getAttribute("text"), oRow.getAttribute("value"))
+        oRow = null;
+        if (!_isArrowClicking) {
+            element.combo.wpp.hide();
+        }
+    }
+
+    function setValue(sText, sVal) {
+        text = sText;
+        if (sVal != _oldValue) {
+            setTimeout(fireOnchangeEvent, 1);
+        }
+        value = sVal;
+        _oldValue = sVal;
+    }
+
+    function fireOnchangeEvent() {
+        var evt;
+        evt = element.document.createEventObject();
+        _onchange.fire(evt);
+
+    }
+
+    function GetRow(oElem) {
+        while (oElem) {
+            if (oElem.tagName.toLowerCase() == "tr")
+                return oElem;
+            if (oElem.tagName.toLowerCase() == "table")
+                return null;
+            oElem = oElem.parentElement;
+        }
+    }
+    /*
+    function DoMouseOver()
+    {
+    //
+    //  Find the row of the srcElement and make sure it's not the row that's
+    //  currently highlighted
+    //
+    if (!(oRow = GetRow(window.event.srcElement))) return true;
+	
+    if (oRow == oCurrRow) return true;
+    oCurrRow = oRow;
+
+    if(eval(hoverable)){
+    if (true == prop_firstrowishead){
+    if (0==oRow.rowIndex)
+    return true;
+    }
+	    
+    if (true == prop_lastrowisfoot){
+    if (oRow.rowIndex == element.rows.length - 1)
+    return true;
+    }   
+		
+    //head or foot does nothing
+
+    //  Set the variables to record the current background and color of the row    
+    sDefaultBack = oRow.currentStyle.backgroundColor;
+    sDefaultClr = oRow.currentStyle.color;
+    }
+    */
+    function setFilteredNodes(sFilter) {
+        sFilter = sFilter.toUpperCase()
+        if (sFilter == element.combo.filter)
+            return;
+        element.combo.filter = sFilter;
+        if ("" == sFilter) {
+            element.combo.oNodes = element.combo.oDSRoot.selectNodes("*");
+        }
+        else {
+            element.combo.oNodes = element.combo.oDSRoot.selectNodes(element.combo.filterExpr.replace(/{\?}/g, sFilter));
+        }
+        //element.combo.oNodes = element.combo.oDSRoot.selectNodes(element.combo.filterExpr.replace(/{\?}/g,sFilter));
+        element.combo.totRows = element.combo.oNodes.length;
+        if (0 == element.combo.totRows) {
+            value = _oldValue;
+        }
+    }
+    function getMoreData(rownum) {
+        if (rownum == null) {
+            rownum = element.combo.perRows;
+        }
+        setTitle(element.combo.msg.loading);
+        setTimeout(function () { private_getMoreData(rownum) }, 1);
+    }
+
+    function private_getMoreData(rownum) {
+        var i = 0;
+        while (element.combo.hasRows < element.combo.totRows && i < rownum) {
+            //while(!(null == element.combo.oNextNode ) ){
+            //	if(isPassFilter(element.combo.oNextNode)){
+            addRow(element.combo.oNodes[element.combo.hasRows++])
+            i++;
+            //			element.combo.oCurrNode = element.combo.oNextNode;
+            //	}
+            //		element.combo.oNextNode = element.combo.oCurrNode.nextSibling;
+        }
+        if (element.combo.hasRows == element.combo.totRows) {
+            element.combo.oTbFoot.style.display = "none";
+            if (1 == element.combo.totRows) {
+                setTimeout(function () { clickRow(element.combo.oTbMain.tBodies[0].rows[0], _isArrowClicking); }, 1);
+
+            }
+        }
+        setTitle(element.combo.msg.retrieved.replace("{retrieved}", element.combo.hasRows).replace("{totalrows}", element.combo.totRows))
+    }
+
+    function addRow(oNode) {
+        oRow = element.combo.oTbMain.insertRow(-1);
+        for (i = 0; i < element.combo.listcollength; i++) {
+            oCell = oRow.insertCell(-1);
+            //add 20091229
+            //设置List显示时的各Columns宽度
+            if (element.combo.listcolwidthlength > i) {
+                if (element.combo.listcolwidths[i].length != 0) {
+                    oCell.setAttribute("width", element.combo.listcolwidths[i]);
+                }
+            }
+            oData = oNode.selectSingleNode("./" + element.combo.listcols[i])
+            if (oData == null) {
+                oCell.innerHTML = "&nbsp;"
+            }
+            else {
+                oCell.innerText = oData.text;
+                oCell.noWrap = true;
+            }
+        }
+        oData = oNode.selectSingleNode("./" + element.combo.valuecol)
+        if (oData == null) {
+            oRow.setAttribute("value", "");
+        }
+        else {
+            oRow.setAttribute("value", oData.text);
+        }
+        oData = oNode.selectSingleNode("./" + element.combo.textcol)
+        if (oData == null) {
+            oRow.setAttribute("text", "");
+        }
+        else {
+            oRow.setAttribute("text", oData.text);
+        }
+    }
+
+    function setTitle(val) {
+        element.combo.wpp.document.all("spanTitle").innerText = val;
+    }
+
+    /*
+    function addRow(oNode){
+    var bValid=false;
+    var s= ""//element.combo.filter;
+    if(null==s || ""==s)
+    bValid=true;	
+    for(i=0;i<element.combo.listcollength;i++){
+    oData = oNode.selectSingleNode("./" + element.combo.listcols[i])	
+    if(oData==null){
+    _arrRowText[i] = "&nbsp;"
+    }
+    else{
+    _arrRowText[i] = oData.text;
+    if(!bValid){
+    if(_arrRowText[i].search(s)>=0){
+    bValid = true;
+    }
+    }
+    }
+    }
+    if(!bValid)
+    return false ;
+	
+    oRow = element.combo.oTbMain.insertRow(-1);
+    for(i=0;i<element.combo.listcollength;i++){
+    oCell = oRow.insertCell(-1);
+    oCell.innerText = _arrRowText[i];		
+    }
+    return true
+    }
+    */
+
+    // add by lxd, 20051027
+    function onInputChange() {
+        if (_oInput.value == "") {
+            setValue("", "");
+        }
+        else if (element.combo.oNodes == null) {
+            setValue("", "");
+        }
+        else if (element.combo.oNodes.length == 0) {
+            setValue("", "");
+        }
+        else {
+            oNode = element.combo.oNodes[0];
+            var oData = oNode.selectSingleNode("./" + element.combo.valuecol);
+            var sValue = "";
+            var sText = "";
+            if (oData != null) {
+                sValue = oData.text;
+            }
+
+            oData = oNode.selectSingleNode("./" + element.combo.textcol)
+            if (oData != null) {
+                sText = oData.text;
+            }
+            setValue(sText, sValue);
+        }
+    }
+
+    function onInputKeyUp() {
+
+        window.event.returnValue = true;
+        window.event.cancelBubble = true;
+
+        //下面的40行代码是新加的，处理一些键盘keydown事件，包括上下键，回车键等
+        // 同时把原来的 keyup事件更改未keydown事件。
+
+        var keyID;
+
+        keyID = event.keyCode;
+
+        if (element.combo.wpp.isOpen && (element.combo.oTbMain) && (keyID == 38 || keyID == 40)) {
+            element.combo.beforeselectedindex = element.combo.curselectedindex;
+
+            if (keyID == 38) {
+                if (element.combo.curselectedindex > 0) element.combo.curselectedindex = element.combo.curselectedindex - 1;
+            }
+            else element.combo.curselectedindex = element.combo.curselectedindex + 1;
+            if (element.combo.curselectedindex < -1) element.combo.curselectedindex = -1;
+            if (element.combo.curselectedindex == element.combo.oTbMain.rows.length) element.combo.curselectedindex = element.combo.curselectedindex - 1;
+
+            if (element.combo.oTbMain.rows.length == 0) return;
+            if (element.combo.beforeselectedindex > -1) element.combo.oTbMain.rows.item(element.combo.beforeselectedindex).className = "";
+            if (element.combo.curselectedindex > -1) element.combo.oTbMain.rows.item(element.combo.curselectedindex).className = "SelectedRow";
+            element.combo.odivInfo = element.combo.wpp.document.all("divInfo");
+            if (element.combo.curselectedindex > -1) element.combo.odivInfo.scrollTop = element.combo.oTbMain.rows.item(element.combo.curselectedindex).offsetTop;
+            return;
+        }
+
+        if (element.combo.wpp.isOpen && element.combo.oTbMain && keyID == 13) {
+            if (element.combo.curselectedindex > -1 && element.combo.oTbMain.rows.length > 0 && element.combo.oTbMain.rows.length > element.combo.curselectedindex) {
+                //setValue(element.combo.oTbMain.rows.item(element.combo.curselectedindex).getAttribute("text"),element.combo.oTbMain.rows.item(element.combo.curselectedindex).getAttribute("value"));
+                //element.combo.wpp.hide();
+                selectRow(element.combo.oTbMain.rows.item(element.combo.curselectedindex));
+                _isArrowClicking = false;
+            }
+
+            event.keyCode = 9;
+            document.body.fireEvent("onkeydown");
+            return;
+        }
+
+        if ((keyID >= 48 && keyID <= 57) || (keyID >= 65 && keyID <= 90) || (keyID == 46) || (keyID == 8)) {
+            if (element.combo.curselectedindex > -1 && element.combo.oTbMain.rows.length > element.combo.curselectedindex) element.combo.oTbMain.rows.item(element.combo.curselectedindex).className = "";
+            element.combo.curselectedindex = -1;
+            element.combo.beforeselectedindex = -1;
+        }
+        if (keyID == 34 && element.combo.wpp.isOpen) {
+            getMoreData();
+            return;
+        }
+        setTimeout(function () { showlist(false); }, 1)
+
+        return;
+    }
+
+    /*
+    var t = 0
+
+    function testFunc(){
+    //input test here
+
+    //
+    setTimeout(alertTime,1)
+    }
+    function alertTime(){
+    var d = new Date();
+    alert(d.getTime() - t );
+
+    }
+    function testspeed(){
+    var d = new Date();
+    t = d.getTime();
+
+    setTimeout(testFunc,1);
+    return ;
+    }
+    */
+</script>

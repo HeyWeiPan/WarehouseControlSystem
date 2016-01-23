@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterEmptyList.master.cs"
+    Inherits="CommonUI_MasterPage_MasterEmptyList" %>
+
+<%@ Register Assembly="EntpClass.WebControlLib" Namespace="EntpClass.WebControlLib"
+    TagPrefix="cc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/CommonUI/MasterPage/MasterMainWindow.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        // <!CDATA[
+
+        function window_onkeydown() {
+            f_onenterkeydown();
+        }
+
+        // ]]>
+    </script>
+</head>
+<body onkeydown="return window_onkeydown()">
+    <form id="form1" runat="server">
+    <div>
+        <table style="width: 100%; display: inline; table-layout: fixed;" cellpadding="0"
+            cellspacing="0">
+            <tr style="height: 40px;">
+                <td>
+                    <table class="TbTitle" border="0" cellspacing="0" cellpadding="0">
+                        <tr class="TbTitleR1">
+                            <td align="left" valign="middle">
+                                <asp:Label ID="LblTitle" CssClass="PageTitle" runat="server" Text="Label"></asp:Label>
+                            </td>
+                            <td style="text-align: left; width: 25px;" valign="middle">
+                                <asp:Image ID="ImgHelpIcon" Visible="false" ImageUrl="~/CommonUI/MasterPage/Images/1_0/help.gif"
+                                    runat="server" />
+                            </td>
+                            <td valign="middle" style="width: 160px;">
+                                <asp:HyperLink ID="LnkHelpTextEn" Visible="false" Target="_blank" NavigateUrl="#"
+                                    runat="server">User Guide</asp:HyperLink>&nbsp;
+                                <asp:HyperLink ID="LnkHelpTextCN" Visible="false" Target="_blank" NavigateUrl="#"
+                                    runat="server">操作帮助</asp:HyperLink>
+                            </td>
+                        </tr>
+                        <tr class="TbTitleR2">
+                            <td style="height: 4px" colspan="3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table style="display: inline; width: 100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td style="height: 24px">
+                                <cc1:UcButton ID="BtnSearch" Width="80px" ColumnName="Search" runat="server" CausesValidation="False"
+                                    EnableViewState="False" OnClientClick='ShowScope();return false;' UseSubmitBehavior="False" />
+                                <cc1:UcButton ID="BtnRefresh" Width="80px" ColumnName="Refresh" runat="server" UseSubmitBehavior="False"
+                                    EnableViewState="False" InsureClickOnce="True" OnClick="BtnRefresh_Click" />
+                                <asp:ContentPlaceHolder ID="C1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                            <td style="text-align: right">
+                                <cc1:UcButton ID="BtnPrint" ColumnName="Print" runat="server" OnClick="BtnPrint_Click"
+                                    Width="60px" UseSubmitBehavior="False" />
+                                <cc1:UcButton ID="BtnExport" ColumnName="ExportExcel" runat="server" OnClick="BtnExport_Click"
+                                    UseSubmitBehavior="False" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="DivAutoScroll">
+                        <asp:ContentPlaceHolder ID="C2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <cc1:UcGridView ID="GridList" runat="server" Visible="false" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

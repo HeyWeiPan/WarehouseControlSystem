@@ -1,0 +1,71 @@
+﻿#pageFooter
+{
+    padding-left: 10px;
+    color: #007069;
+}
+#pageFooter a
+{
+    color: #007069;
+    padding: 1px 3px;
+}
+
+#pageFooter a:hover
+{
+    color: #fff;
+    background-color: #36c0aa;
+    text-decoration: none;
+}
+.pagerFooterText
+{
+    color: #007069;
+}
+.btn_go
+{
+    vertical-align: middle;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    width: 47px;
+    height: 26px;
+    text-align: left;
+    text-indent: 7px;
+    font-family: arial, helvetica, sans-serif;
+    background: url(../../Home/images/btn_go.gif) no-repeat left 2px;
+    border: 0;
+    color: #007069;
+}
+.btn_go:hover
+{
+    color: #fff;
+    vertical-align: middle;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    width: 47px;
+    height: 26px;
+    text-align: left;
+    text-indent: 7px;
+    font-family: arial, helvetica, sans-serif;
+    background: url(../../Home/images/btn_go.gif) no-repeat left -31px;
+    border: 0;
+    text-decoration: none;
+}
+.FooterRight input
+{
+    width: 60px;
+    height: 20px;
+    border: 1px solid #ccc;
+}
+.TrBg
+{
+    background-color: #ebebeb;
+    font-size: 14px;
+    color: #007069;
+    border-bottom-width: 0px;
+}
+
+.GridLink a
+{
+    color: blue;
+}
+

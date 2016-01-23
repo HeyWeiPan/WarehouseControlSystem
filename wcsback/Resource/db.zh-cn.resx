@@ -1,0 +1,6210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="academic_degree" xml:space="preserve">
+    <value>Degree</value>
+  </data>
+  <data name="acceptance_result" xml:space="preserve">
+    <value>验收结果</value>
+  </data>
+  <data name="accident_date" xml:space="preserve">
+    <value>事故时间</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="accommodation_fee" xml:space="preserve">
+    <value>食宿费</value>
+  </data>
+  <data name="account" xml:space="preserve">
+    <value>帐户名</value>
+  </data>
+  <data name="account_no" xml:space="preserve">
+    <value>银行帐号</value>
+  </data>
+  <data name="account_of_employee" xml:space="preserve">
+    <value>设置员工帐户</value>
+  </data>
+  <data name="achieved_certificate_date" xml:space="preserve">
+    <value>证书颁发日期</value>
+  </data>
+  <data name="achieved_certificate_name" xml:space="preserve">
+    <value>证书名称</value>
+  </data>
+  <data name="achieved_certificate_number" xml:space="preserve">
+    <value>证书编号</value>
+  </data>
+  <data name="achieved_certificate_validate" xml:space="preserve">
+    <value>证书有效期</value>
+  </data>
+  <data name="acl_pay_users" xml:space="preserve">
+    <value>实际参与人数</value>
+  </data>
+  <data name="acompany_user_name" xml:space="preserve">
+    <value>乘车人</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="act_location" xml:space="preserve">
+    <value>地点</value>
+  </data>
+  <data name="act_purpose" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="action_by" xml:space="preserve">
+    <value>操作人</value>
+  </data>
+  <data name="action_date" xml:space="preserve">
+    <value>操作时间</value>
+  </data>
+  <data name="action_date_from" xml:space="preserve">
+    <value>操作时间从</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="action_name" xml:space="preserve">
+    <value>销售员</value>
+  </data>
+  <data name="action_type" xml:space="preserve">
+    <value>操作类型</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="action_user_id" xml:space="preserve">
+    <value>经办人</value>
+  </data>
+  <data name="actions" xml:space="preserve">
+    <value>操作</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="active_flag" xml:space="preserve">
+    <value>当前绩效?</value>
+  </data>
+  <data name="actual_amount" xml:space="preserve">
+    <value>实际金额</value>
+  </data>
+  <data name="actual_complete_date" xml:space="preserve">
+    <value>实际结束日期</value>
+  </data>
+  <data name="actual_complete_percent" xml:space="preserve">
+    <value>实际完成%</value>
+  </data>
+  <data name="actual_complete_rate" xml:space="preserve">
+    <value>实际完成(%)</value>
+  </data>
+  <data name="actual_end_date" xml:space="preserve">
+    <value>实际结束日期</value>
+  </data>
+  <data name="actual_job_description" xml:space="preserve">
+    <value>实际完成情况</value>
+  </data>
+  <data name="actual_leave_date" xml:space="preserve">
+    <value>实际离职日期</value>
+  </data>
+  <data name="actual_ll_qty" xml:space="preserve">
+    <value>领用数量</value>
+  </data>
+  <data name="actual_lltrk_qty" xml:space="preserve">
+    <value>实际入库数量</value>
+  </data>
+  <data name="actual_no" xml:space="preserve">
+    <value>手工单号</value>
+  </data>
+  <data name="actual_plan_rate" xml:space="preserve">
+    <value>完成率(%)</value>
+  </data>
+  <data name="actual_price" xml:space="preserve">
+    <value>实际单价</value>
+  </data>
+  <data name="actual_return" xml:space="preserve">
+    <value>实际归车时间</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="actual_start" xml:space="preserve">
+    <value>实际出车时间</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="actual_start_date" xml:space="preserve">
+    <value>实际开始日期</value>
+  </data>
+  <data name="actual_tax" xml:space="preserve">
+    <value>实际税额</value>
+  </data>
+  <data name="actual_training_days" xml:space="preserve">
+    <value>实际培训天数</value>
+  </data>
+  <data name="actualcheck_qty" xml:space="preserve">
+    <value>实际检验数量</value>
+  </data>
+  <data name="add_fee" xml:space="preserve">
+    <value>增加费用</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="adjust_amount" xml:space="preserve">
+    <value>调整金额</value>
+  </data>
+  <data name="adjust_cost" xml:space="preserve">
+    <value>调节金额</value>
+  </data>
+  <data name="adjust_period_id" xml:space="preserve">
+    <value>调整期间</value>
+  </data>
+  <data name="adjust_remark" xml:space="preserve">
+    <value>调整备注</value>
+  </data>
+  <data name="adjust_score" xml:space="preserve">
+    <value>调整分数</value>
+  </data>
+  <data name="adjust_tax" xml:space="preserve">
+    <value>调整税额</value>
+  </data>
+  <data name="adult_count" xml:space="preserve">
+    <value>成人数</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="age" xml:space="preserve">
+    <value>年龄</value>
+  </data>
+  <data name="age_request" xml:space="preserve">
+    <value>年龄要求</value>
+  </data>
+  <data name="ageanalysis" xml:space="preserve">
+    <value>账龄分析期</value>
+  </data>
+  <data name="already_pay_amount" xml:space="preserve">
+    <value>已还金额</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="amcv" xml:space="preserve">
+    <value>AMCV</value>
+  </data>
+  <data name="amount" xml:space="preserve">
+    <value>金额</value>
+  </data>
+  <data name="ap_amount" xml:space="preserve">
+    <value>应付金额</value>
+  </data>
+  <data name="ap_item_description" xml:space="preserve">
+    <value>应付单描述</value>
+  </data>
+  <data name="app_name" xml:space="preserve">
+    <value>应用程序名称</value>
+  </data>
+  <data name="app_type_code" xml:space="preserve">
+    <value>表单类型</value>
+  </data>
+  <data name="app_type_name" xml:space="preserve">
+    <value>表单类型名称</value>
+  </data>
+  <data name="applicant" xml:space="preserve">
+    <value>申请人</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="applicant_date" xml:space="preserve">
+    <value>申请日期</value>
+  </data>
+  <data name="applicant_description" xml:space="preserve">
+    <value>申请事由</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="applicant_name" xml:space="preserve">
+    <value>申请人</value>
+  </data>
+  <data name="applicant_team_id" xml:space="preserve">
+    <value>申请部门</value>
+  </data>
+  <data name="application" xml:space="preserve">
+    <value>使用状况</value>
+  </data>
+  <data name="application_code" xml:space="preserve">
+    <value>Application Code</value>
+  </data>
+  <data name="application_date" xml:space="preserve">
+    <value>申请日期</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="application_date_from" xml:space="preserve">
+    <value>申请时间从</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="application_detail" xml:space="preserve">
+    <value>详细内容</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="application_id" xml:space="preserve">
+    <value>Application ID</value>
+  </data>
+  <data name="approve_date" xml:space="preserve">
+    <value> 批准日期</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="ar_amount" xml:space="preserve">
+    <value>应收金额</value>
+  </data>
+  <data name="ar_item_description" xml:space="preserve">
+    <value>应收单描述</value>
+  </data>
+  <data name="arrive_address" xml:space="preserve">
+    <value>到达地点</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="artifact_price" xml:space="preserve">
+    <value>加工费</value>
+  </data>
+  <data name="artifi_cost" xml:space="preserve">
+    <value>人工成本</value>
+  </data>
+  <data name="artifi_fee" xml:space="preserve">
+    <value>人工费用</value>
+  </data>
+  <data name="artifi_fixed_cost" xml:space="preserve">
+    <value>工资费用</value>
+  </data>
+  <data name="artifi_fixed_fee" xml:space="preserve">
+    <value>工资费用</value>
+  </data>
+  <data name="artifi_flexible_cost" xml:space="preserve">
+    <value>福利费用</value>
+  </data>
+  <data name="artifi_flexible_fee" xml:space="preserve">
+    <value>福利费用</value>
+  </data>
+  <data name="assign_to" xml:space="preserve">
+    <value>被授权人</value>
+  </data>
+  <data name="assist_team_charged_cost" xml:space="preserve">
+    <value>分摊辅助车间费用</value>
+  </data>
+  <data name="assist_team_charged_fee" xml:space="preserve">
+    <value>分摊辅助车间费用</value>
+  </data>
+  <data name="assist_team_charged_rate" xml:space="preserve">
+    <value>分摊比例</value>
+  </data>
+  <data name="assist_team_empcount" xml:space="preserve">
+    <value>车间总人数</value>
+  </data>
+  <data name="assist_team_total_fee" xml:space="preserve">
+    <value>辅助车间总费用</value>
+  </data>
+  <data name="assist_team_total_fee_adjust" xml:space="preserve">
+    <value>分摊调整额</value>
+  </data>
+  <data name="attach_employee" xml:space="preserve">
+    <value>共同参与者</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="attachment" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="attachment_notify_flag" xml:space="preserve">
+    <value>附件发布</value>
+  </data>
+  <data name="attence_code" xml:space="preserve">
+    <value>考勤单号</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="attribute" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="audit_date" xml:space="preserve">
+    <value>核准日期</value>
+  </data>
+  <data name="audit_user" xml:space="preserve">
+    <value>核准人</value>
+  </data>
+  <data name="audit_user_name" xml:space="preserve">
+    <value>核准人</value>
+  </data>
+  <data name="audit1_user_name" xml:space="preserve">
+    <value>核准人1</value>
+  </data>
+  <data name="audit2_user_name" xml:space="preserve">
+    <value>核准人2</value>
+  </data>
+  <data name="audit3_date" xml:space="preserve">
+    <value>核准日期</value>
+  </data>
+  <data name="audit3_user_name" xml:space="preserve">
+    <value>核准人3</value>
+  </data>
+  <data name="auto_calc_flag" xml:space="preserve">
+    <value>系统自动生成</value>
+  </data>
+  <data name="available_llt_qty" xml:space="preserve">
+    <value>可退数量</value>
+  </data>
+  <data name="avg_score" xml:space="preserve">
+    <value>平均得分</value>
+  </data>
+  <data name="b_code" xml:space="preserve">
+    <value>BOM编码</value>
+  </data>
+  <data name="b_name" xml:space="preserve">
+    <value>BOM名称</value>
+  </data>
+  <data name="bank_account" xml:space="preserve">
+    <value>帐号</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="bank_address" xml:space="preserve">
+    <value>银行地址</value>
+  </data>
+  <data name="bank_name" xml:space="preserve">
+    <value>开户银行名称</value>
+  </data>
+  <data name="bank_no" xml:space="preserve">
+    <value>银行帐号</value>
+  </data>
+  <data name="bankbook_account" xml:space="preserve">
+    <value>银行存折帐号</value>
+  </data>
+  <data name="bankcard_account" xml:space="preserve">
+    <value>银行卡卡号</value>
+  </data>
+  <data name="bankcard_code" xml:space="preserve">
+    <value>银行代码</value>
+  </data>
+  <data name="bankcard_usetype" xml:space="preserve">
+    <value>账户用途</value>
+  </data>
+  <data name="baojia_item_name" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="bar_code" xml:space="preserve">
+    <value>条码</value>
+  </data>
+  <data name="basic_id" xml:space="preserve">
+    <value>车辆编号</value>
+  </data>
+  <data name="batch_control_flag" xml:space="preserve">
+    <value>批号控制</value>
+  </data>
+  <data name="batch_no" xml:space="preserve">
+    <value>批号</value>
+  </data>
+  <data name="batch_no_control_flag" xml:space="preserve">
+    <value>批号控制</value>
+  </data>
+  <data name="batch_num_prefix" xml:space="preserve">
+    <value>批号前缀</value>
+  </data>
+  <data name="batch_num_start" xml:space="preserve">
+    <value>起始批号</value>
+  </data>
+  <data name="batchno" xml:space="preserve">
+    <value>批号</value>
+  </data>
+  <data name="begin_amount" xml:space="preserve">
+    <value>初始金额</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="begin_kilometer" xml:space="preserve">
+    <value>初始公里数</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="beneficiary_by" xml:space="preserve">
+    <value>受益人</value>
+  </data>
+  <data name="bill_to_flag" xml:space="preserve">
+    <value>开票地址</value>
+  </data>
+  <data name="billto_site_name" xml:space="preserve">
+    <value>开票地址名称</value>
+  </data>
+  <data name="billto_site_num" xml:space="preserve">
+    <value>开票地址编号</value>
+  </data>
+  <data name="birth_place_geo_id" xml:space="preserve">
+    <value>出生地</value>
+  </data>
+  <data name="birthday" xml:space="preserve">
+    <value>出生日期</value>
+  </data>
+  <data name="bom_code" xml:space="preserve">
+    <value>标准BOM编码</value>
+  </data>
+  <data name="bom_desc" xml:space="preserve">
+    <value>标准BOM描述</value>
+  </data>
+  <data name="bom_name" xml:space="preserve">
+    <value>标准BOM名称</value>
+  </data>
+  <data name="book_fee" xml:space="preserve">
+    <value>书本费</value>
+  </data>
+  <data name="branch_bank_name" xml:space="preserve">
+    <value>分支银行名称</value>
+  </data>
+  <data name="brand" xml:space="preserve">
+    <value>品牌</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="brand_id" xml:space="preserve">
+    <value>品牌</value>
+  </data>
+  <data name="brand_name" xml:space="preserve">
+    <value>品牌</value>
+  </data>
+  <data name="brank_name" xml:space="preserve">
+    <value>开户银行</value>
+  </data>
+  <data name="break_rule_date" xml:space="preserve">
+    <value>违章日期</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="break_rule_type" xml:space="preserve">
+    <value>违章类型</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="build_date" xml:space="preserve">
+    <value>生成日期</value>
+  </data>
+  <data name="build_user_name" xml:space="preserve">
+    <value>生成人</value>
+  </data>
+  <data name="course_required_flag" xml:space="preserve">
+    <value>必修课程</value>
+  </data>
+  <data name="estab_address2" xml:space="preserve">
+    <value>地址2</value>
+  </data>
+  <data name="hr_user_reward" xml:space="preserve">
+    <value>奖赏</value>
+  </data>
+  <data name="language_certificate" xml:space="preserve">
+    <value>语言证书</value>
+  </data>
+  <data name="needattachment_flag" xml:space="preserve">
+    <value>是否需要上传附件</value>
+  </data>
+  <data name="pinyin" xml:space="preserve">
+    <value>拼音</value>
+  </data>
+  <data name="remarkm_fullname" xml:space="preserve">
+    <value>备注/物料描述</value>
+  </data>
+  <data name="suggestline_id" xml:space="preserve">
+    <value>建议行程编号</value>
+  </data>
+  <data name="user_expect_help" xml:space="preserve">
+    <value>3.您希望从您主管那里得到哪些帮助和支持？</value>
+  </data>
+  <data name="erp_dj_name" xml:space="preserve">
+    <value>ERP单据名称</value>
+  </data>
+  <data name="exchange_flag" xml:space="preserve">
+    <value>汇兑损失计算</value>
+  </data>
+  <data name="expense_flag" xml:space="preserve">
+    <value>间接费用标识</value>
+  </data>
+  <data name="fax_no" xml:space="preserve">
+    <value>传真号</value>
+  </data>
+  <data name="figl_je" xml:space="preserve">
+    <value>财务金额</value>
+  </data>
+  <data name="figl_year" xml:space="preserve">
+    <value>会计年度</value>
+  </data>
+  <data name="figlyear" xml:space="preserve">
+    <value>会计年度</value>
+  </data>
+  <data name="fl_je" xml:space="preserve">
+    <value>分录金额</value>
+  </data>
+  <data name="function_code" xml:space="preserve">
+    <value>函数</value>
+  </data>
+  <data name="function_param_code" xml:space="preserve">
+    <value>参数代码</value>
+  </data>
+  <data name="function_param_def" xml:space="preserve">
+    <value>参数值</value>
+  </data>
+  <data name="function_param_name" xml:space="preserve">
+    <value>参数名称</value>
+  </data>
+  <data name="function_param_type" xml:space="preserve">
+    <value>参数类型</value>
+  </data>
+  <data name="gl_kmdm" xml:space="preserve">
+    <value>总账科目代码</value>
+  </data>
+  <data name="gl_qc_dfe" xml:space="preserve">
+    <value>总账期初货方额</value>
+  </data>
+  <data name="gl_qc_jfe" xml:space="preserve">
+    <value>总账期初借方额</value>
+  </data>
+  <data name="gl_qc_ye" xml:space="preserve">
+    <value>总账期初余额</value>
+  </data>
+  <data name="gl_snjze" xml:space="preserve">
+    <value>总账上年结转额</value>
+  </data>
+  <data name="handle_type_name" xml:space="preserve">
+    <value>处置类型</value>
+  </data>
+  <data name="huowei_control_flag" xml:space="preserve">
+    <value>货位控制</value>
+  </data>
+  <data name="include_unpass" xml:space="preserve">
+    <value>包含未记账</value>
+  </data>
+  <data name="interface_function_code" xml:space="preserve">
+    <value>接口函数代码</value>
+  </data>
+  <data name="interface_je" xml:space="preserve">
+    <value>外系统金额</value>
+  </data>
+  <data name="interface_module" xml:space="preserve">
+    <value>ERP系统模块</value>
+  </data>
+  <data name="is_level" xml:space="preserve">
+    <value>是否分类</value>
+  </data>
+  <data name="is_public_flag" xml:space="preserve">
+    <value>是否公用</value>
+  </data>
+  <data name="itemclass_code" xml:space="preserve">
+    <value>项目类别代码</value>
+  </data>
+  <data name="itemclass_id" xml:space="preserve">
+    <value>项目类别代码</value>
+  </data>
+  <data name="itemclass_name" xml:space="preserve">
+    <value>项目类别名称</value>
+  </data>
+  <data name="j" xml:space="preserve">
+    <value>借</value>
+  </data>
+  <data name="jd_c" xml:space="preserve">
+    <value>余额方向</value>
+  </data>
+  <data name="jd1" xml:space="preserve">
+    <value>借贷</value>
+  </data>
+  <data name="jd2" xml:space="preserve">
+    <value>借贷</value>
+  </data>
+  <data name="jdc" xml:space="preserve">
+    <value>余额方向</value>
+  </data>
+  <data name="jdc_1" xml:space="preserve">
+    <value>借贷</value>
+  </data>
+  <data name="jdc_2" xml:space="preserve">
+    <value>借贷</value>
+  </data>
+  <data name="jiez_date" xml:space="preserve">
+    <value>结转日期</value>
+  </data>
+  <data name="jiez_name" xml:space="preserve">
+    <value>结转人员</value>
+  </data>
+  <data name="joural_flag" xml:space="preserve">
+    <value>日记帐</value>
+  </data>
+  <data name="js_code" xml:space="preserve">
+    <value>结算方式代码</value>
+  </data>
+  <data name="js_name" xml:space="preserve">
+    <value>结算方式</value>
+  </data>
+  <data name="jxrk_dj_id" xml:space="preserve">
+    <value>检修入库单号</value>
+  </data>
+  <data name="jxrk_dj_no" xml:space="preserve">
+    <value>检修入库单号</value>
+  </data>
+  <data name="jz" xml:space="preserve">
+    <value>结转</value>
+  </data>
+  <data name="jz_date" xml:space="preserve">
+    <value>记账日期</value>
+  </data>
+  <data name="jz_user_name" xml:space="preserve">
+    <value>记账人</value>
+  </data>
+  <data name="kmbmgs" xml:space="preserve">
+    <value>科目编码格式</value>
+  </data>
+  <data name="kmbs_code" xml:space="preserve">
+    <value>科目标识代码</value>
+  </data>
+  <data name="kmbs_id" xml:space="preserve">
+    <value>科目标识</value>
+  </data>
+  <data name="kmbs_name" xml:space="preserve">
+    <value>科目标识</value>
+  </data>
+  <data name="kmclass" xml:space="preserve">
+    <value>科目类别</value>
+  </data>
+  <data name="kmclass_code" xml:space="preserve">
+    <value>科目类别代码</value>
+  </data>
+  <data name="kmclass_id" xml:space="preserve">
+    <value>科目类别</value>
+  </data>
+  <data name="kmclass_name" xml:space="preserve">
+    <value>科目类别</value>
+  </data>
+  <data name="kmdm_extend" xml:space="preserve">
+    <value>科目代码</value>
+  </data>
+  <data name="kmdm_level" xml:space="preserve">
+    <value>科目级别</value>
+  </data>
+  <data name="kmdmtotalcount" xml:space="preserve">
+    <value>科目代码数:</value>
+  </data>
+  <data name="kmmc" xml:space="preserve">
+    <value>科目名称</value>
+  </data>
+  <data name="kmmc_extend" xml:space="preserve">
+    <value>科目名称</value>
+  </data>
+  <data name="kmxz" xml:space="preserve">
+    <value>科目性质</value>
+  </data>
+  <data name="kmxz_code" xml:space="preserve">
+    <value>科目性质代码</value>
+  </data>
+  <data name="kmxz_id" xml:space="preserve">
+    <value>科目性质</value>
+  </data>
+  <data name="kmxz_name" xml:space="preserve">
+    <value>科目性质名称</value>
+  </data>
+  <data name="left_prepay_amount" xml:space="preserve">
+    <value>剩余冲销金额</value>
+  </data>
+  <data name="left_prereceive_amount" xml:space="preserve">
+    <value>可冲销金额</value>
+  </data>
+  <data name="level_max_length" xml:space="preserve">
+    <value>每级最大长度</value>
+  </data>
+  <data name="level1" xml:space="preserve">
+    <value>第1级</value>
+  </data>
+  <data name="level2" xml:space="preserve">
+    <value>第2级</value>
+  </data>
+  <data name="level3" xml:space="preserve">
+    <value>第3级</value>
+  </data>
+  <data name="level4" xml:space="preserve">
+    <value>第4级</value>
+  </data>
+  <data name="level5" xml:space="preserve">
+    <value>第5级</value>
+  </data>
+  <data name="level6" xml:space="preserve">
+    <value>第6级</value>
+  </data>
+  <data name="level7" xml:space="preserve">
+    <value>第7级</value>
+  </data>
+  <data name="level8" xml:space="preserve">
+    <value>第8级</value>
+  </data>
+  <data name="level9" xml:space="preserve">
+    <value>第9级</value>
+  </data>
+  <data name="link_dj_sys_type_name" xml:space="preserve">
+    <value>关联单据类型名称</value>
+  </data>
+  <data name="linkman" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="lj_dfe" xml:space="preserve">
+    <value>累计贷方额</value>
+  </data>
+  <data name="lj_jfe" xml:space="preserve">
+    <value>累计借方额</value>
+  </data>
+  <data name="m_dfe" xml:space="preserve">
+    <value>贷方金额</value>
+  </data>
+  <data name="m_jfe" xml:space="preserve">
+    <value>借方金额</value>
+  </data>
+  <data name="m_ye" xml:space="preserve">
+    <value>余额</value>
+  </data>
+  <data name="mark_date" xml:space="preserve">
+    <value>制单日期</value>
+  </data>
+  <data name="mark_user_name" xml:space="preserve">
+    <value>制单人</value>
+  </data>
+  <data name="max_length" xml:space="preserve">
+    <value>最大长度</value>
+  </data>
+  <data name="max_level" xml:space="preserve">
+    <value>最大级数</value>
+  </data>
+  <data name="memory" xml:space="preserve">
+    <value>助记码</value>
+  </data>
+  <data name="mspare_code" xml:space="preserve">
+    <value>余度类别</value>
+  </data>
+  <data name="mspare_name" xml:space="preserve">
+    <value>余度类别</value>
+  </data>
+  <data name="mspare_ratio_flag" xml:space="preserve">
+    <value>是否百分比控制</value>
+  </data>
+  <data name="mspare_target_id" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="mspare_target_name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="mspare_value" xml:space="preserve">
+    <value>余度值</value>
+  </data>
+  <data name="n_kmdm1" xml:space="preserve">
+    <value>必无科目1</value>
+  </data>
+  <data name="n_kmdm2" xml:space="preserve">
+    <value>必无科目2</value>
+  </data>
+  <data name="n_type" xml:space="preserve">
+    <value>必无科目条件</value>
+  </data>
+  <data name="nb_price" xml:space="preserve">
+    <value>内部结算价</value>
+  </data>
+  <data name="new_asset_place_id" xml:space="preserve">
+    <value>现存放位置</value>
+  </data>
+  <data name="new_asset_place_name" xml:space="preserve">
+    <value>现存放位置</value>
+  </data>
+  <data name="new_asset_site_id" xml:space="preserve">
+    <value>现存放地点</value>
+  </data>
+  <data name="new_asset_site_name" xml:space="preserve">
+    <value>现存放地点</value>
+  </data>
+  <data name="new_asset_team_id" xml:space="preserve">
+    <value>现使用部门</value>
+  </data>
+  <data name="new_asset_team_name" xml:space="preserve">
+    <value>现使用部门</value>
+  </data>
+  <data name="new_cost_team_id" xml:space="preserve">
+    <value>现费用承担部门</value>
+  </data>
+  <data name="new_cost_team_name" xml:space="preserve">
+    <value>现费用承担部门</value>
+  </data>
+  <data name="new_fen_duan1" xml:space="preserve">
+    <value>分段内(新)</value>
+  </data>
+  <data name="new_fen_duan2" xml:space="preserve">
+    <value>分段中(新)</value>
+  </data>
+  <data name="new_fen_duan3" xml:space="preserve">
+    <value>分段外(新)</value>
+  </data>
+  <data name="new_site_place_name" xml:space="preserve">
+    <value>现存放位置</value>
+  </data>
+  <data name="new_store_user_id" xml:space="preserve">
+    <value>现保管员</value>
+  </data>
+  <data name="new_store_user_name" xml:space="preserve">
+    <value>现保管员</value>
+  </data>
+  <data name="no_include_zero" xml:space="preserve">
+    <value>不包含余额零</value>
+  </data>
+  <data name="old_asset_team_id" xml:space="preserve">
+    <value>原使用部门</value>
+  </data>
+  <data name="old_asset_team_name" xml:space="preserve">
+    <value>原使用部门</value>
+  </data>
+  <data name="old_cost_center" xml:space="preserve">
+    <value>原成本中心</value>
+  </data>
+  <data name="old_cost_team_id" xml:space="preserve">
+    <value>原费用承担部门</value>
+  </data>
+  <data name="old_cost_team_name" xml:space="preserve">
+    <value>原费用承担部门</value>
+  </data>
+  <data name="old_fen_duan1" xml:space="preserve">
+    <value>分段内(原)</value>
+  </data>
+  <data name="old_fen_duan2" xml:space="preserve">
+    <value>分段中(原)</value>
+  </data>
+  <data name="old_fen_duan3" xml:space="preserve">
+    <value>分段外(原)</value>
+  </data>
+  <data name="old_site_place_name" xml:space="preserve">
+    <value>原存放位置</value>
+  </data>
+  <data name="old_store_user_id" xml:space="preserve">
+    <value>原保管员</value>
+  </data>
+  <data name="old_store_user_name" xml:space="preserve">
+    <value>原保管员</value>
+  </data>
+  <data name="order_dj_no" xml:space="preserve">
+    <value>预定单号</value>
+  </data>
+  <data name="original_dlpan_name" xml:space="preserve">
+    <value>原盘规格</value>
+  </data>
+  <data name="original_huowei_code" xml:space="preserve">
+    <value>原货位</value>
+  </data>
+  <data name="original_value_kmdm" xml:space="preserve">
+    <value>原值科目代码</value>
+  </data>
+  <data name="otherside_kmdm" xml:space="preserve">
+    <value>对方科目</value>
+  </data>
+  <data name="pass_bs" xml:space="preserve">
+    <value>月结转</value>
+  </data>
+  <data name="place_code" xml:space="preserve">
+    <value>位置代码</value>
+  </data>
+  <data name="place_name" xml:space="preserve">
+    <value>位置名称</value>
+  </data>
+  <data name="previous_kmdm" xml:space="preserve">
+    <value>上一级科目代码</value>
+  </data>
+  <data name="previous_qc_dfe" xml:space="preserve">
+    <value>上一级期初货方额</value>
+  </data>
+  <data name="previous_qc_jfe" xml:space="preserve">
+    <value>上一级期初借方额</value>
+  </data>
+  <data name="previous_qc_ye" xml:space="preserve">
+    <value>上一级期初余额</value>
+  </data>
+  <data name="previous_qm_dfe" xml:space="preserve">
+    <value>上一级期末贷方</value>
+  </data>
+  <data name="previous_qm_jfe" xml:space="preserve">
+    <value>上一级期末借方</value>
+  </data>
+  <data name="previous_qm_ye" xml:space="preserve">
+    <value>上一级期末余额</value>
+  </data>
+  <data name="previous_snjze" xml:space="preserve">
+    <value>上一级上年结转额</value>
+  </data>
+  <data name="purchase_cost" xml:space="preserve">
+    <value>购入成本</value>
+  </data>
+  <data name="purchase_date" xml:space="preserve">
+    <value>购入日期</value>
+  </data>
+  <data name="pz_date" xml:space="preserve">
+    <value>凭证日期</value>
+  </data>
+  <data name="pz_fjs" xml:space="preserve">
+    <value>附件数</value>
+  </data>
+  <data name="pz_je" xml:space="preserve">
+    <value>凭证金额</value>
+  </data>
+  <data name="pz_lb" xml:space="preserve">
+    <value>凭证类别</value>
+  </data>
+  <data name="pz_no" xml:space="preserve">
+    <value>凭证编号</value>
+  </data>
+  <data name="pz_no_length" xml:space="preserve">
+    <value>编号长度</value>
+  </data>
+  <data name="pz_number" xml:space="preserve">
+    <value>凭证编号</value>
+  </data>
+  <data name="pz_status" xml:space="preserve">
+    <value>凭证状态</value>
+  </data>
+  <data name="pzbh_code" xml:space="preserve">
+    <value>凭证编号字</value>
+  </data>
+  <data name="pzbh_id" xml:space="preserve">
+    <value>凭证编号字</value>
+  </data>
+  <data name="pzbh_name" xml:space="preserve">
+    <value>凭证编号说明</value>
+  </data>
+  <data name="pzlb_code" xml:space="preserve">
+    <value>凭证类别代码</value>
+  </data>
+  <data name="pzlb_name" xml:space="preserve">
+    <value>凭证类别名称</value>
+  </data>
+  <data name="pzly_code" xml:space="preserve">
+    <value>凭证来源</value>
+  </data>
+  <data name="pzly_name" xml:space="preserve">
+    <value>凭证来源</value>
+  </data>
+  <data name="pzzy" xml:space="preserve">
+    <value>凭证摘要</value>
+  </data>
+  <data name="qc_dfe" xml:space="preserve">
+    <value>期初贷方</value>
+  </data>
+  <data name="qc_je" xml:space="preserve">
+    <value>期初单价</value>
+  </data>
+  <data name="qc_jfe" xml:space="preserve">
+    <value>期初借方</value>
+  </data>
+  <data name="qc_ye" xml:space="preserve">
+    <value>期初余额</value>
+  </data>
+  <data name="qg_reason" xml:space="preserve">
+    <value>请购原因</value>
+  </data>
+  <data name="sy_receive_amount" xml:space="preserve">
+    <value>剩余应收金额</value>
+  </data>
+  <data name="sys_amount" xml:space="preserve">
+    <value>系统金额</value>
+  </data>
+  <data name="sys_start_date" xml:space="preserve">
+    <value>系统启用日期</value>
+  </data>
+  <data name="sys_start_flag" xml:space="preserve">
+    <value>系统启用标志</value>
+  </data>
+  <data name="system_auto_score" xml:space="preserve">
+    <value>业绩系统得分</value>
+  </data>
+  <data name="system_role" xml:space="preserve">
+    <value>系统角色</value>
+  </data>
+  <data name="system_role_flag" xml:space="preserve">
+    <value>系统角色</value>
+    <comment>Security</comment>
+  </data>
+  <data name="t_adjusted_cost" xml:space="preserve">
+    <value>调整后成本</value>
+  </data>
+  <data name="t_amount" xml:space="preserve">
+    <value>金额合计</value>
+  </data>
+  <data name="t_amount_tax" xml:space="preserve">
+    <value>税价合计</value>
+  </data>
+  <data name="t_ap_amount" xml:space="preserve">
+    <value>应付金额</value>
+  </data>
+  <data name="t_ar_amount" xml:space="preserve">
+    <value>应收金额</value>
+  </data>
+  <data name="t_cost" xml:space="preserve">
+    <value>成本合计</value>
+  </data>
+  <data name="t_cxpay_amount" xml:space="preserve">
+    <value>实际付款金额</value>
+  </data>
+  <data name="t_cxreceive_amount" xml:space="preserve">
+    <value>实际收款金额</value>
+  </data>
+  <data name="t_diff_amount" xml:space="preserve">
+    <value>补差金额</value>
+  </data>
+  <data name="t_estimate_amount" xml:space="preserve">
+    <value>预估金额</value>
+  </data>
+  <data name="t_fee" xml:space="preserve">
+    <value>费用总计</value>
+  </data>
+  <data name="t_kp_amount" xml:space="preserve">
+    <value>开票成本合计</value>
+  </data>
+  <data name="t_mkp_amount" xml:space="preserve">
+    <value>未开票成本合计</value>
+  </data>
+  <data name="t_oil_fee" xml:space="preserve">
+    <value>油费总计</value>
+  </data>
+  <data name="t_original_cost" xml:space="preserve">
+    <value>调整前成本</value>
+  </data>
+  <data name="t_other_fee" xml:space="preserve">
+    <value>其它费用总计</value>
+  </data>
+  <data name="t_park_fee" xml:space="preserve">
+    <value>停车费总计</value>
+  </data>
+  <data name="t_pay_amount" xml:space="preserve">
+    <value>应付金额合计</value>
+  </data>
+  <data name="t_qty" xml:space="preserve">
+    <value>数量合计</value>
+  </data>
+  <data name="t_receive_amount" xml:space="preserve">
+    <value>收款金额</value>
+  </data>
+  <data name="t_road_fee" xml:space="preserve">
+    <value>路桥费总计</value>
+  </data>
+  <data name="t_tax" xml:space="preserve">
+    <value>税额</value>
+  </data>
+  <data name="t_wtjg_fee" xml:space="preserve">
+    <value>加工费总计</value>
+  </data>
+  <data name="tabpayiteminitadjust" xml:space="preserve">
+    <value>初始化项数据调整</value>
+  </data>
+  <data name="target" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="target_qty" xml:space="preserve">
+    <value>下达数量</value>
+  </data>
+  <data name="task_dj_no" xml:space="preserve">
+    <value>生产任务单号</value>
+  </data>
+  <data name="task_no" xml:space="preserve">
+    <value>任务单号</value>
+  </data>
+  <data name="task_owner" xml:space="preserve">
+    <value>责任人</value>
+  </data>
+  <data name="task_team_empcount" xml:space="preserve">
+    <value>当前车间人数</value>
+  </data>
+  <data name="task_team_id" xml:space="preserve">
+    <value>生产部门</value>
+  </data>
+  <data name="task_team_name" xml:space="preserve">
+    <value>生产部门</value>
+  </data>
+  <data name="tax" xml:space="preserve">
+    <value>税</value>
+  </data>
+  <data name="tax_company_id" xml:space="preserve">
+    <value>税务单位</value>
+  </data>
+  <data name="tax_company_name" xml:space="preserve">
+    <value>税务单位</value>
+  </data>
+  <data name="tax_no" xml:space="preserve">
+    <value>税号</value>
+  </data>
+  <data name="tax_rate" xml:space="preserve">
+    <value>税率(%)</value>
+  </data>
+  <data name="tax_registration_num" xml:space="preserve">
+    <value>税务登记号</value>
+  </data>
+  <data name="teaching_method" xml:space="preserve">
+    <value>授课方式</value>
+  </data>
+  <data name="team_adjust_score" xml:space="preserve">
+    <value>部门关联得分</value>
+  </data>
+  <data name="team_id" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="team_leaderid" xml:space="preserve">
+    <value>部门领导</value>
+  </data>
+  <data name="team_name" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="team_start_date" xml:space="preserve">
+    <value>现职位生效日</value>
+  </data>
+  <data name="team_type_id" xml:space="preserve">
+    <value>部门类型</value>
+  </data>
+  <data name="team_work_report" xml:space="preserve">
+    <value>部门述职报告</value>
+  </data>
+  <data name="teamkpi_name" xml:space="preserve">
+    <value>部门考评指标</value>
+  </data>
+  <data name="tel" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="telephone" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="terr_code_list" xml:space="preserve">
+    <value>销售域列表</value>
+  </data>
+  <data name="ticket_application_number" xml:space="preserve">
+    <value>申请单号</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="ticket_count" xml:space="preserve">
+    <value>票数</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="ticket_level" xml:space="preserve">
+    <value>购票等级</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="ticket_line_number" xml:space="preserve">
+    <value>航班号/车次</value>
+  </data>
+  <data name="ticket_person_count" xml:space="preserve">
+    <value>出行人数</value>
+  </data>
+  <data name="ticket_start_date" xml:space="preserve">
+    <value>出发时间</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="ticket_type" xml:space="preserve">
+    <value>购票种类</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="ticket_type_name" xml:space="preserve">
+    <value>交通方式</value>
+  </data>
+  <data name="ticketapp_code" xml:space="preserve">
+    <value>订票单号</value>
+  </data>
+  <data name="ticketapp_reason" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="ticketapp_required_arrive_date" xml:space="preserve">
+    <value>要求到达时间</value>
+  </data>
+  <data name="ticketapp_required_start_date" xml:space="preserve">
+    <value>出发时间</value>
+  </data>
+  <data name="ticketappsuggestlinelist" xml:space="preserve">
+    <value>建议行程</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="tj_date" xml:space="preserve">
+    <value>调价日期</value>
+  </data>
+  <data name="tj_qty" xml:space="preserve">
+    <value>调价数量</value>
+  </data>
+  <data name="tj_reason" xml:space="preserve">
+    <value>调价原因</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="to_customer_code" xml:space="preserve">
+    <value>转入客户代码</value>
+  </data>
+  <data name="to_customer_id" xml:space="preserve">
+    <value>转入客户ID</value>
+  </data>
+  <data name="to_customer_name" xml:space="preserve">
+    <value>转入客户名称</value>
+  </data>
+  <data name="to_date" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="to_inspect_qty" xml:space="preserve">
+    <value>待检验数量</value>
+  </data>
+  <data name="to_pay" xml:space="preserve">
+    <value>拟付薪资</value>
+  </data>
+  <data name="to_site_name" xml:space="preserve">
+    <value>转入用户名称</value>
+  </data>
+  <data name="to_site_num" xml:space="preserve">
+    <value>转入用户编号</value>
+  </data>
+  <data name="to_test_qty" xml:space="preserve">
+    <value>待测试数量</value>
+  </data>
+  <data name="tobecheck_qty" xml:space="preserve">
+    <value>送检数量</value>
+  </data>
+  <data name="total_add_cost" xml:space="preserve">
+    <value>总分摊金额</value>
+  </data>
+  <data name="total_amount" xml:space="preserve">
+    <value>总价</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="total_cost" xml:space="preserve">
+    <value>产品总成本</value>
+  </data>
+  <data name="total_fee" xml:space="preserve">
+    <value>费用总计</value>
+  </data>
+  <data name="total_mat_cost" xml:space="preserve">
+    <value>材料成本总计</value>
+  </data>
+  <data name="total_qg_qty" xml:space="preserve">
+    <value>总请购数量</value>
+  </data>
+  <data name="total_qty" xml:space="preserve">
+    <value>总数量</value>
+  </data>
+  <data name="total_residual_days" xml:space="preserve">
+    <value>可用休假天数</value>
+  </data>
+  <data name="total_service_month" xml:space="preserve">
+    <value>累计社会工龄(月)</value>
+  </data>
+  <data name="total_training_amount" xml:space="preserve">
+    <value>全部费用</value>
+  </data>
+  <data name="totalamount" xml:space="preserve">
+    <value>总金额</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="touser" xml:space="preserve">
+    <value>接收人</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="tpayamount" xml:space="preserve">
+    <value>付款金额</value>
+  </data>
+  <data name="tr_form_num" xml:space="preserve">
+    <value>申请单号</value>
+  </data>
+  <data name="traffic_fee" xml:space="preserve">
+    <value>交通费</value>
+  </data>
+  <data name="training_address" xml:space="preserve">
+    <value>培训地点</value>
+  </data>
+  <data name="training_category" xml:space="preserve">
+    <value>培训类别</value>
+  </data>
+  <data name="training_course" xml:space="preserve">
+    <value>培训课程</value>
+  </data>
+  <data name="training_current_company_after" xml:space="preserve">
+    <value>培训信息加入公司后</value>
+  </data>
+  <data name="training_current_company_before" xml:space="preserve">
+    <value>培训信息加入公司前</value>
+  </data>
+  <data name="training_end_date" xml:space="preserve">
+    <value>培训结束日期</value>
+  </data>
+  <data name="training_institute" xml:space="preserve">
+    <value>培训单位</value>
+  </data>
+  <data name="training_institution" xml:space="preserve">
+    <value>培训机构</value>
+  </data>
+  <data name="training_method" xml:space="preserve">
+    <value>培训方式</value>
+  </data>
+  <data name="training_method_remark" xml:space="preserve">
+    <value>培训方式注明</value>
+  </data>
+  <data name="training_name" xml:space="preserve">
+    <value>培训名称</value>
+  </data>
+  <data name="training_objective" xml:space="preserve">
+    <value>培训目的</value>
+  </data>
+  <data name="training_objective_remark" xml:space="preserve">
+    <value>培训目的注明</value>
+  </data>
+  <data name="training_schedule_name" xml:space="preserve">
+    <value>计划名称</value>
+  </data>
+  <data name="training_start_date" xml:space="preserve">
+    <value>培训开始日期</value>
+  </data>
+  <data name="training_structure_code" xml:space="preserve">
+    <value>体系代码</value>
+  </data>
+  <data name="training_structure_name" xml:space="preserve">
+    <value>体系名称</value>
+  </data>
+  <data name="training_target" xml:space="preserve">
+    <value>授课对象</value>
+  </data>
+  <data name="training_type" xml:space="preserve">
+    <value>培训类别</value>
+  </data>
+  <data name="transfer_num" xml:space="preserve">
+    <value>异动编号</value>
+  </data>
+  <data name="transfer_type_code" xml:space="preserve">
+    <value>异动类型</value>
+  </data>
+  <data name="travel_return_date" xml:space="preserve">
+    <value>返程出发时间范围</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="travel_start_date" xml:space="preserve">
+    <value>出发时间范围</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="treceiveamount" xml:space="preserve">
+    <value>收款金额</value>
+  </data>
+  <data name="tsxs_dj_no" xml:space="preserve">
+    <value>特殊销售单号</value>
+  </data>
+  <data name="tsxs_type" xml:space="preserve">
+    <value>单据类型</value>
+  </data>
+  <data name="tuition_fee" xml:space="preserve">
+    <value>学费</value>
+  </data>
+  <data name="turnover" xml:space="preserve">
+    <value>年营业额</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="type_detail_name" xml:space="preserve">
+    <value>详细费用</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="type_form_name" xml:space="preserve">
+    <value>表单类型</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="underwriting_by" xml:space="preserve">
+    <value>承保单位</value>
+  </data>
+  <data name="unemployed_num" xml:space="preserve">
+    <value>就失业证号</value>
+  </data>
+  <data name="unit" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="unit_code" xml:space="preserve">
+    <value>单位代码</value>
+  </data>
+  <data name="unit_name" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="unit_std_cost" xml:space="preserve">
+    <value>单位标准成本</value>
+  </data>
+  <data name="unit_std_manhour" xml:space="preserve">
+    <value>单位标准工时</value>
+  </data>
+  <data name="unit_std_salary_rate" xml:space="preserve">
+    <value>标准工资率</value>
+  </data>
+  <data name="uploadattachfile" xml:space="preserve">
+    <value>上传附件</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="uploadnewtemplatefile" xml:space="preserve">
+    <value>上传模板文档</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="use_person_number" xml:space="preserve">
+    <value>乘车人数</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="use_reason" xml:space="preserve">
+    <value>使用原因</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="use_time_from" xml:space="preserve">
+    <value>用车时间从</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="used_kilometer" xml:space="preserve">
+    <value>行驶公里数</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="used_qty" xml:space="preserve">
+    <value>已用数量</value>
+  </data>
+  <data name="user_id" xml:space="preserve">
+    <value>姓名</value>
+    <comment>SFA</comment>
+  </data>
+  <data name="user_name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="user_number" xml:space="preserve">
+    <value>员工号</value>
+  </data>
+  <data name="user_number_type_name" xml:space="preserve">
+    <value>员工号类型</value>
+  </data>
+  <data name="user_number_type_prefix" xml:space="preserve">
+    <value>员工编号前缀</value>
+  </data>
+  <data name="user_photo" xml:space="preserve">
+    <value>用户照片</value>
+  </data>
+  <data name="user_select" xml:space="preserve">
+    <value>选择用户</value>
+  </data>
+  <data name="user_status" xml:space="preserve">
+    <value>用工状态</value>
+  </data>
+  <data name="user_status_code" xml:space="preserve">
+    <value>用工状态</value>
+  </data>
+  <data name="user_type" xml:space="preserve">
+    <value>用工类型</value>
+  </data>
+  <data name="user_type_id" xml:space="preserve">
+    <value>用工类型</value>
+  </data>
+  <data name="user_weight" xml:space="preserve">
+    <value>体重(公斤)</value>
+  </data>
+  <data name="user_work_exaltation" xml:space="preserve">
+    <value>2.您将怎样提升下半年的工作业绩？</value>
+  </data>
+  <data name="user_work_report" xml:space="preserve">
+    <value>1.您上半年业绩完成情况(述职报告)</value>
+  </data>
+  <data name="username" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="valid_day" xml:space="preserve">
+    <value>有效天数</value>
+  </data>
+  <data name="valid_month" xml:space="preserve">
+    <value>有效月份</value>
+  </data>
+  <data name="value_name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="value_name_en" xml:space="preserve">
+    <value>英文名称</value>
+  </data>
+  <data name="vat_amount" xml:space="preserve">
+    <value>金额(含税)</value>
+  </data>
+  <data name="vat_flag" xml:space="preserve">
+    <value>是否开VAT发票</value>
+  </data>
+  <data name="vat_price" xml:space="preserve">
+    <value>单价(含税)</value>
+  </data>
+  <data name="vatamount" xml:space="preserve">
+    <value>含税金额</value>
+  </data>
+  <data name="vatprice" xml:space="preserve">
+    <value>含税单价</value>
+  </data>
+  <data name="vehicle_actualreturn_time" xml:space="preserve">
+    <value>实际归车时间</value>
+  </data>
+  <data name="vehicle_actualreturn_time_h" xml:space="preserve">
+    <value>实际归车时间(小时)</value>
+  </data>
+  <data name="vehicle_actualreturn_time_m" xml:space="preserve">
+    <value>实际归车时间(分钟)</value>
+  </data>
+  <data name="vehicle_actualstart_time" xml:space="preserve">
+    <value>实际出车时间</value>
+  </data>
+  <data name="vehicle_actualstart_time_h" xml:space="preserve">
+    <value>实际出车时间(小时)</value>
+  </data>
+  <data name="vehicle_actualstart_time_m" xml:space="preserve">
+    <value>实际出车时间(分钟)</value>
+  </data>
+  <data name="vehicle_app_code" xml:space="preserve">
+    <value>用车申请单号</value>
+  </data>
+  <data name="vehicle_app_form_code" xml:space="preserve">
+    <value>申请单号</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="vehicle_owner" xml:space="preserve">
+    <value>车辆所有人</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="vehicle_passenger_count" xml:space="preserve">
+    <value>用车人数</value>
+  </data>
+  <data name="vehicle_planreturn_time" xml:space="preserve">
+    <value>计划归车时间</value>
+  </data>
+  <data name="vehicle_planreturn_time_h" xml:space="preserve">
+    <value>计划归车时间(小时)</value>
+  </data>
+  <data name="vehicle_planreturn_time_m" xml:space="preserve">
+    <value>计划归车时间(分钟)</value>
+  </data>
+  <data name="vehicle_planstart_time" xml:space="preserve">
+    <value>计划出车时间</value>
+  </data>
+  <data name="vehicle_planstart_time_h" xml:space="preserve">
+    <value>计划出车时间(小时)</value>
+  </data>
+  <data name="vehicle_planstart_time_m" xml:space="preserve">
+    <value>计划出车时间(分钟)</value>
+  </data>
+  <data name="vehicle_type_id" xml:space="preserve">
+    <value>用车类型</value>
+  </data>
+  <data name="vehicle_type_name" xml:space="preserve">
+    <value>用车类别</value>
+  </data>
+  <data name="vender_artifact_vatprice" xml:space="preserve">
+    <value>加工费(含税)</value>
+  </data>
+  <data name="vender_code" xml:space="preserve">
+    <value>供应商编号</value>
+  </data>
+  <data name="vender_material_vatprice" xml:space="preserve">
+    <value>协议价(含税)</value>
+  </data>
+  <data name="vender_name" xml:space="preserve">
+    <value>供应商名称</value>
+  </data>
+  <data name="vender_type_id" xml:space="preserve">
+    <value>类别名称</value>
+  </data>
+  <data name="vender_type_name" xml:space="preserve">
+    <value>类别名称</value>
+  </data>
+  <data name="version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="vice_card_num" xml:space="preserve">
+    <value>副卡卡号</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="vicerechargelist" xml:space="preserve">
+    <value>向副卡充值记录</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="viewlend" xml:space="preserve">
+    <value>查看借款单</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="visible_flag" xml:space="preserve">
+    <value>可见标识</value>
+  </data>
+  <data name="wait_for_approve" xml:space="preserve">
+    <value>下一操作人</value>
+  </data>
+  <data name="warehousing_rate" xml:space="preserve">
+    <value>入库率</value>
+  </data>
+  <data name="web_site" xml:space="preserve">
+    <value>网址</value>
+  </data>
+  <data name="week" xml:space="preserve">
+    <value>星期</value>
+  </data>
+  <data name="weight" xml:space="preserve">
+    <value>权重</value>
+  </data>
+  <data name="wgrk_dj_no" xml:space="preserve">
+    <value>完工入库单号</value>
+  </data>
+  <data name="wh_code" xml:space="preserve">
+    <value>仓库代码</value>
+  </data>
+  <data name="wh_id" xml:space="preserve">
+    <value>仓库</value>
+  </data>
+  <data name="wh_in_id" xml:space="preserve">
+    <value>拨入仓库</value>
+  </data>
+  <data name="wh_in_name" xml:space="preserve">
+    <value>拨入仓库</value>
+  </data>
+  <data name="wh_mat_init_flag" xml:space="preserve">
+    <value>仓库期初余额设置</value>
+  </data>
+  <data name="wh_name" xml:space="preserve">
+    <value>仓库名称</value>
+  </data>
+  <data name="wh_out_id" xml:space="preserve">
+    <value>拨出仓库</value>
+  </data>
+  <data name="wh_out_name" xml:space="preserve">
+    <value>拨出仓库</value>
+  </data>
+  <data name="wh_qty" xml:space="preserve">
+    <value>库存数量</value>
+  </data>
+  <data name="win_rate" xml:space="preserve">
+    <value>成功率%</value>
+  </data>
+  <data name="work_break_month" xml:space="preserve">
+    <value>工作间断时间</value>
+  </data>
+  <data name="work_company" xml:space="preserve">
+    <value>工作单位</value>
+  </data>
+  <data name="work_condition_code" xml:space="preserve">
+    <value>工作条件</value>
+  </data>
+  <data name="work_condition_desc" xml:space="preserve">
+    <value>工作条件描述</value>
+  </data>
+  <data name="work_day_count" xml:space="preserve">
+    <value>工作</value>
+  </data>
+  <data name="work_experience" xml:space="preserve">
+    <value>工作经历</value>
+  </data>
+  <data name="work_start_date" xml:space="preserve">
+    <value>开始工作日期</value>
+  </data>
+  <data name="working_attitude" xml:space="preserve">
+    <value>工作态度</value>
+  </data>
+  <data name="working_discipline" xml:space="preserve">
+    <value>纪律执行</value>
+  </data>
+  <data name="working_performance" xml:space="preserve">
+    <value>工作表现</value>
+  </data>
+  <data name="workload" xml:space="preserve">
+    <value>实际工作量</value>
+  </data>
+  <data name="workmanship_specialskill" xml:space="preserve">
+    <value>工作技能及工作经验要求</value>
+  </data>
+  <data name="workskill_category_code" xml:space="preserve">
+    <value>胜任素质类型</value>
+  </data>
+  <data name="workskill_level_description" xml:space="preserve">
+    <value>级别描述</value>
+  </data>
+  <data name="workskill_level_number" xml:space="preserve">
+    <value>级别编号</value>
+  </data>
+  <data name="workskill_name" xml:space="preserve">
+    <value>胜任素质名称</value>
+  </data>
+  <data name="workskill_number" xml:space="preserve">
+    <value>胜任素质编号</value>
+  </data>
+  <data name="wtjg_detail_type" xml:space="preserve">
+    <value>明细类别</value>
+  </data>
+  <data name="wtjg_detail_type_name" xml:space="preserve">
+    <value>明细类别</value>
+  </data>
+  <data name="wtjg_dj_no" xml:space="preserve">
+    <value>委托加工编号</value>
+  </data>
+  <data name="wtjg_fee" xml:space="preserve">
+    <value>加工费(含税)</value>
+  </data>
+  <data name="wtjgck_dj_no" xml:space="preserve">
+    <value>委托加工出库单</value>
+  </data>
+  <data name="xs_dj_no" xml:space="preserve">
+    <value>销售单据号</value>
+  </data>
+  <data name="xsck_dj_no" xml:space="preserve">
+    <value>销售出库单号</value>
+  </data>
+  <data name="xsck_ignore_flag" xml:space="preserve">
+    <value>销售出库单便捷操作</value>
+  </data>
+  <data name="xsfp_dj_no" xml:space="preserve">
+    <value>销售发票单号</value>
+  </data>
+  <data name="xsorder_dj_no" xml:space="preserve">
+    <value>预订单号</value>
+  </data>
+  <data name="xsorder_qty" xml:space="preserve">
+    <value>预订数量</value>
+  </data>
+  <data name="xst_dj_no" xml:space="preserve">
+    <value>销售退回单据编号</value>
+  </data>
+  <data name="xstrk_ignore_flag" xml:space="preserve">
+    <value>销售退回单便捷操作</value>
+  </data>
+  <data name="year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="year_end_rating" xml:space="preserve">
+    <value>最终等级</value>
+  </data>
+  <data name="year_end_result" xml:space="preserve">
+    <value>年末完成情况</value>
+  </data>
+  <data name="year_end_score" xml:space="preserve">
+    <value>年底得分</value>
+  </data>
+  <data name="yearend_development" xml:space="preserve">
+    <value>2.制定您下属下一年度的发展计划</value>
+  </data>
+  <data name="yearend_end_date" xml:space="preserve">
+    <value>年末评估结束日期</value>
+  </data>
+  <data name="yearend_overall_appraise" xml:space="preserve">
+    <value>1.您对您下属本年度工作的总体评价</value>
+  </data>
+  <data name="yearend_pa_feedback" xml:space="preserve">
+    <value>2.您对您主管的整个绩效管理(包括绩效目标的设定、指导跟踪、年中/末的评估等)有何反馈意见?</value>
+  </data>
+  <data name="yearend_start_date" xml:space="preserve">
+    <value>年末评估开始日期</value>
+  </data>
+  <data name="yearend_work_exaltation" xml:space="preserve">
+    <value>2.您下一年将在哪些方面提升自己?</value>
+  </data>
+  <data name="yearend_work_report" xml:space="preserve">
+    <value>1.您本年度业绩完成情况(述职报告，不少于300字)</value>
+  </data>
+  <data name="youth_league_join_date" xml:space="preserve">
+    <value>入团日期</value>
+  </data>
+  <data name="zengzhishuihao" xml:space="preserve">
+    <value>增值税号</value>
+  </data>
+  <data name="zip" xml:space="preserve">
+    <value>邮编</value>
+  </data>
+  <data name="zip_code" xml:space="preserve">
+    <value>邮编</value>
+  </data>
+  <data name="zljy_dj_no" xml:space="preserve">
+    <value>质量检验单号</value>
+  </data>
+  <data name="zt_left_lend_amount" xml:space="preserve">
+    <value>待还款余额</value>
+  </data>
+  <data name="层" xml:space="preserve">
+    <value>层</value>
+  </data>
+  <data name="qg_user_name" xml:space="preserve">
+    <value>请购人</value>
+  </data>
+  <data name="qm_dfe" xml:space="preserve">
+    <value>期末贷方</value>
+  </data>
+  <data name="qm_jfe" xml:space="preserve">
+    <value>期末借方</value>
+  </data>
+  <data name="qm_ye" xml:space="preserve">
+    <value>期末余额</value>
+  </data>
+  <data name="fl_zy" xml:space="preserve">
+    <value>分录摘要</value>
+  </data>
+  <data name="place_description" xml:space="preserve">
+    <value>位置描述</value>
+  </data>
+  <data name="special_remark" xml:space="preserve">
+    <value>特殊事项说明</value>
+  </data>
+  <data name="sr_date" xml:space="preserve">
+    <value>制单日期</value>
+  </data>
+  <data name="sr_user_name" xml:space="preserve">
+    <value>制单人</value>
+  </data>
+  <data name="standard_kmdm" xml:space="preserve">
+    <value>标准科目</value>
+  </data>
+  <data name="state_code" xml:space="preserve">
+    <value>状态代码</value>
+  </data>
+  <data name="state_name_cn" xml:space="preserve">
+    <value>状态中文名</value>
+  </data>
+  <data name="state_name_en" xml:space="preserve">
+    <value>状态英文名</value>
+  </data>
+  <data name="storage_sites" xml:space="preserve">
+    <value>存放地点</value>
+  </data>
+  <data name="store_user_name" xml:space="preserve">
+    <value>保管员</value>
+  </data>
+  <data name="string1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="subject" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="total_price" xml:space="preserve">
+    <value>总价</value>
+  </data>
+  <data name="total_request_cg_qty" xml:space="preserve">
+    <value>总请购数量</value>
+  </data>
+  <data name="totalcxprepayamount" xml:space="preserve">
+    <value>总冲销金额</value>
+  </data>
+  <data name="totalcxprereceiveamount" xml:space="preserve">
+    <value>总冲销金额</value>
+  </data>
+  <data name="totalleftprepayamount" xml:space="preserve">
+    <value>总剩余冲销金额</value>
+  </data>
+  <data name="redundance_control_way" xml:space="preserve">
+    <value>余度控制方式</value>
+  </data>
+  <data name="request_cg_date" xml:space="preserve">
+    <value>需求日期</value>
+  </data>
+  <data name="request_cg_qty" xml:space="preserve">
+    <value>请购数量</value>
+  </data>
+  <data name="require_date" xml:space="preserve">
+    <value>需求日期</value>
+  </data>
+  <data name="residual_value_rate" xml:space="preserve">
+    <value>净残值率</value>
+  </data>
+  <data name="reused_flag" xml:space="preserve">
+    <value>是否已重用</value>
+  </data>
+  <data name="rpt_dlz_flag" xml:space="preserve">
+    <value>多栏式</value>
+  </data>
+  <data name="rpt_rjz_flag" xml:space="preserve">
+    <value>日记账</value>
+  </data>
+  <data name="rpt_slz_flag" xml:space="preserve">
+    <value>三栏式</value>
+  </data>
+  <data name="rpt_zz_flag" xml:space="preserve">
+    <value>总账</value>
+  </data>
+  <data name="salesman" xml:space="preserve">
+    <value>业务员</value>
+  </data>
+  <data name="salesman_belong" xml:space="preserve">
+    <value>所属业务员</value>
+  </data>
+  <data name="scrap_qty" xml:space="preserve">
+    <value>报废数量</value>
+  </data>
+  <data name="scrap_reason" xml:space="preserve">
+    <value>报废原因</value>
+  </data>
+  <data name="searchtype" xml:space="preserve">
+    <value>查询方式</value>
+  </data>
+  <data name="serial_number" xml:space="preserve">
+    <value>序号</value>
+  </data>
+  <data name="serialnumber" xml:space="preserve">
+    <value>序号</value>
+  </data>
+  <data name="sg" xml:space="preserve">
+    <value>手工</value>
+  </data>
+  <data name="sh_date" xml:space="preserve">
+    <value>审核日期</value>
+  </data>
+  <data name="sh_user_name" xml:space="preserve">
+    <value>审核人</value>
+  </data>
+  <data name="sl_unit_name" xml:space="preserve">
+    <value>数量单位名称</value>
+  </data>
+  <data name="snjze" xml:space="preserve">
+    <value>上年结转额</value>
+  </data>
+  <data name="transfer_reason" xml:space="preserve">
+    <value>转移原因</value>
+  </data>
+  <data name="unit_id" xml:space="preserve">
+    <value>数量单位</value>
+  </data>
+  <data name="unit_weight" xml:space="preserve">
+    <value>单位重量</value>
+  </data>
+  <data name="unite_flag" xml:space="preserve">
+    <value>法定合并</value>
+  </data>
+  <data name="usecash" xml:space="preserve">
+    <value>现金账</value>
+  </data>
+  <data name="usedep" xml:space="preserve">
+    <value>部门账</value>
+  </data>
+  <data name="useitem" xml:space="preserve">
+    <value>项目账</value>
+  </data>
+  <data name="usezwsj" xml:space="preserve">
+    <value>账务数据</value>
+  </data>
+  <data name="vat_style" xml:space="preserve">
+    <value>价格方式</value>
+  </data>
+  <data name="vender_artifact_price" xml:space="preserve">
+    <value>加工费(含税)</value>
+  </data>
+  <data name="vender_material_price" xml:space="preserve">
+    <value>协议价(含税)</value>
+  </data>
+  <data name="voltage_class" xml:space="preserve">
+    <value>电压等级</value>
+  </data>
+  <data name="wbdm_id" xml:space="preserve">
+    <value>外币代码</value>
+  </data>
+  <data name="we_date" xml:space="preserve">
+    <value>ERP系统_结束</value>
+  </data>
+  <data name="within_range" xml:space="preserve">
+    <value>下浮幅度</value>
+  </data>
+  <data name="ws_date" xml:space="preserve">
+    <value>ERP系统_起始</value>
+  </data>
+  <data name="xsbj_dj_no" xml:space="preserve">
+    <value>报价单号</value>
+  </data>
+  <data name="xt_qm_dfe" xml:space="preserve">
+    <value>系统账期末贷方</value>
+  </data>
+  <data name="xt_qm_jfe" xml:space="preserve">
+    <value>系统账期末借方</value>
+  </data>
+  <data name="xt_qm_ye" xml:space="preserve">
+    <value>系统账期末余额</value>
+  </data>
+  <data name="y_kmdm1" xml:space="preserve">
+    <value>必有科目1</value>
+  </data>
+  <data name="y_kmdm2" xml:space="preserve">
+    <value>必有科目2</value>
+  </data>
+  <data name="y_type" xml:space="preserve">
+    <value>必有科目条件</value>
+  </data>
+  <data name="year_period" xml:space="preserve">
+    <value>会计期间</value>
+  </data>
+  <data name="ywf_xsbl" xml:space="preserve">
+    <value>业务费享受比例</value>
+  </data>
+  <data name="zcbmgz" xml:space="preserve">
+    <value>编码规则</value>
+  </data>
+  <data name="zdypz_function_name" xml:space="preserve">
+    <value>公式名称</value>
+  </data>
+  <data name="zdypz_name" xml:space="preserve">
+    <value>自定义凭证名称</value>
+  </data>
+  <data name="zj_amount" xml:space="preserve">
+    <value>折旧金额</value>
+  </data>
+  <data name="zj_kmdm" xml:space="preserve">
+    <value>折旧科目代码</value>
+  </data>
+  <data name="zj_status" xml:space="preserve">
+    <value>质检状态</value>
+  </data>
+  <data name="zjtype_code" xml:space="preserve">
+    <value>折旧编码</value>
+  </data>
+  <data name="zjtype_name" xml:space="preserve">
+    <value>折旧类型</value>
+  </data>
+  <data name="zp_no" xml:space="preserve">
+    <value>支票号码</value>
+  </data>
+  <data name="zy" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="00totalleftprereceiveamount" xml:space="preserve">
+    <value>总剩余冲销金额</value>
+  </data>
+  <data name="account_code" xml:space="preserve">
+    <value>会计科目</value>
+  </data>
+  <data name="acquire_qty" xml:space="preserve">
+    <value>取得数量</value>
+  </data>
+  <data name="acquire_reason" xml:space="preserve">
+    <value>取得原因</value>
+  </data>
+  <data name="acquire_way_id" xml:space="preserve">
+    <value>取得方式</value>
+  </data>
+  <data name="action_user_name" xml:space="preserve">
+    <value>经办人</value>
+  </data>
+  <data name="adjust_fen_duan1" xml:space="preserve">
+    <value>分段内(调)</value>
+  </data>
+  <data name="adjust_fen_duan2" xml:space="preserve">
+    <value>分段中(调)</value>
+  </data>
+  <data name="adjust_fen_duan3" xml:space="preserve">
+    <value>分段外(调)</value>
+  </data>
+  <data name="adjust_qty" xml:space="preserve">
+    <value>调整数量</value>
+  </data>
+  <data name="ap_item_description1" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="app_dj_name" xml:space="preserve">
+    <value>系统单据名称</value>
+  </data>
+  <data name="ar_item_description1" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="asset_code" xml:space="preserve">
+    <value>资产编号</value>
+  </data>
+  <data name="asset_description" xml:space="preserve">
+    <value>资产描述</value>
+  </data>
+  <data name="asset_name" xml:space="preserve">
+    <value>资产名称</value>
+  </data>
+  <data name="asset_place_id" xml:space="preserve">
+    <value>存放位置</value>
+  </data>
+  <data name="asset_place_name" xml:space="preserve">
+    <value>存放位置</value>
+  </data>
+  <data name="asset_qg_description" xml:space="preserve">
+    <value>请购资产描述</value>
+  </data>
+  <data name="asset_qg_name" xml:space="preserve">
+    <value>请购资产名称</value>
+  </data>
+  <data name="asset_serial_num" xml:space="preserve">
+    <value>资产序列号</value>
+  </data>
+  <data name="asset_site_id" xml:space="preserve">
+    <value>存放地点</value>
+  </data>
+  <data name="asset_site_name" xml:space="preserve">
+    <value>存放地点</value>
+  </data>
+  <data name="asset_site_place_name" xml:space="preserve">
+    <value>存放位置</value>
+  </data>
+  <data name="asset_status_code" xml:space="preserve">
+    <value>资产状态</value>
+  </data>
+  <data name="asset_status_name" xml:space="preserve">
+    <value>资产状态</value>
+  </data>
+  <data name="asset_team_id" xml:space="preserve">
+    <value>所属部门</value>
+  </data>
+  <data name="asset_team_name" xml:space="preserve">
+    <value>使用部门</value>
+  </data>
+  <data name="asset_work_t_qty" xml:space="preserve">
+    <value>资产工作总量</value>
+  </data>
+  <data name="asset_worked_qty" xml:space="preserve">
+    <value>已工作量</value>
+  </data>
+  <data name="assign_type" xml:space="preserve">
+    <value>操作类型</value>
+  </data>
+  <data name="assignto_function" xml:space="preserve">
+    <value>操作人</value>
+  </data>
+  <data name="assist_item_bmgs" xml:space="preserve">
+    <value>辅助项目编码格式</value>
+  </data>
+  <data name="assist_item_code" xml:space="preserve">
+    <value>辅助项目代码</value>
+  </data>
+  <data name="assist_item_flag" xml:space="preserve">
+    <value>项目帐</value>
+  </data>
+  <data name="assist_item_manager" xml:space="preserve">
+    <value>项目主管</value>
+  </data>
+  <data name="assist_item_name" xml:space="preserve">
+    <value>辅助项目名称</value>
+  </data>
+  <data name="assist_itemclass_id" xml:space="preserve">
+    <value>辅助项目类别代码</value>
+  </data>
+  <data name="assist_itemclass_name" xml:space="preserve">
+    <value>辅助项目类别名称</value>
+  </data>
+  <data name="attatch_count" xml:space="preserve">
+    <value>附单据数</value>
+  </data>
+  <data name="bank_flag" xml:space="preserve">
+    <value>银行帐标识</value>
+  </data>
+  <data name="baojia_flag" xml:space="preserve">
+    <value>报价标识</value>
+  </data>
+  <data name="barcode" xml:space="preserve">
+    <value>条码</value>
+  </data>
+  <data name="bf_fen_duan1" xml:space="preserve">
+    <value>分段内(报)</value>
+  </data>
+  <data name="bf_fen_duan2" xml:space="preserve">
+    <value>分段中(报)</value>
+  </data>
+  <data name="bf_fen_duan3" xml:space="preserve">
+    <value>分段外(报)</value>
+  </data>
+  <data name="bj_dj_no" xml:space="preserve">
+    <value>报价单号</value>
+  </data>
+  <data name="bj_price" xml:space="preserve">
+    <value>报价</value>
+  </data>
+  <data name="bm_code" xml:space="preserve">
+    <value>编码代码</value>
+  </data>
+  <data name="bm_name" xml:space="preserve">
+    <value>编码项目</value>
+  </data>
+  <data name="book_format_code" xml:space="preserve">
+    <value>账簿格式代码</value>
+  </data>
+  <data name="book_format_id" xml:space="preserve">
+    <value>账簿格式</value>
+  </data>
+  <data name="book_format_name" xml:space="preserve">
+    <value>账簿格式名称</value>
+  </data>
+  <data name="bq_dfe" xml:space="preserve">
+    <value>本期贷方</value>
+  </data>
+  <data name="bq_jfe" xml:space="preserve">
+    <value>本期借方</value>
+  </data>
+  <data name="bq_ye" xml:space="preserve">
+    <value>本期余额</value>
+  </data>
+  <data name="can_adjust_qty" xml:space="preserve">
+    <value>可调数量</value>
+  </data>
+  <data name="cash_code" xml:space="preserve">
+    <value>现金流量代码</value>
+  </data>
+  <data name="cash_flag" xml:space="preserve">
+    <value>现金流量</value>
+  </data>
+  <data name="cash_name" xml:space="preserve">
+    <value>现金流量名称</value>
+  </data>
+  <data name="cash_user_name" xml:space="preserve">
+    <value>出纳</value>
+  </data>
+  <data name="ck_qty" xml:space="preserve">
+    <value>出库数量</value>
+  </data>
+  <data name="cn_date" xml:space="preserve">
+    <value>出纳审核日期</value>
+  </data>
+  <data name="cn_user_name" xml:space="preserve">
+    <value>出纳</value>
+  </data>
+  <data name="code" xml:space="preserve">
+    <value>代码</value>
+  </data>
+  <data name="cost_asset_team_id" xml:space="preserve">
+    <value>费用承担部门</value>
+  </data>
+  <data name="cost_asset_team_name" xml:space="preserve">
+    <value>费用承担部门</value>
+  </data>
+  <data name="cost_center_bmgs" xml:space="preserve">
+    <value>成本中心编码格式</value>
+  </data>
+  <data name="cost_center_flag" xml:space="preserve">
+    <value>成本中心帐</value>
+  </data>
+  <data name="cost_center_name" xml:space="preserve">
+    <value>成本中心名称</value>
+  </data>
+  <data name="cost_flag" xml:space="preserve">
+    <value>成本中心核算标识</value>
+  </data>
+  <data name="create_by_name" xml:space="preserve">
+    <value>创建人</value>
+  </data>
+  <data name="credited_amount" xml:space="preserve">
+    <value>贷方金额</value>
+  </data>
+  <data name="customer_name1" xml:space="preserve">
+    <value>客户姓名</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="customer_type" xml:space="preserve">
+    <value>客户类别</value>
+  </data>
+  <data name="cx_prepay_amount" xml:space="preserve">
+    <value>已冲销金额</value>
+  </data>
+  <data name="cx_prereceive_amount" xml:space="preserve">
+    <value>已冲销金额</value>
+  </data>
+  <data name="cx_status" xml:space="preserve">
+    <value>冲销状态</value>
+  </data>
+  <data name="cypz" xml:space="preserve">
+    <value>常用凭证</value>
+  </data>
+  <data name="cypz_code" xml:space="preserve">
+    <value>常用凭证代码</value>
+  </data>
+  <data name="cypz_memo" xml:space="preserve">
+    <value>常用凭证描述</value>
+  </data>
+  <data name="d" xml:space="preserve">
+    <value>贷</value>
+  </data>
+  <data name="day" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="debited_amount" xml:space="preserve">
+    <value>借方金额</value>
+  </data>
+  <data name="delete_count" xml:space="preserve">
+    <value>删除次数</value>
+  </data>
+  <data name="delivery_address" xml:space="preserve">
+    <value>交货地址</value>
+  </data>
+  <data name="dep_manager" xml:space="preserve">
+    <value>部门主管</value>
+  </data>
+  <data name="dest_dlpan_name" xml:space="preserve">
+    <value>调整盘规格</value>
+  </data>
+  <data name="dest_huowei_code" xml:space="preserve">
+    <value>调整货位</value>
+  </data>
+  <data name="differentdesc" xml:space="preserve">
+    <value>差异描述</value>
+  </data>
+  <data name="durable_year" xml:space="preserve">
+    <value>耐用年限</value>
+  </data>
+  <data name="enable_date" xml:space="preserve">
+    <value>启用日期</value>
+  </data>
+  <data name="erp" xml:space="preserve">
+    <value>ERP</value>
+  </data>
+  <data name="building" xml:space="preserve">
+    <value>建筑物</value>
+  </data>
+  <data name="by_evaluator" xml:space="preserve">
+    <value>被评估者</value>
+  </data>
+  <data name="by_evaluator_team" xml:space="preserve">
+    <value>被评估部门</value>
+  </data>
+  <data name="c_pay_amount" xml:space="preserve">
+    <value>应付账款余额</value>
+  </data>
+  <data name="c_prepay_amount" xml:space="preserve">
+    <value>当前预付账款余额</value>
+  </data>
+  <data name="c_prereceive_amount" xml:space="preserve">
+    <value>当前预收账款余额</value>
+  </data>
+  <data name="c_receive_amount" xml:space="preserve">
+    <value>当前应收账款金额</value>
+  </data>
+  <data name="calc_function_name" xml:space="preserve">
+    <value>自动计算函数名称</value>
+  </data>
+  <data name="calc_order" xml:space="preserve">
+    <value>计算顺序</value>
+  </data>
+  <data name="calc_type_code" xml:space="preserve">
+    <value>计算类型</value>
+  </data>
+  <data name="call_minute" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="calltime_name" xml:space="preserve">
+    <value>访问时间</value>
+  </data>
+  <data name="capitalasserts_good_flag" xml:space="preserve">
+    <value>固定资产是否完好</value>
+  </data>
+  <data name="capitalasserts_handover_flag" xml:space="preserve">
+    <value>固定资产交接</value>
+  </data>
+  <data name="card_num" xml:space="preserve">
+    <value>卡号</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="card_type" xml:space="preserve">
+    <value>加油卡类型</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="case_end_date" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="case_name" xml:space="preserve">
+    <value>案例名称</value>
+  </data>
+  <data name="case_number" xml:space="preserve">
+    <value>案例编码</value>
+  </data>
+  <data name="case_start_by" xml:space="preserve">
+    <value>开始人</value>
+  </data>
+  <data name="case_start_date" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="case_start_name" xml:space="preserve">
+    <value>创建人</value>
+  </data>
+  <data name="case_status_name" xml:space="preserve">
+    <value>案例状态</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>类别</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="center_buy_flag" xml:space="preserve">
+    <value>集中采购？</value>
+  </data>
+  <data name="certificate_count" xml:space="preserve">
+    <value>凭证数</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="cfm_participate_flag" xml:space="preserve">
+    <value>确认参加</value>
+  </data>
+  <data name="cg_dj_no" xml:space="preserve">
+    <value>采购单据号</value>
+  </data>
+  <data name="cg_price" xml:space="preserve">
+    <value>采购价</value>
+  </data>
+  <data name="cgbcj_cost" xml:space="preserve">
+    <value>补差金额</value>
+  </data>
+  <data name="cgbcj_team_fee" xml:space="preserve">
+    <value>分摊采购补差金额</value>
+  </data>
+  <data name="cgbcj_total_amount" xml:space="preserve">
+    <value>采购补差金额</value>
+  </data>
+  <data name="cgbcj_total_amount_adjust" xml:space="preserve">
+    <value>分摊调整额</value>
+  </data>
+  <data name="cgfp_dj_no" xml:space="preserve">
+    <value>采购发票单号</value>
+  </data>
+  <data name="cgjh_dj_no" xml:space="preserve">
+    <value>采购计划单号</value>
+  </data>
+  <data name="cgqg_dj_no" xml:space="preserve">
+    <value>请购单号</value>
+  </data>
+  <data name="cgqg_num" xml:space="preserve">
+    <value>请购单号</value>
+  </data>
+  <data name="cgqg_qty" xml:space="preserve">
+    <value>已请购数量</value>
+  </data>
+  <data name="cgqg_type_name" xml:space="preserve">
+    <value>请购单类别</value>
+  </data>
+  <data name="cgrk_dj_no" xml:space="preserve">
+    <value>采购入库单号</value>
+  </data>
+  <data name="cgrk_ignore_flag" xml:space="preserve">
+    <value>采购入库单便捷操作</value>
+  </data>
+  <data name="cgrk_wh_flag" xml:space="preserve">
+    <value>分仓别生成采购入库单</value>
+  </data>
+  <data name="cgt_dj_no" xml:space="preserve">
+    <value>采购退回单编号</value>
+  </data>
+  <data name="cgtck_ignore_flag" xml:space="preserve">
+    <value>采购退回单便捷操作</value>
+  </data>
+  <data name="change_password" xml:space="preserve">
+    <value>改变登录密码</value>
+  </data>
+  <data name="change_reason" xml:space="preserve">
+    <value>变动原因</value>
+  </data>
+  <data name="charge_against_lend_flag" xml:space="preserve">
+    <value>冲抵借款</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="check_date" xml:space="preserve">
+    <value>检查日期</value>
+  </data>
+  <data name="check_result" xml:space="preserve">
+    <value>检查结果</value>
+  </data>
+  <data name="check_result_description" xml:space="preserve">
+    <value>结果描述</value>
+  </data>
+  <data name="check_result_type" xml:space="preserve">
+    <value>是否合格</value>
+  </data>
+  <data name="check_result_type_name" xml:space="preserve">
+    <value>是否合格</value>
+  </data>
+  <data name="check_type" xml:space="preserve">
+    <value>检查类型</value>
+  </data>
+  <data name="child_count" xml:space="preserve">
+    <value>其中儿童数</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="child_ticket_count" xml:space="preserve">
+    <value>其中儿童票</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="city" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="city_id" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="city_name" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="close_flag" xml:space="preserve">
+    <value>关闭标志</value>
+  </data>
+  <data name="close_number" xml:space="preserve">
+    <value>截止人数</value>
+  </data>
+  <data name="close_period" xml:space="preserve">
+    <value>完工期间</value>
+  </data>
+  <data name="cm_cg_amount" xml:space="preserve">
+    <value>当月采购金额</value>
+  </data>
+  <data name="cm_kp_amount" xml:space="preserve">
+    <value>当月开票金额</value>
+  </data>
+  <data name="cm_pay_amount" xml:space="preserve">
+    <value>当月付款金额</value>
+  </data>
+  <data name="cm_receive_amount" xml:space="preserve">
+    <value>当月收款金额</value>
+  </data>
+  <data name="cm_xs_amount" xml:space="preserve">
+    <value>当月销售金额</value>
+  </data>
+  <data name="cm_xs_cost" xml:space="preserve">
+    <value>当月销售成本</value>
+  </data>
+  <data name="cm_xs_profit" xml:space="preserve">
+    <value>当月销售利润</value>
+  </data>
+  <data name="cm_xs_profit_rate" xml:space="preserve">
+    <value>当月销售利润率%</value>
+  </data>
+  <data name="color" xml:space="preserve">
+    <value>颜色</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="column_name" xml:space="preserve">
+    <value>字段名称</value>
+  </data>
+  <data name="comp_prop_id" xml:space="preserve">
+    <value>竞争对手方案</value>
+  </data>
+  <data name="companies" xml:space="preserve">
+    <value>协同工作者</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>开卡公司</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="company_arrearage_flag" xml:space="preserve">
+    <value>有无公司欠款</value>
+  </data>
+  <data name="company_email" xml:space="preserve">
+    <value>企业邮箱</value>
+  </data>
+  <data name="company_id" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="company_name" xml:space="preserve">
+    <value>公司名称</value>
+  </data>
+  <data name="company_person" xml:space="preserve">
+    <value>协同工作者</value>
+  </data>
+  <data name="complete_date" xml:space="preserve">
+    <value>完成日期</value>
+  </data>
+  <data name="complete_description" xml:space="preserve">
+    <value>完成情况说明</value>
+  </data>
+  <data name="complete_flag" xml:space="preserve">
+    <value>完成标志</value>
+  </data>
+  <data name="complete_ratio" xml:space="preserve">
+    <value>完成率%</value>
+  </data>
+  <data name="complete_work_handover_flag" xml:space="preserve">
+    <value>是否完成工作交接</value>
+  </data>
+  <data name="computer_specifications" xml:space="preserve">
+    <value>电脑规格</value>
+  </data>
+  <data name="conditions" xml:space="preserve">
+    <value>备注</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="configuration" xml:space="preserve">
+    <value>配制</value>
+  </data>
+  <data name="confirm_password" xml:space="preserve">
+    <value>确认密码</value>
+  </data>
+  <data name="contact_address" xml:space="preserve">
+    <value>联系地址</value>
+  </data>
+  <data name="contact_be_develop" xml:space="preserve">
+    <value>Be Developed</value>
+  </data>
+  <data name="contact_" xml:space="preserve">
+    <value>生日</value>
+  </data>
+  <data name="contact_casual" xml:space="preserve">
+    <value>Casual</value>
+  </data>
+  <data name="contact_department" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="contact_email" xml:space="preserve">
+    <value>联系邮件</value>
+  </data>
+  <data name="contact_focus" xml:space="preserve">
+    <value>Focus</value>
+  </data>
+  <data name="contact_info" xml:space="preserve">
+    <value>联系方式</value>
+  </data>
+  <data name="contact_key_flag" xml:space="preserve">
+    <value>Key Contact?</value>
+  </data>
+  <data name="contact_name" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="contact_person" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="contact_phone" xml:space="preserve">
+    <value>联系电话</value>
+  </data>
+  <data name="contact_role" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="contact_strong" xml:space="preserve">
+    <value>职责</value>
+  </data>
+  <data name="contact_tel" xml:space="preserve">
+    <value>联系电话</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="contact_title" xml:space="preserve">
+    <value>头衔</value>
+  </data>
+  <data name="contact_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="contact_view" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="content_size" xml:space="preserve">
+    <value>尺寸</value>
+  </data>
+  <data name="contract_company_id" xml:space="preserve">
+    <value>雇佣单位</value>
+  </data>
+  <data name="contract_company_name" xml:space="preserve">
+    <value>雇佣单位</value>
+  </data>
+  <data name="contract_end_date" xml:space="preserve">
+    <value>合同结束日期</value>
+  </data>
+  <data name="contract_month" xml:space="preserve">
+    <value>合同期限(月)</value>
+  </data>
+  <data name="contract_no" xml:space="preserve">
+    <value>合同编号</value>
+  </data>
+  <data name="contract_noenddate_flag" xml:space="preserve">
+    <value>无固定期限合同</value>
+  </data>
+  <data name="contract_num" xml:space="preserve">
+    <value>合同编号</value>
+  </data>
+  <data name="contract_renew_num" xml:space="preserve">
+    <value>合同续订单号</value>
+  </data>
+  <data name="contract_start_date" xml:space="preserve">
+    <value>合同开始日期</value>
+  </data>
+  <data name="contract_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="copy" xml:space="preserve">
+    <value>拷贝</value>
+  </data>
+  <data name="copy_from" xml:space="preserve">
+    <value>拷贝从</value>
+  </data>
+  <data name="copylasttravelperson" xml:space="preserve">
+    <value>复制上一行程人员信息</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="copyto_reason" xml:space="preserve">
+    <value>抄送原因</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="copytodate" xml:space="preserve">
+    <value>抄送日期</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="core_flag" xml:space="preserve">
+    <value>核心产品标志</value>
+  </data>
+  <data name="corp_code" xml:space="preserve">
+    <value>企业代码</value>
+  </data>
+  <data name="corp_name" xml:space="preserve">
+    <value>企业名称</value>
+  </data>
+  <data name="cost" xml:space="preserve">
+    <value>成本</value>
+  </data>
+  <data name="cost_alloc" xml:space="preserve">
+    <value>分摊费用</value>
+  </data>
+  <data name="cost_beg" xml:space="preserve">
+    <value>期初金额</value>
+  </data>
+  <data name="cost_center" xml:space="preserve">
+    <value>成本中心</value>
+  </data>
+  <data name="cost_company_id" xml:space="preserve">
+    <value>成本单位</value>
+  </data>
+  <data name="cost_company_name" xml:space="preserve">
+    <value>成本单位</value>
+  </data>
+  <data name="cost_end" xml:space="preserve">
+    <value>期末金额</value>
+  </data>
+  <data name="cost_in" xml:space="preserve">
+    <value>入库金额</value>
+  </data>
+  <data name="cost_out" xml:space="preserve">
+    <value>出库金额</value>
+  </data>
+  <data name="cost_per_month" xml:space="preserve">
+    <value>成本/月</value>
+  </data>
+  <data name="cost_price" xml:space="preserve">
+    <value>成本单价</value>
+  </data>
+  <data name="cost_ratio" xml:space="preserve">
+    <value>成本分摊比率</value>
+  </data>
+  <data name="cost_team_id" xml:space="preserve">
+    <value>费用承担部门</value>
+  </data>
+  <data name="cost_team_name" xml:space="preserve">
+    <value>费用承担部门</value>
+  </data>
+  <data name="costcenter_code" xml:space="preserve">
+    <value>成本中心代码</value>
+  </data>
+  <data name="costcenter_name" xml:space="preserve">
+    <value>成本中心名称</value>
+  </data>
+  <data name="course_code" xml:space="preserve">
+    <value>课程代码</value>
+  </data>
+  <data name="course_content" xml:space="preserve">
+    <value>课程内容</value>
+  </data>
+  <data name="course_duration" xml:space="preserve">
+    <value>课程历时</value>
+  </data>
+  <data name="course_lecturer" xml:space="preserve">
+    <value>课程讲师</value>
+  </data>
+  <data name="course_name" xml:space="preserve">
+    <value>课程名称</value>
+  </data>
+  <data name="course_objective" xml:space="preserve">
+    <value>课程目标</value>
+  </data>
+  <data name="course_supplie" xml:space="preserve">
+    <value>课程用品</value>
+  </data>
+  <data name="cptest_pass_flag" xml:space="preserve">
+    <value>通过产品试验</value>
+  </data>
+  <data name="cpwg_dj_no" xml:space="preserve">
+    <value>完工单号</value>
+  </data>
+  <data name="cpwgrk_dj_id" xml:space="preserve">
+    <value>完工入库单据编号</value>
+  </data>
+  <data name="cpwgrk_dj_no" xml:space="preserve">
+    <value>完工入库单号</value>
+  </data>
+  <data name="cpwgrk_qty" xml:space="preserve">
+    <value>完工入库数量</value>
+  </data>
+  <data name="cpzljy_dj_no" xml:space="preserve">
+    <value>产品检验单号</value>
+  </data>
+  <data name="create_by" xml:space="preserve">
+    <value>创建人</value>
+  </data>
+  <data name="create_date" xml:space="preserve">
+    <value>创建日期</value>
+  </data>
+  <data name="create_name" xml:space="preserve">
+    <value>制单人</value>
+  </data>
+  <data name="createrepayment" xml:space="preserve">
+    <value>创建还款单</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="credential_name" xml:space="preserve">
+    <value>证件名称</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="credential_number" xml:space="preserve">
+    <value>证件号码</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="cubage" xml:space="preserve">
+    <value>体积</value>
+  </data>
+  <data name="currencyaccount_code" xml:space="preserve">
+    <value>货币账号代码</value>
+  </data>
+  <data name="currencyaccount_name" xml:space="preserve">
+    <value>货币账号名称</value>
+  </data>
+  <data name="current_amount" xml:space="preserve">
+    <value>当前金额</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="current_company_after" xml:space="preserve">
+    <value>加入公司后</value>
+  </data>
+  <data name="current_company_before" xml:space="preserve">
+    <value>加入公司前</value>
+  </data>
+  <data name="current_contract_flag" xml:space="preserve">
+    <value>当前合同</value>
+  </data>
+  <data name="current_flag" xml:space="preserve">
+    <value>当前期间标志</value>
+  </data>
+  <data name="current_job_title" xml:space="preserve">
+    <value>现任岗位</value>
+  </data>
+  <data name="current_kilometer" xml:space="preserve">
+    <value>当前公里数</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="current_month_value" xml:space="preserve">
+    <value>当前月值</value>
+  </data>
+  <data name="current_num" xml:space="preserve">
+    <value>当前编号中的数字</value>
+  </data>
+  <data name="current_period_flag" xml:space="preserve">
+    <value>当前期间标志</value>
+  </data>
+  <data name="current_state" xml:space="preserve">
+    <value>当前状态</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="current_version" xml:space="preserve">
+    <value>当前版本</value>
+  </data>
+  <data name="current_version_description" xml:space="preserve">
+    <value>当前版本值</value>
+  </data>
+  <data name="customer_budget" xml:space="preserve">
+    <value>预算</value>
+  </data>
+  <data name="customer_code" xml:space="preserve">
+    <value>客户编号</value>
+  </data>
+  <data name="customer_id" xml:space="preserve">
+    <value>客户编号</value>
+  </data>
+  <data name="customer_name" xml:space="preserve">
+    <value>客户名称</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="customer_num" xml:space="preserve">
+    <value>客户编号</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="customer_project_num" xml:space="preserve">
+    <value>工程账号</value>
+  </data>
+  <data name="customer_type_name" xml:space="preserve">
+    <value>类别名称</value>
+  </data>
+  <data name="cut" xml:space="preserve">
+    <value>剪贴</value>
+  </data>
+  <data name="cx_dj_no" xml:space="preserve">
+    <value>冲销单号</value>
+  </data>
+  <data name="cx_flag" xml:space="preserve">
+    <value>是否冲销</value>
+  </data>
+  <data name="cx_pay_amount" xml:space="preserve">
+    <value>可充应付金额</value>
+  </data>
+  <data name="cx_receive_amount" xml:space="preserve">
+    <value>可充应收款金额</value>
+  </data>
+  <data name="cxreceive_amount" xml:space="preserve">
+    <value>冲销金额</value>
+  </data>
+  <data name="cy_cg_amount" xml:space="preserve">
+    <value>当年累计采购金额</value>
+  </data>
+  <data name="cy_kp_amount" xml:space="preserve">
+    <value>当年累计开票金额</value>
+  </data>
+  <data name="cy_pay_amount" xml:space="preserve">
+    <value>当年累计付款金额</value>
+  </data>
+  <data name="cy_receive_amount" xml:space="preserve">
+    <value>当年累计收金额</value>
+  </data>
+  <data name="cy_xs_amount" xml:space="preserve">
+    <value>当年累计销售金额</value>
+  </data>
+  <data name="cy_xs_cost" xml:space="preserve">
+    <value>当年累计销售成本</value>
+  </data>
+  <data name="cy_xs_profit" xml:space="preserve">
+    <value>当年销售利润</value>
+  </data>
+  <data name="cy_xs_profit_rate" xml:space="preserve">
+    <value>当年销售利润率%</value>
+  </data>
+  <data name="cycle_code" xml:space="preserve">
+    <value>当前操作周期</value>
+  </data>
+  <data name="cycle_name" xml:space="preserve">
+    <value>销售周期定义</value>
+  </data>
+  <data name="dalei_code" xml:space="preserve">
+    <value>分类代码</value>
+  </data>
+  <data name="dalei_id" xml:space="preserve">
+    <value>分类</value>
+  </data>
+  <data name="dalei_level" xml:space="preserve">
+    <value>分类层次</value>
+  </data>
+  <data name="dalei_name" xml:space="preserve">
+    <value>分类名称</value>
+  </data>
+  <data name="dalei_pid" xml:space="preserve">
+    <value>父节点</value>
+  </data>
+  <data name="data_source" xml:space="preserve">
+    <value>数据源</value>
+  </data>
+  <data name="data_text" xml:space="preserve">
+    <value>参数值</value>
+  </data>
+  <data name="data_type" xml:space="preserve">
+    <value>数据类型</value>
+  </data>
+  <data name="data_value" xml:space="preserve">
+    <value>参数值</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="day_scope_from" xml:space="preserve">
+    <value>需要休假最短天数</value>
+  </data>
+  <data name="day_scope_to" xml:space="preserve">
+    <value>需要休假最多天数</value>
+  </data>
+  <data name="dayslab" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="db_dj_no" xml:space="preserve">
+    <value>调拨单编号</value>
+  </data>
+  <data name="dbck_dj_no" xml:space="preserve">
+    <value>调拨出库单编号</value>
+  </data>
+  <data name="default_hstype_code" xml:space="preserve">
+    <value>系统核算方式</value>
+  </data>
+  <data name="default_tax_rate" xml:space="preserve">
+    <value>系统默认税率</value>
+  </data>
+  <data name="default_vender_flag" xml:space="preserve">
+    <value>默认供应商</value>
+  </data>
+  <data name="degree" xml:space="preserve">
+    <value>学位</value>
+  </data>
+  <data name="deinstall_date" xml:space="preserve">
+    <value>卸装时间</value>
+  </data>
+  <data name="delegate_begin_date" xml:space="preserve">
+    <value>授权开始时间</value>
+  </data>
+  <data name="delegate_end_date" xml:space="preserve">
+    <value>授权结束时间</value>
+  </data>
+  <data name="delegate_id" xml:space="preserve">
+    <value>授权编号</value>
+  </data>
+  <data name="delegate_manufacture_cost" xml:space="preserve">
+    <value>委外加工费用</value>
+  </data>
+  <data name="delete_flag" xml:space="preserve">
+    <value>删除标志</value>
+  </data>
+  <data name="delivery_rate" xml:space="preserve">
+    <value>出货率</value>
+  </data>
+  <data name="delte_flag" xml:space="preserve">
+    <value>删除标志</value>
+  </data>
+  <data name="demand_number" xml:space="preserve">
+    <value>需求人数</value>
+  </data>
+  <data name="department" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="department_name" xml:space="preserve">
+    <value>部门</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="description1" xml:space="preserve">
+    <value>描述1</value>
+  </data>
+  <data name="description2" xml:space="preserve">
+    <value>描述2</value>
+  </data>
+  <data name="design_by" xml:space="preserve">
+    <value>设计者</value>
+  </data>
+  <data name="design_qty" xml:space="preserve">
+    <value>设计数量</value>
+  </data>
+  <data name="designate_users" xml:space="preserve">
+    <value>指定参与人数</value>
+  </data>
+  <data name="desire_pay" xml:space="preserve">
+    <value>期望薪资水平</value>
+  </data>
+  <data name="destination_place" xml:space="preserve">
+    <value>目的地</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="diff_amount" xml:space="preserve">
+    <value>补差价</value>
+  </data>
+  <data name="dimission_reason" xml:space="preserve">
+    <value>离职原因</value>
+  </data>
+  <data name="direct_line" xml:space="preserve">
+    <value>直线电话</value>
+  </data>
+  <data name="direct_manager_name" xml:space="preserve">
+    <value>主管姓名</value>
+  </data>
+  <data name="discharge_capacity" xml:space="preserve">
+    <value>排量</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="dismiss_date" xml:space="preserve">
+    <value>被辞退日期</value>
+  </data>
+  <data name="dismiss_num" xml:space="preserve">
+    <value>辞退单号</value>
+  </data>
+  <data name="dismiss_reason" xml:space="preserve">
+    <value>辞退理由</value>
+  </data>
+  <data name="dismiss_user_id" xml:space="preserve">
+    <value>被辞退员工姓名</value>
+  </data>
+  <data name="dispatch_code" xml:space="preserve">
+    <value>派车单号</value>
+  </data>
+  <data name="dj_date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="dj_detail_id" xml:space="preserve">
+    <value>DJ Detail ID</value>
+  </data>
+  <data name="dj_id" xml:space="preserve">
+    <value>单据ID</value>
+  </data>
+  <data name="dj_name" xml:space="preserve">
+    <value>单据名称</value>
+  </data>
+  <data name="dj_no" xml:space="preserve">
+    <value>单据编号</value>
+  </data>
+  <data name="dj_no_length" xml:space="preserve">
+    <value>单据编号长度</value>
+  </data>
+  <data name="dj_no_prefix" xml:space="preserve">
+    <value>单据编号前缀</value>
+  </data>
+  <data name="dj_status" xml:space="preserve">
+    <value>单据状态</value>
+  </data>
+  <data name="dj_status_name" xml:space="preserve">
+    <value>单据状态</value>
+  </data>
+  <data name="dj_sys_type" xml:space="preserve">
+    <value>单据类别</value>
+  </data>
+  <data name="dj_type" xml:space="preserve">
+    <value>单据类型</value>
+  </data>
+  <data name="dlpan_code" xml:space="preserve">
+    <value>电缆盘编号</value>
+  </data>
+  <data name="dlpan_control_flag" xml:space="preserve">
+    <value>电缆盘控制</value>
+  </data>
+  <data name="dlpan_name" xml:space="preserve">
+    <value>电缆盘</value>
+  </data>
+  <data name="drive_liscence_date" xml:space="preserve">
+    <value>初次领照日期</value>
+  </data>
+  <data name="drive_liscence_type" xml:space="preserve">
+    <value>驾照类型</value>
+  </data>
+  <data name="driver" xml:space="preserve">
+    <value>驾驶员</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="driver_name" xml:space="preserve">
+    <value>驾驶人员</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="duns_num" xml:space="preserve">
+    <value>DUNS代码</value>
+  </data>
+  <data name="educational_background" xml:space="preserve">
+    <value>学历</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="email_address" xml:space="preserve">
+    <value>EMail 地址</value>
+  </data>
+  <data name="email1" xml:space="preserve">
+    <value>邮件</value>
+  </data>
+  <data name="emergency_contact_name" xml:space="preserve">
+    <value>紧急联系人</value>
+  </data>
+  <data name="emergency_phone" xml:space="preserve">
+    <value>紧急联系电话</value>
+  </data>
+  <data name="employee" xml:space="preserve">
+    <value>员工</value>
+    <comment>CMDB</comment>
+  </data>
+  <data name="employee_size" xml:space="preserve">
+    <value>员工规模</value>
+  </data>
+  <data name="employment_month" xml:space="preserve">
+    <value>用工期限(月)</value>
+  </data>
+  <data name="employment_period" xml:space="preserve">
+    <value>聘用期</value>
+  </data>
+  <data name="enable_flag" xml:space="preserve">
+    <value>可用标志</value>
+  </data>
+  <data name="enabled" xml:space="preserve">
+    <value>可用标识</value>
+  </data>
+  <data name="end_date" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="end_date_yyyymmdd" xml:space="preserve">
+    <value>结束日期 ( YYYYMMDD )</value>
+    <comment>SFA</comment>
+  </data>
+  <data name="end_kilometer" xml:space="preserve">
+    <value>当前公里数</value>
+  </data>
+  <data name="end_payperiod_name" xml:space="preserve">
+    <value>结束期间</value>
+  </data>
+  <data name="end_time" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="end_time_hour" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="endprobation_date" xml:space="preserve">
+    <value>申请转正时间</value>
+  </data>
+  <data name="endprobation_flag" xml:space="preserve">
+    <value>是否转正</value>
+  </data>
+  <data name="endprobation_num" xml:space="preserve">
+    <value>转正单号</value>
+  </data>
+  <data name="endprobation_remark" xml:space="preserve">
+    <value>是否转正说明</value>
+  </data>
+  <data name="endprobation_user_id" xml:space="preserve">
+    <value>拟转正人姓名</value>
+  </data>
+  <data name="eng_name" xml:space="preserve">
+    <value>英文名</value>
+  </data>
+  <data name="engine_number" xml:space="preserve">
+    <value>发动机号</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="english_name" xml:space="preserve">
+    <value>英文姓名</value>
+  </data>
+  <data name="equipment_unit_price" xml:space="preserve">
+    <value>单价</value>
+  </data>
+  <data name="error_msg" xml:space="preserve">
+    <value>错误消息</value>
+  </data>
+  <data name="estab_address" xml:space="preserve">
+    <value>地址</value>
+  </data>
+  <data name="estab_address1" xml:space="preserve">
+    <value>地址1</value>
+  </data>
+  <data name="estab_name" xml:space="preserve">
+    <value>客户名称</value>
+  </data>
+  <data name="estab_name_cn" xml:space="preserve">
+    <value>中文名</value>
+  </data>
+  <data name="estab_name_en" xml:space="preserve">
+    <value>英文名</value>
+  </data>
+  <data name="estab_num" xml:space="preserve">
+    <value>客户编号</value>
+  </data>
+  <data name="estab_postcode" xml:space="preserve">
+    <value>邮编</value>
+  </data>
+  <data name="estab_property" xml:space="preserve">
+    <value>所有权</value>
+  </data>
+  <data name="estab_remark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="estab_top" xml:space="preserve">
+    <value>级别</value>
+  </data>
+  <data name="estimate_amount" xml:space="preserve">
+    <value>预估金额</value>
+  </data>
+  <data name="estimate_complete_rate" xml:space="preserve">
+    <value>预计完成(%)</value>
+  </data>
+  <data name="estimate_end_date" xml:space="preserve">
+    <value>计划结束日期</value>
+  </data>
+  <data name="estimate_install_date" xml:space="preserve">
+    <value>预估安装时间</value>
+  </data>
+  <data name="estimate_price" xml:space="preserve">
+    <value>预估价格</value>
+  </data>
+  <data name="estimate_required_date" xml:space="preserve">
+    <value>计划需求日</value>
+  </data>
+  <data name="estimate_revenue" xml:space="preserve">
+    <value>预估收入</value>
+  </data>
+  <data name="estimate_revenue_cpl" xml:space="preserve">
+    <value>预计收入(RMB,K)</value>
+  </data>
+  <data name="estimate_start_date" xml:space="preserve">
+    <value>计划开始日期</value>
+  </data>
+  <data name="estimate_workload" xml:space="preserve">
+    <value>预计工作量</value>
+  </data>
+  <data name="evaluation_numbers" xml:space="preserve">
+    <value>评估人数</value>
+  </data>
+  <data name="evaluation_period" xml:space="preserve">
+    <value>评估期间</value>
+  </data>
+  <data name="evaluator" xml:space="preserve">
+    <value>评估者</value>
+  </data>
+  <data name="excel_file_name" xml:space="preserve">
+    <value>Excel文件</value>
+  </data>
+  <data name="exclude_kq_team_name" xml:space="preserve">
+    <value>不参与电子考勤的部门</value>
+  </data>
+  <data name="exclude_pa_team_name" xml:space="preserve">
+    <value>不参与绩效考核的部门</value>
+  </data>
+  <data name="expect_accession_date" xml:space="preserve">
+    <value>期望到职日期</value>
+  </data>
+  <data name="expect_leave_date" xml:space="preserve">
+    <value>拟离职日期</value>
+  </data>
+  <data name="expected_result" xml:space="preserve">
+    <value>预期效果</value>
+  </data>
+  <data name="expense_category_name" xml:space="preserve">
+    <value>报销分类</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="expense_code" xml:space="preserve">
+    <value>报销单编号</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="expense_guid" xml:space="preserve">
+    <value>条码</value>
+  </data>
+  <data name="expense_id" xml:space="preserve">
+    <value>报销单号</value>
+  </data>
+  <data name="expense_idmp_code" xml:space="preserve">
+    <value>内部决策单号</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="expense_journey_id" xml:space="preserve">
+    <value>行程ID</value>
+  </data>
+  <data name="expense_remark" xml:space="preserve">
+    <value>描述</value>
+    <comment>Finance</comment>
+  </data>
+  <data name="expense_repayment_detail_id" xml:space="preserve">
+    <value>还款单号</value>
+  </data>
+  <data name="expense_team_id" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="expense_team_name" xml:space="preserve">
+    <value>费用发生部门</value>
+  </data>
+  <data name="expense_team_name1" xml:space="preserve">
+    <value>部门名称</value>
+  </data>
+  <data name="expense_type" xml:space="preserve">
+    <value>报销费用种类</value>
+    <comment>Finance</comment>
+  </data>
+  <data name="expense_type_name" xml:space="preserve">
+    <value>报销分类名称</value>
+    <comment>Finance</comment>
+  </data>
+  <data name="expensedetail" xml:space="preserve">
+    <value>详细费用</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="expensedetailtype" xml:space="preserve">
+    <value>可选费用列表</value>
+    <comment>Finance</comment>
+  </data>
+  <data name="expenseprocess" xml:space="preserve">
+    <value>可选流程</value>
+    <comment>Finance</comment>
+  </data>
+  <data name="experimental_fee" xml:space="preserve">
+    <value>实验费</value>
+  </data>
+  <data name="expertise_test_score" xml:space="preserve">
+    <value>专业测试成绩</value>
+  </data>
+  <data name="external_num" xml:space="preserve">
+    <value>申请单号</value>
+  </data>
+  <data name="factor" xml:space="preserve">
+    <value>要素</value>
+  </data>
+  <data name="facturer" xml:space="preserve">
+    <value>制造商</value>
+  </data>
+  <data name="fax" xml:space="preserve">
+    <value>传真号码</value>
+  </data>
+  <data name="fee_remark" xml:space="preserve">
+    <value>费用说明</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="feedback_code" xml:space="preserve">
+    <value>结果录入单号</value>
+  </data>
+  <data name="feedback_date" xml:space="preserve">
+    <value>反馈日期</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="feedback_description" xml:space="preserve">
+    <value>反馈</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="feetype_name" xml:space="preserve">
+    <value>费用类别</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="fen_duan" xml:space="preserve">
+    <value>分段</value>
+  </data>
+  <data name="fen_duan1" xml:space="preserve">
+    <value>分段内</value>
+  </data>
+  <data name="fen_duan2" xml:space="preserve">
+    <value>分段中</value>
+  </data>
+  <data name="fen_duan3" xml:space="preserve">
+    <value>分段外</value>
+  </data>
+  <data name="file_handover_flag" xml:space="preserve">
+    <value>书籍,公章,文件等交接</value>
+  </data>
+  <data name="file_name" xml:space="preserve">
+    <value>文件名称</value>
+  </data>
+  <data name="file_type" xml:space="preserve">
+    <value>文件类型</value>
+  </data>
+  <data name="final_rating" xml:space="preserve">
+    <value>等级评定结果</value>
+  </data>
+  <data name="final_result" xml:space="preserve">
+    <value>最终意见</value>
+  </data>
+  <data name="final_score" xml:space="preserve">
+    <value>业绩/素质综合得分</value>
+  </data>
+  <data name="financeinfo" xml:space="preserve">
+    <value>财务信息</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="finish_equipment" xml:space="preserve">
+    <value>结束装机</value>
+  </data>
+  <data name="first_check_date" xml:space="preserve">
+    <value>检查开始日期</value>
+  </data>
+  <data name="first_num" xml:space="preserve">
+    <value>第一次单号</value>
+  </data>
+  <data name="fixed_manufacture_cost" xml:space="preserve">
+    <value>单位固定制造费用金额</value>
+  </data>
+  <data name="flexible_manufacture_cost_rate" xml:space="preserve">
+    <value>变动制造费用分配率</value>
+  </data>
+  <data name="flight_info" xml:space="preserve">
+    <value>航班信息</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="flight_num_list" xml:space="preserve">
+    <value>建议航班</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="flight_train_number" xml:space="preserve">
+    <value>航班车次</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="folkishness" xml:space="preserve">
+    <value>民族</value>
+  </data>
+  <data name="foreignlanguage_level" xml:space="preserve">
+    <value>外语水平</value>
+  </data>
+  <data name="foreignlanguage_test_score" xml:space="preserve">
+    <value>外语测试成绩</value>
+  </data>
+  <data name="form_code" xml:space="preserve">
+    <value>表单编号</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="formalities_num" xml:space="preserve">
+    <value>离职手续单号</value>
+  </data>
+  <data name="frame_number" xml:space="preserve">
+    <value>车架号</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="freecopy_volume" xml:space="preserve">
+    <value>免费用量</value>
+  </data>
+  <data name="from" xml:space="preserve">
+    <value>从</value>
+  </data>
+  <data name="from_customer_code" xml:space="preserve">
+    <value>转出客户代码</value>
+  </data>
+  <data name="from_customer_name" xml:space="preserve">
+    <value>转出客户名称</value>
+  </data>
+  <data name="from_dj_no" xml:space="preserve">
+    <value>关联单据号</value>
+  </data>
+  <data name="from_site_name" xml:space="preserve">
+    <value>转出用户名称</value>
+  </data>
+  <data name="from_site_num" xml:space="preserve">
+    <value>转出用户编号</value>
+  </data>
+  <data name="fromuser" xml:space="preserve">
+    <value>抄送人</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="function_id" xml:space="preserve">
+    <value>菜单序号</value>
+  </data>
+  <data name="function_name" xml:space="preserve">
+    <value>菜单名称</value>
+  </data>
+  <data name="function_name_cn" xml:space="preserve">
+    <value>菜单中文名称</value>
+  </data>
+  <data name="function_name_en" xml:space="preserve">
+    <value>菜单英文名称</value>
+  </data>
+  <data name="function_pid" xml:space="preserve">
+    <value>父菜单序号</value>
+  </data>
+  <data name="function_type_id" xml:space="preserve">
+    <value>菜单类型</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="gender_code" xml:space="preserve">
+    <value>性别</value>
+  </data>
+  <data name="gender_request" xml:space="preserve">
+    <value>性别要求</value>
+  </data>
+  <data name="geo_name" xml:space="preserve">
+    <value>区域名称</value>
+  </data>
+  <data name="geo_parent_name" xml:space="preserve">
+    <value>上级区域名称</value>
+  </data>
+  <data name="geo_pid" xml:space="preserve">
+    <value>上级区域</value>
+  </data>
+  <data name="geo_type" xml:space="preserve">
+    <value>区域类型</value>
+  </data>
+  <data name="getremark_expression" xml:space="preserve">
+    <value>获取备注表达式</value>
+  </data>
+  <data name="getvalue_expression" xml:space="preserve">
+    <value>获取值表达式</value>
+  </data>
+  <data name="gh_day" xml:space="preserve">
+    <value>供货周期</value>
+  </data>
+  <data name="global_account_flag" xml:space="preserve">
+    <value>全球账户?</value>
+  </data>
+  <data name="graduation_date" xml:space="preserve">
+    <value>毕业时间</value>
+  </data>
+  <data name="graduation_school" xml:space="preserve">
+    <value>毕业院校</value>
+  </data>
+  <data name="handover_items" xml:space="preserve">
+    <value>需移交事项</value>
+  </data>
+  <data name="health_condition" xml:space="preserve">
+    <value>健康状况</value>
+  </data>
+  <data name="heducational_background" xml:space="preserve">
+    <value>学历</value>
+  </data>
+  <data name="height" xml:space="preserve">
+    <value>身高(公分)</value>
+  </data>
+  <data name="highest_academic_degree" xml:space="preserve">
+    <value>最高学位</value>
+  </data>
+  <data name="highest_educational_background" xml:space="preserve">
+    <value>最高学历</value>
+  </data>
+  <data name="hire_num" xml:space="preserve">
+    <value>录用单号</value>
+  </data>
+  <data name="hire_status_name" xml:space="preserve">
+    <value>招聘状态</value>
+  </data>
+  <data name="hire_user_name" xml:space="preserve">
+    <value>录用员工姓名</value>
+  </data>
+  <data name="home_action" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="home_address" xml:space="preserve">
+    <value>家庭地址</value>
+  </data>
+  <data name="home_phone" xml:space="preserve">
+    <value>家庭电话</value>
+  </data>
+  <data name="home_phone1" xml:space="preserve">
+    <value>家庭电话</value>
+  </data>
+  <data name="home_postcode" xml:space="preserve">
+    <value>邮编</value>
+  </data>
+  <data name="housing_fund_account" xml:space="preserve">
+    <value>公积金账号</value>
+  </data>
+  <data name="housing_fund_basic_amount" xml:space="preserve">
+    <value>公积金缴纳基数</value>
+  </data>
+  <data name="housing_fund_company_id" xml:space="preserve">
+    <value>公积金缴纳单位</value>
+  </data>
+  <data name="housing_fund_date" xml:space="preserve">
+    <value>公积金起缴日期(原单位)</value>
+  </data>
+  <data name="housing_fund_date_company" xml:space="preserve">
+    <value>公积金起缴日期(本集团)</value>
+  </data>
+  <data name="housing_fund_geo_id" xml:space="preserve">
+    <value>公积金所在地</value>
+  </data>
+  <data name="housing_fund_geo_name" xml:space="preserve">
+    <value>公积金所在地</value>
+  </data>
+  <data name="housing_fund_place" xml:space="preserve">
+    <value>公积金所在地</value>
+  </data>
+  <data name="hq_flag" xml:space="preserve">
+    <value>是否总部?</value>
+  </data>
+  <data name="hr_leave_form" xml:space="preserve">
+    <value>休假加班记录</value>
+  </data>
+  <data name="hr_remark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="hr_service_month" xml:space="preserve">
+    <value>累积司龄(月)</value>
+  </data>
+  <data name="hr_user_bankinfo" xml:space="preserve">
+    <value>银行信息</value>
+  </data>
+  <data name="hr_user_contract" xml:space="preserve">
+    <value>用工信息</value>
+  </data>
+  <data name="hr_user_education" xml:space="preserve">
+    <value>教育背景</value>
+  </data>
+  <data name="hr_user_insurance" xml:space="preserve">
+    <value>商业保险</value>
+  </data>
+  <data name="hr_user_leave" xml:space="preserve">
+    <value>离职信息</value>
+  </data>
+  <data name="hr_user_punish" xml:space="preserve">
+    <value>处罚</value>
+  </data>
+  <data name="hr_user_team_history" xml:space="preserve">
+    <value>加入公司后的职位变动</value>
+  </data>
+  <data name="hr_work_experience" xml:space="preserve">
+    <value>加入公司前的工作经历</value>
+  </data>
+  <data name="hstype_code" xml:space="preserve">
+    <value>核算方式</value>
+  </data>
+  <data name="hukou_geo_id" xml:space="preserve">
+    <value>户口地址</value>
+  </data>
+  <data name="hukou_place" xml:space="preserve">
+    <value>户口地址</value>
+  </data>
+  <data name="hukou_type" xml:space="preserve">
+    <value>户口种类</value>
+  </data>
+  <data name="huowei_code" xml:space="preserve">
+    <value>货位代码</value>
+  </data>
+  <data name="huowei_name" xml:space="preserve">
+    <value>货位名称</value>
+  </data>
+  <data name="idcard_num" xml:space="preserve">
+    <value>身份证号</value>
+  </data>
+  <data name="idmp_code" xml:space="preserve">
+    <value>编号</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmp_guid" xml:space="preserve">
+    <value>条码</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmp_select_subject" xml:space="preserve">
+    <value>选择一个流程</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmp_wizard_complete" xml:space="preserve">
+    <value>完成提交</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmp_wizard_confirm_information" xml:space="preserve">
+    <value>第四步，确认全部信息：</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmp_wizard_input_details" xml:space="preserve">
+    <value>第二步，输入详细信息：</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmp_wizard_select_category" xml:space="preserve">
+    <value>第一步，选择一个流程：</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmp_wizard_upload_files" xml:space="preserve">
+    <value>第三步，上传相关附件：</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpassign_to" xml:space="preserve">
+    <value>审批人</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpcancel" xml:space="preserve">
+    <value>取消</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpclose" xml:space="preserve">
+    <value>关闭</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpcopytoenable_flag" xml:space="preserve">
+    <value>是否终止</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpfinish" xml:space="preserve">
+    <value>完成</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpnext" xml:space="preserve">
+    <value>下一步</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpoperation" xml:space="preserve">
+    <value>可用操作</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpprevious" xml:space="preserve">
+    <value>上一步</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpstate" xml:space="preserve">
+    <value>步骤状态</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="idmpstep_order" xml:space="preserve">
+    <value>步骤顺序号</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="import_by" xml:space="preserve">
+    <value>操作人</value>
+  </data>
+  <data name="import_date" xml:space="preserve">
+    <value>操作日期</value>
+  </data>
+  <data name="import_reason" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="improve_deadline" xml:space="preserve">
+    <value>改进期限</value>
+  </data>
+  <data name="improve_num" xml:space="preserve">
+    <value>改进单号</value>
+  </data>
+  <data name="improve_plan" xml:space="preserve">
+    <value>行动计划</value>
+  </data>
+  <data name="improve_project" xml:space="preserve">
+    <value>改进项目</value>
+  </data>
+  <data name="improve_time" xml:space="preserve">
+    <value>制定次数</value>
+  </data>
+  <data name="in_budget_flag" xml:space="preserve">
+    <value>是否预算内</value>
+  </data>
+  <data name="in_qty" xml:space="preserve">
+    <value>入库数量</value>
+  </data>
+  <data name="in_schedule_flag" xml:space="preserve">
+    <value>计划标志</value>
+  </data>
+  <data name="include_leader_flag" xml:space="preserve">
+    <value>是否包含部门领导</value>
+  </data>
+  <data name="income_amount" xml:space="preserve">
+    <value>收入</value>
+  </data>
+  <data name="indirect_manager_id" xml:space="preserve">
+    <value>上一级主管</value>
+  </data>
+  <data name="indirect_manager_name" xml:space="preserve">
+    <value>上一级主管姓名</value>
+  </data>
+  <data name="individual_computer_flag" xml:space="preserve">
+    <value>电脑需求</value>
+  </data>
+  <data name="init_day_flag" xml:space="preserve">
+    <value>是否需要初始化年假数据</value>
+  </data>
+  <data name="init_days" xml:space="preserve">
+    <value>初始化天数</value>
+  </data>
+  <data name="init_item_code" xml:space="preserve">
+    <value>初始化项编码</value>
+  </data>
+  <data name="init_item_name" xml:space="preserve">
+    <value>初始化项名称</value>
+  </data>
+  <data name="init_item_value" xml:space="preserve">
+    <value>初始化项值</value>
+  </data>
+  <data name="input_date" xml:space="preserve">
+    <value>购（转）入日期</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="inspection_address" xml:space="preserve">
+    <value>年检地址</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="inspection_content" xml:space="preserve">
+    <value>年检内容</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="inspection_cyle" xml:space="preserve">
+    <value>年检周期</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="inspection_date" xml:space="preserve">
+    <value>年检日期</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="inspection_expense" xml:space="preserve">
+    <value>年检费用</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="install_date" xml:space="preserve">
+    <value>装机日期</value>
+  </data>
+  <data name="insurance_amount" xml:space="preserve">
+    <value>保险金额</value>
+  </data>
+  <data name="insurance_by_company_id" xml:space="preserve">
+    <value>承保单位</value>
+  </data>
+  <data name="insurance_fees" xml:space="preserve">
+    <value>保险费用</value>
+  </data>
+  <data name="insurance_num" xml:space="preserve">
+    <value>保险单号</value>
+  </data>
+  <data name="insurance_type" xml:space="preserve">
+    <value>保险险种</value>
+  </data>
+  <data name="insure_amount" xml:space="preserve">
+    <value>保险金额</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="insure_company" xml:space="preserve">
+    <value>保险公司</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="insure_content" xml:space="preserve">
+    <value>保险内容</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="insure_cycle" xml:space="preserve">
+    <value>保险周期</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="insure_end_date" xml:space="preserve">
+    <value>出保日期</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="insure_start_date" xml:space="preserve">
+    <value>入保日期</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="interview_remark" xml:space="preserve">
+    <value>面试总评</value>
+  </data>
+  <data name="interview_score" xml:space="preserve">
+    <value>面试总分</value>
+  </data>
+  <data name="interview_user1" xml:space="preserve">
+    <value>面试人员1</value>
+  </data>
+  <data name="interview_user2" xml:space="preserve">
+    <value>面试人员2</value>
+  </data>
+  <data name="interview_user3" xml:space="preserve">
+    <value>面试人员3</value>
+  </data>
+  <data name="invoice_amount" xml:space="preserve">
+    <value>发票金额</value>
+  </data>
+  <data name="invoice_code" xml:space="preserve">
+    <value>发票代码</value>
+  </data>
+  <data name="invoice_company_name" xml:space="preserve">
+    <value>发票抬头</value>
+  </data>
+  <data name="invoice_date" xml:space="preserve">
+    <value>发票日期</value>
+  </data>
+  <data name="invoice_no" xml:space="preserve">
+    <value>发票号码</value>
+  </data>
+  <data name="invoice_type" xml:space="preserve">
+    <value>发票类型</value>
+  </data>
+  <data name="invoice_type_name" xml:space="preserve">
+    <value>发票类型</value>
+  </data>
+  <data name="ismandantory" xml:space="preserve">
+    <value>是否强制</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="issue_by" xml:space="preserve">
+    <value>发布人</value>
+  </data>
+  <data name="issue_date" xml:space="preserve">
+    <value>发布日期</value>
+  </data>
+  <data name="issue_num" xml:space="preserve">
+    <value>发布编号</value>
+  </data>
+  <data name="issue_team" xml:space="preserve">
+    <value>发布部门</value>
+  </data>
+  <data name="issued_rate" xml:space="preserve">
+    <value>下达率</value>
+  </data>
+  <data name="jgwg_dj_no" xml:space="preserve">
+    <value>加工完工单号</value>
+  </data>
+  <data name="jhcg_qty" xml:space="preserve">
+    <value>采购数量</value>
+  </data>
+  <data name="job_check_description" xml:space="preserve">
+    <value>工作检查内容</value>
+  </data>
+  <data name="job_code" xml:space="preserve">
+    <value>岗位编号</value>
+  </data>
+  <data name="job_description" xml:space="preserve">
+    <value>工作描述</value>
+  </data>
+  <data name="job_duties" xml:space="preserve">
+    <value>岗位职责</value>
+  </data>
+  <data name="job_family" xml:space="preserve">
+    <value>岗位工种</value>
+  </data>
+  <data name="job_formal_title" xml:space="preserve">
+    <value>职称(国家评定)</value>
+  </data>
+  <data name="job_function" xml:space="preserve">
+    <value>岗位系统</value>
+  </data>
+  <data name="job_level" xml:space="preserve">
+    <value>岗位级别</value>
+  </data>
+  <data name="job_name" xml:space="preserve">
+    <value>职务</value>
+  </data>
+  <data name="job_position" xml:space="preserve">
+    <value>职位</value>
+  </data>
+  <data name="job_responsibility" xml:space="preserve">
+    <value>岗位职责</value>
+  </data>
+  <data name="job_summary" xml:space="preserve">
+    <value>岗位概述</value>
+  </data>
+  <data name="job_title" xml:space="preserve">
+    <value>岗位名称</value>
+  </data>
+  <data name="job_type" xml:space="preserve">
+    <value>岗位类别</value>
+  </data>
+  <data name="job_users" xml:space="preserve">
+    <value>岗位人数</value>
+  </data>
+  <data name="jointcalltype_id" xml:space="preserve">
+    <value>共同拜访</value>
+  </data>
+  <data name="journey_abstract_code" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="journey_abstract_name" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="journey_amount" xml:space="preserve">
+    <value>小计</value>
+  </data>
+  <data name="journey_arrive_city" xml:space="preserve">
+    <value>到达城市</value>
+  </data>
+  <data name="journey_arrive_date" xml:space="preserve">
+    <value>到达时间</value>
+  </data>
+  <data name="journey_arrive_date_h" xml:space="preserve">
+    <value>到达时间(小时)</value>
+  </data>
+  <data name="journey_arrive_date_m" xml:space="preserve">
+    <value>到达时间(分钟)</value>
+  </data>
+  <data name="journey_arrive_place" xml:space="preserve">
+    <value>到达地点</value>
+  </data>
+  <data name="journey_description" xml:space="preserve">
+    <value>行程说明</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="journey_person_count" xml:space="preserve">
+    <value>人数</value>
+  </data>
+  <data name="journey_place" xml:space="preserve">
+    <value>城市</value>
+  </data>
+  <data name="journey_required_arrive_date" xml:space="preserve">
+    <value>要求到达时间</value>
+  </data>
+  <data name="journey_start_city" xml:space="preserve">
+    <value>出发城市</value>
+  </data>
+  <data name="journey_start_date" xml:space="preserve">
+    <value>出发时间</value>
+  </data>
+  <data name="journey_start_place" xml:space="preserve">
+    <value>出发地点</value>
+  </data>
+  <data name="journey_stay_place" xml:space="preserve">
+    <value>住宿地点</value>
+  </data>
+  <data name="journey_suggest_start_date" xml:space="preserve">
+    <value>建议出发时间</value>
+  </data>
+  <data name="journey_traffic_type" xml:space="preserve">
+    <value>交通方式</value>
+  </data>
+  <data name="journey_type" xml:space="preserve">
+    <value>行程类别</value>
+  </data>
+  <data name="journeydescription" xml:space="preserve">
+    <value>行程描述</value>
+  </data>
+  <data name="journeydetail" xml:space="preserve">
+    <value>行程单</value>
+  </data>
+  <data name="jx_dj_no" xml:space="preserve">
+    <value>检修单编号</value>
+  </data>
+  <data name="jxc_matdesign_bom" xml:space="preserve">
+    <value>半成品</value>
+  </data>
+  <data name="jxc_matdesign_bom_material" xml:space="preserve">
+    <value>原材料</value>
+  </data>
+  <data name="kc_qty" xml:space="preserve">
+    <value>库存数量</value>
+  </data>
+  <data name="kilometer" xml:space="preserve">
+    <value>公里数</value>
+  </data>
+  <data name="kilometer_number" xml:space="preserve">
+    <value>加油时公里数</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="kmdm" xml:space="preserve">
+    <value>科目代码</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="knowledge_level_description" xml:space="preserve">
+    <value>岗位要求级别</value>
+  </data>
+  <data name="kq_am_end_time" xml:space="preserve">
+    <value>上午签退时间</value>
+  </data>
+  <data name="kq_am_start_time" xml:space="preserve">
+    <value>上午签到时间</value>
+  </data>
+  <data name="kq_monthly_num" xml:space="preserve">
+    <value>考勤单号</value>
+  </data>
+  <data name="kq_pm_end_time" xml:space="preserve">
+    <value>下午签退时间</value>
+  </data>
+  <data name="kq_pm_start_time" xml:space="preserve">
+    <value>下午签到时间</value>
+  </data>
+  <data name="ky_qty" xml:space="preserve">
+    <value>可用数量</value>
+  </data>
+  <data name="language_kind" xml:space="preserve">
+    <value>语言种类</value>
+  </data>
+  <data name="language_level" xml:space="preserve">
+    <value>语言水平</value>
+  </data>
+  <data name="language_request" xml:space="preserve">
+    <value>语言要求</value>
+  </data>
+  <data name="last_action_date" xml:space="preserve">
+    <value>最后操作时间</value>
+  </data>
+  <data name="last_contact_by" xml:space="preserve">
+    <value>最后联系人</value>
+  </data>
+  <data name="last_contact_date" xml:space="preserve">
+    <value>最后联系时间</value>
+  </data>
+  <data name="last_depre_period" xml:space="preserve">
+    <value>Last Depre Period</value>
+    <comment>EFA</comment>
+  </data>
+  <data name="last_end_date" xml:space="preserve">
+    <value>Last End Date</value>
+  </data>
+  <data name="last_flag" xml:space="preserve">
+    <value>最后标志</value>
+  </data>
+  <data name="last_flag1" xml:space="preserve">
+    <value>最后标志</value>
+  </data>
+  <data name="last_operation" xml:space="preserve">
+    <value>最后操作</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="last_operation_by" xml:space="preserve">
+    <value>最后操作人</value>
+  </data>
+  <data name="last_operation_id" xml:space="preserve">
+    <value>最后操作</value>
+  </data>
+  <data name="last_operator" xml:space="preserve">
+    <value>最后操作人</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="last_start_date" xml:space="preserve">
+    <value>Last Start Date</value>
+  </data>
+  <data name="last_update_by" xml:space="preserve">
+    <value>最后更改人</value>
+  </data>
+  <data name="last_update_date" xml:space="preserve">
+    <value>最后更改日期</value>
+  </data>
+  <data name="lastlockout_date" xml:space="preserve">
+    <value>最后锁定日期</value>
+  </data>
+  <data name="lastlogin_date" xml:space="preserve">
+    <value>最后登录日期</value>
+  </data>
+  <data name="lastpasswordchanged_date" xml:space="preserve">
+    <value>最后密码改变日期</value>
+  </data>
+  <data name="launch_date" xml:space="preserve">
+    <value>发布时间</value>
+  </data>
+  <data name="lead_authority" xml:space="preserve">
+    <value>权限</value>
+  </data>
+  <data name="lead_duplicate_count" xml:space="preserve">
+    <value>重复数量</value>
+  </data>
+  <data name="leader_adjust_score" xml:space="preserve">
+    <value>主管调整得分</value>
+  </data>
+  <data name="leader_mend_expect" xml:space="preserve">
+    <value>3.您认为您下属下半年有待改进之处：</value>
+  </data>
+  <data name="leader_overall_appraise" xml:space="preserve">
+    <value>1.您对您下属上半年工作的总体评价：</value>
+  </data>
+  <data name="leader_prominent_appraise" xml:space="preserve">
+    <value>2.您认为您下属上半年表现最突出之处：</value>
+  </data>
+  <data name="lease_end_date" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="lease_months" xml:space="preserve">
+    <value>租赁月份</value>
+  </data>
+  <data name="lease_start_date" xml:space="preserve">
+    <value>租赁开始</value>
+  </data>
+  <data name="leave_advise" xml:space="preserve">
+    <value>离职赠言</value>
+  </data>
+  <data name="leave_condition_name" xml:space="preserve">
+    <value>流程类别</value>
+  </data>
+  <data name="leave_date" xml:space="preserve">
+    <value>离职日期</value>
+  </data>
+  <data name="leave_form_code" xml:space="preserve">
+    <value>休假单号</value>
+  </data>
+  <data name="leave_reason" xml:space="preserve">
+    <value>离职原因</value>
+  </data>
+  <data name="leave_type" xml:space="preserve">
+    <value>离职类别</value>
+  </data>
+  <data name="leave_type_code" xml:space="preserve">
+    <value>休假类型</value>
+  </data>
+  <data name="leave_type_name" xml:space="preserve">
+    <value>休假类型名称</value>
+  </data>
+  <data name="left_jhcg_qty" xml:space="preserve">
+    <value>剩余计划采购数量</value>
+  </data>
+  <data name="left_lend_amount" xml:space="preserve">
+    <value>待还款余额</value>
+  </data>
+  <data name="left_ll_qty" xml:space="preserve">
+    <value>剩余领料数量</value>
+  </data>
+  <data name="left_qty" xml:space="preserve">
+    <value>剩余数量</value>
+  </data>
+  <data name="leftqty_actiontype" xml:space="preserve">
+    <value>剩余数量操作方式</value>
+  </data>
+  <data name="lend_amount" xml:space="preserve">
+    <value>借款金额</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="lend_amount_summary" xml:space="preserve">
+    <value>借款总额</value>
+  </data>
+  <data name="lend_code" xml:space="preserve">
+    <value>借款单号</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="lend_date" xml:space="preserve">
+    <value>借款日期</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="lend_detail_id" xml:space="preserve">
+    <value>Lend Detail ID</value>
+  </data>
+  <data name="lend_guid" xml:space="preserve">
+    <value>条码</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="lend_id" xml:space="preserve">
+    <value>借款单号</value>
+  </data>
+  <data name="lend_person" xml:space="preserve">
+    <value>借款人</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="lend_repayment_amount" xml:space="preserve">
+    <value>已还款金额</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="lend_repayment_status" xml:space="preserve">
+    <value>是否已还款</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="lend_type" xml:space="preserve">
+    <value>借款类型</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="lend_usage_description" xml:space="preserve">
+    <value>借款用途</value>
+  </data>
+  <data name="length_of_service" xml:space="preserve">
+    <value>累积司龄</value>
+  </data>
+  <data name="liability_identification" xml:space="preserve">
+    <value>责任认定</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="license_plate" xml:space="preserve">
+    <value>车牌照</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="limit_artifact_vatprice" xml:space="preserve">
+    <value>加工费限定</value>
+  </data>
+  <data name="limit_vatprice" xml:space="preserve">
+    <value>采购价格限定</value>
+  </data>
+  <data name="line" xml:space="preserve">
+    <value>序号</value>
+  </data>
+  <data name="link_dj_detail_id" xml:space="preserve">
+    <value>关联单据明细ID</value>
+  </data>
+  <data name="link_dj_id" xml:space="preserve">
+    <value>关联单据ID</value>
+  </data>
+  <data name="link_dj_line" xml:space="preserve">
+    <value>关联单据行号</value>
+  </data>
+  <data name="link_dj_no_list" xml:space="preserve">
+    <value>关联单据号</value>
+  </data>
+  <data name="link_dj_sys_type" xml:space="preserve">
+    <value>关联单据类别</value>
+  </data>
+  <data name="ll_dj_no" xml:space="preserve">
+    <value>领料单号</value>
+  </data>
+  <data name="ll_type" xml:space="preserve">
+    <value>领料出库单类型</value>
+  </data>
+  <data name="ll_type_name" xml:space="preserve">
+    <value>领料单类别</value>
+  </data>
+  <data name="llck_dj_detail_id" xml:space="preserve">
+    <value>领料出库单据明细ID</value>
+  </data>
+  <data name="llck_dj_id" xml:space="preserve">
+    <value>领料出库单据ID</value>
+  </data>
+  <data name="llck_dj_no" xml:space="preserve">
+    <value>领料出库单号</value>
+  </data>
+  <data name="llck_qty" xml:space="preserve">
+    <value>领料数量</value>
+  </data>
+  <data name="llout_team_name" xml:space="preserve">
+    <value>领料部门</value>
+  </data>
+  <data name="llt_dj_no" xml:space="preserve">
+    <value>退料单号</value>
+  </data>
+  <data name="llt_type_name" xml:space="preserve">
+    <value>退料单类型</value>
+  </data>
+  <data name="location" xml:space="preserve">
+    <value>场所</value>
+  </data>
+  <data name="location_city" xml:space="preserve">
+    <value>所在城市</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="login_name" xml:space="preserve">
+    <value>登录名</value>
+  </data>
+  <data name="m_code" xml:space="preserve">
+    <value>物料编码</value>
+  </data>
+  <data name="m_fullname" xml:space="preserve">
+    <value>物料描述</value>
+  </data>
+  <data name="m_id" xml:space="preserve">
+    <value>M_ID</value>
+  </data>
+  <data name="m_madetype_code" xml:space="preserve">
+    <value>物料制造类别</value>
+  </data>
+  <data name="m_name" xml:space="preserve">
+    <value>物料名称</value>
+  </data>
+  <data name="m_xinhao" xml:space="preserve">
+    <value>物料型号</value>
+  </data>
+  <data name="made_cost" xml:space="preserve">
+    <value>制造成本</value>
+  </data>
+  <data name="made_fee" xml:space="preserve">
+    <value>制造费用</value>
+  </data>
+  <data name="made_fixed_cost" xml:space="preserve">
+    <value>固定制造成本</value>
+  </data>
+  <data name="made_fixed_fee" xml:space="preserve">
+    <value>固定制造费用</value>
+  </data>
+  <data name="made_flexible_cost" xml:space="preserve">
+    <value>变动制造成本</value>
+  </data>
+  <data name="made_flexible_fee" xml:space="preserve">
+    <value>变动制造费用</value>
+  </data>
+  <data name="made_in_place" xml:space="preserve">
+    <value>产地</value>
+  </data>
+  <data name="madetype_a_cost" xml:space="preserve">
+    <value>领用成品成本</value>
+  </data>
+  <data name="madetype_b_cost" xml:space="preserve">
+    <value>领用半成品成本</value>
+  </data>
+  <data name="mail_to_flag" xml:space="preserve">
+    <value>邮寄地址</value>
+  </data>
+  <data name="major" xml:space="preserve">
+    <value>主修专业</value>
+  </data>
+  <data name="management_skill" xml:space="preserve">
+    <value>团队管理</value>
+  </data>
+  <data name="manual_adjust_flag" xml:space="preserve">
+    <value>调整</value>
+  </data>
+  <data name="map_no" xml:space="preserve">
+    <value>行号</value>
+    <comment>Finance</comment>
+  </data>
+  <data name="marry_type" xml:space="preserve">
+    <value>婚姻状况</value>
+  </data>
+  <data name="mat_cost" xml:space="preserve">
+    <value>材料成本</value>
+  </data>
+  <data name="mat_type" xml:space="preserve">
+    <value>物料类型</value>
+  </data>
+  <data name="matdesign_dj_no" xml:space="preserve">
+    <value>设计单号</value>
+  </data>
+  <data name="max_price" xml:space="preserve">
+    <value>最高采购单价</value>
+  </data>
+  <data name="max_qty" xml:space="preserve">
+    <value>最高库存</value>
+  </data>
+  <data name="memo" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="mid_year_result" xml:space="preserve">
+    <value>年中完成情况</value>
+  </data>
+  <data name="mid_year_score" xml:space="preserve">
+    <value>年中得分</value>
+  </data>
+  <data name="midyear_end_date" xml:space="preserve">
+    <value>年中评估结束日期</value>
+  </data>
+  <data name="midyear_start_date" xml:space="preserve">
+    <value>年中评估开始日期</value>
+  </data>
+  <data name="mif_quantity" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="mif_reference" xml:space="preserve">
+    <value>机器参考</value>
+  </data>
+  <data name="min_price" xml:space="preserve">
+    <value>最低销售单价</value>
+  </data>
+  <data name="min_qty" xml:space="preserve">
+    <value>最低库存</value>
+  </data>
+  <data name="mobile_phone" xml:space="preserve">
+    <value>手机</value>
+  </data>
+  <data name="model" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="model_id" xml:space="preserve">
+    <value>产品序号</value>
+  </data>
+  <data name="module_name" xml:space="preserve">
+    <value>模块名称</value>
+  </data>
+  <data name="month_commit_volume" xml:space="preserve">
+    <value>承诺用量/月</value>
+  </data>
+  <data name="month_fix_charge" xml:space="preserve">
+    <value>固定费用/月</value>
+  </data>
+  <data name="monthclose_text" xml:space="preserve">
+    <value>期间范围</value>
+  </data>
+  <data name="monthly_close_day" xml:space="preserve">
+    <value>每月核算日期</value>
+  </data>
+  <data name="monthly_item_code" xml:space="preserve">
+    <value>数据项编码</value>
+  </data>
+  <data name="monthly_item_name" xml:space="preserve">
+    <value>数据项名称</value>
+  </data>
+  <data name="monthly_item_value" xml:space="preserve">
+    <value>数据项值</value>
+  </data>
+  <data name="monthlydata_submit_date" xml:space="preserve">
+    <value>提交日期</value>
+  </data>
+  <data name="monthlydata_submit_flag" xml:space="preserve">
+    <value>提交标识</value>
+  </data>
+  <data name="nation_id" xml:space="preserve">
+    <value>国家和地区序号</value>
+  </data>
+  <data name="nationality_name" xml:space="preserve">
+    <value>国籍</value>
+  </data>
+  <data name="native_name" xml:space="preserve">
+    <value>中文姓名</value>
+  </data>
+  <data name="native_place" xml:space="preserve">
+    <value>籍贯</value>
+  </data>
+  <data name="need_cx_flag" xml:space="preserve">
+    <value>是否需要冲销</value>
+  </data>
+  <data name="need_idmp_flag" xml:space="preserve">
+    <value>需要IDMP</value>
+    <comment>Finance</comment>
+  </data>
+  <data name="need_journey_flag" xml:space="preserve">
+    <value>需要行程单</value>
+    <comment>Finance</comment>
+  </data>
+  <data name="need_kq_flag" xml:space="preserve">
+    <value>是否参与考勤</value>
+  </data>
+  <data name="need_leave_flag" xml:space="preserve">
+    <value>需要加班申请</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="need_pa_flag" xml:space="preserve">
+    <value>是否参与绩效考核</value>
+  </data>
+  <data name="need_quantity" xml:space="preserve">
+    <value>需求人数</value>
+  </data>
+  <data name="need_rentinfo_flag" xml:space="preserve">
+    <value>是否协助租房</value>
+  </data>
+  <data name="need_trip_flag" xml:space="preserve">
+    <value>需要出差申请</value>
+  </data>
+  <data name="needattachment_description" xml:space="preserve">
+    <value>上传附件时显示的提示信息</value>
+  </data>
+  <data name="network" xml:space="preserve">
+    <value>网络</value>
+  </data>
+  <data name="new_company_name" xml:space="preserve">
+    <value>新所属公司</value>
+  </data>
+  <data name="new_contract_company_name" xml:space="preserve">
+    <value>新雇用单位</value>
+  </data>
+  <data name="new_contract_end_date" xml:space="preserve">
+    <value>新合同结束日期</value>
+  </data>
+  <data name="new_contract_month" xml:space="preserve">
+    <value>新合同期限(月)</value>
+  </data>
+  <data name="new_contract_start_date" xml:space="preserve">
+    <value>新合同开始日期</value>
+  </data>
+  <data name="new_contract_type_name" xml:space="preserve">
+    <value>新合同类型</value>
+  </data>
+  <data name="new_cost" xml:space="preserve">
+    <value>调价后成本</value>
+  </data>
+  <data name="new_cost_center" xml:space="preserve">
+    <value>新成本中心</value>
+  </data>
+  <data name="new_cost_company_id" xml:space="preserve">
+    <value>新成本单位</value>
+  </data>
+  <data name="new_cost_price" xml:space="preserve">
+    <value>新成本单价</value>
+  </data>
+  <data name="new_job_code" xml:space="preserve">
+    <value>新岗位编号</value>
+  </data>
+  <data name="new_job_effective_date" xml:space="preserve">
+    <value>新岗位生效日期</value>
+  </data>
+  <data name="new_job_level" xml:space="preserve">
+    <value>新岗位级别</value>
+  </data>
+  <data name="new_job_title" xml:space="preserve">
+    <value>新岗位名称</value>
+  </data>
+  <data name="new_manager_name" xml:space="preserve">
+    <value>新直接主管</value>
+  </data>
+  <data name="new_password" xml:space="preserve">
+    <value>新密码</value>
+  </data>
+  <data name="new_prod_flag" xml:space="preserve">
+    <value>新产品研发</value>
+  </data>
+  <data name="new_site_name" xml:space="preserve">
+    <value>新办公地点</value>
+  </data>
+  <data name="new_std_price" xml:space="preserve">
+    <value>标准价(新)</value>
+  </data>
+  <data name="new_tax_company_id" xml:space="preserve">
+    <value>新税务单位</value>
+  </data>
+  <data name="new_team_name" xml:space="preserve">
+    <value>新所属部门</value>
+  </data>
+  <data name="new_user_contract_id" xml:space="preserve">
+    <value>新合同编号</value>
+  </data>
+  <data name="new_user_number" xml:space="preserve">
+    <value>新员工号</value>
+  </data>
+  <data name="new_value" xml:space="preserve">
+    <value>新值</value>
+  </data>
+  <data name="newcase" xml:space="preserve">
+    <value>新增销售案例</value>
+  </data>
+  <data name="newcontact" xml:space="preserve">
+    <value>添加新联系</value>
+  </data>
+  <data name="newheadcount_num" xml:space="preserve">
+    <value>需求单号</value>
+  </data>
+  <data name="newheadcount_num_desc" xml:space="preserve">
+    <value>需求申请单</value>
+  </data>
+  <data name="next_check_date" xml:space="preserve">
+    <value>下一检查日期</value>
+  </data>
+  <data name="next_check_days" xml:space="preserve">
+    <value>检查间隔周期</value>
+  </data>
+  <data name="next_inspection_date" xml:space="preserve">
+    <value>下次年检日期</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="next_operator" xml:space="preserve">
+    <value>下一操作人</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="nowg_llck_qty" xml:space="preserve">
+    <value>未完工领料数量</value>
+  </data>
+  <data name="number_of_days" xml:space="preserve">
+    <value>实际天数</value>
+  </data>
+  <data name="number_of_hours" xml:space="preserve">
+    <value>实际小时</value>
+  </data>
+  <data name="object_type" xml:space="preserve">
+    <value>目标类型</value>
+  </data>
+  <data name="objective_id" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="off_duty_ip" xml:space="preserve">
+    <value>下班IP</value>
+  </data>
+  <data name="off_duty_time" xml:space="preserve">
+    <value>下班时间</value>
+  </data>
+  <data name="office_mobile" xml:space="preserve">
+    <value>手机号码</value>
+  </data>
+  <data name="oil_add_date" xml:space="preserve">
+    <value>加油日期</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="oil_card_id" xml:space="preserve">
+    <value>油卡编号</value>
+  </data>
+  <data name="oil_card_num" xml:space="preserve">
+    <value>加油卡号</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="oil_count" xml:space="preserve">
+    <value>加油数量</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="oil_fee" xml:space="preserve">
+    <value>油费</value>
+  </data>
+  <data name="oil_type" xml:space="preserve">
+    <value>加油类型</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="old_contract_company_name" xml:space="preserve">
+    <value>原雇佣单位</value>
+  </data>
+  <data name="old_contract_end_date" xml:space="preserve">
+    <value>原合同结束日期</value>
+  </data>
+  <data name="old_contract_type_name" xml:space="preserve">
+    <value>原合同类型</value>
+  </data>
+  <data name="old_cost" xml:space="preserve">
+    <value>调价前成本</value>
+  </data>
+  <data name="old_cost_price" xml:space="preserve">
+    <value>原成本单价</value>
+  </data>
+  <data name="old_m_code" xml:space="preserve">
+    <value>物料编码(旧)</value>
+  </data>
+  <data name="old_m_name" xml:space="preserve">
+    <value>物料名称(旧)</value>
+  </data>
+  <data name="old_password" xml:space="preserve">
+    <value>旧密码</value>
+  </data>
+  <data name="old_std_price" xml:space="preserve">
+    <value>标准价(旧)</value>
+  </data>
+  <data name="old_user_contract_id" xml:space="preserve">
+    <value>原合同编号</value>
+  </data>
+  <data name="old_value" xml:space="preserve">
+    <value>旧值</value>
+  </data>
+  <data name="on_duty_ip" xml:space="preserve">
+    <value>上班IP</value>
+  </data>
+  <data name="on_duty_time" xml:space="preserve">
+    <value>上班时间</value>
+  </data>
+  <data name="onboard_date" xml:space="preserve">
+    <value>入职日期</value>
+  </data>
+  <data name="onboard_diathesis_level" xml:space="preserve">
+    <value>入职素质测试</value>
+  </data>
+  <data name="onboard_end_date" xml:space="preserve">
+    <value>入职截止日期</value>
+  </data>
+  <data name="onboard_num" xml:space="preserve">
+    <value>报到单号</value>
+  </data>
+  <data name="onedisapproveend" xml:space="preserve">
+    <value>一次不批准即结束流程</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="open_number" xml:space="preserve">
+    <value>开班人数</value>
+  </data>
+  <data name="operation_name" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="order_no" xml:space="preserve">
+    <value>订单编号</value>
+  </data>
+  <data name="order_num" xml:space="preserve">
+    <value>订单号</value>
+  </data>
+  <data name="other_fee" xml:space="preserve">
+    <value>其它费用</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="other_reason_name" xml:space="preserve">
+    <value>其他原因</value>
+  </data>
+  <data name="otherpay_type_code" xml:space="preserve">
+    <value>类别代码</value>
+  </data>
+  <data name="otherpay_type_id" xml:space="preserve">
+    <value>类别名称</value>
+  </data>
+  <data name="otherpay_type_name" xml:space="preserve">
+    <value>类别名称</value>
+  </data>
+  <data name="otherreceive_type_code" xml:space="preserve">
+    <value>类别代码</value>
+  </data>
+  <data name="otherreceive_type_id" xml:space="preserve">
+    <value>类别名称</value>
+  </data>
+  <data name="otherreceive_type_name" xml:space="preserve">
+    <value>类别名称</value>
+  </data>
+  <data name="out_budget_remark" xml:space="preserve">
+    <value>如是预算外职位,请说明原因</value>
+  </data>
+  <data name="outlook_date" xml:space="preserve">
+    <value>Outlook 日期</value>
+  </data>
+  <data name="over_budget_type" xml:space="preserve">
+    <value>是否超预算</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="owner" xml:space="preserve">
+    <value>授权人</value>
+  </data>
+  <data name="owner_company" xml:space="preserve">
+    <value>所属公司</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="pa_communication_flag" xml:space="preserve">
+    <value>1.针对本年度的绩效评估及下年度的发展计划,您的主管是否与您进行了一对一的沟通?</value>
+  </data>
+  <data name="pa_control_factor" xml:space="preserve">
+    <value>具体评估标准</value>
+  </data>
+  <data name="pa_direct_manager_id" xml:space="preserve">
+    <value>评估主管</value>
+  </data>
+  <data name="pa_end_date" xml:space="preserve">
+    <value>绩效结束日期</value>
+  </data>
+  <data name="pa_objective" xml:space="preserve">
+    <value>绩效目标</value>
+  </data>
+  <data name="pa_rating" xml:space="preserve">
+    <value>系统等级</value>
+  </data>
+  <data name="pa_start_date" xml:space="preserve">
+    <value>绩效开始日期</value>
+  </data>
+  <data name="pa_subject" xml:space="preserve">
+    <value>绩效目标</value>
+  </data>
+  <data name="page_function_id" xml:space="preserve">
+    <value>菜单位置</value>
+  </data>
+  <data name="page_url" xml:space="preserve">
+    <value>菜单 URL</value>
+  </data>
+  <data name="paperiod_close_flag" xml:space="preserve">
+    <value>期间关闭标志</value>
+  </data>
+  <data name="parahead" xml:space="preserve">
+    <value>密码已到期,请更新您的密码!</value>
+  </data>
+  <data name="parameter_code" xml:space="preserve">
+    <value>参数代码</value>
+  </data>
+  <data name="parent_function_name" xml:space="preserve">
+    <value>父亲菜单名称</value>
+  </data>
+  <data name="parent_name" xml:space="preserve">
+    <value>父节点名称</value>
+  </data>
+  <data name="park_fee" xml:space="preserve">
+    <value>停车费</value>
+  </data>
+  <data name="pass_date" xml:space="preserve">
+    <value>记帐日期</value>
+  </data>
+  <data name="pass_user_name" xml:space="preserve">
+    <value>记帐人</value>
+  </data>
+  <data name="passenger_name" xml:space="preserve">
+    <value>乘坐人员</value>
+  </data>
+  <data name="passport" xml:space="preserve">
+    <value>护照号码</value>
+  </data>
+  <data name="passport_expire_date" xml:space="preserve">
+    <value>护照有效期</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="pause_date" xml:space="preserve">
+    <value>终止日期</value>
+  </data>
+  <data name="pay_amount" xml:space="preserve">
+    <value>本次付款金额</value>
+  </data>
+  <data name="pay_category" xml:space="preserve">
+    <value>薪酬类别</value>
+  </data>
+  <data name="pay_company" xml:space="preserve">
+    <value>支付给公司</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="pay_dj_no" xml:space="preserve">
+    <value>付款单号</value>
+  </data>
+  <data name="pay_grade" xml:space="preserve">
+    <value>工资级别</value>
+  </data>
+  <data name="pay_max" xml:space="preserve">
+    <value>最高工资</value>
+  </data>
+  <data name="pay_mid" xml:space="preserve">
+    <value>中位工资</value>
+  </data>
+  <data name="pay_min" xml:space="preserve">
+    <value>最低工资</value>
+  </data>
+  <data name="pay_person" xml:space="preserve">
+    <value>支付给个人</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="pay_settlement" xml:space="preserve">
+    <value>工资结算</value>
+  </data>
+  <data name="pay_type" xml:space="preserve">
+    <value>支付方式</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="payperiod_id" xml:space="preserve">
+    <value>薪资期间</value>
+  </data>
+  <data name="payperiod_name" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="payperiod_type_name" xml:space="preserve">
+    <value>结算周期</value>
+  </data>
+  <data name="payset_id" xml:space="preserve">
+    <value>工资结构</value>
+  </data>
+  <data name="payset_name" xml:space="preserve">
+    <value>工资结构</value>
+  </data>
+  <data name="payslip_item_code" xml:space="preserve">
+    <value>工资单项编码</value>
+  </data>
+  <data name="payslip_item_name" xml:space="preserve">
+    <value>工资单项名称</value>
+  </data>
+  <data name="pd_qty" xml:space="preserve">
+    <value>盘点数量</value>
+  </data>
+  <data name="pend_reason" xml:space="preserve">
+    <value>待决原因</value>
+  </data>
+  <data name="period" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="period_id" xml:space="preserve">
+    <value>期间</value>
+  </data>
+  <data name="period_type" xml:space="preserve">
+    <value>期间类型</value>
+  </data>
+  <data name="person_avg_expense" xml:space="preserve">
+    <value>人均费用</value>
+  </data>
+  <data name="person_count" xml:space="preserve">
+    <value>总人数</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="person_list" xml:space="preserve">
+    <value>同行人员</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="person_name" xml:space="preserve">
+    <value>家庭成员姓名</value>
+  </data>
+  <data name="person_native_name" xml:space="preserve">
+    <value>姓名</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="person_type" xml:space="preserve">
+    <value>乘客类别</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="personal_email" xml:space="preserve">
+    <value>个人邮箱</value>
+  </data>
+  <data name="personal_file_place" xml:space="preserve">
+    <value>档案地址</value>
+  </data>
+  <data name="personal_mobile" xml:space="preserve">
+    <value>移动电话</value>
+  </data>
+  <data name="personal_remark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="persontype_id" xml:space="preserve">
+    <value>乘客类别</value>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value>电话</value>
+  </data>
+  <data name="phone_ext" xml:space="preserve">
+    <value>电话分机</value>
+  </data>
+  <data name="photo" xml:space="preserve">
+    <value>选择图片</value>
+  </data>
+  <data name="photo_name" xml:space="preserve">
+    <value>图片名称</value>
+  </data>
+  <data name="pi_hao" xml:space="preserve">
+    <value>批号</value>
+  </data>
+  <data name="pictureno" xml:space="preserve">
+    <value>图号</value>
+  </data>
+  <data name="pinyin_ab" xml:space="preserve">
+    <value>拼音</value>
+  </data>
+  <data name="place" xml:space="preserve">
+    <value>货位</value>
+  </data>
+  <data name="plan_complete_date" xml:space="preserve">
+    <value>计划完成日期</value>
+  </data>
+  <data name="plan_complete_percent" xml:space="preserve">
+    <value>预计完成%</value>
+  </data>
+  <data name="plan_cost" xml:space="preserve">
+    <value>预计费用</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="plan_end_date" xml:space="preserve">
+    <value>计划结束日期</value>
+  </data>
+  <data name="plan_flight_train" xml:space="preserve">
+    <value>预期航班车次</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="plan_job_description" xml:space="preserve">
+    <value>计划执行项目</value>
+  </data>
+  <data name="plan_start" xml:space="preserve">
+    <value>预计出车时间</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="plan_start_date" xml:space="preserve">
+    <value>计划开始日期</value>
+  </data>
+  <data name="political" xml:space="preserve">
+    <value>政治面貌</value>
+  </data>
+  <data name="political_join_date" xml:space="preserve">
+    <value>入党日期</value>
+  </data>
+  <data name="ppf_end_date" xml:space="preserve">
+    <value>年初计划结束日期</value>
+  </data>
+  <data name="ppf_start_date" xml:space="preserve">
+    <value>年初计划开始日期</value>
+  </data>
+  <data name="pre_pay_amount" xml:space="preserve">
+    <value>预付款金额</value>
+  </data>
+  <data name="pre_receive_amount" xml:space="preserve">
+    <value>预收款金额</value>
+  </data>
+  <data name="prepay_dj_no" xml:space="preserve">
+    <value>预付款单号</value>
+  </data>
+  <data name="prereceive_dj_no" xml:space="preserve">
+    <value>预收款单号</value>
+  </data>
+  <data name="present_address" xml:space="preserve">
+    <value>现住址</value>
+  </data>
+  <data name="present_company_name" xml:space="preserve">
+    <value>现所属公司</value>
+  </data>
+  <data name="present_cost_center" xml:space="preserve">
+    <value>现成本中心</value>
+  </data>
+  <data name="present_cost_company_id" xml:space="preserve">
+    <value>现成本单位</value>
+  </data>
+  <data name="present_job_code" xml:space="preserve">
+    <value>现岗位编号</value>
+  </data>
+  <data name="present_job_effective_date" xml:space="preserve">
+    <value>现岗位生效日期</value>
+  </data>
+  <data name="present_job_level" xml:space="preserve">
+    <value>现岗位级别</value>
+  </data>
+  <data name="present_job_title" xml:space="preserve">
+    <value>现岗位名称</value>
+  </data>
+  <data name="present_manager_name" xml:space="preserve">
+    <value>现直接主管</value>
+  </data>
+  <data name="present_pay" xml:space="preserve">
+    <value>目前薪资水平</value>
+  </data>
+  <data name="present_site_name" xml:space="preserve">
+    <value>现办公地点</value>
+  </data>
+  <data name="present_tax_company_id" xml:space="preserve">
+    <value>现税务单位</value>
+  </data>
+  <data name="present_team_name" xml:space="preserve">
+    <value>现所属部门</value>
+  </data>
+  <data name="previous_version" xml:space="preserve">
+    <value>上一版本</value>
+  </data>
+  <data name="previous_version_description" xml:space="preserve">
+    <value>上一版本值</value>
+  </data>
+  <data name="price" xml:space="preserve">
+    <value>单价</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="primary_child_department" xml:space="preserve">
+    <value>子部门</value>
+  </data>
+  <data name="primary_company" xml:space="preserve">
+    <value>所属公司</value>
+  </data>
+  <data name="primary_department" xml:space="preserve">
+    <value>所属部门</value>
+  </data>
+  <data name="primary_flag" xml:space="preserve">
+    <value>主要的?</value>
+  </data>
+  <data name="primary_group" xml:space="preserve">
+    <value>组</value>
+  </data>
+  <data name="primary_reason_id" xml:space="preserve">
+    <value>主要原因</value>
+  </data>
+  <data name="primary_reason_name" xml:space="preserve">
+    <value>主要原因</value>
+  </data>
+  <data name="primary_sub_department" xml:space="preserve">
+    <value>分部门</value>
+  </data>
+  <data name="primary_team_flag" xml:space="preserve">
+    <value>直属部门</value>
+  </data>
+  <data name="primary_team_group" xml:space="preserve">
+    <value>班</value>
+  </data>
+  <data name="primary_team_id" xml:space="preserve">
+    <value>所属部门</value>
+  </data>
+  <data name="primary_team_name" xml:space="preserve">
+    <value>所在部门</value>
+  </data>
+  <data name="priority_type" xml:space="preserve">
+    <value>优先级</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="probation_end_date" xml:space="preserve">
+    <value>试用期结束日期</value>
+  </data>
+  <data name="probation_month" xml:space="preserve">
+    <value>试用期限(月)</value>
+  </data>
+  <data name="probation_pay" xml:space="preserve">
+    <value>实习期工资</value>
+  </data>
+  <data name="probing_question" xml:space="preserve">
+    <value>探讨问题</value>
+  </data>
+  <data name="process" xml:space="preserve">
+    <value>流程</value>
+  </data>
+  <data name="process_description" xml:space="preserve">
+    <value>流程描述</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="process_id" xml:space="preserve">
+    <value>流程</value>
+  </data>
+  <data name="process_list" xml:space="preserve">
+    <value>流程列表</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="process_name" xml:space="preserve">
+    <value>流程名称</value>
+  </data>
+  <data name="process_number" xml:space="preserve">
+    <value>流程编号</value>
+  </data>
+  <data name="process_type_id" xml:space="preserve">
+    <value>流程名称</value>
+  </data>
+  <data name="process_type_name" xml:space="preserve">
+    <value>流程名称</value>
+  </data>
+  <data name="prod_serial_num" xml:space="preserve">
+    <value>产品编号</value>
+  </data>
+  <data name="product_num" xml:space="preserve">
+    <value>产品代码</value>
+  </data>
+  <data name="product_type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="professional_knowledge_define" xml:space="preserve">
+    <value>专业知识定义</value>
+  </data>
+  <data name="professional_knowledge_name" xml:space="preserve">
+    <value>专业知识名称</value>
+  </data>
+  <data name="professional_quality_define" xml:space="preserve">
+    <value>职业素养定义</value>
+  </data>
+  <data name="professional_quality_name" xml:space="preserve">
+    <value>职业素养名称</value>
+  </data>
+  <data name="professional_skill_define" xml:space="preserve">
+    <value>职业技能/能力定义</value>
+  </data>
+  <data name="professional_skill_name" xml:space="preserve">
+    <value>职业技能/能力名称</value>
+  </data>
+  <data name="profile_code" xml:space="preserve">
+    <value>Profile Code</value>
+  </data>
+  <data name="profile_desc" xml:space="preserve">
+    <value>Profile Desc</value>
+  </data>
+  <data name="profile_type" xml:space="preserve">
+    <value>Profile Type</value>
+  </data>
+  <data name="profit_amount" xml:space="preserve">
+    <value>利润</value>
+  </data>
+  <data name="project_code" xml:space="preserve">
+    <value>项目代码</value>
+  </data>
+  <data name="project_id" xml:space="preserve">
+    <value>项目id</value>
+  </data>
+  <data name="project_leader" xml:space="preserve">
+    <value>负责人</value>
+  </data>
+  <data name="project_name" xml:space="preserve">
+    <value>项目名称</value>
+  </data>
+  <data name="project_num" xml:space="preserve">
+    <value>项目编号</value>
+  </data>
+  <data name="project_owner" xml:space="preserve">
+    <value>项目编制人</value>
+  </data>
+  <data name="project_status" xml:space="preserve">
+    <value>项目状态</value>
+  </data>
+  <data name="prospect_source_id" xml:space="preserve">
+    <value>机会来源</value>
+  </data>
+  <data name="prospect_source_name" xml:space="preserve">
+    <value>机会来源</value>
+  </data>
+  <data name="province" xml:space="preserve">
+    <value>省份</value>
+  </data>
+  <data name="province_id" xml:space="preserve">
+    <value>省份</value>
+  </data>
+  <data name="province_name" xml:space="preserve">
+    <value>省份</value>
+  </data>
+  <data name="purchase_type" xml:space="preserve">
+    <value>购买类型</value>
+  </data>
+  <data name="purchaser" xml:space="preserve">
+    <value>采购员</value>
+  </data>
+  <data name="purpose" xml:space="preserve">
+    <value>目的</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="qc_check_rate" xml:space="preserve">
+    <value>抽检率</value>
+  </data>
+  <data name="qc_check_result" xml:space="preserve">
+    <value>检验结果</value>
+  </data>
+  <data name="qc_pass_qty" xml:space="preserve">
+    <value>合格数量</value>
+  </data>
+  <data name="qc_pass_rate" xml:space="preserve">
+    <value>合格率</value>
+  </data>
+  <data name="qg_qty" xml:space="preserve">
+    <value>请购数量</value>
+  </data>
+  <data name="qty" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="qty_beg" xml:space="preserve">
+    <value>期初数量</value>
+  </data>
+  <data name="qty_end" xml:space="preserve">
+    <value>期末数量</value>
+  </data>
+  <data name="qty_in" xml:space="preserve">
+    <value>入库数量</value>
+  </data>
+  <data name="qty_out" xml:space="preserve">
+    <value>出库数量</value>
+  </data>
+  <data name="qty_qualified" xml:space="preserve">
+    <value>合格数量</value>
+  </data>
+  <data name="qty_waste" xml:space="preserve">
+    <value>损耗数量</value>
+  </data>
+  <data name="qualifi_code" xml:space="preserve">
+    <value>任职资格</value>
+  </data>
+  <data name="qualifi_desc" xml:space="preserve">
+    <value>任职资格描述</value>
+  </data>
+  <data name="qualifie_flag" xml:space="preserve">
+    <value>是否合格</value>
+  </data>
+  <data name="qualifie_users" xml:space="preserve">
+    <value>合格人数</value>
+  </data>
+  <data name="quality" xml:space="preserve">
+    <value>完成质量</value>
+  </data>
+  <data name="quality_level_description" xml:space="preserve">
+    <value>岗位要求级别</value>
+  </data>
+  <data name="qualitycontrol_dj_type" xml:space="preserve">
+    <value>质量检验类型</value>
+  </data>
+  <data name="qualitycontrol_type_code" xml:space="preserve">
+    <value>质量检验方式</value>
+  </data>
+  <data name="quantity" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="quick_search" xml:space="preserve">
+    <value>快速查找</value>
+  </data>
+  <data name="rank_code" xml:space="preserve">
+    <value>等级</value>
+  </data>
+  <data name="ranliao_cost" xml:space="preserve">
+    <value>燃料成本</value>
+  </data>
+  <data name="ranliao_fee" xml:space="preserve">
+    <value>燃料费</value>
+  </data>
+  <data name="read_date" xml:space="preserve">
+    <value>查看日期</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="read_flag" xml:space="preserve">
+    <value>是否已读</value>
+    <comment>IDMP</comment>
+  </data>
+  <data name="readonly_flag" xml:space="preserve">
+    <value>只读标志</value>
+  </data>
+  <data name="reason" xml:space="preserve">
+    <value>申请原因</value>
+  </data>
+  <data name="receive_amount" xml:space="preserve">
+    <value>收款金额</value>
+  </data>
+  <data name="receive_dj_no" xml:space="preserve">
+    <value>收款单号</value>
+  </data>
+  <data name="recharge_amount" xml:space="preserve">
+    <value>充值金额</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="recharge_date" xml:space="preserve">
+    <value>充值日期</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="recharge_no" xml:space="preserve">
+    <value>序号</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="recharge_type" xml:space="preserve">
+    <value>充值类型</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="rechargelist" xml:space="preserve">
+    <value>充值记录</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="record_date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="recovery" xml:space="preserve">
+    <value>赔付情况</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="ref_card_num" xml:space="preserve">
+    <value>关联主卡</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="ref_count" xml:space="preserve">
+    <value>引用次数</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="ref_expense" xml:space="preserve">
+    <value>相关报销单</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="ref_lend" xml:space="preserve">
+    <value>引用借款单</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="reference_count" xml:space="preserve">
+    <value>引用次数</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="register_certificate" xml:space="preserve">
+    <value>车辆登记证书号</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="registration_fee" xml:space="preserve">
+    <value>报名费</value>
+  </data>
+  <data name="registrt_end_date" xml:space="preserve">
+    <value>报名结束日期</value>
+  </data>
+  <data name="registrt_start_date" xml:space="preserve">
+    <value>报名开始日期</value>
+  </data>
+  <data name="regsitr_users" xml:space="preserve">
+    <value>申请人数</value>
+  </data>
+  <data name="reimbursed_amount" xml:space="preserve">
+    <value>报销金额</value>
+  </data>
+  <data name="reimbursed_ratio" xml:space="preserve">
+    <value>报销比例</value>
+  </data>
+  <data name="relation" xml:space="preserve">
+    <value>关系</value>
+  </data>
+  <data name="relation_flight" xml:space="preserve">
+    <value>关联机票申请</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="relationform" xml:space="preserve">
+    <value>关联表单</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="remark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="renew_decision_comment" xml:space="preserve">
+    <value>是否续签说明</value>
+  </data>
+  <data name="renew_flag" xml:space="preserve">
+    <value>是否续签</value>
+  </data>
+  <data name="repair_qty" xml:space="preserve">
+    <value>返修数量</value>
+  </data>
+  <data name="repayment_amount" xml:space="preserve">
+    <value>还款金额</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="repayment_amount_summary" xml:space="preserve">
+    <value>还款总额</value>
+  </data>
+  <data name="repayment_applicant_date" xml:space="preserve">
+    <value>提交日期</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="repayment_applicant_name" xml:space="preserve">
+    <value>还款人</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="repayment_code" xml:space="preserve">
+    <value>还款单编号</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="repayment_description" xml:space="preserve">
+    <value>还款说明</value>
+  </data>
+  <data name="repayment_guid" xml:space="preserve">
+    <value>条码</value>
+  </data>
+  <data name="repayment_status_name" xml:space="preserve">
+    <value>还款单状态</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="repayment_type" xml:space="preserve">
+    <value>还款单类型</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="repaymentdetail" xml:space="preserve">
+    <value>还款明细</value>
+  </data>
+  <data name="replace_user_id" xml:space="preserve">
+    <value>被替换者</value>
+  </data>
+  <data name="replace_user_name" xml:space="preserve">
+    <value>被替换者</value>
+  </data>
+  <data name="report_level" xml:space="preserve">
+    <value>层</value>
+  </data>
+  <data name="report_type" xml:space="preserve">
+    <value>报表类型</value>
+  </data>
+  <data name="request_date" xml:space="preserve">
+    <value>需求日期</value>
+  </data>
+  <data name="request_qty" xml:space="preserve">
+    <value>需求数量</value>
+  </data>
+  <data name="require_cg_date" xml:space="preserve">
+    <value>需求日期</value>
+  </data>
+  <data name="require_ll_qty" xml:space="preserve">
+    <value>需求数量</value>
+  </data>
+  <data name="require_llt_qty" xml:space="preserve">
+    <value>拟退数量</value>
+  </data>
+  <data name="required_course_flag" xml:space="preserve">
+    <value>必修</value>
+  </data>
+  <data name="required_seatlevel_name" xml:space="preserve">
+    <value>座位等级</value>
+  </data>
+  <data name="required_ticket_type_id" xml:space="preserve">
+    <value>交通方式</value>
+  </data>
+  <data name="residence_address" xml:space="preserve">
+    <value>详细地址</value>
+  </data>
+  <data name="residence_area" xml:space="preserve">
+    <value>现居住区域</value>
+  </data>
+  <data name="residence_permit_expire_date" xml:space="preserve">
+    <value>暂住证有效期</value>
+  </data>
+  <data name="residence_permit_number" xml:space="preserve">
+    <value>暂住证号码</value>
+  </data>
+  <data name="residence_zip" xml:space="preserve">
+    <value>居住地邮编</value>
+  </data>
+  <data name="residual_days" xml:space="preserve">
+    <value>剩余天数</value>
+  </data>
+  <data name="resign_num" xml:space="preserve">
+    <value>辞职单号</value>
+  </data>
+  <data name="resign_reason" xml:space="preserve">
+    <value>辞职原因</value>
+  </data>
+  <data name="resource_interface_id" xml:space="preserve">
+    <value>资源子类</value>
+  </data>
+  <data name="resource_needed" xml:space="preserve">
+    <value>需要资源</value>
+  </data>
+  <data name="resource_type" xml:space="preserve">
+    <value>资源类型</value>
+  </data>
+  <data name="responsibility" xml:space="preserve">
+    <value>职务</value>
+  </data>
+  <data name="resume_num" xml:space="preserve">
+    <value>简历编号</value>
+  </data>
+  <data name="retailprice" xml:space="preserve">
+    <value>零售单价</value>
+  </data>
+  <data name="return_date_begin" xml:space="preserve">
+    <value>返程出发时间范围从</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="return_date_end" xml:space="preserve">
+    <value>到</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="return_flag" xml:space="preserve">
+    <value>包括返程</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="reward_punish_date" xml:space="preserve">
+    <value>奖惩日期</value>
+  </data>
+  <data name="reward_punish_name" xml:space="preserve">
+    <value>奖惩名称</value>
+  </data>
+  <data name="reward_punish_type" xml:space="preserve">
+    <value>奖惩种类</value>
+  </data>
+  <data name="rewards_current_company_after" xml:space="preserve">
+    <value>奖惩信息加入公司后</value>
+  </data>
+  <data name="rewards_current_company_before" xml:space="preserve">
+    <value>奖惩信息加入公司前</value>
+  </data>
+  <data name="risk_description" xml:space="preserve">
+    <value>潜在风险</value>
+  </data>
+  <data name="road_fee" xml:space="preserve">
+    <value>过路费</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="role_id" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="role_name" xml:space="preserve">
+    <value>角色名称</value>
+  </data>
+  <data name="rownum" xml:space="preserve">
+    <value>行号</value>
+  </data>
+  <data name="salary_remark" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="salemethod_id" xml:space="preserve">
+    <value>销售方法</value>
+  </data>
+  <data name="salemethod_name" xml:space="preserve">
+    <value>销售方法</value>
+  </data>
+  <data name="sales_price" xml:space="preserve">
+    <value>销售价格</value>
+  </data>
+  <data name="sales_price_cpl" xml:space="preserve">
+    <value>价格(RMB)</value>
+  </data>
+  <data name="salestype_id" xml:space="preserve">
+    <value>销售类型</value>
+  </data>
+  <data name="schedule_end_date" xml:space="preserve">
+    <value>计划结束日期</value>
+  </data>
+  <data name="schedule_remark" xml:space="preserve">
+    <value>备注</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="schedule_start_date" xml:space="preserve">
+    <value>计划开始日期</value>
+  </data>
+  <data name="school_name" xml:space="preserve">
+    <value>学校名称</value>
+  </data>
+  <data name="school_specialty_request" xml:space="preserve">
+    <value>学历专业要求</value>
+  </data>
+  <data name="score" xml:space="preserve">
+    <value>得分</value>
+  </data>
+  <data name="score_from" xml:space="preserve">
+    <value>评分(从)</value>
+  </data>
+  <data name="score_standard" xml:space="preserve">
+    <value>评分标准</value>
+  </data>
+  <data name="score_to" xml:space="preserve">
+    <value>评分(至)</value>
+  </data>
+  <data name="seat_number" xml:space="preserve">
+    <value>座位数</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="seatlevel_name" xml:space="preserve">
+    <value>座位等级</value>
+  </data>
+  <data name="segment" xml:space="preserve">
+    <value>段</value>
+  </data>
+  <data name="select_wf_process" xml:space="preserve">
+    <value>流程类别</value>
+  </data>
+  <data name="seq_id" xml:space="preserve">
+    <value>编号</value>
+  </data>
+  <data name="serial_num" xml:space="preserve">
+    <value>序列号</value>
+  </data>
+  <data name="serial_num_control_flag" xml:space="preserve">
+    <value>产品编号控制</value>
+  </data>
+  <data name="server_time" xml:space="preserve">
+    <value>服务器时间</value>
+  </data>
+  <data name="service_end_date" xml:space="preserve">
+    <value>结束时间</value>
+  </data>
+  <data name="service_month" xml:space="preserve">
+    <value>司龄(月)</value>
+  </data>
+  <data name="service_price" xml:space="preserve">
+    <value>维修服务价格</value>
+  </data>
+  <data name="service_start_date" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="set_member_sql" xml:space="preserve">
+    <value>资源范围</value>
+  </data>
+  <data name="set_top_flag" xml:space="preserve">
+    <value>置顶标记</value>
+  </data>
+  <data name="setperson" xml:space="preserve">
+    <value>查看设置人员信息</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="settlement_unit" xml:space="preserve">
+    <value>结算单位</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="settlement_unit_id" xml:space="preserve">
+    <value>结算单位</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="settlement_unit_name" xml:space="preserve">
+    <value>结算单位</value>
+    <comment>Expense</comment>
+  </data>
+  <data name="settlement_unit_symbol" xml:space="preserve">
+    <value>货币标识</value>
+  </data>
+  <data name="sf_qty" xml:space="preserve">
+    <value>实发数量</value>
+  </data>
+  <data name="sh_no" xml:space="preserve">
+    <value>送货单号</value>
+  </data>
+  <data name="ship_to_flag" xml:space="preserve">
+    <value>送货地址</value>
+  </data>
+  <data name="short_name" xml:space="preserve">
+    <value>简称</value>
+  </data>
+  <data name="shortname" xml:space="preserve">
+    <value>关键字</value>
+  </data>
+  <data name="show_all_flag" xml:space="preserve">
+    <value>显示没有发生数量的商品</value>
+  </data>
+  <data name="show_amount_flag" xml:space="preserve">
+    <value>显示金额</value>
+  </data>
+  <data name="show_close_projecttask" xml:space="preserve">
+    <value>未完工的任务单是否显示</value>
+  </data>
+  <data name="show_contain_zero_stock_product" xml:space="preserve">
+    <value>显示库存为０的产品</value>
+  </data>
+  <data name="show_flag" xml:space="preserve">
+    <value>是否显示</value>
+  </data>
+  <data name="show_fzcl_flag" xml:space="preserve">
+    <value>辅材领料是否显示</value>
+  </data>
+  <data name="show_noinvoice_flag" xml:space="preserve">
+    <value>发票选项</value>
+  </data>
+  <data name="show_order" xml:space="preserve">
+    <value>排序</value>
+  </data>
+  <data name="show_qtyequal_flag" xml:space="preserve">
+    <value>物料数量一致是否显示</value>
+  </data>
+  <data name="show_tsxs_flag" xml:space="preserve">
+    <value>特殊销售选项</value>
+  </data>
+  <data name="sic_code" xml:space="preserve">
+    <value>行业代码</value>
+  </data>
+  <data name="site_address" xml:space="preserve">
+    <value>办公地址</value>
+  </data>
+  <data name="site_id" xml:space="preserve">
+    <value>办公地点</value>
+  </data>
+  <data name="site_name" xml:space="preserve">
+    <value>用户名称</value>
+  </data>
+  <data name="site_num" xml:space="preserve">
+    <value>用户编号</value>
+  </data>
+  <data name="sj_qty" xml:space="preserve">
+    <value>实际数量</value>
+  </data>
+  <data name="skill" xml:space="preserve">
+    <value>胜任素质定义</value>
+  </data>
+  <data name="skill_level_description" xml:space="preserve">
+    <value>岗位要求级别</value>
+  </data>
+  <data name="social_insurance_account" xml:space="preserve">
+    <value>社保帐号</value>
+  </data>
+  <data name="social_insurance_basic_amount" xml:space="preserve">
+    <value>社保缴纳基数</value>
+  </data>
+  <data name="social_insurance_company_id" xml:space="preserve">
+    <value>社保缴纳单位</value>
+  </data>
+  <data name="social_insurance_company_name" xml:space="preserve">
+    <value>社保缴纳单位</value>
+  </data>
+  <data name="social_insurance_date" xml:space="preserve">
+    <value>社保起缴日期(原单位)</value>
+  </data>
+  <data name="social_insurance_date_company" xml:space="preserve">
+    <value>社保起缴日期(本集团)</value>
+  </data>
+  <data name="social_insurance_geo_id" xml:space="preserve">
+    <value>社保所在地</value>
+  </data>
+  <data name="social_insurance_geo_name" xml:space="preserve">
+    <value>社保所在地</value>
+  </data>
+  <data name="social_insurance_place" xml:space="preserve">
+    <value>社保所在地</value>
+  </data>
+  <data name="social_service_month" xml:space="preserve">
+    <value>社会工龄(月)</value>
+  </data>
+  <data name="source" xml:space="preserve">
+    <value>数据源</value>
+  </data>
+  <data name="start_address" xml:space="preserve">
+    <value>出发地点</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="start_date" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="start_date_begin" xml:space="preserve">
+    <value>出发时间范围从</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="start_date_end" xml:space="preserve">
+    <value>到</value>
+    <comment>Ticket</comment>
+  </data>
+  <data name="start_kilometer" xml:space="preserve">
+    <value>起始公里数</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="start_payperiod_name" xml:space="preserve">
+    <value>开始期间</value>
+  </data>
+  <data name="start_place" xml:space="preserve">
+    <value>出发地</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="start_time" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="start_time_hour" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="state" xml:space="preserve">
+    <value>省份</value>
+  </data>
+  <data name="state_id" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="status_id" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="stay_time_description" xml:space="preserve">
+    <value>停留时间</value>
+  </data>
+  <data name="std_price" xml:space="preserve">
+    <value>标准价</value>
+  </data>
+  <data name="submit_by" xml:space="preserve">
+    <value>提交人</value>
+  </data>
+  <data name="submit_date" xml:space="preserve">
+    <value>提交日期</value>
+  </data>
+  <data name="submit_flag" xml:space="preserve">
+    <value>提交标志</value>
+  </data>
+  <data name="aisle_margin" xml:space="preserve">
+    <value>巷道边距(mm)</value>
+  </data>
+  <data name="asrv_code" xml:space="preserve">
+    <value>小车编号</value>
+  </data>
+  <data name="celltype_code" xml:space="preserve">
+    <value>格子类型</value>
+  </data>
+  <data name="cell_depth" xml:space="preserve">
+    <value>储位深度(mm)</value>
+  </data>
+  <data name="cell_margin" xml:space="preserve">
+    <value>储位间距(mm)</value>
+  </data>
+  <data name="cell_num" xml:space="preserve">
+    <value>位置编号</value>
+  </data>
+  <data name="cell_width" xml:space="preserve">
+    <value>储位宽度(mm)</value>
+  </data>
+  <data name="floor_code" xml:space="preserve">
+    <value>楼层编号</value>
+  </data>
+  <data name="floor_description" xml:space="preserve">
+    <value>楼层描述</value>
+  </data>
+  <data name="floor_num" xml:space="preserve">
+    <value>楼层</value>
+  </data>
+  <data name="lift_code" xml:space="preserve">
+    <value>电梯编号</value>
+  </data>
+  <data name="channel_direction" xml:space="preserve">
+    <value>货道方向</value>
+  </data>
+  <data name="channel_gap" xml:space="preserve">
+    <value>流道间距(mm)</value>
+  </data>
+  <data name="status_code" xml:space="preserve">
+    <value>状态编号</value>
+  </data>
+  <data name="status_name" xml:space="preserve">
+    <value>状态名称</value>
+  </data>
+  <data name="status_sync_date" xml:space="preserve">
+    <value>状态同步日期</value>
+  </data>
+  <data name="status_value" xml:space="preserve">
+    <value>状态值</value>
+  </data>
+  <data name="x_num" xml:space="preserve">
+    <value>x编号</value>
+  </data>
+  <data name="x_num_from" xml:space="preserve">
+    <value>x方向起点</value>
+  </data>
+  <data name="x_num_to" xml:space="preserve">
+    <value>x方向终点</value>
+  </data>
+  <data name="y_num" xml:space="preserve">
+    <value>y编号</value>
+  </data>
+  <data name="y_num_from" xml:space="preserve">
+    <value>y方向起点</value>
+  </data>
+  <data name="y_num_to" xml:space="preserve">
+    <value>y方向终点</value>
+  </data>
+  <data name="asrv_current_location" xml:space="preserve">
+    <value>小车当前位置</value>
+  </data>
+  <data name="target_floor" xml:space="preserve">
+    <value>目标楼层</value>
+  </data>
+  <data name="xb_1" xml:space="preserve">
+    <value>1#XB</value>
+  </data>
+  <data name="xb_2" xml:space="preserve">
+    <value>2#XB</value>
+  </data>
+  <data name="xb_3" xml:space="preserve">
+    <value>3#XB</value>
+  </data>
+  <data name="xb_4" xml:space="preserve">
+    <value>4#XB</value>
+  </data>
+  <data name="xf_1" xml:space="preserve">
+    <value>1#XF</value>
+  </data>
+  <data name="xf_2" xml:space="preserve">
+    <value>2#XF</value>
+  </data>
+  <data name="xf_3" xml:space="preserve">
+    <value>3#XF</value>
+  </data>
+  <data name="xf_4" xml:space="preserve">
+    <value>4#XF</value>
+  </data>
+  <data name="YB_1" xml:space="preserve">
+    <value>1#YB</value>
+  </data>
+  <data name="YB_2" xml:space="preserve">
+    <value>2#YB</value>
+  </data>
+  <data name="YB_3" xml:space="preserve">
+    <value>3#YB</value>
+  </data>
+  <data name="YB_4" xml:space="preserve">
+    <value>4#YB</value>
+  </data>
+  <data name="YF_1" xml:space="preserve">
+    <value>1#YF</value>
+  </data>
+  <data name="YF_2" xml:space="preserve">
+    <value>2#YF</value>
+  </data>
+  <data name="YF_3" xml:space="preserve">
+    <value>3#YF</value>
+  </data>
+  <data name="YF_4" xml:space="preserve">
+    <value>4#YF</value>
+  </data>
+  <data name="task_type_id" xml:space="preserve">
+    <value>任务类型</value>
+  </data>
+  <data name="enter_direction" xml:space="preserve">
+    <value>进入方向</value>
+  </data>
+  <data name="ip_adress" xml:space="preserve">
+    <value>IP地址</value>
+  </data>
+  <data name="mac_adress" xml:space="preserve">
+    <value>物理地址</value>
+  </data>
+  <data name="port" xml:space="preserve">
+    <value>端口</value>
+  </data>
+  <data name="acp_ah" xml:space="preserve">
+    <value>容量Ah</value>
+  </data>
+  <data name="battery_type" xml:space="preserve">
+    <value>电池类别</value>
+  </data>
+  <data name="charging_v" xml:space="preserve">
+    <value>充电最高电压</value>
+  </data>
+  <data name="discharge_v" xml:space="preserve">
+    <value>放电截止电压</value>
+  </data>
+  <data name="battery_model" xml:space="preserve">
+    <value>电池型号</value>
+  </data>
+  <data name="charged_ah" xml:space="preserve">
+    <value>已冲Ah数</value>
+  </data>
+  <data name="charged_cycle" xml:space="preserve">
+    <value>已充电次数</value>
+  </data>
+  <data name="Charge_Time" xml:space="preserve">
+    <value>充电时间</value>
+  </data>
+  <data name="Max_Charge_Volt" xml:space="preserve">
+    <value>最高充电电压</value>
+  </data>
+  <data name="Min_Discharge_Volt" xml:space="preserve">
+    <value>最低放电电压</value>
+  </data>
+  <data name="Rated_Ah" xml:space="preserve">
+    <value>额定电池容量</value>
+  </data>
+  <data name="shuttle_model" xml:space="preserve">
+    <value>小车型号</value>
+  </data>
+  <data name="shuttle_type" xml:space="preserve">
+    <value>小车类型</value>
+  </data>
+  <data name="equipment_type_name" xml:space="preserve">
+    <value>设备类型</value>
+  </data>
+  <data name="equipment_code" xml:space="preserve">
+    <value>设备代码</value>
+  </data>
+  <data name="equipment_model" xml:space="preserve">
+    <value>设备型号</value>
+  </data>
+  <data name="equipment_name" xml:space="preserve">
+    <value>设备名称</value>
+  </data>
+  <data name="mode_switch" xml:space="preserve">
+    <value>模式切换</value>
+  </data>
+  <data name="token_strategy" xml:space="preserve">
+    <value>令牌策略</value>
+  </data>
+  <data name="from_x_num" xml:space="preserve">
+    <value>X开始坐标</value>
+  </data>
+  <data name="from_y_num" xml:space="preserve">
+    <value>Y开始坐标</value>
+  </data>
+  <data name="to_x_num" xml:space="preserve">
+    <value>X结束坐标</value>
+  </data>
+  <data name="to_y_num" xml:space="preserve">
+    <value>Y结束坐标</value>
+  </data>
+  <data name="rack_direction" xml:space="preserve">
+    <value>巷道方向</value>
+  </data>
+</root>

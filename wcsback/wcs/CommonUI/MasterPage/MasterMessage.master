@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterMessage.master.cs" Inherits="CommonUI_MasterPage_MasterMessage" %>
+
+
+<%@ Register Assembly="EntpClass.WebControlLib" Namespace="EntpClass.WebControlLib"
+    TagPrefix="cc1" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <script type="text/javascript">
+        function SetPager(v) {
+            document.getElementById('HidPagerArgument').value = v;
+            __doPostBack('', '');
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="right" style="display: inline;">
+         <asp:ContentPlaceHolder ID="C1" runat="server">
+         </asp:ContentPlaceHolder>
+    </div>
+    <table id="TabHome" cellpadding="0" cellspacing="0" border="0" style="table-layout: fixed;
+        width: 100%; height: 92%; display: inline; padding: 0px 10px 0px 10px;">
+        <col width="15%" style="vertical-align: top;" />
+        <col width="85%" style="vertical-align: top; padding-left: 1px;" />
+        <tr>
+            <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="height: 100%;
+                    margin: 0 0 0 0; padding: 0 0 0 0;">
+                    <colgroup>
+                        <col width="5px" />
+                        <col style="vertical-align: top;" />
+                        <col width="5px" />
+                    </colgroup>
+                    <tr>
+                        <td style="background: url(images/one_06.jpg) no-repeat; height: 5px;">
+                        </td>
+                        <td style="background: url(images/one_13.jpg) repeat-x;">
+                        </td>
+                        <td style="background: url(images/one_08.jpg) no-repeat; height: 5px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background: url(images/one_11.jpg) repeat-y;">
+                        </td>
+                        <td style="background: url(images/one_15.jpg) no-repeat;">
+                          <asp:ContentPlaceHolder ID="C2" runat="server">
+                        </asp:ContentPlaceHolder>
+                        </td>
+                        <td style="background: url(images/one_12.jpg) repeat-y;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background: url(images/one_07.jpg) no-repeat; height: 5px;">
+                        </td>
+                        <td style="background: url(images/one_14.jpg) repeat-x;">
+                        </td>
+                        <td style="background: url(images/one_09.jpg) no-repeat; height: 5px;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table width="100%" cellpadding="0" cellspacing="0" border="0" style="height: 100%;
+                    margin: 0 0 0 0; padding: 0 0 0 0; display: inline;">
+                    <colgroup>
+                        <col width="5px" />
+                        <col style="vertical-align: top;" />
+                        <col width="5px" />
+                    </colgroup>
+                    <tr>
+                        <td style="background: url(images/one_06.jpg) no-repeat; height: 5px;">
+                        </td>
+                        <td style="background: url(images/one_13.jpg) repeat-x;">
+                        </td>
+                        <td style="background: url(images/one_08.jpg) no-repeat; height: 5px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background: url(images/one_11.jpg) repeat-y;">
+                        </td>
+                        <td style="background: url(images/one_15.jpg) no-repeat;">
+                            <asp:ContentPlaceHolder ID="C3" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td style="background: url(images/one_12.jpg) repeat-y;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background: url(images/one_07.jpg) no-repeat; height: 5px;">
+                        </td>
+                        <td style="background: url(images/one_14.jpg) repeat-x;">
+                        </td>
+                        <td style="background: url(images/one_09.jpg) no-repeat; height: 5px;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

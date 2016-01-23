@@ -1,0 +1,54 @@
+﻿body
+{
+	margin-left: 10px;
+	margin-right: 20px;
+}
+.PageTitle
+{
+	font-size: 12pt;
+	font-weight: bold;
+	color: #003366;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.MainDiv
+{
+	width: 100%;
+	height: 90%;
+	display: inline;
+}
+.TbTitle
+{
+	display: inline;
+	height: 40px;
+	width: 100%;
+}
+.TbTitleR1
+{
+	height: 30px;
+}
+.TbTitleR2
+{
+	background-color: #C9DAF1;
+	background-image: url(Images/1_0/TitleLine.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.NoScroll
+{
+	overflow: visible;
+}
+.DivAutoScroll
+{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	display: inline;
+}
+.tdlocked
+{
+    position: relative;
+    left: expression(document.getElementById("divBody").scrollLeft);
+    background-color: white;
+    z-index: 999;
+}
